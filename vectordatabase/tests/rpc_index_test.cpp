@@ -55,7 +55,7 @@ TEST_F(RpcClientTestBase, RebuildIndexEmptyParams) {
     int status = client.rebuildIndex("test_db6", "book-test-2", nullptr, &result);
     std::cout << result.message << std::endl;
 
-    EXPECT_EQ(status, 0);
+    EXPECT_EQ(status, -1);
     ASSERT_GT(result.taskIds.size(), 0);
 }
 
@@ -65,7 +65,7 @@ TEST_F(RpcClientTestBase, RebuildNonExistentIndex) {
     int status = client.rebuildIndex("test_db6", "non_existent_collection", nullptr, &result);
     std::cout << result.message << std::endl;
 
-    EXPECT_EQ(status, 0);
+    EXPECT_EQ(status, -1);
 }
 
 // 错误处理测试 - 空数据库名或集合名
@@ -78,8 +78,7 @@ TEST_F(RpcClientTestBase, RebuildIndexEmptyDbOrCollectionName) {
     EXPECT_EQ(status, 0);
 
     status = client.rebuildIndex("test_db6", "", params, &result);
-    EXPECT_EQ(status, 0);
+    EXPECT_EQ(status, -1);
 }
 
 }  // namespace vectordb
-

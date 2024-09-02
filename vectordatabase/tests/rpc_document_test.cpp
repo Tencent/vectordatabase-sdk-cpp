@@ -95,7 +95,7 @@ TEST_F(RpcClientTestBase, UpsertDocument) {
     };
     UpsertDocumentParams* params = new UpsertDocumentParams();
     params->buildIndex = true;
-    int status = client.upsert("test_db6", "book-test-2", documents, params, &result);
+    int status = client.upsert("test_db5", "test_collection2", documents, params, &result);
     std::cout << result.message << std::endl;
 
     EXPECT_EQ(status, 0);
@@ -107,7 +107,7 @@ TEST_F(RpcClientTestBase, QueryDocument) {
     std::vector<std::string> documentIds;
     QueryDocumentParams* params = new QueryDocumentParams();
     params->limit = 100;
-    int status = client.query("test_db6", "book-test-2", documentIds, params, &result);
+    int status = client.query("test_db5", "test_collection2", documentIds, params, &result);
     std::cout << result.message << std::endl;
 
     EXPECT_EQ(status, 0);
@@ -126,7 +126,7 @@ TEST_F(RpcClientTestBase, SearchDocument) {
         {0.3123, 0.43, 0.213},
         {0.233, 0.12, 0.97}
     };
-    int status = client.search("test_db6", "book-test-2", {}, vectors, {}, params, &result);
+    int status = client.search("test_db5", "test_collection2", {}, vectors, {}, params, &result);
     std::cout << result.message << std::endl;
     EXPECT_EQ(status, 0);
 
@@ -144,7 +144,7 @@ TEST_F(RpcClientTestBase, SearchDocumentById) {
     params->limit = 2;
     params->filter = std::make_unique<Filter>("bookName=\"三国演义\"");
     std::vector<std::string> documentIds = {"0003"};
-    int status = client.search("test_db6", "book-test-2", documentIds, {}, {}, params, &result);
+    int status = client.search("test_db5", "test_collection2", documentIds, {}, {}, params, &result);
     std::cout << result.message << std::endl;
 
     EXPECT_EQ(status, 0);
@@ -156,7 +156,7 @@ TEST_F(RpcClientTestBase, DeleteDocument) {
     DeleteDocumentParams* deleteParams = new DeleteDocumentParams();
     deleteParams->documentIds = {"0001", "0003"};
     deleteParams->filter = std::make_unique<Filter>("bookName=\"西游记\"");
-    int status = client.dele("test_db6", "book-test-2", deleteParams, &result);
+    int status = client.dele("test_db5", "test_collection2", deleteParams, &result);
     std::cout << result.message << std::endl;
 
     EXPECT_EQ(status, 0);
@@ -170,7 +170,7 @@ TEST_F(RpcClientTestBase, UpdateDocument) {
     updateParams->queryIds = {"0001", "0003"};
     updateParams->queryFilter = std::make_unique<Filter>("bookName=\"三国演义\"");
     updateParams->updateFields.insert({"page", Field(static_cast<uint64_t>(24))});
-    int status = client.update("test_db6", "book-test-2", updateParams, &result);
+    int status = client.update("test_db5", "test_collection2", updateParams, &result);
     std::cout << result.message << std::endl;
 
     EXPECT_EQ(status, 0);
@@ -179,4 +179,3 @@ TEST_F(RpcClientTestBase, UpdateDocument) {
 }
 
 }  // namespace vectordb
-

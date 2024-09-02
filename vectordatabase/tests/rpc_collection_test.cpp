@@ -56,7 +56,7 @@ TEST_F(RpcClientTestBase, CreateCollection) {
     };
 
 
-    int status = client.createCollection("test_db6", "test_collection", 1, 0, "Test Collection",
+    int status = client.createCollection("test_db5", "test_collection2", 1, 0, "Test Collection",
                                         indexes, nullptr, &result);
     std::cout << result.message << std::endl;
 
@@ -65,7 +65,7 @@ TEST_F(RpcClientTestBase, CreateCollection) {
 
 TEST_F(RpcClientTestBase, ListCollections) {
     ListCollectionResult result;
-    int status = client.listCollections("test_db6", &result);
+    int status = client.listCollections("test_db5", &result);
     std::cout << result.message << std::endl;
 
     EXPECT_EQ(status, 0);
@@ -73,7 +73,7 @@ TEST_F(RpcClientTestBase, ListCollections) {
 
     bool found = false;
     for (const auto& collection : result.collections) {
-        if (collection->collectionName == "test_collection") {
+        if (collection->collectionName == "test_collection2") {
             found = true;
             break;
         }
@@ -83,17 +83,17 @@ TEST_F(RpcClientTestBase, ListCollections) {
 
 TEST_F(RpcClientTestBase, DescribeCollection) {
     DescribeCollectionResult result;
-    int status = client.describeCollection("test_db6", "test_collection", &result);
+    int status = client.describeCollection("test_db5", "test_collection2", &result);
     std::cout << result.message << std::endl;
 
     EXPECT_EQ(status, 0);
 
-    EXPECT_EQ(result.collection->collectionName, "test_collection");
+    EXPECT_EQ(result.collection->collectionName, "test_collection2");
 }
 
 TEST_F(RpcClientTestBase, TruncateCollection) {
     TruncateCollectionResult result;
-    int status = client.truncateCollection("test_db6", "test_collection", &result);
+    int status = client.truncateCollection("test_db5", "test_collection2", &result);
     std::cout << result.message << std::endl;
 
     EXPECT_EQ(status, 0);
@@ -103,7 +103,7 @@ TEST_F(RpcClientTestBase, TruncateCollection) {
 
 TEST_F(RpcClientTestBase, DropCollection) {
     DropCollectionResult result;
-    int status = client.dropCollection("test_db6", "test_collection", &result);
+    int status = client.dropCollection("test_db6", "test_collection2", &result);
     std::cout << result.message << std::endl;
 
     EXPECT_EQ(status, 0);
@@ -111,10 +111,10 @@ TEST_F(RpcClientTestBase, DropCollection) {
     EXPECT_GT(result.affectedCount, 0);
 
     ListCollectionResult listResult;
-    client.listCollections("test_db6", &listResult);
+    client.listCollections("test_db5", &listResult);
     bool found = false;
     for (const auto& collection : listResult.collections) {
-        if (collection->collectionName == "test_collection") {
+        if (collection->collectionName == "test_collection2") {
             found = true;
             break;
         }
@@ -125,7 +125,7 @@ TEST_F(RpcClientTestBase, DropCollection) {
 // 边界条件测试 - 删除不存在的集合
 TEST_F(RpcClientTestBase, DropNonExistentCollection) {
     DropCollectionResult result;
-    int status = client.dropCollection("test_db6", "non_existent_collection", &result);
+    int status = client.dropCollection("test_db5", "non_existent_collection", &result);
     std::cout << result.message << std::endl;
 
     EXPECT_EQ(status, 0);

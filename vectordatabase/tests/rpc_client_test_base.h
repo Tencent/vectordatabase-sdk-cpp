@@ -37,8 +37,8 @@ class RpcClientTestBase : public ::testing::Test {
     RpcClient client;
 
     RpcClientTestBase()
-        : client("http://lb-lq5x9sm9-xl29rc643uyb5hgs.clb.ap-beijing.tencentclb.com:50000", "root",
-                 "A21gU7pNPq2T534PpF5N5qem6p1Rn1b1hzTcZmN5", nullptr) {
+        : client("url", "username",
+                 "key", nullptr) {
     }
 
     void SetUp() override {

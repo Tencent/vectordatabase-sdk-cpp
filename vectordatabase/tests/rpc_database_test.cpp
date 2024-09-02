@@ -35,7 +35,7 @@ namespace vectordb {
 
 TEST_F(RpcClientTestBase, CreateDatabase) {
     CreateDatabaseResult result;
-    int status = client.createDatabase("test_db5", &result);
+    int status = client.createDatabase("test_db8", &result);
     std::cout << result.message << std::endl;
     EXPECT_EQ(status, 0);
     EXPECT_GT(result.affectedCount, 0);
@@ -49,7 +49,7 @@ TEST_F(RpcClientTestBase, ListDatabases) {
     ASSERT_FALSE(result.databases.empty());
     bool found = false;
     for (const auto& db : result.databases) {
-        if (db->name == "test_db4") {
+        if (db->name == "test_db8") {
             found = true;
             break;
         }
@@ -60,14 +60,14 @@ TEST_F(RpcClientTestBase, ListDatabases) {
 
 TEST_F(RpcClientTestBase, DropDatabase) {
     DropDatabaseResult dropResult;
-    int status = client.dropDatabase("test_db4", &dropResult);
+    int status = client.dropDatabase("test_db8", &dropResult);
     EXPECT_EQ(status, 0);
     EXPECT_GT(dropResult.affectedCount, 0);
     ListDatabaseResult listResult;
     client.listDatabases(&listResult);
     bool found = false;
     for (const auto& db : listResult.databases) {
-        if (db->name == "test_db4") {
+        if (db->name == "test_db8") {
             found = true;
             break;
         }
