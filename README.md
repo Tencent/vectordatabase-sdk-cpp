@@ -27,10 +27,7 @@ C++ SDK for Tencent Cloud VectorDB.
 
 #### [protobuf](https://github.com/protocolbuffers/protobuf/releases?page=1)
 
-#### [googletest](https://github.com/google/googletest/tree/main/googletest)
-
-安装完成grpc，protobuf和googletest会一并安装，无需额外安装
-
+安装完成grpc，protobuf会一并安装，无需额外安装
 
 如果protobuf版本不是27.0
 需要重新生成olama.pb.h和olama.grpc.h文件
@@ -63,6 +60,18 @@ static const char* SearchEngine_method_names[] = {
   "/database/list",
 };
 ```
+
+#### [googletest](https://github.com/google/googletest/tree/main/googletest)
+```
+git clone https://github.com/google/googletest.git
+cd googletest       
+mkdir build         
+cd build
+cmake ..     
+make
+sudo make install 
+```
+
 ### CMake
 ```
 mkdir build && cd build
