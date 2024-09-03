@@ -98,7 +98,7 @@ int main() {
     // 第二步：创建 Collection
     // 创建collection耗时较长，需要调整客户端的timeout
     // 这里以三可用区实例作为参考，具体实例不同的规格所支持的shard和replicas区间不同，需要参考官方文档
-    cli.setTimeout(30);  // 单位：秒（s）
+    cli.setTimeout(3000);  // 单位：毫秒（s）
     status = cli.createCollection(dbName, collectionName, 3, 0, "test collection", indexes);
 
     // Create Collection without Embedding
@@ -128,7 +128,7 @@ int main() {
     embedding->enabled = "vector";
     embedding->model = "bge-base-zh";
     createCollectionParams->embedding = std::move(embedding);
-    cli.setTimeout(30);  // 单位：秒（s）
+    cli.setTimeout(3000);  // 单位：毫秒（s）
     status = cli.createCollection(dbName, collectionName, 3, 0, "test collection", indexes);
 
     // list Collection
