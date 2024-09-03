@@ -64,7 +64,8 @@ static const char* SearchEngine_method_names[] = {
 #### [googletest](https://github.com/google/googletest/tree/main/googletest)
 ```
 git clone https://github.com/google/googletest.git
-cd googletest       
+cd googletest
+git submodule update --init
 mkdir build         
 cd build
 cmake ..     
