@@ -30,14 +30,14 @@ C++ SDK for Tencent Cloud VectorDB.
 安装完成grpc，protobuf会一并安装，无需额外安装
 
 如果protobuf版本不是27.0
-需要重新生成olama.pb.h和olama.grpc.h文件
+需要重新生成olama.pb.cc和olama.grpc.pb.cc等文件
 
 ```
 protoc -I=. --cpp_out=. olama.proto
 
 protoc -I=. --grpc_out=. --plugin=protoc-gen-grpc=$(which grpc_cpp_plugin) olama.proto
 ```
-重新生成olama.pb.h和olama.grpc.h文件后，需手动修改SearchEngine_method_names为下面的内容
+重新生成olama.grpc.pb.cc文件后，需手动修改SearchEngine_method_names为下面的内容
 
 ```
 static const char* SearchEngine_method_names[] = {
