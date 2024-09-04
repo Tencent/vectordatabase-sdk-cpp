@@ -7,23 +7,34 @@
 #include "olama.pb.h"
 
 #include <functional>
-#include <grpcpp/generic/async_generic_service.h>
-#include <grpcpp/support/async_stream.h>
-#include <grpcpp/support/async_unary_call.h>
-#include <grpcpp/support/client_callback.h>
-#include <grpcpp/client_context.h>
-#include <grpcpp/completion_queue.h>
-#include <grpcpp/support/message_allocator.h>
-#include <grpcpp/support/method_handler.h>
-#include <grpcpp/impl/proto_utils.h>
-#include <grpcpp/impl/rpc_method.h>
-#include <grpcpp/support/server_callback.h>
-#include <grpcpp/impl/server_callback_handlers.h>
-#include <grpcpp/server_context.h>
-#include <grpcpp/impl/service_type.h>
-#include <grpcpp/support/status.h>
-#include <grpcpp/support/stub_options.h>
-#include <grpcpp/support/sync_stream.h>
+#include <grpcpp/impl/codegen/async_generic_service.h>
+#include <grpcpp/impl/codegen/async_stream.h>
+#include <grpcpp/impl/codegen/async_unary_call.h>
+#include <grpcpp/impl/codegen/client_callback.h>
+#include <grpcpp/impl/codegen/client_context.h>
+#include <grpcpp/impl/codegen/completion_queue.h>
+#include <grpcpp/impl/codegen/method_handler_impl.h>
+#include <grpcpp/impl/codegen/proto_utils.h>
+#include <grpcpp/impl/codegen/rpc_method.h>
+#include <grpcpp/impl/codegen/server_callback.h>
+#include <grpcpp/impl/codegen/server_context.h>
+#include <grpcpp/impl/codegen/service_type.h>
+#include <grpcpp/impl/codegen/status.h>
+#include <grpcpp/impl/codegen/stub_options.h>
+#include <grpcpp/impl/codegen/sync_stream.h>
+
+namespace grpc_impl {
+class CompletionQueue;
+class ServerCompletionQueue;
+class ServerContext;
+}  // namespace grpc_impl
+
+namespace grpc {
+namespace experimental {
+template <typename RequestT, typename ResponseT>
+class MessageAllocator;
+}  // namespace experimental
+}  // namespace grpc
 
 namespace olama {
 
@@ -171,65 +182,97 @@ class SearchEngine final {
     std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::olama::DatabaseResponse>> PrepareAsynclistDatabases(::grpc::ClientContext* context, const ::olama::DatabaseRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::olama::DatabaseResponse>>(PrepareAsynclistDatabasesRaw(context, request, cq));
     }
-    class async_interface {
+    class experimental_async_interface {
      public:
-      virtual ~async_interface() {}
+      virtual ~experimental_async_interface() {}
       // 修改别名指向
       virtual void setAlias(::grpc::ClientContext* context, const ::olama::AddAliasRequest* request, ::olama::UpdateAliasResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void setAlias(::grpc::ClientContext* context, const ::olama::AddAliasRequest* request, ::olama::UpdateAliasResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void setAlias(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::UpdateAliasResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void setAlias(::grpc::ClientContext* context, const ::olama::AddAliasRequest* request, ::olama::UpdateAliasResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      virtual void setAlias(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::UpdateAliasResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
       // 查询别名指向
       virtual void getAlias(::grpc::ClientContext* context, const ::olama::GetAliasRequest* request, ::olama::GetAliasResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void getAlias(::grpc::ClientContext* context, const ::olama::GetAliasRequest* request, ::olama::GetAliasResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void getAlias(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::GetAliasResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void getAlias(::grpc::ClientContext* context, const ::olama::GetAliasRequest* request, ::olama::GetAliasResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      virtual void getAlias(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::GetAliasResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
       // 删除别名指向
       virtual void deleteAlias(::grpc::ClientContext* context, const ::olama::RemoveAliasRequest* request, ::olama::UpdateAliasResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void deleteAlias(::grpc::ClientContext* context, const ::olama::RemoveAliasRequest* request, ::olama::UpdateAliasResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void deleteAlias(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::UpdateAliasResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void deleteAlias(::grpc::ClientContext* context, const ::olama::RemoveAliasRequest* request, ::olama::UpdateAliasResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      virtual void deleteAlias(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::UpdateAliasResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
       // 创建索引
       virtual void createCollection(::grpc::ClientContext* context, const ::olama::CreateCollectionRequest* request, ::olama::CreateCollectionResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void createCollection(::grpc::ClientContext* context, const ::olama::CreateCollectionRequest* request, ::olama::CreateCollectionResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void createCollection(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::CreateCollectionResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void createCollection(::grpc::ClientContext* context, const ::olama::CreateCollectionRequest* request, ::olama::CreateCollectionResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      virtual void createCollection(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::CreateCollectionResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
       // 删除索引
       virtual void dropCollection(::grpc::ClientContext* context, const ::olama::DropCollectionRequest* request, ::olama::DropCollectionResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void dropCollection(::grpc::ClientContext* context, const ::olama::DropCollectionRequest* request, ::olama::DropCollectionResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void dropCollection(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DropCollectionResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void dropCollection(::grpc::ClientContext* context, const ::olama::DropCollectionRequest* request, ::olama::DropCollectionResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      virtual void dropCollection(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DropCollectionResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
       // 清空索引
       virtual void truncateCollection(::grpc::ClientContext* context, const ::olama::TruncateCollectionRequest* request, ::olama::TruncateCollectionResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void truncateCollection(::grpc::ClientContext* context, const ::olama::TruncateCollectionRequest* request, ::olama::TruncateCollectionResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void truncateCollection(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::TruncateCollectionResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void truncateCollection(::grpc::ClientContext* context, const ::olama::TruncateCollectionRequest* request, ::olama::TruncateCollectionResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      virtual void truncateCollection(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::TruncateCollectionResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
       // 显示索引配置
       virtual void describeCollection(::grpc::ClientContext* context, const ::olama::DescribeCollectionRequest* request, ::olama::DescribeCollectionResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void describeCollection(::grpc::ClientContext* context, const ::olama::DescribeCollectionRequest* request, ::olama::DescribeCollectionResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void describeCollection(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DescribeCollectionResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void describeCollection(::grpc::ClientContext* context, const ::olama::DescribeCollectionRequest* request, ::olama::DescribeCollectionResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      virtual void describeCollection(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DescribeCollectionResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
       // 显示全部索引
       virtual void listCollections(::grpc::ClientContext* context, const ::olama::ListCollectionsRequest* request, ::olama::ListCollectionsResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void listCollections(::grpc::ClientContext* context, const ::olama::ListCollectionsRequest* request, ::olama::ListCollectionsResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void listCollections(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::ListCollectionsResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void listCollections(::grpc::ClientContext* context, const ::olama::ListCollectionsRequest* request, ::olama::ListCollectionsResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      virtual void listCollections(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::ListCollectionsResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
       // 重建索引
       virtual void rebuildIndex(::grpc::ClientContext* context, const ::olama::RebuildIndexRequest* request, ::olama::RebuildIndexResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void rebuildIndex(::grpc::ClientContext* context, const ::olama::RebuildIndexRequest* request, ::olama::RebuildIndexResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void rebuildIndex(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::RebuildIndexResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void rebuildIndex(::grpc::ClientContext* context, const ::olama::RebuildIndexRequest* request, ::olama::RebuildIndexResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      virtual void rebuildIndex(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::RebuildIndexResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
       // 写入向量
       virtual void upsert(::grpc::ClientContext* context, const ::olama::UpsertRequest* request, ::olama::UpsertResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void upsert(::grpc::ClientContext* context, const ::olama::UpsertRequest* request, ::olama::UpsertResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void upsert(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::UpsertResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void upsert(::grpc::ClientContext* context, const ::olama::UpsertRequest* request, ::olama::UpsertResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      virtual void upsert(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::UpsertResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
       // 更新向量
       virtual void update(::grpc::ClientContext* context, const ::olama::UpdateRequest* request, ::olama::UpdateResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void update(::grpc::ClientContext* context, const ::olama::UpdateRequest* request, ::olama::UpdateResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void update(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::UpdateResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void update(::grpc::ClientContext* context, const ::olama::UpdateRequest* request, ::olama::UpdateResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      virtual void update(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::UpdateResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
       // 查询向量
       virtual void query(::grpc::ClientContext* context, const ::olama::QueryRequest* request, ::olama::QueryResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void query(::grpc::ClientContext* context, const ::olama::QueryRequest* request, ::olama::QueryResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void query(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::QueryResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void query(::grpc::ClientContext* context, const ::olama::QueryRequest* request, ::olama::QueryResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      virtual void query(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::QueryResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
       // KNN搜索
       virtual void search(::grpc::ClientContext* context, const ::olama::SearchRequest* request, ::olama::SearchResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void search(::grpc::ClientContext* context, const ::olama::SearchRequest* request, ::olama::SearchResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void search(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::SearchResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void search(::grpc::ClientContext* context, const ::olama::SearchRequest* request, ::olama::SearchResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      virtual void search(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::SearchResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
       // 删除向量
       virtual void dele(::grpc::ClientContext* context, const ::olama::DeleteRequest* request, ::olama::DeleteResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void dele(::grpc::ClientContext* context, const ::olama::DeleteRequest* request, ::olama::DeleteResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void dele(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DeleteResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void dele(::grpc::ClientContext* context, const ::olama::DeleteRequest* request, ::olama::DeleteResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      virtual void dele(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DeleteResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
       // 创建 database
       virtual void createDatabase(::grpc::ClientContext* context, const ::olama::DatabaseRequest* request, ::olama::DatabaseResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void createDatabase(::grpc::ClientContext* context, const ::olama::DatabaseRequest* request, ::olama::DatabaseResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void createDatabase(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DatabaseResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void createDatabase(::grpc::ClientContext* context, const ::olama::DatabaseRequest* request, ::olama::DatabaseResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      virtual void createDatabase(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DatabaseResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
       // 删除 database
       virtual void dropDatabase(::grpc::ClientContext* context, const ::olama::DatabaseRequest* request, ::olama::DatabaseResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void dropDatabase(::grpc::ClientContext* context, const ::olama::DatabaseRequest* request, ::olama::DatabaseResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void dropDatabase(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DatabaseResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void dropDatabase(::grpc::ClientContext* context, const ::olama::DatabaseRequest* request, ::olama::DatabaseResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      virtual void dropDatabase(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DatabaseResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
       // 显示全部 database
       virtual void listDatabases(::grpc::ClientContext* context, const ::olama::DatabaseRequest* request, ::olama::DatabaseResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void listDatabases(::grpc::ClientContext* context, const ::olama::DatabaseRequest* request, ::olama::DatabaseResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void listDatabases(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DatabaseResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void listDatabases(::grpc::ClientContext* context, const ::olama::DatabaseRequest* request, ::olama::DatabaseResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      virtual void listDatabases(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DatabaseResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
     };
-    typedef class async_interface experimental_async_interface;
-    virtual class async_interface* async() { return nullptr; }
-    class async_interface* experimental_async() { return async(); }
-   private:
+    virtual class experimental_async_interface* experimental_async() { return nullptr; }
+  private:
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::olama::UpdateAliasResponse>* AsyncsetAliasRaw(::grpc::ClientContext* context, const ::olama::AddAliasRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::olama::UpdateAliasResponse>* PrepareAsyncsetAliasRaw(::grpc::ClientContext* context, const ::olama::AddAliasRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::olama::GetAliasResponse>* AsyncgetAliasRaw(::grpc::ClientContext* context, const ::olama::GetAliasRequest& request, ::grpc::CompletionQueue* cq) = 0;
@@ -267,7 +310,7 @@ class SearchEngine final {
   };
   class Stub final : public StubInterface {
    public:
-    Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel, const ::grpc::StubOptions& options = ::grpc::StubOptions());
+    Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
     ::grpc::Status setAlias(::grpc::ClientContext* context, const ::olama::AddAliasRequest& request, ::olama::UpdateAliasResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::olama::UpdateAliasResponse>> AsyncsetAlias(::grpc::ClientContext* context, const ::olama::AddAliasRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::olama::UpdateAliasResponse>>(AsyncsetAliasRaw(context, request, cq));
@@ -387,54 +430,88 @@ class SearchEngine final {
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::olama::DatabaseResponse>> PrepareAsynclistDatabases(::grpc::ClientContext* context, const ::olama::DatabaseRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::olama::DatabaseResponse>>(PrepareAsynclistDatabasesRaw(context, request, cq));
     }
-    class async final :
-      public StubInterface::async_interface {
+    class experimental_async final :
+      public StubInterface::experimental_async_interface {
      public:
       void setAlias(::grpc::ClientContext* context, const ::olama::AddAliasRequest* request, ::olama::UpdateAliasResponse* response, std::function<void(::grpc::Status)>) override;
-      void setAlias(::grpc::ClientContext* context, const ::olama::AddAliasRequest* request, ::olama::UpdateAliasResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void setAlias(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::UpdateAliasResponse* response, std::function<void(::grpc::Status)>) override;
+      void setAlias(::grpc::ClientContext* context, const ::olama::AddAliasRequest* request, ::olama::UpdateAliasResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      void setAlias(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::UpdateAliasResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
       void getAlias(::grpc::ClientContext* context, const ::olama::GetAliasRequest* request, ::olama::GetAliasResponse* response, std::function<void(::grpc::Status)>) override;
-      void getAlias(::grpc::ClientContext* context, const ::olama::GetAliasRequest* request, ::olama::GetAliasResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void getAlias(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::GetAliasResponse* response, std::function<void(::grpc::Status)>) override;
+      void getAlias(::grpc::ClientContext* context, const ::olama::GetAliasRequest* request, ::olama::GetAliasResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      void getAlias(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::GetAliasResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
       void deleteAlias(::grpc::ClientContext* context, const ::olama::RemoveAliasRequest* request, ::olama::UpdateAliasResponse* response, std::function<void(::grpc::Status)>) override;
-      void deleteAlias(::grpc::ClientContext* context, const ::olama::RemoveAliasRequest* request, ::olama::UpdateAliasResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void deleteAlias(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::UpdateAliasResponse* response, std::function<void(::grpc::Status)>) override;
+      void deleteAlias(::grpc::ClientContext* context, const ::olama::RemoveAliasRequest* request, ::olama::UpdateAliasResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      void deleteAlias(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::UpdateAliasResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
       void createCollection(::grpc::ClientContext* context, const ::olama::CreateCollectionRequest* request, ::olama::CreateCollectionResponse* response, std::function<void(::grpc::Status)>) override;
-      void createCollection(::grpc::ClientContext* context, const ::olama::CreateCollectionRequest* request, ::olama::CreateCollectionResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void createCollection(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::CreateCollectionResponse* response, std::function<void(::grpc::Status)>) override;
+      void createCollection(::grpc::ClientContext* context, const ::olama::CreateCollectionRequest* request, ::olama::CreateCollectionResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      void createCollection(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::CreateCollectionResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
       void dropCollection(::grpc::ClientContext* context, const ::olama::DropCollectionRequest* request, ::olama::DropCollectionResponse* response, std::function<void(::grpc::Status)>) override;
-      void dropCollection(::grpc::ClientContext* context, const ::olama::DropCollectionRequest* request, ::olama::DropCollectionResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void dropCollection(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DropCollectionResponse* response, std::function<void(::grpc::Status)>) override;
+      void dropCollection(::grpc::ClientContext* context, const ::olama::DropCollectionRequest* request, ::olama::DropCollectionResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      void dropCollection(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DropCollectionResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
       void truncateCollection(::grpc::ClientContext* context, const ::olama::TruncateCollectionRequest* request, ::olama::TruncateCollectionResponse* response, std::function<void(::grpc::Status)>) override;
-      void truncateCollection(::grpc::ClientContext* context, const ::olama::TruncateCollectionRequest* request, ::olama::TruncateCollectionResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void truncateCollection(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::TruncateCollectionResponse* response, std::function<void(::grpc::Status)>) override;
+      void truncateCollection(::grpc::ClientContext* context, const ::olama::TruncateCollectionRequest* request, ::olama::TruncateCollectionResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      void truncateCollection(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::TruncateCollectionResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
       void describeCollection(::grpc::ClientContext* context, const ::olama::DescribeCollectionRequest* request, ::olama::DescribeCollectionResponse* response, std::function<void(::grpc::Status)>) override;
-      void describeCollection(::grpc::ClientContext* context, const ::olama::DescribeCollectionRequest* request, ::olama::DescribeCollectionResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void describeCollection(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DescribeCollectionResponse* response, std::function<void(::grpc::Status)>) override;
+      void describeCollection(::grpc::ClientContext* context, const ::olama::DescribeCollectionRequest* request, ::olama::DescribeCollectionResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      void describeCollection(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DescribeCollectionResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
       void listCollections(::grpc::ClientContext* context, const ::olama::ListCollectionsRequest* request, ::olama::ListCollectionsResponse* response, std::function<void(::grpc::Status)>) override;
-      void listCollections(::grpc::ClientContext* context, const ::olama::ListCollectionsRequest* request, ::olama::ListCollectionsResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void listCollections(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::ListCollectionsResponse* response, std::function<void(::grpc::Status)>) override;
+      void listCollections(::grpc::ClientContext* context, const ::olama::ListCollectionsRequest* request, ::olama::ListCollectionsResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      void listCollections(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::ListCollectionsResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
       void rebuildIndex(::grpc::ClientContext* context, const ::olama::RebuildIndexRequest* request, ::olama::RebuildIndexResponse* response, std::function<void(::grpc::Status)>) override;
-      void rebuildIndex(::grpc::ClientContext* context, const ::olama::RebuildIndexRequest* request, ::olama::RebuildIndexResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void rebuildIndex(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::RebuildIndexResponse* response, std::function<void(::grpc::Status)>) override;
+      void rebuildIndex(::grpc::ClientContext* context, const ::olama::RebuildIndexRequest* request, ::olama::RebuildIndexResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      void rebuildIndex(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::RebuildIndexResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
       void upsert(::grpc::ClientContext* context, const ::olama::UpsertRequest* request, ::olama::UpsertResponse* response, std::function<void(::grpc::Status)>) override;
-      void upsert(::grpc::ClientContext* context, const ::olama::UpsertRequest* request, ::olama::UpsertResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void upsert(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::UpsertResponse* response, std::function<void(::grpc::Status)>) override;
+      void upsert(::grpc::ClientContext* context, const ::olama::UpsertRequest* request, ::olama::UpsertResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      void upsert(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::UpsertResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
       void update(::grpc::ClientContext* context, const ::olama::UpdateRequest* request, ::olama::UpdateResponse* response, std::function<void(::grpc::Status)>) override;
-      void update(::grpc::ClientContext* context, const ::olama::UpdateRequest* request, ::olama::UpdateResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void update(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::UpdateResponse* response, std::function<void(::grpc::Status)>) override;
+      void update(::grpc::ClientContext* context, const ::olama::UpdateRequest* request, ::olama::UpdateResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      void update(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::UpdateResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
       void query(::grpc::ClientContext* context, const ::olama::QueryRequest* request, ::olama::QueryResponse* response, std::function<void(::grpc::Status)>) override;
-      void query(::grpc::ClientContext* context, const ::olama::QueryRequest* request, ::olama::QueryResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void query(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::QueryResponse* response, std::function<void(::grpc::Status)>) override;
+      void query(::grpc::ClientContext* context, const ::olama::QueryRequest* request, ::olama::QueryResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      void query(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::QueryResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
       void search(::grpc::ClientContext* context, const ::olama::SearchRequest* request, ::olama::SearchResponse* response, std::function<void(::grpc::Status)>) override;
-      void search(::grpc::ClientContext* context, const ::olama::SearchRequest* request, ::olama::SearchResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void search(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::SearchResponse* response, std::function<void(::grpc::Status)>) override;
+      void search(::grpc::ClientContext* context, const ::olama::SearchRequest* request, ::olama::SearchResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      void search(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::SearchResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
       void dele(::grpc::ClientContext* context, const ::olama::DeleteRequest* request, ::olama::DeleteResponse* response, std::function<void(::grpc::Status)>) override;
-      void dele(::grpc::ClientContext* context, const ::olama::DeleteRequest* request, ::olama::DeleteResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void dele(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DeleteResponse* response, std::function<void(::grpc::Status)>) override;
+      void dele(::grpc::ClientContext* context, const ::olama::DeleteRequest* request, ::olama::DeleteResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      void dele(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DeleteResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
       void createDatabase(::grpc::ClientContext* context, const ::olama::DatabaseRequest* request, ::olama::DatabaseResponse* response, std::function<void(::grpc::Status)>) override;
-      void createDatabase(::grpc::ClientContext* context, const ::olama::DatabaseRequest* request, ::olama::DatabaseResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void createDatabase(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DatabaseResponse* response, std::function<void(::grpc::Status)>) override;
+      void createDatabase(::grpc::ClientContext* context, const ::olama::DatabaseRequest* request, ::olama::DatabaseResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      void createDatabase(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DatabaseResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
       void dropDatabase(::grpc::ClientContext* context, const ::olama::DatabaseRequest* request, ::olama::DatabaseResponse* response, std::function<void(::grpc::Status)>) override;
-      void dropDatabase(::grpc::ClientContext* context, const ::olama::DatabaseRequest* request, ::olama::DatabaseResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void dropDatabase(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DatabaseResponse* response, std::function<void(::grpc::Status)>) override;
+      void dropDatabase(::grpc::ClientContext* context, const ::olama::DatabaseRequest* request, ::olama::DatabaseResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      void dropDatabase(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DatabaseResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
       void listDatabases(::grpc::ClientContext* context, const ::olama::DatabaseRequest* request, ::olama::DatabaseResponse* response, std::function<void(::grpc::Status)>) override;
-      void listDatabases(::grpc::ClientContext* context, const ::olama::DatabaseRequest* request, ::olama::DatabaseResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void listDatabases(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DatabaseResponse* response, std::function<void(::grpc::Status)>) override;
+      void listDatabases(::grpc::ClientContext* context, const ::olama::DatabaseRequest* request, ::olama::DatabaseResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      void listDatabases(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DatabaseResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
      private:
       friend class Stub;
-      explicit async(Stub* stub): stub_(stub) { }
+      explicit experimental_async(Stub* stub): stub_(stub) { }
       Stub* stub() { return stub_; }
       Stub* stub_;
     };
-    class async* async() override { return &async_stub_; }
+    class experimental_async_interface* experimental_async() override { return &async_stub_; }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    class async async_stub_{this};
+    class experimental_async async_stub_{this};
     ::grpc::ClientAsyncResponseReader< ::olama::UpdateAliasResponse>* AsyncsetAliasRaw(::grpc::ClientContext* context, const ::olama::AddAliasRequest& request, ::grpc::CompletionQueue* cq) override;
     ::grpc::ClientAsyncResponseReader< ::olama::UpdateAliasResponse>* PrepareAsyncsetAliasRaw(::grpc::ClientContext* context, const ::olama::AddAliasRequest& request, ::grpc::CompletionQueue* cq) override;
     ::grpc::ClientAsyncResponseReader< ::olama::GetAliasResponse>* AsyncgetAliasRaw(::grpc::ClientContext* context, const ::olama::GetAliasRequest& request, ::grpc::CompletionQueue* cq) override;
@@ -870,22 +947,27 @@ class SearchEngine final {
   };
   typedef WithAsyncMethod_setAlias<WithAsyncMethod_getAlias<WithAsyncMethod_deleteAlias<WithAsyncMethod_createCollection<WithAsyncMethod_dropCollection<WithAsyncMethod_truncateCollection<WithAsyncMethod_describeCollection<WithAsyncMethod_listCollections<WithAsyncMethod_rebuildIndex<WithAsyncMethod_upsert<WithAsyncMethod_update<WithAsyncMethod_query<WithAsyncMethod_search<WithAsyncMethod_dele<WithAsyncMethod_createDatabase<WithAsyncMethod_dropDatabase<WithAsyncMethod_listDatabases<Service > > > > > > > > > > > > > > > > > AsyncService;
   template <class BaseClass>
-  class WithCallbackMethod_setAlias : public BaseClass {
+  class ExperimentalWithCallbackMethod_setAlias : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithCallbackMethod_setAlias() {
-      ::grpc::Service::MarkMethodCallback(0,
-          new ::grpc::internal::CallbackUnaryHandler< ::olama::AddAliasRequest, ::olama::UpdateAliasResponse>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::olama::AddAliasRequest* request, ::olama::UpdateAliasResponse* response) { return this->setAlias(context, request, response); }));}
+    ExperimentalWithCallbackMethod_setAlias() {
+      ::grpc::Service::experimental().MarkMethodCallback(0,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::olama::AddAliasRequest, ::olama::UpdateAliasResponse>(
+          [this](::grpc::ServerContext* context,
+                 const ::olama::AddAliasRequest* request,
+                 ::olama::UpdateAliasResponse* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   return this->setAlias(context, request, response, controller);
+                 }));
+    }
     void SetMessageAllocatorFor_setAlias(
-        ::grpc::MessageAllocator< ::olama::AddAliasRequest, ::olama::UpdateAliasResponse>* allocator) {
-      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(0);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::olama::AddAliasRequest, ::olama::UpdateAliasResponse>*>(handler)
+        ::grpc::experimental::MessageAllocator< ::olama::AddAliasRequest, ::olama::UpdateAliasResponse>* allocator) {
+      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::olama::AddAliasRequest, ::olama::UpdateAliasResponse>*>(
+          ::grpc::Service::experimental().GetHandler(0))
               ->SetMessageAllocator(allocator);
     }
-    ~WithCallbackMethod_setAlias() override {
+    ~ExperimentalWithCallbackMethod_setAlias() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -893,26 +975,30 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* setAlias(
-      ::grpc::CallbackServerContext* /*context*/, const ::olama::AddAliasRequest* /*request*/, ::olama::UpdateAliasResponse* /*response*/)  { return nullptr; }
+    virtual void setAlias(::grpc::ServerContext* /*context*/, const ::olama::AddAliasRequest* /*request*/, ::olama::UpdateAliasResponse* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
-  class WithCallbackMethod_getAlias : public BaseClass {
+  class ExperimentalWithCallbackMethod_getAlias : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithCallbackMethod_getAlias() {
-      ::grpc::Service::MarkMethodCallback(1,
-          new ::grpc::internal::CallbackUnaryHandler< ::olama::GetAliasRequest, ::olama::GetAliasResponse>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::olama::GetAliasRequest* request, ::olama::GetAliasResponse* response) { return this->getAlias(context, request, response); }));}
+    ExperimentalWithCallbackMethod_getAlias() {
+      ::grpc::Service::experimental().MarkMethodCallback(1,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::olama::GetAliasRequest, ::olama::GetAliasResponse>(
+          [this](::grpc::ServerContext* context,
+                 const ::olama::GetAliasRequest* request,
+                 ::olama::GetAliasResponse* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   return this->getAlias(context, request, response, controller);
+                 }));
+    }
     void SetMessageAllocatorFor_getAlias(
-        ::grpc::MessageAllocator< ::olama::GetAliasRequest, ::olama::GetAliasResponse>* allocator) {
-      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(1);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::olama::GetAliasRequest, ::olama::GetAliasResponse>*>(handler)
+        ::grpc::experimental::MessageAllocator< ::olama::GetAliasRequest, ::olama::GetAliasResponse>* allocator) {
+      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::olama::GetAliasRequest, ::olama::GetAliasResponse>*>(
+          ::grpc::Service::experimental().GetHandler(1))
               ->SetMessageAllocator(allocator);
     }
-    ~WithCallbackMethod_getAlias() override {
+    ~ExperimentalWithCallbackMethod_getAlias() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -920,26 +1006,30 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* getAlias(
-      ::grpc::CallbackServerContext* /*context*/, const ::olama::GetAliasRequest* /*request*/, ::olama::GetAliasResponse* /*response*/)  { return nullptr; }
+    virtual void getAlias(::grpc::ServerContext* /*context*/, const ::olama::GetAliasRequest* /*request*/, ::olama::GetAliasResponse* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
-  class WithCallbackMethod_deleteAlias : public BaseClass {
+  class ExperimentalWithCallbackMethod_deleteAlias : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithCallbackMethod_deleteAlias() {
-      ::grpc::Service::MarkMethodCallback(2,
-          new ::grpc::internal::CallbackUnaryHandler< ::olama::RemoveAliasRequest, ::olama::UpdateAliasResponse>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::olama::RemoveAliasRequest* request, ::olama::UpdateAliasResponse* response) { return this->deleteAlias(context, request, response); }));}
+    ExperimentalWithCallbackMethod_deleteAlias() {
+      ::grpc::Service::experimental().MarkMethodCallback(2,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::olama::RemoveAliasRequest, ::olama::UpdateAliasResponse>(
+          [this](::grpc::ServerContext* context,
+                 const ::olama::RemoveAliasRequest* request,
+                 ::olama::UpdateAliasResponse* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   return this->deleteAlias(context, request, response, controller);
+                 }));
+    }
     void SetMessageAllocatorFor_deleteAlias(
-        ::grpc::MessageAllocator< ::olama::RemoveAliasRequest, ::olama::UpdateAliasResponse>* allocator) {
-      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(2);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::olama::RemoveAliasRequest, ::olama::UpdateAliasResponse>*>(handler)
+        ::grpc::experimental::MessageAllocator< ::olama::RemoveAliasRequest, ::olama::UpdateAliasResponse>* allocator) {
+      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::olama::RemoveAliasRequest, ::olama::UpdateAliasResponse>*>(
+          ::grpc::Service::experimental().GetHandler(2))
               ->SetMessageAllocator(allocator);
     }
-    ~WithCallbackMethod_deleteAlias() override {
+    ~ExperimentalWithCallbackMethod_deleteAlias() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -947,26 +1037,30 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* deleteAlias(
-      ::grpc::CallbackServerContext* /*context*/, const ::olama::RemoveAliasRequest* /*request*/, ::olama::UpdateAliasResponse* /*response*/)  { return nullptr; }
+    virtual void deleteAlias(::grpc::ServerContext* /*context*/, const ::olama::RemoveAliasRequest* /*request*/, ::olama::UpdateAliasResponse* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
-  class WithCallbackMethod_createCollection : public BaseClass {
+  class ExperimentalWithCallbackMethod_createCollection : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithCallbackMethod_createCollection() {
-      ::grpc::Service::MarkMethodCallback(3,
-          new ::grpc::internal::CallbackUnaryHandler< ::olama::CreateCollectionRequest, ::olama::CreateCollectionResponse>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::olama::CreateCollectionRequest* request, ::olama::CreateCollectionResponse* response) { return this->createCollection(context, request, response); }));}
+    ExperimentalWithCallbackMethod_createCollection() {
+      ::grpc::Service::experimental().MarkMethodCallback(3,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::olama::CreateCollectionRequest, ::olama::CreateCollectionResponse>(
+          [this](::grpc::ServerContext* context,
+                 const ::olama::CreateCollectionRequest* request,
+                 ::olama::CreateCollectionResponse* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   return this->createCollection(context, request, response, controller);
+                 }));
+    }
     void SetMessageAllocatorFor_createCollection(
-        ::grpc::MessageAllocator< ::olama::CreateCollectionRequest, ::olama::CreateCollectionResponse>* allocator) {
-      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(3);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::olama::CreateCollectionRequest, ::olama::CreateCollectionResponse>*>(handler)
+        ::grpc::experimental::MessageAllocator< ::olama::CreateCollectionRequest, ::olama::CreateCollectionResponse>* allocator) {
+      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::olama::CreateCollectionRequest, ::olama::CreateCollectionResponse>*>(
+          ::grpc::Service::experimental().GetHandler(3))
               ->SetMessageAllocator(allocator);
     }
-    ~WithCallbackMethod_createCollection() override {
+    ~ExperimentalWithCallbackMethod_createCollection() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -974,26 +1068,30 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* createCollection(
-      ::grpc::CallbackServerContext* /*context*/, const ::olama::CreateCollectionRequest* /*request*/, ::olama::CreateCollectionResponse* /*response*/)  { return nullptr; }
+    virtual void createCollection(::grpc::ServerContext* /*context*/, const ::olama::CreateCollectionRequest* /*request*/, ::olama::CreateCollectionResponse* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
-  class WithCallbackMethod_dropCollection : public BaseClass {
+  class ExperimentalWithCallbackMethod_dropCollection : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithCallbackMethod_dropCollection() {
-      ::grpc::Service::MarkMethodCallback(4,
-          new ::grpc::internal::CallbackUnaryHandler< ::olama::DropCollectionRequest, ::olama::DropCollectionResponse>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::olama::DropCollectionRequest* request, ::olama::DropCollectionResponse* response) { return this->dropCollection(context, request, response); }));}
+    ExperimentalWithCallbackMethod_dropCollection() {
+      ::grpc::Service::experimental().MarkMethodCallback(4,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::olama::DropCollectionRequest, ::olama::DropCollectionResponse>(
+          [this](::grpc::ServerContext* context,
+                 const ::olama::DropCollectionRequest* request,
+                 ::olama::DropCollectionResponse* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   return this->dropCollection(context, request, response, controller);
+                 }));
+    }
     void SetMessageAllocatorFor_dropCollection(
-        ::grpc::MessageAllocator< ::olama::DropCollectionRequest, ::olama::DropCollectionResponse>* allocator) {
-      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(4);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::olama::DropCollectionRequest, ::olama::DropCollectionResponse>*>(handler)
+        ::grpc::experimental::MessageAllocator< ::olama::DropCollectionRequest, ::olama::DropCollectionResponse>* allocator) {
+      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::olama::DropCollectionRequest, ::olama::DropCollectionResponse>*>(
+          ::grpc::Service::experimental().GetHandler(4))
               ->SetMessageAllocator(allocator);
     }
-    ~WithCallbackMethod_dropCollection() override {
+    ~ExperimentalWithCallbackMethod_dropCollection() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -1001,26 +1099,30 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* dropCollection(
-      ::grpc::CallbackServerContext* /*context*/, const ::olama::DropCollectionRequest* /*request*/, ::olama::DropCollectionResponse* /*response*/)  { return nullptr; }
+    virtual void dropCollection(::grpc::ServerContext* /*context*/, const ::olama::DropCollectionRequest* /*request*/, ::olama::DropCollectionResponse* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
-  class WithCallbackMethod_truncateCollection : public BaseClass {
+  class ExperimentalWithCallbackMethod_truncateCollection : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithCallbackMethod_truncateCollection() {
-      ::grpc::Service::MarkMethodCallback(5,
-          new ::grpc::internal::CallbackUnaryHandler< ::olama::TruncateCollectionRequest, ::olama::TruncateCollectionResponse>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::olama::TruncateCollectionRequest* request, ::olama::TruncateCollectionResponse* response) { return this->truncateCollection(context, request, response); }));}
+    ExperimentalWithCallbackMethod_truncateCollection() {
+      ::grpc::Service::experimental().MarkMethodCallback(5,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::olama::TruncateCollectionRequest, ::olama::TruncateCollectionResponse>(
+          [this](::grpc::ServerContext* context,
+                 const ::olama::TruncateCollectionRequest* request,
+                 ::olama::TruncateCollectionResponse* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   return this->truncateCollection(context, request, response, controller);
+                 }));
+    }
     void SetMessageAllocatorFor_truncateCollection(
-        ::grpc::MessageAllocator< ::olama::TruncateCollectionRequest, ::olama::TruncateCollectionResponse>* allocator) {
-      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(5);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::olama::TruncateCollectionRequest, ::olama::TruncateCollectionResponse>*>(handler)
+        ::grpc::experimental::MessageAllocator< ::olama::TruncateCollectionRequest, ::olama::TruncateCollectionResponse>* allocator) {
+      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::olama::TruncateCollectionRequest, ::olama::TruncateCollectionResponse>*>(
+          ::grpc::Service::experimental().GetHandler(5))
               ->SetMessageAllocator(allocator);
     }
-    ~WithCallbackMethod_truncateCollection() override {
+    ~ExperimentalWithCallbackMethod_truncateCollection() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -1028,26 +1130,30 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* truncateCollection(
-      ::grpc::CallbackServerContext* /*context*/, const ::olama::TruncateCollectionRequest* /*request*/, ::olama::TruncateCollectionResponse* /*response*/)  { return nullptr; }
+    virtual void truncateCollection(::grpc::ServerContext* /*context*/, const ::olama::TruncateCollectionRequest* /*request*/, ::olama::TruncateCollectionResponse* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
-  class WithCallbackMethod_describeCollection : public BaseClass {
+  class ExperimentalWithCallbackMethod_describeCollection : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithCallbackMethod_describeCollection() {
-      ::grpc::Service::MarkMethodCallback(6,
-          new ::grpc::internal::CallbackUnaryHandler< ::olama::DescribeCollectionRequest, ::olama::DescribeCollectionResponse>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::olama::DescribeCollectionRequest* request, ::olama::DescribeCollectionResponse* response) { return this->describeCollection(context, request, response); }));}
+    ExperimentalWithCallbackMethod_describeCollection() {
+      ::grpc::Service::experimental().MarkMethodCallback(6,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::olama::DescribeCollectionRequest, ::olama::DescribeCollectionResponse>(
+          [this](::grpc::ServerContext* context,
+                 const ::olama::DescribeCollectionRequest* request,
+                 ::olama::DescribeCollectionResponse* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   return this->describeCollection(context, request, response, controller);
+                 }));
+    }
     void SetMessageAllocatorFor_describeCollection(
-        ::grpc::MessageAllocator< ::olama::DescribeCollectionRequest, ::olama::DescribeCollectionResponse>* allocator) {
-      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(6);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::olama::DescribeCollectionRequest, ::olama::DescribeCollectionResponse>*>(handler)
+        ::grpc::experimental::MessageAllocator< ::olama::DescribeCollectionRequest, ::olama::DescribeCollectionResponse>* allocator) {
+      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::olama::DescribeCollectionRequest, ::olama::DescribeCollectionResponse>*>(
+          ::grpc::Service::experimental().GetHandler(6))
               ->SetMessageAllocator(allocator);
     }
-    ~WithCallbackMethod_describeCollection() override {
+    ~ExperimentalWithCallbackMethod_describeCollection() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -1055,26 +1161,30 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* describeCollection(
-      ::grpc::CallbackServerContext* /*context*/, const ::olama::DescribeCollectionRequest* /*request*/, ::olama::DescribeCollectionResponse* /*response*/)  { return nullptr; }
+    virtual void describeCollection(::grpc::ServerContext* /*context*/, const ::olama::DescribeCollectionRequest* /*request*/, ::olama::DescribeCollectionResponse* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
-  class WithCallbackMethod_listCollections : public BaseClass {
+  class ExperimentalWithCallbackMethod_listCollections : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithCallbackMethod_listCollections() {
-      ::grpc::Service::MarkMethodCallback(7,
-          new ::grpc::internal::CallbackUnaryHandler< ::olama::ListCollectionsRequest, ::olama::ListCollectionsResponse>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::olama::ListCollectionsRequest* request, ::olama::ListCollectionsResponse* response) { return this->listCollections(context, request, response); }));}
+    ExperimentalWithCallbackMethod_listCollections() {
+      ::grpc::Service::experimental().MarkMethodCallback(7,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::olama::ListCollectionsRequest, ::olama::ListCollectionsResponse>(
+          [this](::grpc::ServerContext* context,
+                 const ::olama::ListCollectionsRequest* request,
+                 ::olama::ListCollectionsResponse* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   return this->listCollections(context, request, response, controller);
+                 }));
+    }
     void SetMessageAllocatorFor_listCollections(
-        ::grpc::MessageAllocator< ::olama::ListCollectionsRequest, ::olama::ListCollectionsResponse>* allocator) {
-      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(7);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::olama::ListCollectionsRequest, ::olama::ListCollectionsResponse>*>(handler)
+        ::grpc::experimental::MessageAllocator< ::olama::ListCollectionsRequest, ::olama::ListCollectionsResponse>* allocator) {
+      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::olama::ListCollectionsRequest, ::olama::ListCollectionsResponse>*>(
+          ::grpc::Service::experimental().GetHandler(7))
               ->SetMessageAllocator(allocator);
     }
-    ~WithCallbackMethod_listCollections() override {
+    ~ExperimentalWithCallbackMethod_listCollections() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -1082,26 +1192,30 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* listCollections(
-      ::grpc::CallbackServerContext* /*context*/, const ::olama::ListCollectionsRequest* /*request*/, ::olama::ListCollectionsResponse* /*response*/)  { return nullptr; }
+    virtual void listCollections(::grpc::ServerContext* /*context*/, const ::olama::ListCollectionsRequest* /*request*/, ::olama::ListCollectionsResponse* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
-  class WithCallbackMethod_rebuildIndex : public BaseClass {
+  class ExperimentalWithCallbackMethod_rebuildIndex : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithCallbackMethod_rebuildIndex() {
-      ::grpc::Service::MarkMethodCallback(8,
-          new ::grpc::internal::CallbackUnaryHandler< ::olama::RebuildIndexRequest, ::olama::RebuildIndexResponse>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::olama::RebuildIndexRequest* request, ::olama::RebuildIndexResponse* response) { return this->rebuildIndex(context, request, response); }));}
+    ExperimentalWithCallbackMethod_rebuildIndex() {
+      ::grpc::Service::experimental().MarkMethodCallback(8,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::olama::RebuildIndexRequest, ::olama::RebuildIndexResponse>(
+          [this](::grpc::ServerContext* context,
+                 const ::olama::RebuildIndexRequest* request,
+                 ::olama::RebuildIndexResponse* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   return this->rebuildIndex(context, request, response, controller);
+                 }));
+    }
     void SetMessageAllocatorFor_rebuildIndex(
-        ::grpc::MessageAllocator< ::olama::RebuildIndexRequest, ::olama::RebuildIndexResponse>* allocator) {
-      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(8);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::olama::RebuildIndexRequest, ::olama::RebuildIndexResponse>*>(handler)
+        ::grpc::experimental::MessageAllocator< ::olama::RebuildIndexRequest, ::olama::RebuildIndexResponse>* allocator) {
+      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::olama::RebuildIndexRequest, ::olama::RebuildIndexResponse>*>(
+          ::grpc::Service::experimental().GetHandler(8))
               ->SetMessageAllocator(allocator);
     }
-    ~WithCallbackMethod_rebuildIndex() override {
+    ~ExperimentalWithCallbackMethod_rebuildIndex() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -1109,26 +1223,30 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* rebuildIndex(
-      ::grpc::CallbackServerContext* /*context*/, const ::olama::RebuildIndexRequest* /*request*/, ::olama::RebuildIndexResponse* /*response*/)  { return nullptr; }
+    virtual void rebuildIndex(::grpc::ServerContext* /*context*/, const ::olama::RebuildIndexRequest* /*request*/, ::olama::RebuildIndexResponse* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
-  class WithCallbackMethod_upsert : public BaseClass {
+  class ExperimentalWithCallbackMethod_upsert : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithCallbackMethod_upsert() {
-      ::grpc::Service::MarkMethodCallback(9,
-          new ::grpc::internal::CallbackUnaryHandler< ::olama::UpsertRequest, ::olama::UpsertResponse>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::olama::UpsertRequest* request, ::olama::UpsertResponse* response) { return this->upsert(context, request, response); }));}
+    ExperimentalWithCallbackMethod_upsert() {
+      ::grpc::Service::experimental().MarkMethodCallback(9,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::olama::UpsertRequest, ::olama::UpsertResponse>(
+          [this](::grpc::ServerContext* context,
+                 const ::olama::UpsertRequest* request,
+                 ::olama::UpsertResponse* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   return this->upsert(context, request, response, controller);
+                 }));
+    }
     void SetMessageAllocatorFor_upsert(
-        ::grpc::MessageAllocator< ::olama::UpsertRequest, ::olama::UpsertResponse>* allocator) {
-      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(9);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::olama::UpsertRequest, ::olama::UpsertResponse>*>(handler)
+        ::grpc::experimental::MessageAllocator< ::olama::UpsertRequest, ::olama::UpsertResponse>* allocator) {
+      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::olama::UpsertRequest, ::olama::UpsertResponse>*>(
+          ::grpc::Service::experimental().GetHandler(9))
               ->SetMessageAllocator(allocator);
     }
-    ~WithCallbackMethod_upsert() override {
+    ~ExperimentalWithCallbackMethod_upsert() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -1136,26 +1254,30 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* upsert(
-      ::grpc::CallbackServerContext* /*context*/, const ::olama::UpsertRequest* /*request*/, ::olama::UpsertResponse* /*response*/)  { return nullptr; }
+    virtual void upsert(::grpc::ServerContext* /*context*/, const ::olama::UpsertRequest* /*request*/, ::olama::UpsertResponse* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
-  class WithCallbackMethod_update : public BaseClass {
+  class ExperimentalWithCallbackMethod_update : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithCallbackMethod_update() {
-      ::grpc::Service::MarkMethodCallback(10,
-          new ::grpc::internal::CallbackUnaryHandler< ::olama::UpdateRequest, ::olama::UpdateResponse>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::olama::UpdateRequest* request, ::olama::UpdateResponse* response) { return this->update(context, request, response); }));}
+    ExperimentalWithCallbackMethod_update() {
+      ::grpc::Service::experimental().MarkMethodCallback(10,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::olama::UpdateRequest, ::olama::UpdateResponse>(
+          [this](::grpc::ServerContext* context,
+                 const ::olama::UpdateRequest* request,
+                 ::olama::UpdateResponse* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   return this->update(context, request, response, controller);
+                 }));
+    }
     void SetMessageAllocatorFor_update(
-        ::grpc::MessageAllocator< ::olama::UpdateRequest, ::olama::UpdateResponse>* allocator) {
-      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(10);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::olama::UpdateRequest, ::olama::UpdateResponse>*>(handler)
+        ::grpc::experimental::MessageAllocator< ::olama::UpdateRequest, ::olama::UpdateResponse>* allocator) {
+      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::olama::UpdateRequest, ::olama::UpdateResponse>*>(
+          ::grpc::Service::experimental().GetHandler(10))
               ->SetMessageAllocator(allocator);
     }
-    ~WithCallbackMethod_update() override {
+    ~ExperimentalWithCallbackMethod_update() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -1163,26 +1285,30 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* update(
-      ::grpc::CallbackServerContext* /*context*/, const ::olama::UpdateRequest* /*request*/, ::olama::UpdateResponse* /*response*/)  { return nullptr; }
+    virtual void update(::grpc::ServerContext* /*context*/, const ::olama::UpdateRequest* /*request*/, ::olama::UpdateResponse* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
-  class WithCallbackMethod_query : public BaseClass {
+  class ExperimentalWithCallbackMethod_query : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithCallbackMethod_query() {
-      ::grpc::Service::MarkMethodCallback(11,
-          new ::grpc::internal::CallbackUnaryHandler< ::olama::QueryRequest, ::olama::QueryResponse>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::olama::QueryRequest* request, ::olama::QueryResponse* response) { return this->query(context, request, response); }));}
+    ExperimentalWithCallbackMethod_query() {
+      ::grpc::Service::experimental().MarkMethodCallback(11,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::olama::QueryRequest, ::olama::QueryResponse>(
+          [this](::grpc::ServerContext* context,
+                 const ::olama::QueryRequest* request,
+                 ::olama::QueryResponse* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   return this->query(context, request, response, controller);
+                 }));
+    }
     void SetMessageAllocatorFor_query(
-        ::grpc::MessageAllocator< ::olama::QueryRequest, ::olama::QueryResponse>* allocator) {
-      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(11);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::olama::QueryRequest, ::olama::QueryResponse>*>(handler)
+        ::grpc::experimental::MessageAllocator< ::olama::QueryRequest, ::olama::QueryResponse>* allocator) {
+      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::olama::QueryRequest, ::olama::QueryResponse>*>(
+          ::grpc::Service::experimental().GetHandler(11))
               ->SetMessageAllocator(allocator);
     }
-    ~WithCallbackMethod_query() override {
+    ~ExperimentalWithCallbackMethod_query() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -1190,26 +1316,30 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* query(
-      ::grpc::CallbackServerContext* /*context*/, const ::olama::QueryRequest* /*request*/, ::olama::QueryResponse* /*response*/)  { return nullptr; }
+    virtual void query(::grpc::ServerContext* /*context*/, const ::olama::QueryRequest* /*request*/, ::olama::QueryResponse* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
-  class WithCallbackMethod_search : public BaseClass {
+  class ExperimentalWithCallbackMethod_search : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithCallbackMethod_search() {
-      ::grpc::Service::MarkMethodCallback(12,
-          new ::grpc::internal::CallbackUnaryHandler< ::olama::SearchRequest, ::olama::SearchResponse>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::olama::SearchRequest* request, ::olama::SearchResponse* response) { return this->search(context, request, response); }));}
+    ExperimentalWithCallbackMethod_search() {
+      ::grpc::Service::experimental().MarkMethodCallback(12,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::olama::SearchRequest, ::olama::SearchResponse>(
+          [this](::grpc::ServerContext* context,
+                 const ::olama::SearchRequest* request,
+                 ::olama::SearchResponse* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   return this->search(context, request, response, controller);
+                 }));
+    }
     void SetMessageAllocatorFor_search(
-        ::grpc::MessageAllocator< ::olama::SearchRequest, ::olama::SearchResponse>* allocator) {
-      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(12);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::olama::SearchRequest, ::olama::SearchResponse>*>(handler)
+        ::grpc::experimental::MessageAllocator< ::olama::SearchRequest, ::olama::SearchResponse>* allocator) {
+      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::olama::SearchRequest, ::olama::SearchResponse>*>(
+          ::grpc::Service::experimental().GetHandler(12))
               ->SetMessageAllocator(allocator);
     }
-    ~WithCallbackMethod_search() override {
+    ~ExperimentalWithCallbackMethod_search() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -1217,26 +1347,30 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* search(
-      ::grpc::CallbackServerContext* /*context*/, const ::olama::SearchRequest* /*request*/, ::olama::SearchResponse* /*response*/)  { return nullptr; }
+    virtual void search(::grpc::ServerContext* /*context*/, const ::olama::SearchRequest* /*request*/, ::olama::SearchResponse* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
-  class WithCallbackMethod_dele : public BaseClass {
+  class ExperimentalWithCallbackMethod_dele : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithCallbackMethod_dele() {
-      ::grpc::Service::MarkMethodCallback(13,
-          new ::grpc::internal::CallbackUnaryHandler< ::olama::DeleteRequest, ::olama::DeleteResponse>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::olama::DeleteRequest* request, ::olama::DeleteResponse* response) { return this->dele(context, request, response); }));}
+    ExperimentalWithCallbackMethod_dele() {
+      ::grpc::Service::experimental().MarkMethodCallback(13,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::olama::DeleteRequest, ::olama::DeleteResponse>(
+          [this](::grpc::ServerContext* context,
+                 const ::olama::DeleteRequest* request,
+                 ::olama::DeleteResponse* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   return this->dele(context, request, response, controller);
+                 }));
+    }
     void SetMessageAllocatorFor_dele(
-        ::grpc::MessageAllocator< ::olama::DeleteRequest, ::olama::DeleteResponse>* allocator) {
-      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(13);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::olama::DeleteRequest, ::olama::DeleteResponse>*>(handler)
+        ::grpc::experimental::MessageAllocator< ::olama::DeleteRequest, ::olama::DeleteResponse>* allocator) {
+      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::olama::DeleteRequest, ::olama::DeleteResponse>*>(
+          ::grpc::Service::experimental().GetHandler(13))
               ->SetMessageAllocator(allocator);
     }
-    ~WithCallbackMethod_dele() override {
+    ~ExperimentalWithCallbackMethod_dele() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -1244,26 +1378,30 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* dele(
-      ::grpc::CallbackServerContext* /*context*/, const ::olama::DeleteRequest* /*request*/, ::olama::DeleteResponse* /*response*/)  { return nullptr; }
+    virtual void dele(::grpc::ServerContext* /*context*/, const ::olama::DeleteRequest* /*request*/, ::olama::DeleteResponse* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
-  class WithCallbackMethod_createDatabase : public BaseClass {
+  class ExperimentalWithCallbackMethod_createDatabase : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithCallbackMethod_createDatabase() {
-      ::grpc::Service::MarkMethodCallback(14,
-          new ::grpc::internal::CallbackUnaryHandler< ::olama::DatabaseRequest, ::olama::DatabaseResponse>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::olama::DatabaseRequest* request, ::olama::DatabaseResponse* response) { return this->createDatabase(context, request, response); }));}
+    ExperimentalWithCallbackMethod_createDatabase() {
+      ::grpc::Service::experimental().MarkMethodCallback(14,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::olama::DatabaseRequest, ::olama::DatabaseResponse>(
+          [this](::grpc::ServerContext* context,
+                 const ::olama::DatabaseRequest* request,
+                 ::olama::DatabaseResponse* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   return this->createDatabase(context, request, response, controller);
+                 }));
+    }
     void SetMessageAllocatorFor_createDatabase(
-        ::grpc::MessageAllocator< ::olama::DatabaseRequest, ::olama::DatabaseResponse>* allocator) {
-      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(14);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::olama::DatabaseRequest, ::olama::DatabaseResponse>*>(handler)
+        ::grpc::experimental::MessageAllocator< ::olama::DatabaseRequest, ::olama::DatabaseResponse>* allocator) {
+      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::olama::DatabaseRequest, ::olama::DatabaseResponse>*>(
+          ::grpc::Service::experimental().GetHandler(14))
               ->SetMessageAllocator(allocator);
     }
-    ~WithCallbackMethod_createDatabase() override {
+    ~ExperimentalWithCallbackMethod_createDatabase() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -1271,26 +1409,30 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* createDatabase(
-      ::grpc::CallbackServerContext* /*context*/, const ::olama::DatabaseRequest* /*request*/, ::olama::DatabaseResponse* /*response*/)  { return nullptr; }
+    virtual void createDatabase(::grpc::ServerContext* /*context*/, const ::olama::DatabaseRequest* /*request*/, ::olama::DatabaseResponse* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
-  class WithCallbackMethod_dropDatabase : public BaseClass {
+  class ExperimentalWithCallbackMethod_dropDatabase : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithCallbackMethod_dropDatabase() {
-      ::grpc::Service::MarkMethodCallback(15,
-          new ::grpc::internal::CallbackUnaryHandler< ::olama::DatabaseRequest, ::olama::DatabaseResponse>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::olama::DatabaseRequest* request, ::olama::DatabaseResponse* response) { return this->dropDatabase(context, request, response); }));}
+    ExperimentalWithCallbackMethod_dropDatabase() {
+      ::grpc::Service::experimental().MarkMethodCallback(15,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::olama::DatabaseRequest, ::olama::DatabaseResponse>(
+          [this](::grpc::ServerContext* context,
+                 const ::olama::DatabaseRequest* request,
+                 ::olama::DatabaseResponse* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   return this->dropDatabase(context, request, response, controller);
+                 }));
+    }
     void SetMessageAllocatorFor_dropDatabase(
-        ::grpc::MessageAllocator< ::olama::DatabaseRequest, ::olama::DatabaseResponse>* allocator) {
-      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(15);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::olama::DatabaseRequest, ::olama::DatabaseResponse>*>(handler)
+        ::grpc::experimental::MessageAllocator< ::olama::DatabaseRequest, ::olama::DatabaseResponse>* allocator) {
+      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::olama::DatabaseRequest, ::olama::DatabaseResponse>*>(
+          ::grpc::Service::experimental().GetHandler(15))
               ->SetMessageAllocator(allocator);
     }
-    ~WithCallbackMethod_dropDatabase() override {
+    ~ExperimentalWithCallbackMethod_dropDatabase() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -1298,26 +1440,30 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* dropDatabase(
-      ::grpc::CallbackServerContext* /*context*/, const ::olama::DatabaseRequest* /*request*/, ::olama::DatabaseResponse* /*response*/)  { return nullptr; }
+    virtual void dropDatabase(::grpc::ServerContext* /*context*/, const ::olama::DatabaseRequest* /*request*/, ::olama::DatabaseResponse* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
-  class WithCallbackMethod_listDatabases : public BaseClass {
+  class ExperimentalWithCallbackMethod_listDatabases : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithCallbackMethod_listDatabases() {
-      ::grpc::Service::MarkMethodCallback(16,
-          new ::grpc::internal::CallbackUnaryHandler< ::olama::DatabaseRequest, ::olama::DatabaseResponse>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::olama::DatabaseRequest* request, ::olama::DatabaseResponse* response) { return this->listDatabases(context, request, response); }));}
+    ExperimentalWithCallbackMethod_listDatabases() {
+      ::grpc::Service::experimental().MarkMethodCallback(16,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::olama::DatabaseRequest, ::olama::DatabaseResponse>(
+          [this](::grpc::ServerContext* context,
+                 const ::olama::DatabaseRequest* request,
+                 ::olama::DatabaseResponse* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   return this->listDatabases(context, request, response, controller);
+                 }));
+    }
     void SetMessageAllocatorFor_listDatabases(
-        ::grpc::MessageAllocator< ::olama::DatabaseRequest, ::olama::DatabaseResponse>* allocator) {
-      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(16);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::olama::DatabaseRequest, ::olama::DatabaseResponse>*>(handler)
+        ::grpc::experimental::MessageAllocator< ::olama::DatabaseRequest, ::olama::DatabaseResponse>* allocator) {
+      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::olama::DatabaseRequest, ::olama::DatabaseResponse>*>(
+          ::grpc::Service::experimental().GetHandler(16))
               ->SetMessageAllocator(allocator);
     }
-    ~WithCallbackMethod_listDatabases() override {
+    ~ExperimentalWithCallbackMethod_listDatabases() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -1325,11 +1471,9 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* listDatabases(
-      ::grpc::CallbackServerContext* /*context*/, const ::olama::DatabaseRequest* /*request*/, ::olama::DatabaseResponse* /*response*/)  { return nullptr; }
+    virtual void listDatabases(::grpc::ServerContext* /*context*/, const ::olama::DatabaseRequest* /*request*/, ::olama::DatabaseResponse* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
-  typedef WithCallbackMethod_setAlias<WithCallbackMethod_getAlias<WithCallbackMethod_deleteAlias<WithCallbackMethod_createCollection<WithCallbackMethod_dropCollection<WithCallbackMethod_truncateCollection<WithCallbackMethod_describeCollection<WithCallbackMethod_listCollections<WithCallbackMethod_rebuildIndex<WithCallbackMethod_upsert<WithCallbackMethod_update<WithCallbackMethod_query<WithCallbackMethod_search<WithCallbackMethod_dele<WithCallbackMethod_createDatabase<WithCallbackMethod_dropDatabase<WithCallbackMethod_listDatabases<Service > > > > > > > > > > > > > > > > > CallbackService;
-  typedef CallbackService ExperimentalCallbackService;
+  typedef ExperimentalWithCallbackMethod_setAlias<ExperimentalWithCallbackMethod_getAlias<ExperimentalWithCallbackMethod_deleteAlias<ExperimentalWithCallbackMethod_createCollection<ExperimentalWithCallbackMethod_dropCollection<ExperimentalWithCallbackMethod_truncateCollection<ExperimentalWithCallbackMethod_describeCollection<ExperimentalWithCallbackMethod_listCollections<ExperimentalWithCallbackMethod_rebuildIndex<ExperimentalWithCallbackMethod_upsert<ExperimentalWithCallbackMethod_update<ExperimentalWithCallbackMethod_query<ExperimentalWithCallbackMethod_search<ExperimentalWithCallbackMethod_dele<ExperimentalWithCallbackMethod_createDatabase<ExperimentalWithCallbackMethod_dropDatabase<ExperimentalWithCallbackMethod_listDatabases<Service > > > > > > > > > > > > > > > > > ExperimentalCallbackService;
   template <class BaseClass>
   class WithGenericMethod_setAlias : public BaseClass {
    private:
@@ -1960,17 +2104,21 @@ class SearchEngine final {
     }
   };
   template <class BaseClass>
-  class WithRawCallbackMethod_setAlias : public BaseClass {
+  class ExperimentalWithRawCallbackMethod_setAlias : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithRawCallbackMethod_setAlias() {
-      ::grpc::Service::MarkMethodRawCallback(0,
-          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->setAlias(context, request, response); }));
+    ExperimentalWithRawCallbackMethod_setAlias() {
+      ::grpc::Service::experimental().MarkMethodRawCallback(0,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+          [this](::grpc::ServerContext* context,
+                 const ::grpc::ByteBuffer* request,
+                 ::grpc::ByteBuffer* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   this->setAlias(context, request, response, controller);
+                 }));
     }
-    ~WithRawCallbackMethod_setAlias() override {
+    ~ExperimentalWithRawCallbackMethod_setAlias() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -1978,21 +2126,24 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* setAlias(
-      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+    virtual void setAlias(::grpc::ServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
-  class WithRawCallbackMethod_getAlias : public BaseClass {
+  class ExperimentalWithRawCallbackMethod_getAlias : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithRawCallbackMethod_getAlias() {
-      ::grpc::Service::MarkMethodRawCallback(1,
-          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->getAlias(context, request, response); }));
+    ExperimentalWithRawCallbackMethod_getAlias() {
+      ::grpc::Service::experimental().MarkMethodRawCallback(1,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+          [this](::grpc::ServerContext* context,
+                 const ::grpc::ByteBuffer* request,
+                 ::grpc::ByteBuffer* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   this->getAlias(context, request, response, controller);
+                 }));
     }
-    ~WithRawCallbackMethod_getAlias() override {
+    ~ExperimentalWithRawCallbackMethod_getAlias() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -2000,21 +2151,24 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* getAlias(
-      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+    virtual void getAlias(::grpc::ServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
-  class WithRawCallbackMethod_deleteAlias : public BaseClass {
+  class ExperimentalWithRawCallbackMethod_deleteAlias : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithRawCallbackMethod_deleteAlias() {
-      ::grpc::Service::MarkMethodRawCallback(2,
-          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->deleteAlias(context, request, response); }));
+    ExperimentalWithRawCallbackMethod_deleteAlias() {
+      ::grpc::Service::experimental().MarkMethodRawCallback(2,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+          [this](::grpc::ServerContext* context,
+                 const ::grpc::ByteBuffer* request,
+                 ::grpc::ByteBuffer* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   this->deleteAlias(context, request, response, controller);
+                 }));
     }
-    ~WithRawCallbackMethod_deleteAlias() override {
+    ~ExperimentalWithRawCallbackMethod_deleteAlias() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -2022,21 +2176,24 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* deleteAlias(
-      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+    virtual void deleteAlias(::grpc::ServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
-  class WithRawCallbackMethod_createCollection : public BaseClass {
+  class ExperimentalWithRawCallbackMethod_createCollection : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithRawCallbackMethod_createCollection() {
-      ::grpc::Service::MarkMethodRawCallback(3,
-          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->createCollection(context, request, response); }));
+    ExperimentalWithRawCallbackMethod_createCollection() {
+      ::grpc::Service::experimental().MarkMethodRawCallback(3,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+          [this](::grpc::ServerContext* context,
+                 const ::grpc::ByteBuffer* request,
+                 ::grpc::ByteBuffer* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   this->createCollection(context, request, response, controller);
+                 }));
     }
-    ~WithRawCallbackMethod_createCollection() override {
+    ~ExperimentalWithRawCallbackMethod_createCollection() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -2044,21 +2201,24 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* createCollection(
-      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+    virtual void createCollection(::grpc::ServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
-  class WithRawCallbackMethod_dropCollection : public BaseClass {
+  class ExperimentalWithRawCallbackMethod_dropCollection : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithRawCallbackMethod_dropCollection() {
-      ::grpc::Service::MarkMethodRawCallback(4,
-          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->dropCollection(context, request, response); }));
+    ExperimentalWithRawCallbackMethod_dropCollection() {
+      ::grpc::Service::experimental().MarkMethodRawCallback(4,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+          [this](::grpc::ServerContext* context,
+                 const ::grpc::ByteBuffer* request,
+                 ::grpc::ByteBuffer* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   this->dropCollection(context, request, response, controller);
+                 }));
     }
-    ~WithRawCallbackMethod_dropCollection() override {
+    ~ExperimentalWithRawCallbackMethod_dropCollection() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -2066,21 +2226,24 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* dropCollection(
-      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+    virtual void dropCollection(::grpc::ServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
-  class WithRawCallbackMethod_truncateCollection : public BaseClass {
+  class ExperimentalWithRawCallbackMethod_truncateCollection : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithRawCallbackMethod_truncateCollection() {
-      ::grpc::Service::MarkMethodRawCallback(5,
-          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->truncateCollection(context, request, response); }));
+    ExperimentalWithRawCallbackMethod_truncateCollection() {
+      ::grpc::Service::experimental().MarkMethodRawCallback(5,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+          [this](::grpc::ServerContext* context,
+                 const ::grpc::ByteBuffer* request,
+                 ::grpc::ByteBuffer* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   this->truncateCollection(context, request, response, controller);
+                 }));
     }
-    ~WithRawCallbackMethod_truncateCollection() override {
+    ~ExperimentalWithRawCallbackMethod_truncateCollection() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -2088,21 +2251,24 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* truncateCollection(
-      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+    virtual void truncateCollection(::grpc::ServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
-  class WithRawCallbackMethod_describeCollection : public BaseClass {
+  class ExperimentalWithRawCallbackMethod_describeCollection : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithRawCallbackMethod_describeCollection() {
-      ::grpc::Service::MarkMethodRawCallback(6,
-          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->describeCollection(context, request, response); }));
+    ExperimentalWithRawCallbackMethod_describeCollection() {
+      ::grpc::Service::experimental().MarkMethodRawCallback(6,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+          [this](::grpc::ServerContext* context,
+                 const ::grpc::ByteBuffer* request,
+                 ::grpc::ByteBuffer* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   this->describeCollection(context, request, response, controller);
+                 }));
     }
-    ~WithRawCallbackMethod_describeCollection() override {
+    ~ExperimentalWithRawCallbackMethod_describeCollection() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -2110,21 +2276,24 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* describeCollection(
-      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+    virtual void describeCollection(::grpc::ServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
-  class WithRawCallbackMethod_listCollections : public BaseClass {
+  class ExperimentalWithRawCallbackMethod_listCollections : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithRawCallbackMethod_listCollections() {
-      ::grpc::Service::MarkMethodRawCallback(7,
-          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->listCollections(context, request, response); }));
+    ExperimentalWithRawCallbackMethod_listCollections() {
+      ::grpc::Service::experimental().MarkMethodRawCallback(7,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+          [this](::grpc::ServerContext* context,
+                 const ::grpc::ByteBuffer* request,
+                 ::grpc::ByteBuffer* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   this->listCollections(context, request, response, controller);
+                 }));
     }
-    ~WithRawCallbackMethod_listCollections() override {
+    ~ExperimentalWithRawCallbackMethod_listCollections() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -2132,21 +2301,24 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* listCollections(
-      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+    virtual void listCollections(::grpc::ServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
-  class WithRawCallbackMethod_rebuildIndex : public BaseClass {
+  class ExperimentalWithRawCallbackMethod_rebuildIndex : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithRawCallbackMethod_rebuildIndex() {
-      ::grpc::Service::MarkMethodRawCallback(8,
-          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->rebuildIndex(context, request, response); }));
+    ExperimentalWithRawCallbackMethod_rebuildIndex() {
+      ::grpc::Service::experimental().MarkMethodRawCallback(8,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+          [this](::grpc::ServerContext* context,
+                 const ::grpc::ByteBuffer* request,
+                 ::grpc::ByteBuffer* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   this->rebuildIndex(context, request, response, controller);
+                 }));
     }
-    ~WithRawCallbackMethod_rebuildIndex() override {
+    ~ExperimentalWithRawCallbackMethod_rebuildIndex() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -2154,21 +2326,24 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* rebuildIndex(
-      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+    virtual void rebuildIndex(::grpc::ServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
-  class WithRawCallbackMethod_upsert : public BaseClass {
+  class ExperimentalWithRawCallbackMethod_upsert : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithRawCallbackMethod_upsert() {
-      ::grpc::Service::MarkMethodRawCallback(9,
-          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->upsert(context, request, response); }));
+    ExperimentalWithRawCallbackMethod_upsert() {
+      ::grpc::Service::experimental().MarkMethodRawCallback(9,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+          [this](::grpc::ServerContext* context,
+                 const ::grpc::ByteBuffer* request,
+                 ::grpc::ByteBuffer* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   this->upsert(context, request, response, controller);
+                 }));
     }
-    ~WithRawCallbackMethod_upsert() override {
+    ~ExperimentalWithRawCallbackMethod_upsert() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -2176,21 +2351,24 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* upsert(
-      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+    virtual void upsert(::grpc::ServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
-  class WithRawCallbackMethod_update : public BaseClass {
+  class ExperimentalWithRawCallbackMethod_update : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithRawCallbackMethod_update() {
-      ::grpc::Service::MarkMethodRawCallback(10,
-          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->update(context, request, response); }));
+    ExperimentalWithRawCallbackMethod_update() {
+      ::grpc::Service::experimental().MarkMethodRawCallback(10,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+          [this](::grpc::ServerContext* context,
+                 const ::grpc::ByteBuffer* request,
+                 ::grpc::ByteBuffer* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   this->update(context, request, response, controller);
+                 }));
     }
-    ~WithRawCallbackMethod_update() override {
+    ~ExperimentalWithRawCallbackMethod_update() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -2198,21 +2376,24 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* update(
-      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+    virtual void update(::grpc::ServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
-  class WithRawCallbackMethod_query : public BaseClass {
+  class ExperimentalWithRawCallbackMethod_query : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithRawCallbackMethod_query() {
-      ::grpc::Service::MarkMethodRawCallback(11,
-          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->query(context, request, response); }));
+    ExperimentalWithRawCallbackMethod_query() {
+      ::grpc::Service::experimental().MarkMethodRawCallback(11,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+          [this](::grpc::ServerContext* context,
+                 const ::grpc::ByteBuffer* request,
+                 ::grpc::ByteBuffer* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   this->query(context, request, response, controller);
+                 }));
     }
-    ~WithRawCallbackMethod_query() override {
+    ~ExperimentalWithRawCallbackMethod_query() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -2220,21 +2401,24 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* query(
-      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+    virtual void query(::grpc::ServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
-  class WithRawCallbackMethod_search : public BaseClass {
+  class ExperimentalWithRawCallbackMethod_search : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithRawCallbackMethod_search() {
-      ::grpc::Service::MarkMethodRawCallback(12,
-          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->search(context, request, response); }));
+    ExperimentalWithRawCallbackMethod_search() {
+      ::grpc::Service::experimental().MarkMethodRawCallback(12,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+          [this](::grpc::ServerContext* context,
+                 const ::grpc::ByteBuffer* request,
+                 ::grpc::ByteBuffer* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   this->search(context, request, response, controller);
+                 }));
     }
-    ~WithRawCallbackMethod_search() override {
+    ~ExperimentalWithRawCallbackMethod_search() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -2242,21 +2426,24 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* search(
-      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+    virtual void search(::grpc::ServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
-  class WithRawCallbackMethod_dele : public BaseClass {
+  class ExperimentalWithRawCallbackMethod_dele : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithRawCallbackMethod_dele() {
-      ::grpc::Service::MarkMethodRawCallback(13,
-          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->dele(context, request, response); }));
+    ExperimentalWithRawCallbackMethod_dele() {
+      ::grpc::Service::experimental().MarkMethodRawCallback(13,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+          [this](::grpc::ServerContext* context,
+                 const ::grpc::ByteBuffer* request,
+                 ::grpc::ByteBuffer* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   this->dele(context, request, response, controller);
+                 }));
     }
-    ~WithRawCallbackMethod_dele() override {
+    ~ExperimentalWithRawCallbackMethod_dele() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -2264,21 +2451,24 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* dele(
-      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+    virtual void dele(::grpc::ServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
-  class WithRawCallbackMethod_createDatabase : public BaseClass {
+  class ExperimentalWithRawCallbackMethod_createDatabase : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithRawCallbackMethod_createDatabase() {
-      ::grpc::Service::MarkMethodRawCallback(14,
-          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->createDatabase(context, request, response); }));
+    ExperimentalWithRawCallbackMethod_createDatabase() {
+      ::grpc::Service::experimental().MarkMethodRawCallback(14,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+          [this](::grpc::ServerContext* context,
+                 const ::grpc::ByteBuffer* request,
+                 ::grpc::ByteBuffer* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   this->createDatabase(context, request, response, controller);
+                 }));
     }
-    ~WithRawCallbackMethod_createDatabase() override {
+    ~ExperimentalWithRawCallbackMethod_createDatabase() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -2286,21 +2476,24 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* createDatabase(
-      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+    virtual void createDatabase(::grpc::ServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
-  class WithRawCallbackMethod_dropDatabase : public BaseClass {
+  class ExperimentalWithRawCallbackMethod_dropDatabase : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithRawCallbackMethod_dropDatabase() {
-      ::grpc::Service::MarkMethodRawCallback(15,
-          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->dropDatabase(context, request, response); }));
+    ExperimentalWithRawCallbackMethod_dropDatabase() {
+      ::grpc::Service::experimental().MarkMethodRawCallback(15,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+          [this](::grpc::ServerContext* context,
+                 const ::grpc::ByteBuffer* request,
+                 ::grpc::ByteBuffer* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   this->dropDatabase(context, request, response, controller);
+                 }));
     }
-    ~WithRawCallbackMethod_dropDatabase() override {
+    ~ExperimentalWithRawCallbackMethod_dropDatabase() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -2308,21 +2501,24 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* dropDatabase(
-      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+    virtual void dropDatabase(::grpc::ServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
-  class WithRawCallbackMethod_listDatabases : public BaseClass {
+  class ExperimentalWithRawCallbackMethod_listDatabases : public BaseClass {
    private:
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
-    WithRawCallbackMethod_listDatabases() {
-      ::grpc::Service::MarkMethodRawCallback(16,
-          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
-            [this](
-                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->listDatabases(context, request, response); }));
+    ExperimentalWithRawCallbackMethod_listDatabases() {
+      ::grpc::Service::experimental().MarkMethodRawCallback(16,
+        new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+          [this](::grpc::ServerContext* context,
+                 const ::grpc::ByteBuffer* request,
+                 ::grpc::ByteBuffer* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   this->listDatabases(context, request, response, controller);
+                 }));
     }
-    ~WithRawCallbackMethod_listDatabases() override {
+    ~ExperimentalWithRawCallbackMethod_listDatabases() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
@@ -2330,8 +2526,7 @@ class SearchEngine final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::ServerUnaryReactor* listDatabases(
-      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+    virtual void listDatabases(::grpc::ServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
   class WithStreamedUnaryMethod_setAlias : public BaseClass {
@@ -2340,14 +2535,7 @@ class SearchEngine final {
    public:
     WithStreamedUnaryMethod_setAlias() {
       ::grpc::Service::MarkMethodStreamed(0,
-        new ::grpc::internal::StreamedUnaryHandler<
-          ::olama::AddAliasRequest, ::olama::UpdateAliasResponse>(
-            [this](::grpc::ServerContext* context,
-                   ::grpc::ServerUnaryStreamer<
-                     ::olama::AddAliasRequest, ::olama::UpdateAliasResponse>* streamer) {
-                       return this->StreamedsetAlias(context,
-                         streamer);
-                  }));
+        new ::grpc::internal::StreamedUnaryHandler< ::olama::AddAliasRequest, ::olama::UpdateAliasResponse>(std::bind(&WithStreamedUnaryMethod_setAlias<BaseClass>::StreamedsetAlias, this, std::placeholders::_1, std::placeholders::_2)));
     }
     ~WithStreamedUnaryMethod_setAlias() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2367,14 +2555,7 @@ class SearchEngine final {
    public:
     WithStreamedUnaryMethod_getAlias() {
       ::grpc::Service::MarkMethodStreamed(1,
-        new ::grpc::internal::StreamedUnaryHandler<
-          ::olama::GetAliasRequest, ::olama::GetAliasResponse>(
-            [this](::grpc::ServerContext* context,
-                   ::grpc::ServerUnaryStreamer<
-                     ::olama::GetAliasRequest, ::olama::GetAliasResponse>* streamer) {
-                       return this->StreamedgetAlias(context,
-                         streamer);
-                  }));
+        new ::grpc::internal::StreamedUnaryHandler< ::olama::GetAliasRequest, ::olama::GetAliasResponse>(std::bind(&WithStreamedUnaryMethod_getAlias<BaseClass>::StreamedgetAlias, this, std::placeholders::_1, std::placeholders::_2)));
     }
     ~WithStreamedUnaryMethod_getAlias() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2394,14 +2575,7 @@ class SearchEngine final {
    public:
     WithStreamedUnaryMethod_deleteAlias() {
       ::grpc::Service::MarkMethodStreamed(2,
-        new ::grpc::internal::StreamedUnaryHandler<
-          ::olama::RemoveAliasRequest, ::olama::UpdateAliasResponse>(
-            [this](::grpc::ServerContext* context,
-                   ::grpc::ServerUnaryStreamer<
-                     ::olama::RemoveAliasRequest, ::olama::UpdateAliasResponse>* streamer) {
-                       return this->StreameddeleteAlias(context,
-                         streamer);
-                  }));
+        new ::grpc::internal::StreamedUnaryHandler< ::olama::RemoveAliasRequest, ::olama::UpdateAliasResponse>(std::bind(&WithStreamedUnaryMethod_deleteAlias<BaseClass>::StreameddeleteAlias, this, std::placeholders::_1, std::placeholders::_2)));
     }
     ~WithStreamedUnaryMethod_deleteAlias() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2421,14 +2595,7 @@ class SearchEngine final {
    public:
     WithStreamedUnaryMethod_createCollection() {
       ::grpc::Service::MarkMethodStreamed(3,
-        new ::grpc::internal::StreamedUnaryHandler<
-          ::olama::CreateCollectionRequest, ::olama::CreateCollectionResponse>(
-            [this](::grpc::ServerContext* context,
-                   ::grpc::ServerUnaryStreamer<
-                     ::olama::CreateCollectionRequest, ::olama::CreateCollectionResponse>* streamer) {
-                       return this->StreamedcreateCollection(context,
-                         streamer);
-                  }));
+        new ::grpc::internal::StreamedUnaryHandler< ::olama::CreateCollectionRequest, ::olama::CreateCollectionResponse>(std::bind(&WithStreamedUnaryMethod_createCollection<BaseClass>::StreamedcreateCollection, this, std::placeholders::_1, std::placeholders::_2)));
     }
     ~WithStreamedUnaryMethod_createCollection() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2448,14 +2615,7 @@ class SearchEngine final {
    public:
     WithStreamedUnaryMethod_dropCollection() {
       ::grpc::Service::MarkMethodStreamed(4,
-        new ::grpc::internal::StreamedUnaryHandler<
-          ::olama::DropCollectionRequest, ::olama::DropCollectionResponse>(
-            [this](::grpc::ServerContext* context,
-                   ::grpc::ServerUnaryStreamer<
-                     ::olama::DropCollectionRequest, ::olama::DropCollectionResponse>* streamer) {
-                       return this->StreameddropCollection(context,
-                         streamer);
-                  }));
+        new ::grpc::internal::StreamedUnaryHandler< ::olama::DropCollectionRequest, ::olama::DropCollectionResponse>(std::bind(&WithStreamedUnaryMethod_dropCollection<BaseClass>::StreameddropCollection, this, std::placeholders::_1, std::placeholders::_2)));
     }
     ~WithStreamedUnaryMethod_dropCollection() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2475,14 +2635,7 @@ class SearchEngine final {
    public:
     WithStreamedUnaryMethod_truncateCollection() {
       ::grpc::Service::MarkMethodStreamed(5,
-        new ::grpc::internal::StreamedUnaryHandler<
-          ::olama::TruncateCollectionRequest, ::olama::TruncateCollectionResponse>(
-            [this](::grpc::ServerContext* context,
-                   ::grpc::ServerUnaryStreamer<
-                     ::olama::TruncateCollectionRequest, ::olama::TruncateCollectionResponse>* streamer) {
-                       return this->StreamedtruncateCollection(context,
-                         streamer);
-                  }));
+        new ::grpc::internal::StreamedUnaryHandler< ::olama::TruncateCollectionRequest, ::olama::TruncateCollectionResponse>(std::bind(&WithStreamedUnaryMethod_truncateCollection<BaseClass>::StreamedtruncateCollection, this, std::placeholders::_1, std::placeholders::_2)));
     }
     ~WithStreamedUnaryMethod_truncateCollection() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2502,14 +2655,7 @@ class SearchEngine final {
    public:
     WithStreamedUnaryMethod_describeCollection() {
       ::grpc::Service::MarkMethodStreamed(6,
-        new ::grpc::internal::StreamedUnaryHandler<
-          ::olama::DescribeCollectionRequest, ::olama::DescribeCollectionResponse>(
-            [this](::grpc::ServerContext* context,
-                   ::grpc::ServerUnaryStreamer<
-                     ::olama::DescribeCollectionRequest, ::olama::DescribeCollectionResponse>* streamer) {
-                       return this->StreameddescribeCollection(context,
-                         streamer);
-                  }));
+        new ::grpc::internal::StreamedUnaryHandler< ::olama::DescribeCollectionRequest, ::olama::DescribeCollectionResponse>(std::bind(&WithStreamedUnaryMethod_describeCollection<BaseClass>::StreameddescribeCollection, this, std::placeholders::_1, std::placeholders::_2)));
     }
     ~WithStreamedUnaryMethod_describeCollection() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2529,14 +2675,7 @@ class SearchEngine final {
    public:
     WithStreamedUnaryMethod_listCollections() {
       ::grpc::Service::MarkMethodStreamed(7,
-        new ::grpc::internal::StreamedUnaryHandler<
-          ::olama::ListCollectionsRequest, ::olama::ListCollectionsResponse>(
-            [this](::grpc::ServerContext* context,
-                   ::grpc::ServerUnaryStreamer<
-                     ::olama::ListCollectionsRequest, ::olama::ListCollectionsResponse>* streamer) {
-                       return this->StreamedlistCollections(context,
-                         streamer);
-                  }));
+        new ::grpc::internal::StreamedUnaryHandler< ::olama::ListCollectionsRequest, ::olama::ListCollectionsResponse>(std::bind(&WithStreamedUnaryMethod_listCollections<BaseClass>::StreamedlistCollections, this, std::placeholders::_1, std::placeholders::_2)));
     }
     ~WithStreamedUnaryMethod_listCollections() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2556,14 +2695,7 @@ class SearchEngine final {
    public:
     WithStreamedUnaryMethod_rebuildIndex() {
       ::grpc::Service::MarkMethodStreamed(8,
-        new ::grpc::internal::StreamedUnaryHandler<
-          ::olama::RebuildIndexRequest, ::olama::RebuildIndexResponse>(
-            [this](::grpc::ServerContext* context,
-                   ::grpc::ServerUnaryStreamer<
-                     ::olama::RebuildIndexRequest, ::olama::RebuildIndexResponse>* streamer) {
-                       return this->StreamedrebuildIndex(context,
-                         streamer);
-                  }));
+        new ::grpc::internal::StreamedUnaryHandler< ::olama::RebuildIndexRequest, ::olama::RebuildIndexResponse>(std::bind(&WithStreamedUnaryMethod_rebuildIndex<BaseClass>::StreamedrebuildIndex, this, std::placeholders::_1, std::placeholders::_2)));
     }
     ~WithStreamedUnaryMethod_rebuildIndex() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2583,14 +2715,7 @@ class SearchEngine final {
    public:
     WithStreamedUnaryMethod_upsert() {
       ::grpc::Service::MarkMethodStreamed(9,
-        new ::grpc::internal::StreamedUnaryHandler<
-          ::olama::UpsertRequest, ::olama::UpsertResponse>(
-            [this](::grpc::ServerContext* context,
-                   ::grpc::ServerUnaryStreamer<
-                     ::olama::UpsertRequest, ::olama::UpsertResponse>* streamer) {
-                       return this->Streamedupsert(context,
-                         streamer);
-                  }));
+        new ::grpc::internal::StreamedUnaryHandler< ::olama::UpsertRequest, ::olama::UpsertResponse>(std::bind(&WithStreamedUnaryMethod_upsert<BaseClass>::Streamedupsert, this, std::placeholders::_1, std::placeholders::_2)));
     }
     ~WithStreamedUnaryMethod_upsert() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2610,14 +2735,7 @@ class SearchEngine final {
    public:
     WithStreamedUnaryMethod_update() {
       ::grpc::Service::MarkMethodStreamed(10,
-        new ::grpc::internal::StreamedUnaryHandler<
-          ::olama::UpdateRequest, ::olama::UpdateResponse>(
-            [this](::grpc::ServerContext* context,
-                   ::grpc::ServerUnaryStreamer<
-                     ::olama::UpdateRequest, ::olama::UpdateResponse>* streamer) {
-                       return this->Streamedupdate(context,
-                         streamer);
-                  }));
+        new ::grpc::internal::StreamedUnaryHandler< ::olama::UpdateRequest, ::olama::UpdateResponse>(std::bind(&WithStreamedUnaryMethod_update<BaseClass>::Streamedupdate, this, std::placeholders::_1, std::placeholders::_2)));
     }
     ~WithStreamedUnaryMethod_update() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2637,14 +2755,7 @@ class SearchEngine final {
    public:
     WithStreamedUnaryMethod_query() {
       ::grpc::Service::MarkMethodStreamed(11,
-        new ::grpc::internal::StreamedUnaryHandler<
-          ::olama::QueryRequest, ::olama::QueryResponse>(
-            [this](::grpc::ServerContext* context,
-                   ::grpc::ServerUnaryStreamer<
-                     ::olama::QueryRequest, ::olama::QueryResponse>* streamer) {
-                       return this->Streamedquery(context,
-                         streamer);
-                  }));
+        new ::grpc::internal::StreamedUnaryHandler< ::olama::QueryRequest, ::olama::QueryResponse>(std::bind(&WithStreamedUnaryMethod_query<BaseClass>::Streamedquery, this, std::placeholders::_1, std::placeholders::_2)));
     }
     ~WithStreamedUnaryMethod_query() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2664,14 +2775,7 @@ class SearchEngine final {
    public:
     WithStreamedUnaryMethod_search() {
       ::grpc::Service::MarkMethodStreamed(12,
-        new ::grpc::internal::StreamedUnaryHandler<
-          ::olama::SearchRequest, ::olama::SearchResponse>(
-            [this](::grpc::ServerContext* context,
-                   ::grpc::ServerUnaryStreamer<
-                     ::olama::SearchRequest, ::olama::SearchResponse>* streamer) {
-                       return this->Streamedsearch(context,
-                         streamer);
-                  }));
+        new ::grpc::internal::StreamedUnaryHandler< ::olama::SearchRequest, ::olama::SearchResponse>(std::bind(&WithStreamedUnaryMethod_search<BaseClass>::Streamedsearch, this, std::placeholders::_1, std::placeholders::_2)));
     }
     ~WithStreamedUnaryMethod_search() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2691,14 +2795,7 @@ class SearchEngine final {
    public:
     WithStreamedUnaryMethod_dele() {
       ::grpc::Service::MarkMethodStreamed(13,
-        new ::grpc::internal::StreamedUnaryHandler<
-          ::olama::DeleteRequest, ::olama::DeleteResponse>(
-            [this](::grpc::ServerContext* context,
-                   ::grpc::ServerUnaryStreamer<
-                     ::olama::DeleteRequest, ::olama::DeleteResponse>* streamer) {
-                       return this->Streameddele(context,
-                         streamer);
-                  }));
+        new ::grpc::internal::StreamedUnaryHandler< ::olama::DeleteRequest, ::olama::DeleteResponse>(std::bind(&WithStreamedUnaryMethod_dele<BaseClass>::Streameddele, this, std::placeholders::_1, std::placeholders::_2)));
     }
     ~WithStreamedUnaryMethod_dele() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2718,14 +2815,7 @@ class SearchEngine final {
    public:
     WithStreamedUnaryMethod_createDatabase() {
       ::grpc::Service::MarkMethodStreamed(14,
-        new ::grpc::internal::StreamedUnaryHandler<
-          ::olama::DatabaseRequest, ::olama::DatabaseResponse>(
-            [this](::grpc::ServerContext* context,
-                   ::grpc::ServerUnaryStreamer<
-                     ::olama::DatabaseRequest, ::olama::DatabaseResponse>* streamer) {
-                       return this->StreamedcreateDatabase(context,
-                         streamer);
-                  }));
+        new ::grpc::internal::StreamedUnaryHandler< ::olama::DatabaseRequest, ::olama::DatabaseResponse>(std::bind(&WithStreamedUnaryMethod_createDatabase<BaseClass>::StreamedcreateDatabase, this, std::placeholders::_1, std::placeholders::_2)));
     }
     ~WithStreamedUnaryMethod_createDatabase() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2745,14 +2835,7 @@ class SearchEngine final {
    public:
     WithStreamedUnaryMethod_dropDatabase() {
       ::grpc::Service::MarkMethodStreamed(15,
-        new ::grpc::internal::StreamedUnaryHandler<
-          ::olama::DatabaseRequest, ::olama::DatabaseResponse>(
-            [this](::grpc::ServerContext* context,
-                   ::grpc::ServerUnaryStreamer<
-                     ::olama::DatabaseRequest, ::olama::DatabaseResponse>* streamer) {
-                       return this->StreameddropDatabase(context,
-                         streamer);
-                  }));
+        new ::grpc::internal::StreamedUnaryHandler< ::olama::DatabaseRequest, ::olama::DatabaseResponse>(std::bind(&WithStreamedUnaryMethod_dropDatabase<BaseClass>::StreameddropDatabase, this, std::placeholders::_1, std::placeholders::_2)));
     }
     ~WithStreamedUnaryMethod_dropDatabase() override {
       BaseClassMustBeDerivedFromService(this);
@@ -2772,14 +2855,7 @@ class SearchEngine final {
    public:
     WithStreamedUnaryMethod_listDatabases() {
       ::grpc::Service::MarkMethodStreamed(16,
-        new ::grpc::internal::StreamedUnaryHandler<
-          ::olama::DatabaseRequest, ::olama::DatabaseResponse>(
-            [this](::grpc::ServerContext* context,
-                   ::grpc::ServerUnaryStreamer<
-                     ::olama::DatabaseRequest, ::olama::DatabaseResponse>* streamer) {
-                       return this->StreamedlistDatabases(context,
-                         streamer);
-                  }));
+        new ::grpc::internal::StreamedUnaryHandler< ::olama::DatabaseRequest, ::olama::DatabaseResponse>(std::bind(&WithStreamedUnaryMethod_listDatabases<BaseClass>::StreamedlistDatabases, this, std::placeholders::_1, std::placeholders::_2)));
     }
     ~WithStreamedUnaryMethod_listDatabases() override {
       BaseClassMustBeDerivedFromService(this);

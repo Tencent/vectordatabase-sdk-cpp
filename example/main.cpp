@@ -125,7 +125,7 @@ int main() {
     CreateCollectionParams* createCollectionParams = new CreateCollectionParams();
     auto embedding = std::make_unique<Embedding>();
     embedding->field = "text";
-    embedding->enabled = "vector";
+    embedding->vectorField = "vector";
     embedding->model = "bge-base-zh";
     createCollectionParams->embedding = std::move(embedding);
     cli.setTimeout(3000);  // 单位：毫秒（s）

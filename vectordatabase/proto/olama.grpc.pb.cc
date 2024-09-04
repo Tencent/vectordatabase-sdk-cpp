@@ -6,19 +6,16 @@
 #include "olama.grpc.pb.h"
 
 #include <functional>
-#include <grpcpp/support/async_stream.h>
-#include <grpcpp/support/async_unary_call.h>
-#include <grpcpp/impl/channel_interface.h>
-#include <grpcpp/impl/client_unary_call.h>
-#include <grpcpp/support/client_callback.h>
-#include <grpcpp/support/message_allocator.h>
-#include <grpcpp/support/method_handler.h>
-#include <grpcpp/impl/rpc_service_method.h>
-#include <grpcpp/support/server_callback.h>
-#include <grpcpp/impl/server_callback_handlers.h>
-#include <grpcpp/server_context.h>
-#include <grpcpp/impl/service_type.h>
-#include <grpcpp/support/sync_stream.h>
+#include <grpcpp/impl/codegen/async_stream.h>
+#include <grpcpp/impl/codegen/async_unary_call.h>
+#include <grpcpp/impl/codegen/channel_interface.h>
+#include <grpcpp/impl/codegen/client_unary_call.h>
+#include <grpcpp/impl/codegen/client_callback.h>
+#include <grpcpp/impl/codegen/method_handler_impl.h>
+#include <grpcpp/impl/codegen/rpc_service_method.h>
+#include <grpcpp/impl/codegen/server_callback.h>
+#include <grpcpp/impl/codegen/service_type.h>
+#include <grpcpp/impl/codegen/sync_stream.h>
 namespace olama {
 
 static const char* SearchEngine_method_names[] = {
@@ -35,600 +32,600 @@ static const char* SearchEngine_method_names[] = {
   "/document/update",
   "/document/query",
   "/document/search",
-  "/document/delete",
-  "/database/create",
+  "/document/dele",
+  "/olama.SearchEngine/create",
   "/database/drop",
   "/database/list",
 };
 
 std::unique_ptr< SearchEngine::Stub> SearchEngine::NewStub(const std::shared_ptr< ::grpc::ChannelInterface>& channel, const ::grpc::StubOptions& options) {
   (void)options;
-  std::unique_ptr< SearchEngine::Stub> stub(new SearchEngine::Stub(channel, options));
+  std::unique_ptr< SearchEngine::Stub> stub(new SearchEngine::Stub(channel));
   return stub;
 }
 
-SearchEngine::Stub::Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel, const ::grpc::StubOptions& options)
-  : channel_(channel), rpcmethod_setAlias_(SearchEngine_method_names[0], options.suffix_for_stats(),::grpc::internal::RpcMethod::NORMAL_RPC, channel)
-  , rpcmethod_getAlias_(SearchEngine_method_names[1], options.suffix_for_stats(),::grpc::internal::RpcMethod::NORMAL_RPC, channel)
-  , rpcmethod_deleteAlias_(SearchEngine_method_names[2], options.suffix_for_stats(),::grpc::internal::RpcMethod::NORMAL_RPC, channel)
-  , rpcmethod_createCollection_(SearchEngine_method_names[3], options.suffix_for_stats(),::grpc::internal::RpcMethod::NORMAL_RPC, channel)
-  , rpcmethod_dropCollection_(SearchEngine_method_names[4], options.suffix_for_stats(),::grpc::internal::RpcMethod::NORMAL_RPC, channel)
-  , rpcmethod_truncateCollection_(SearchEngine_method_names[5], options.suffix_for_stats(),::grpc::internal::RpcMethod::NORMAL_RPC, channel)
-  , rpcmethod_describeCollection_(SearchEngine_method_names[6], options.suffix_for_stats(),::grpc::internal::RpcMethod::NORMAL_RPC, channel)
-  , rpcmethod_listCollections_(SearchEngine_method_names[7], options.suffix_for_stats(),::grpc::internal::RpcMethod::NORMAL_RPC, channel)
-  , rpcmethod_rebuildIndex_(SearchEngine_method_names[8], options.suffix_for_stats(),::grpc::internal::RpcMethod::NORMAL_RPC, channel)
-  , rpcmethod_upsert_(SearchEngine_method_names[9], options.suffix_for_stats(),::grpc::internal::RpcMethod::NORMAL_RPC, channel)
-  , rpcmethod_update_(SearchEngine_method_names[10], options.suffix_for_stats(),::grpc::internal::RpcMethod::NORMAL_RPC, channel)
-  , rpcmethod_query_(SearchEngine_method_names[11], options.suffix_for_stats(),::grpc::internal::RpcMethod::NORMAL_RPC, channel)
-  , rpcmethod_search_(SearchEngine_method_names[12], options.suffix_for_stats(),::grpc::internal::RpcMethod::NORMAL_RPC, channel)
-  , rpcmethod_dele_(SearchEngine_method_names[13], options.suffix_for_stats(),::grpc::internal::RpcMethod::NORMAL_RPC, channel)
-  , rpcmethod_createDatabase_(SearchEngine_method_names[14], options.suffix_for_stats(),::grpc::internal::RpcMethod::NORMAL_RPC, channel)
-  , rpcmethod_dropDatabase_(SearchEngine_method_names[15], options.suffix_for_stats(),::grpc::internal::RpcMethod::NORMAL_RPC, channel)
-  , rpcmethod_listDatabases_(SearchEngine_method_names[16], options.suffix_for_stats(),::grpc::internal::RpcMethod::NORMAL_RPC, channel)
+SearchEngine::Stub::Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel)
+  : channel_(channel), rpcmethod_setAlias_(SearchEngine_method_names[0], ::grpc::internal::RpcMethod::NORMAL_RPC, channel)
+  , rpcmethod_getAlias_(SearchEngine_method_names[1], ::grpc::internal::RpcMethod::NORMAL_RPC, channel)
+  , rpcmethod_deleteAlias_(SearchEngine_method_names[2], ::grpc::internal::RpcMethod::NORMAL_RPC, channel)
+  , rpcmethod_createCollection_(SearchEngine_method_names[3], ::grpc::internal::RpcMethod::NORMAL_RPC, channel)
+  , rpcmethod_dropCollection_(SearchEngine_method_names[4], ::grpc::internal::RpcMethod::NORMAL_RPC, channel)
+  , rpcmethod_truncateCollection_(SearchEngine_method_names[5], ::grpc::internal::RpcMethod::NORMAL_RPC, channel)
+  , rpcmethod_describeCollection_(SearchEngine_method_names[6], ::grpc::internal::RpcMethod::NORMAL_RPC, channel)
+  , rpcmethod_listCollections_(SearchEngine_method_names[7], ::grpc::internal::RpcMethod::NORMAL_RPC, channel)
+  , rpcmethod_rebuildIndex_(SearchEngine_method_names[8], ::grpc::internal::RpcMethod::NORMAL_RPC, channel)
+  , rpcmethod_upsert_(SearchEngine_method_names[9], ::grpc::internal::RpcMethod::NORMAL_RPC, channel)
+  , rpcmethod_update_(SearchEngine_method_names[10], ::grpc::internal::RpcMethod::NORMAL_RPC, channel)
+  , rpcmethod_query_(SearchEngine_method_names[11], ::grpc::internal::RpcMethod::NORMAL_RPC, channel)
+  , rpcmethod_search_(SearchEngine_method_names[12], ::grpc::internal::RpcMethod::NORMAL_RPC, channel)
+  , rpcmethod_dele_(SearchEngine_method_names[13], ::grpc::internal::RpcMethod::NORMAL_RPC, channel)
+  , rpcmethod_createDatabase_(SearchEngine_method_names[14], ::grpc::internal::RpcMethod::NORMAL_RPC, channel)
+  , rpcmethod_dropDatabase_(SearchEngine_method_names[15], ::grpc::internal::RpcMethod::NORMAL_RPC, channel)
+  , rpcmethod_listDatabases_(SearchEngine_method_names[16], ::grpc::internal::RpcMethod::NORMAL_RPC, channel)
   {}
 
 ::grpc::Status SearchEngine::Stub::setAlias(::grpc::ClientContext* context, const ::olama::AddAliasRequest& request, ::olama::UpdateAliasResponse* response) {
-  return ::grpc::internal::BlockingUnaryCall< ::olama::AddAliasRequest, ::olama::UpdateAliasResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_setAlias_, context, request, response);
+  return ::grpc::internal::BlockingUnaryCall(channel_.get(), rpcmethod_setAlias_, context, request, response);
 }
 
-void SearchEngine::Stub::async::setAlias(::grpc::ClientContext* context, const ::olama::AddAliasRequest* request, ::olama::UpdateAliasResponse* response, std::function<void(::grpc::Status)> f) {
-  ::grpc::internal::CallbackUnaryCall< ::olama::AddAliasRequest, ::olama::UpdateAliasResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_setAlias_, context, request, response, std::move(f));
+void SearchEngine::Stub::experimental_async::setAlias(::grpc::ClientContext* context, const ::olama::AddAliasRequest* request, ::olama::UpdateAliasResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_setAlias_, context, request, response, std::move(f));
 }
 
-void SearchEngine::Stub::async::setAlias(::grpc::ClientContext* context, const ::olama::AddAliasRequest* request, ::olama::UpdateAliasResponse* response, ::grpc::ClientUnaryReactor* reactor) {
-  ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_setAlias_, context, request, response, reactor);
+void SearchEngine::Stub::experimental_async::setAlias(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::UpdateAliasResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_setAlias_, context, request, response, std::move(f));
 }
 
-::grpc::ClientAsyncResponseReader< ::olama::UpdateAliasResponse>* SearchEngine::Stub::PrepareAsyncsetAliasRaw(::grpc::ClientContext* context, const ::olama::AddAliasRequest& request, ::grpc::CompletionQueue* cq) {
-  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::olama::UpdateAliasResponse, ::olama::AddAliasRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_setAlias_, context, request);
+void SearchEngine::Stub::experimental_async::setAlias(::grpc::ClientContext* context, const ::olama::AddAliasRequest* request, ::olama::UpdateAliasResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_setAlias_, context, request, response, reactor);
+}
+
+void SearchEngine::Stub::experimental_async::setAlias(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::UpdateAliasResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_setAlias_, context, request, response, reactor);
 }
 
 ::grpc::ClientAsyncResponseReader< ::olama::UpdateAliasResponse>* SearchEngine::Stub::AsyncsetAliasRaw(::grpc::ClientContext* context, const ::olama::AddAliasRequest& request, ::grpc::CompletionQueue* cq) {
-  auto* result =
-    this->PrepareAsyncsetAliasRaw(context, request, cq);
-  result->StartCall();
-  return result;
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::UpdateAliasResponse>::Create(channel_.get(), cq, rpcmethod_setAlias_, context, request, true);
+}
+
+::grpc::ClientAsyncResponseReader< ::olama::UpdateAliasResponse>* SearchEngine::Stub::PrepareAsyncsetAliasRaw(::grpc::ClientContext* context, const ::olama::AddAliasRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::UpdateAliasResponse>::Create(channel_.get(), cq, rpcmethod_setAlias_, context, request, false);
 }
 
 ::grpc::Status SearchEngine::Stub::getAlias(::grpc::ClientContext* context, const ::olama::GetAliasRequest& request, ::olama::GetAliasResponse* response) {
-  return ::grpc::internal::BlockingUnaryCall< ::olama::GetAliasRequest, ::olama::GetAliasResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_getAlias_, context, request, response);
+  return ::grpc::internal::BlockingUnaryCall(channel_.get(), rpcmethod_getAlias_, context, request, response);
 }
 
-void SearchEngine::Stub::async::getAlias(::grpc::ClientContext* context, const ::olama::GetAliasRequest* request, ::olama::GetAliasResponse* response, std::function<void(::grpc::Status)> f) {
-  ::grpc::internal::CallbackUnaryCall< ::olama::GetAliasRequest, ::olama::GetAliasResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_getAlias_, context, request, response, std::move(f));
+void SearchEngine::Stub::experimental_async::getAlias(::grpc::ClientContext* context, const ::olama::GetAliasRequest* request, ::olama::GetAliasResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_getAlias_, context, request, response, std::move(f));
 }
 
-void SearchEngine::Stub::async::getAlias(::grpc::ClientContext* context, const ::olama::GetAliasRequest* request, ::olama::GetAliasResponse* response, ::grpc::ClientUnaryReactor* reactor) {
-  ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_getAlias_, context, request, response, reactor);
+void SearchEngine::Stub::experimental_async::getAlias(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::GetAliasResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_getAlias_, context, request, response, std::move(f));
 }
 
-::grpc::ClientAsyncResponseReader< ::olama::GetAliasResponse>* SearchEngine::Stub::PrepareAsyncgetAliasRaw(::grpc::ClientContext* context, const ::olama::GetAliasRequest& request, ::grpc::CompletionQueue* cq) {
-  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::olama::GetAliasResponse, ::olama::GetAliasRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_getAlias_, context, request);
+void SearchEngine::Stub::experimental_async::getAlias(::grpc::ClientContext* context, const ::olama::GetAliasRequest* request, ::olama::GetAliasResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_getAlias_, context, request, response, reactor);
+}
+
+void SearchEngine::Stub::experimental_async::getAlias(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::GetAliasResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_getAlias_, context, request, response, reactor);
 }
 
 ::grpc::ClientAsyncResponseReader< ::olama::GetAliasResponse>* SearchEngine::Stub::AsyncgetAliasRaw(::grpc::ClientContext* context, const ::olama::GetAliasRequest& request, ::grpc::CompletionQueue* cq) {
-  auto* result =
-    this->PrepareAsyncgetAliasRaw(context, request, cq);
-  result->StartCall();
-  return result;
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::GetAliasResponse>::Create(channel_.get(), cq, rpcmethod_getAlias_, context, request, true);
+}
+
+::grpc::ClientAsyncResponseReader< ::olama::GetAliasResponse>* SearchEngine::Stub::PrepareAsyncgetAliasRaw(::grpc::ClientContext* context, const ::olama::GetAliasRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::GetAliasResponse>::Create(channel_.get(), cq, rpcmethod_getAlias_, context, request, false);
 }
 
 ::grpc::Status SearchEngine::Stub::deleteAlias(::grpc::ClientContext* context, const ::olama::RemoveAliasRequest& request, ::olama::UpdateAliasResponse* response) {
-  return ::grpc::internal::BlockingUnaryCall< ::olama::RemoveAliasRequest, ::olama::UpdateAliasResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_deleteAlias_, context, request, response);
+  return ::grpc::internal::BlockingUnaryCall(channel_.get(), rpcmethod_deleteAlias_, context, request, response);
 }
 
-void SearchEngine::Stub::async::deleteAlias(::grpc::ClientContext* context, const ::olama::RemoveAliasRequest* request, ::olama::UpdateAliasResponse* response, std::function<void(::grpc::Status)> f) {
-  ::grpc::internal::CallbackUnaryCall< ::olama::RemoveAliasRequest, ::olama::UpdateAliasResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_deleteAlias_, context, request, response, std::move(f));
+void SearchEngine::Stub::experimental_async::deleteAlias(::grpc::ClientContext* context, const ::olama::RemoveAliasRequest* request, ::olama::UpdateAliasResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_deleteAlias_, context, request, response, std::move(f));
 }
 
-void SearchEngine::Stub::async::deleteAlias(::grpc::ClientContext* context, const ::olama::RemoveAliasRequest* request, ::olama::UpdateAliasResponse* response, ::grpc::ClientUnaryReactor* reactor) {
-  ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_deleteAlias_, context, request, response, reactor);
+void SearchEngine::Stub::experimental_async::deleteAlias(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::UpdateAliasResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_deleteAlias_, context, request, response, std::move(f));
 }
 
-::grpc::ClientAsyncResponseReader< ::olama::UpdateAliasResponse>* SearchEngine::Stub::PrepareAsyncdeleteAliasRaw(::grpc::ClientContext* context, const ::olama::RemoveAliasRequest& request, ::grpc::CompletionQueue* cq) {
-  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::olama::UpdateAliasResponse, ::olama::RemoveAliasRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_deleteAlias_, context, request);
+void SearchEngine::Stub::experimental_async::deleteAlias(::grpc::ClientContext* context, const ::olama::RemoveAliasRequest* request, ::olama::UpdateAliasResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_deleteAlias_, context, request, response, reactor);
+}
+
+void SearchEngine::Stub::experimental_async::deleteAlias(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::UpdateAliasResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_deleteAlias_, context, request, response, reactor);
 }
 
 ::grpc::ClientAsyncResponseReader< ::olama::UpdateAliasResponse>* SearchEngine::Stub::AsyncdeleteAliasRaw(::grpc::ClientContext* context, const ::olama::RemoveAliasRequest& request, ::grpc::CompletionQueue* cq) {
-  auto* result =
-    this->PrepareAsyncdeleteAliasRaw(context, request, cq);
-  result->StartCall();
-  return result;
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::UpdateAliasResponse>::Create(channel_.get(), cq, rpcmethod_deleteAlias_, context, request, true);
+}
+
+::grpc::ClientAsyncResponseReader< ::olama::UpdateAliasResponse>* SearchEngine::Stub::PrepareAsyncdeleteAliasRaw(::grpc::ClientContext* context, const ::olama::RemoveAliasRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::UpdateAliasResponse>::Create(channel_.get(), cq, rpcmethod_deleteAlias_, context, request, false);
 }
 
 ::grpc::Status SearchEngine::Stub::createCollection(::grpc::ClientContext* context, const ::olama::CreateCollectionRequest& request, ::olama::CreateCollectionResponse* response) {
-  return ::grpc::internal::BlockingUnaryCall< ::olama::CreateCollectionRequest, ::olama::CreateCollectionResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_createCollection_, context, request, response);
+  return ::grpc::internal::BlockingUnaryCall(channel_.get(), rpcmethod_createCollection_, context, request, response);
 }
 
-void SearchEngine::Stub::async::createCollection(::grpc::ClientContext* context, const ::olama::CreateCollectionRequest* request, ::olama::CreateCollectionResponse* response, std::function<void(::grpc::Status)> f) {
-  ::grpc::internal::CallbackUnaryCall< ::olama::CreateCollectionRequest, ::olama::CreateCollectionResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_createCollection_, context, request, response, std::move(f));
+void SearchEngine::Stub::experimental_async::createCollection(::grpc::ClientContext* context, const ::olama::CreateCollectionRequest* request, ::olama::CreateCollectionResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_createCollection_, context, request, response, std::move(f));
 }
 
-void SearchEngine::Stub::async::createCollection(::grpc::ClientContext* context, const ::olama::CreateCollectionRequest* request, ::olama::CreateCollectionResponse* response, ::grpc::ClientUnaryReactor* reactor) {
-  ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_createCollection_, context, request, response, reactor);
+void SearchEngine::Stub::experimental_async::createCollection(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::CreateCollectionResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_createCollection_, context, request, response, std::move(f));
 }
 
-::grpc::ClientAsyncResponseReader< ::olama::CreateCollectionResponse>* SearchEngine::Stub::PrepareAsynccreateCollectionRaw(::grpc::ClientContext* context, const ::olama::CreateCollectionRequest& request, ::grpc::CompletionQueue* cq) {
-  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::olama::CreateCollectionResponse, ::olama::CreateCollectionRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_createCollection_, context, request);
+void SearchEngine::Stub::experimental_async::createCollection(::grpc::ClientContext* context, const ::olama::CreateCollectionRequest* request, ::olama::CreateCollectionResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_createCollection_, context, request, response, reactor);
+}
+
+void SearchEngine::Stub::experimental_async::createCollection(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::CreateCollectionResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_createCollection_, context, request, response, reactor);
 }
 
 ::grpc::ClientAsyncResponseReader< ::olama::CreateCollectionResponse>* SearchEngine::Stub::AsynccreateCollectionRaw(::grpc::ClientContext* context, const ::olama::CreateCollectionRequest& request, ::grpc::CompletionQueue* cq) {
-  auto* result =
-    this->PrepareAsynccreateCollectionRaw(context, request, cq);
-  result->StartCall();
-  return result;
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::CreateCollectionResponse>::Create(channel_.get(), cq, rpcmethod_createCollection_, context, request, true);
+}
+
+::grpc::ClientAsyncResponseReader< ::olama::CreateCollectionResponse>* SearchEngine::Stub::PrepareAsynccreateCollectionRaw(::grpc::ClientContext* context, const ::olama::CreateCollectionRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::CreateCollectionResponse>::Create(channel_.get(), cq, rpcmethod_createCollection_, context, request, false);
 }
 
 ::grpc::Status SearchEngine::Stub::dropCollection(::grpc::ClientContext* context, const ::olama::DropCollectionRequest& request, ::olama::DropCollectionResponse* response) {
-  return ::grpc::internal::BlockingUnaryCall< ::olama::DropCollectionRequest, ::olama::DropCollectionResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_dropCollection_, context, request, response);
+  return ::grpc::internal::BlockingUnaryCall(channel_.get(), rpcmethod_dropCollection_, context, request, response);
 }
 
-void SearchEngine::Stub::async::dropCollection(::grpc::ClientContext* context, const ::olama::DropCollectionRequest* request, ::olama::DropCollectionResponse* response, std::function<void(::grpc::Status)> f) {
-  ::grpc::internal::CallbackUnaryCall< ::olama::DropCollectionRequest, ::olama::DropCollectionResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_dropCollection_, context, request, response, std::move(f));
+void SearchEngine::Stub::experimental_async::dropCollection(::grpc::ClientContext* context, const ::olama::DropCollectionRequest* request, ::olama::DropCollectionResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_dropCollection_, context, request, response, std::move(f));
 }
 
-void SearchEngine::Stub::async::dropCollection(::grpc::ClientContext* context, const ::olama::DropCollectionRequest* request, ::olama::DropCollectionResponse* response, ::grpc::ClientUnaryReactor* reactor) {
-  ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_dropCollection_, context, request, response, reactor);
+void SearchEngine::Stub::experimental_async::dropCollection(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DropCollectionResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_dropCollection_, context, request, response, std::move(f));
 }
 
-::grpc::ClientAsyncResponseReader< ::olama::DropCollectionResponse>* SearchEngine::Stub::PrepareAsyncdropCollectionRaw(::grpc::ClientContext* context, const ::olama::DropCollectionRequest& request, ::grpc::CompletionQueue* cq) {
-  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::olama::DropCollectionResponse, ::olama::DropCollectionRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_dropCollection_, context, request);
+void SearchEngine::Stub::experimental_async::dropCollection(::grpc::ClientContext* context, const ::olama::DropCollectionRequest* request, ::olama::DropCollectionResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_dropCollection_, context, request, response, reactor);
+}
+
+void SearchEngine::Stub::experimental_async::dropCollection(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DropCollectionResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_dropCollection_, context, request, response, reactor);
 }
 
 ::grpc::ClientAsyncResponseReader< ::olama::DropCollectionResponse>* SearchEngine::Stub::AsyncdropCollectionRaw(::grpc::ClientContext* context, const ::olama::DropCollectionRequest& request, ::grpc::CompletionQueue* cq) {
-  auto* result =
-    this->PrepareAsyncdropCollectionRaw(context, request, cq);
-  result->StartCall();
-  return result;
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::DropCollectionResponse>::Create(channel_.get(), cq, rpcmethod_dropCollection_, context, request, true);
+}
+
+::grpc::ClientAsyncResponseReader< ::olama::DropCollectionResponse>* SearchEngine::Stub::PrepareAsyncdropCollectionRaw(::grpc::ClientContext* context, const ::olama::DropCollectionRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::DropCollectionResponse>::Create(channel_.get(), cq, rpcmethod_dropCollection_, context, request, false);
 }
 
 ::grpc::Status SearchEngine::Stub::truncateCollection(::grpc::ClientContext* context, const ::olama::TruncateCollectionRequest& request, ::olama::TruncateCollectionResponse* response) {
-  return ::grpc::internal::BlockingUnaryCall< ::olama::TruncateCollectionRequest, ::olama::TruncateCollectionResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_truncateCollection_, context, request, response);
+  return ::grpc::internal::BlockingUnaryCall(channel_.get(), rpcmethod_truncateCollection_, context, request, response);
 }
 
-void SearchEngine::Stub::async::truncateCollection(::grpc::ClientContext* context, const ::olama::TruncateCollectionRequest* request, ::olama::TruncateCollectionResponse* response, std::function<void(::grpc::Status)> f) {
-  ::grpc::internal::CallbackUnaryCall< ::olama::TruncateCollectionRequest, ::olama::TruncateCollectionResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_truncateCollection_, context, request, response, std::move(f));
+void SearchEngine::Stub::experimental_async::truncateCollection(::grpc::ClientContext* context, const ::olama::TruncateCollectionRequest* request, ::olama::TruncateCollectionResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_truncateCollection_, context, request, response, std::move(f));
 }
 
-void SearchEngine::Stub::async::truncateCollection(::grpc::ClientContext* context, const ::olama::TruncateCollectionRequest* request, ::olama::TruncateCollectionResponse* response, ::grpc::ClientUnaryReactor* reactor) {
-  ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_truncateCollection_, context, request, response, reactor);
+void SearchEngine::Stub::experimental_async::truncateCollection(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::TruncateCollectionResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_truncateCollection_, context, request, response, std::move(f));
 }
 
-::grpc::ClientAsyncResponseReader< ::olama::TruncateCollectionResponse>* SearchEngine::Stub::PrepareAsynctruncateCollectionRaw(::grpc::ClientContext* context, const ::olama::TruncateCollectionRequest& request, ::grpc::CompletionQueue* cq) {
-  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::olama::TruncateCollectionResponse, ::olama::TruncateCollectionRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_truncateCollection_, context, request);
+void SearchEngine::Stub::experimental_async::truncateCollection(::grpc::ClientContext* context, const ::olama::TruncateCollectionRequest* request, ::olama::TruncateCollectionResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_truncateCollection_, context, request, response, reactor);
+}
+
+void SearchEngine::Stub::experimental_async::truncateCollection(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::TruncateCollectionResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_truncateCollection_, context, request, response, reactor);
 }
 
 ::grpc::ClientAsyncResponseReader< ::olama::TruncateCollectionResponse>* SearchEngine::Stub::AsynctruncateCollectionRaw(::grpc::ClientContext* context, const ::olama::TruncateCollectionRequest& request, ::grpc::CompletionQueue* cq) {
-  auto* result =
-    this->PrepareAsynctruncateCollectionRaw(context, request, cq);
-  result->StartCall();
-  return result;
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::TruncateCollectionResponse>::Create(channel_.get(), cq, rpcmethod_truncateCollection_, context, request, true);
+}
+
+::grpc::ClientAsyncResponseReader< ::olama::TruncateCollectionResponse>* SearchEngine::Stub::PrepareAsynctruncateCollectionRaw(::grpc::ClientContext* context, const ::olama::TruncateCollectionRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::TruncateCollectionResponse>::Create(channel_.get(), cq, rpcmethod_truncateCollection_, context, request, false);
 }
 
 ::grpc::Status SearchEngine::Stub::describeCollection(::grpc::ClientContext* context, const ::olama::DescribeCollectionRequest& request, ::olama::DescribeCollectionResponse* response) {
-  return ::grpc::internal::BlockingUnaryCall< ::olama::DescribeCollectionRequest, ::olama::DescribeCollectionResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_describeCollection_, context, request, response);
+  return ::grpc::internal::BlockingUnaryCall(channel_.get(), rpcmethod_describeCollection_, context, request, response);
 }
 
-void SearchEngine::Stub::async::describeCollection(::grpc::ClientContext* context, const ::olama::DescribeCollectionRequest* request, ::olama::DescribeCollectionResponse* response, std::function<void(::grpc::Status)> f) {
-  ::grpc::internal::CallbackUnaryCall< ::olama::DescribeCollectionRequest, ::olama::DescribeCollectionResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_describeCollection_, context, request, response, std::move(f));
+void SearchEngine::Stub::experimental_async::describeCollection(::grpc::ClientContext* context, const ::olama::DescribeCollectionRequest* request, ::olama::DescribeCollectionResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_describeCollection_, context, request, response, std::move(f));
 }
 
-void SearchEngine::Stub::async::describeCollection(::grpc::ClientContext* context, const ::olama::DescribeCollectionRequest* request, ::olama::DescribeCollectionResponse* response, ::grpc::ClientUnaryReactor* reactor) {
-  ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_describeCollection_, context, request, response, reactor);
+void SearchEngine::Stub::experimental_async::describeCollection(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DescribeCollectionResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_describeCollection_, context, request, response, std::move(f));
 }
 
-::grpc::ClientAsyncResponseReader< ::olama::DescribeCollectionResponse>* SearchEngine::Stub::PrepareAsyncdescribeCollectionRaw(::grpc::ClientContext* context, const ::olama::DescribeCollectionRequest& request, ::grpc::CompletionQueue* cq) {
-  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::olama::DescribeCollectionResponse, ::olama::DescribeCollectionRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_describeCollection_, context, request);
+void SearchEngine::Stub::experimental_async::describeCollection(::grpc::ClientContext* context, const ::olama::DescribeCollectionRequest* request, ::olama::DescribeCollectionResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_describeCollection_, context, request, response, reactor);
+}
+
+void SearchEngine::Stub::experimental_async::describeCollection(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DescribeCollectionResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_describeCollection_, context, request, response, reactor);
 }
 
 ::grpc::ClientAsyncResponseReader< ::olama::DescribeCollectionResponse>* SearchEngine::Stub::AsyncdescribeCollectionRaw(::grpc::ClientContext* context, const ::olama::DescribeCollectionRequest& request, ::grpc::CompletionQueue* cq) {
-  auto* result =
-    this->PrepareAsyncdescribeCollectionRaw(context, request, cq);
-  result->StartCall();
-  return result;
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::DescribeCollectionResponse>::Create(channel_.get(), cq, rpcmethod_describeCollection_, context, request, true);
+}
+
+::grpc::ClientAsyncResponseReader< ::olama::DescribeCollectionResponse>* SearchEngine::Stub::PrepareAsyncdescribeCollectionRaw(::grpc::ClientContext* context, const ::olama::DescribeCollectionRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::DescribeCollectionResponse>::Create(channel_.get(), cq, rpcmethod_describeCollection_, context, request, false);
 }
 
 ::grpc::Status SearchEngine::Stub::listCollections(::grpc::ClientContext* context, const ::olama::ListCollectionsRequest& request, ::olama::ListCollectionsResponse* response) {
-  return ::grpc::internal::BlockingUnaryCall< ::olama::ListCollectionsRequest, ::olama::ListCollectionsResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_listCollections_, context, request, response);
+  return ::grpc::internal::BlockingUnaryCall(channel_.get(), rpcmethod_listCollections_, context, request, response);
 }
 
-void SearchEngine::Stub::async::listCollections(::grpc::ClientContext* context, const ::olama::ListCollectionsRequest* request, ::olama::ListCollectionsResponse* response, std::function<void(::grpc::Status)> f) {
-  ::grpc::internal::CallbackUnaryCall< ::olama::ListCollectionsRequest, ::olama::ListCollectionsResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_listCollections_, context, request, response, std::move(f));
+void SearchEngine::Stub::experimental_async::listCollections(::grpc::ClientContext* context, const ::olama::ListCollectionsRequest* request, ::olama::ListCollectionsResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_listCollections_, context, request, response, std::move(f));
 }
 
-void SearchEngine::Stub::async::listCollections(::grpc::ClientContext* context, const ::olama::ListCollectionsRequest* request, ::olama::ListCollectionsResponse* response, ::grpc::ClientUnaryReactor* reactor) {
-  ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_listCollections_, context, request, response, reactor);
+void SearchEngine::Stub::experimental_async::listCollections(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::ListCollectionsResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_listCollections_, context, request, response, std::move(f));
 }
 
-::grpc::ClientAsyncResponseReader< ::olama::ListCollectionsResponse>* SearchEngine::Stub::PrepareAsynclistCollectionsRaw(::grpc::ClientContext* context, const ::olama::ListCollectionsRequest& request, ::grpc::CompletionQueue* cq) {
-  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::olama::ListCollectionsResponse, ::olama::ListCollectionsRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_listCollections_, context, request);
+void SearchEngine::Stub::experimental_async::listCollections(::grpc::ClientContext* context, const ::olama::ListCollectionsRequest* request, ::olama::ListCollectionsResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_listCollections_, context, request, response, reactor);
+}
+
+void SearchEngine::Stub::experimental_async::listCollections(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::ListCollectionsResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_listCollections_, context, request, response, reactor);
 }
 
 ::grpc::ClientAsyncResponseReader< ::olama::ListCollectionsResponse>* SearchEngine::Stub::AsynclistCollectionsRaw(::grpc::ClientContext* context, const ::olama::ListCollectionsRequest& request, ::grpc::CompletionQueue* cq) {
-  auto* result =
-    this->PrepareAsynclistCollectionsRaw(context, request, cq);
-  result->StartCall();
-  return result;
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::ListCollectionsResponse>::Create(channel_.get(), cq, rpcmethod_listCollections_, context, request, true);
+}
+
+::grpc::ClientAsyncResponseReader< ::olama::ListCollectionsResponse>* SearchEngine::Stub::PrepareAsynclistCollectionsRaw(::grpc::ClientContext* context, const ::olama::ListCollectionsRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::ListCollectionsResponse>::Create(channel_.get(), cq, rpcmethod_listCollections_, context, request, false);
 }
 
 ::grpc::Status SearchEngine::Stub::rebuildIndex(::grpc::ClientContext* context, const ::olama::RebuildIndexRequest& request, ::olama::RebuildIndexResponse* response) {
-  return ::grpc::internal::BlockingUnaryCall< ::olama::RebuildIndexRequest, ::olama::RebuildIndexResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_rebuildIndex_, context, request, response);
+  return ::grpc::internal::BlockingUnaryCall(channel_.get(), rpcmethod_rebuildIndex_, context, request, response);
 }
 
-void SearchEngine::Stub::async::rebuildIndex(::grpc::ClientContext* context, const ::olama::RebuildIndexRequest* request, ::olama::RebuildIndexResponse* response, std::function<void(::grpc::Status)> f) {
-  ::grpc::internal::CallbackUnaryCall< ::olama::RebuildIndexRequest, ::olama::RebuildIndexResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_rebuildIndex_, context, request, response, std::move(f));
+void SearchEngine::Stub::experimental_async::rebuildIndex(::grpc::ClientContext* context, const ::olama::RebuildIndexRequest* request, ::olama::RebuildIndexResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_rebuildIndex_, context, request, response, std::move(f));
 }
 
-void SearchEngine::Stub::async::rebuildIndex(::grpc::ClientContext* context, const ::olama::RebuildIndexRequest* request, ::olama::RebuildIndexResponse* response, ::grpc::ClientUnaryReactor* reactor) {
-  ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_rebuildIndex_, context, request, response, reactor);
+void SearchEngine::Stub::experimental_async::rebuildIndex(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::RebuildIndexResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_rebuildIndex_, context, request, response, std::move(f));
 }
 
-::grpc::ClientAsyncResponseReader< ::olama::RebuildIndexResponse>* SearchEngine::Stub::PrepareAsyncrebuildIndexRaw(::grpc::ClientContext* context, const ::olama::RebuildIndexRequest& request, ::grpc::CompletionQueue* cq) {
-  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::olama::RebuildIndexResponse, ::olama::RebuildIndexRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_rebuildIndex_, context, request);
+void SearchEngine::Stub::experimental_async::rebuildIndex(::grpc::ClientContext* context, const ::olama::RebuildIndexRequest* request, ::olama::RebuildIndexResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_rebuildIndex_, context, request, response, reactor);
+}
+
+void SearchEngine::Stub::experimental_async::rebuildIndex(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::RebuildIndexResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_rebuildIndex_, context, request, response, reactor);
 }
 
 ::grpc::ClientAsyncResponseReader< ::olama::RebuildIndexResponse>* SearchEngine::Stub::AsyncrebuildIndexRaw(::grpc::ClientContext* context, const ::olama::RebuildIndexRequest& request, ::grpc::CompletionQueue* cq) {
-  auto* result =
-    this->PrepareAsyncrebuildIndexRaw(context, request, cq);
-  result->StartCall();
-  return result;
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::RebuildIndexResponse>::Create(channel_.get(), cq, rpcmethod_rebuildIndex_, context, request, true);
+}
+
+::grpc::ClientAsyncResponseReader< ::olama::RebuildIndexResponse>* SearchEngine::Stub::PrepareAsyncrebuildIndexRaw(::grpc::ClientContext* context, const ::olama::RebuildIndexRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::RebuildIndexResponse>::Create(channel_.get(), cq, rpcmethod_rebuildIndex_, context, request, false);
 }
 
 ::grpc::Status SearchEngine::Stub::upsert(::grpc::ClientContext* context, const ::olama::UpsertRequest& request, ::olama::UpsertResponse* response) {
-  return ::grpc::internal::BlockingUnaryCall< ::olama::UpsertRequest, ::olama::UpsertResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_upsert_, context, request, response);
+  return ::grpc::internal::BlockingUnaryCall(channel_.get(), rpcmethod_upsert_, context, request, response);
 }
 
-void SearchEngine::Stub::async::upsert(::grpc::ClientContext* context, const ::olama::UpsertRequest* request, ::olama::UpsertResponse* response, std::function<void(::grpc::Status)> f) {
-  ::grpc::internal::CallbackUnaryCall< ::olama::UpsertRequest, ::olama::UpsertResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_upsert_, context, request, response, std::move(f));
+void SearchEngine::Stub::experimental_async::upsert(::grpc::ClientContext* context, const ::olama::UpsertRequest* request, ::olama::UpsertResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_upsert_, context, request, response, std::move(f));
 }
 
-void SearchEngine::Stub::async::upsert(::grpc::ClientContext* context, const ::olama::UpsertRequest* request, ::olama::UpsertResponse* response, ::grpc::ClientUnaryReactor* reactor) {
-  ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_upsert_, context, request, response, reactor);
+void SearchEngine::Stub::experimental_async::upsert(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::UpsertResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_upsert_, context, request, response, std::move(f));
 }
 
-::grpc::ClientAsyncResponseReader< ::olama::UpsertResponse>* SearchEngine::Stub::PrepareAsyncupsertRaw(::grpc::ClientContext* context, const ::olama::UpsertRequest& request, ::grpc::CompletionQueue* cq) {
-  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::olama::UpsertResponse, ::olama::UpsertRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_upsert_, context, request);
+void SearchEngine::Stub::experimental_async::upsert(::grpc::ClientContext* context, const ::olama::UpsertRequest* request, ::olama::UpsertResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_upsert_, context, request, response, reactor);
+}
+
+void SearchEngine::Stub::experimental_async::upsert(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::UpsertResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_upsert_, context, request, response, reactor);
 }
 
 ::grpc::ClientAsyncResponseReader< ::olama::UpsertResponse>* SearchEngine::Stub::AsyncupsertRaw(::grpc::ClientContext* context, const ::olama::UpsertRequest& request, ::grpc::CompletionQueue* cq) {
-  auto* result =
-    this->PrepareAsyncupsertRaw(context, request, cq);
-  result->StartCall();
-  return result;
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::UpsertResponse>::Create(channel_.get(), cq, rpcmethod_upsert_, context, request, true);
+}
+
+::grpc::ClientAsyncResponseReader< ::olama::UpsertResponse>* SearchEngine::Stub::PrepareAsyncupsertRaw(::grpc::ClientContext* context, const ::olama::UpsertRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::UpsertResponse>::Create(channel_.get(), cq, rpcmethod_upsert_, context, request, false);
 }
 
 ::grpc::Status SearchEngine::Stub::update(::grpc::ClientContext* context, const ::olama::UpdateRequest& request, ::olama::UpdateResponse* response) {
-  return ::grpc::internal::BlockingUnaryCall< ::olama::UpdateRequest, ::olama::UpdateResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_update_, context, request, response);
+  return ::grpc::internal::BlockingUnaryCall(channel_.get(), rpcmethod_update_, context, request, response);
 }
 
-void SearchEngine::Stub::async::update(::grpc::ClientContext* context, const ::olama::UpdateRequest* request, ::olama::UpdateResponse* response, std::function<void(::grpc::Status)> f) {
-  ::grpc::internal::CallbackUnaryCall< ::olama::UpdateRequest, ::olama::UpdateResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_update_, context, request, response, std::move(f));
+void SearchEngine::Stub::experimental_async::update(::grpc::ClientContext* context, const ::olama::UpdateRequest* request, ::olama::UpdateResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_update_, context, request, response, std::move(f));
 }
 
-void SearchEngine::Stub::async::update(::grpc::ClientContext* context, const ::olama::UpdateRequest* request, ::olama::UpdateResponse* response, ::grpc::ClientUnaryReactor* reactor) {
-  ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_update_, context, request, response, reactor);
+void SearchEngine::Stub::experimental_async::update(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::UpdateResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_update_, context, request, response, std::move(f));
 }
 
-::grpc::ClientAsyncResponseReader< ::olama::UpdateResponse>* SearchEngine::Stub::PrepareAsyncupdateRaw(::grpc::ClientContext* context, const ::olama::UpdateRequest& request, ::grpc::CompletionQueue* cq) {
-  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::olama::UpdateResponse, ::olama::UpdateRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_update_, context, request);
+void SearchEngine::Stub::experimental_async::update(::grpc::ClientContext* context, const ::olama::UpdateRequest* request, ::olama::UpdateResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_update_, context, request, response, reactor);
+}
+
+void SearchEngine::Stub::experimental_async::update(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::UpdateResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_update_, context, request, response, reactor);
 }
 
 ::grpc::ClientAsyncResponseReader< ::olama::UpdateResponse>* SearchEngine::Stub::AsyncupdateRaw(::grpc::ClientContext* context, const ::olama::UpdateRequest& request, ::grpc::CompletionQueue* cq) {
-  auto* result =
-    this->PrepareAsyncupdateRaw(context, request, cq);
-  result->StartCall();
-  return result;
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::UpdateResponse>::Create(channel_.get(), cq, rpcmethod_update_, context, request, true);
+}
+
+::grpc::ClientAsyncResponseReader< ::olama::UpdateResponse>* SearchEngine::Stub::PrepareAsyncupdateRaw(::grpc::ClientContext* context, const ::olama::UpdateRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::UpdateResponse>::Create(channel_.get(), cq, rpcmethod_update_, context, request, false);
 }
 
 ::grpc::Status SearchEngine::Stub::query(::grpc::ClientContext* context, const ::olama::QueryRequest& request, ::olama::QueryResponse* response) {
-  return ::grpc::internal::BlockingUnaryCall< ::olama::QueryRequest, ::olama::QueryResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_query_, context, request, response);
+  return ::grpc::internal::BlockingUnaryCall(channel_.get(), rpcmethod_query_, context, request, response);
 }
 
-void SearchEngine::Stub::async::query(::grpc::ClientContext* context, const ::olama::QueryRequest* request, ::olama::QueryResponse* response, std::function<void(::grpc::Status)> f) {
-  ::grpc::internal::CallbackUnaryCall< ::olama::QueryRequest, ::olama::QueryResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_query_, context, request, response, std::move(f));
+void SearchEngine::Stub::experimental_async::query(::grpc::ClientContext* context, const ::olama::QueryRequest* request, ::olama::QueryResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_query_, context, request, response, std::move(f));
 }
 
-void SearchEngine::Stub::async::query(::grpc::ClientContext* context, const ::olama::QueryRequest* request, ::olama::QueryResponse* response, ::grpc::ClientUnaryReactor* reactor) {
-  ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_query_, context, request, response, reactor);
+void SearchEngine::Stub::experimental_async::query(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::QueryResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_query_, context, request, response, std::move(f));
 }
 
-::grpc::ClientAsyncResponseReader< ::olama::QueryResponse>* SearchEngine::Stub::PrepareAsyncqueryRaw(::grpc::ClientContext* context, const ::olama::QueryRequest& request, ::grpc::CompletionQueue* cq) {
-  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::olama::QueryResponse, ::olama::QueryRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_query_, context, request);
+void SearchEngine::Stub::experimental_async::query(::grpc::ClientContext* context, const ::olama::QueryRequest* request, ::olama::QueryResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_query_, context, request, response, reactor);
+}
+
+void SearchEngine::Stub::experimental_async::query(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::QueryResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_query_, context, request, response, reactor);
 }
 
 ::grpc::ClientAsyncResponseReader< ::olama::QueryResponse>* SearchEngine::Stub::AsyncqueryRaw(::grpc::ClientContext* context, const ::olama::QueryRequest& request, ::grpc::CompletionQueue* cq) {
-  auto* result =
-    this->PrepareAsyncqueryRaw(context, request, cq);
-  result->StartCall();
-  return result;
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::QueryResponse>::Create(channel_.get(), cq, rpcmethod_query_, context, request, true);
+}
+
+::grpc::ClientAsyncResponseReader< ::olama::QueryResponse>* SearchEngine::Stub::PrepareAsyncqueryRaw(::grpc::ClientContext* context, const ::olama::QueryRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::QueryResponse>::Create(channel_.get(), cq, rpcmethod_query_, context, request, false);
 }
 
 ::grpc::Status SearchEngine::Stub::search(::grpc::ClientContext* context, const ::olama::SearchRequest& request, ::olama::SearchResponse* response) {
-  return ::grpc::internal::BlockingUnaryCall< ::olama::SearchRequest, ::olama::SearchResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_search_, context, request, response);
+  return ::grpc::internal::BlockingUnaryCall(channel_.get(), rpcmethod_search_, context, request, response);
 }
 
-void SearchEngine::Stub::async::search(::grpc::ClientContext* context, const ::olama::SearchRequest* request, ::olama::SearchResponse* response, std::function<void(::grpc::Status)> f) {
-  ::grpc::internal::CallbackUnaryCall< ::olama::SearchRequest, ::olama::SearchResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_search_, context, request, response, std::move(f));
+void SearchEngine::Stub::experimental_async::search(::grpc::ClientContext* context, const ::olama::SearchRequest* request, ::olama::SearchResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_search_, context, request, response, std::move(f));
 }
 
-void SearchEngine::Stub::async::search(::grpc::ClientContext* context, const ::olama::SearchRequest* request, ::olama::SearchResponse* response, ::grpc::ClientUnaryReactor* reactor) {
-  ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_search_, context, request, response, reactor);
+void SearchEngine::Stub::experimental_async::search(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::SearchResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_search_, context, request, response, std::move(f));
 }
 
-::grpc::ClientAsyncResponseReader< ::olama::SearchResponse>* SearchEngine::Stub::PrepareAsyncsearchRaw(::grpc::ClientContext* context, const ::olama::SearchRequest& request, ::grpc::CompletionQueue* cq) {
-  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::olama::SearchResponse, ::olama::SearchRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_search_, context, request);
+void SearchEngine::Stub::experimental_async::search(::grpc::ClientContext* context, const ::olama::SearchRequest* request, ::olama::SearchResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_search_, context, request, response, reactor);
+}
+
+void SearchEngine::Stub::experimental_async::search(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::SearchResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_search_, context, request, response, reactor);
 }
 
 ::grpc::ClientAsyncResponseReader< ::olama::SearchResponse>* SearchEngine::Stub::AsyncsearchRaw(::grpc::ClientContext* context, const ::olama::SearchRequest& request, ::grpc::CompletionQueue* cq) {
-  auto* result =
-    this->PrepareAsyncsearchRaw(context, request, cq);
-  result->StartCall();
-  return result;
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::SearchResponse>::Create(channel_.get(), cq, rpcmethod_search_, context, request, true);
+}
+
+::grpc::ClientAsyncResponseReader< ::olama::SearchResponse>* SearchEngine::Stub::PrepareAsyncsearchRaw(::grpc::ClientContext* context, const ::olama::SearchRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::SearchResponse>::Create(channel_.get(), cq, rpcmethod_search_, context, request, false);
 }
 
 ::grpc::Status SearchEngine::Stub::dele(::grpc::ClientContext* context, const ::olama::DeleteRequest& request, ::olama::DeleteResponse* response) {
-  return ::grpc::internal::BlockingUnaryCall< ::olama::DeleteRequest, ::olama::DeleteResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_dele_, context, request, response);
+  return ::grpc::internal::BlockingUnaryCall(channel_.get(), rpcmethod_dele_, context, request, response);
 }
 
-void SearchEngine::Stub::async::dele(::grpc::ClientContext* context, const ::olama::DeleteRequest* request, ::olama::DeleteResponse* response, std::function<void(::grpc::Status)> f) {
-  ::grpc::internal::CallbackUnaryCall< ::olama::DeleteRequest, ::olama::DeleteResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_dele_, context, request, response, std::move(f));
+void SearchEngine::Stub::experimental_async::dele(::grpc::ClientContext* context, const ::olama::DeleteRequest* request, ::olama::DeleteResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_dele_, context, request, response, std::move(f));
 }
 
-void SearchEngine::Stub::async::dele(::grpc::ClientContext* context, const ::olama::DeleteRequest* request, ::olama::DeleteResponse* response, ::grpc::ClientUnaryReactor* reactor) {
-  ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_dele_, context, request, response, reactor);
+void SearchEngine::Stub::experimental_async::dele(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DeleteResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_dele_, context, request, response, std::move(f));
 }
 
-::grpc::ClientAsyncResponseReader< ::olama::DeleteResponse>* SearchEngine::Stub::PrepareAsyncdeleRaw(::grpc::ClientContext* context, const ::olama::DeleteRequest& request, ::grpc::CompletionQueue* cq) {
-  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::olama::DeleteResponse, ::olama::DeleteRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_dele_, context, request);
+void SearchEngine::Stub::experimental_async::dele(::grpc::ClientContext* context, const ::olama::DeleteRequest* request, ::olama::DeleteResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_dele_, context, request, response, reactor);
+}
+
+void SearchEngine::Stub::experimental_async::dele(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DeleteResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_dele_, context, request, response, reactor);
 }
 
 ::grpc::ClientAsyncResponseReader< ::olama::DeleteResponse>* SearchEngine::Stub::AsyncdeleRaw(::grpc::ClientContext* context, const ::olama::DeleteRequest& request, ::grpc::CompletionQueue* cq) {
-  auto* result =
-    this->PrepareAsyncdeleRaw(context, request, cq);
-  result->StartCall();
-  return result;
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::DeleteResponse>::Create(channel_.get(), cq, rpcmethod_dele_, context, request, true);
+}
+
+::grpc::ClientAsyncResponseReader< ::olama::DeleteResponse>* SearchEngine::Stub::PrepareAsyncdeleRaw(::grpc::ClientContext* context, const ::olama::DeleteRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::DeleteResponse>::Create(channel_.get(), cq, rpcmethod_dele_, context, request, false);
 }
 
 ::grpc::Status SearchEngine::Stub::createDatabase(::grpc::ClientContext* context, const ::olama::DatabaseRequest& request, ::olama::DatabaseResponse* response) {
-  return ::grpc::internal::BlockingUnaryCall< ::olama::DatabaseRequest, ::olama::DatabaseResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_createDatabase_, context, request, response);
+  return ::grpc::internal::BlockingUnaryCall(channel_.get(), rpcmethod_createDatabase_, context, request, response);
 }
 
-void SearchEngine::Stub::async::createDatabase(::grpc::ClientContext* context, const ::olama::DatabaseRequest* request, ::olama::DatabaseResponse* response, std::function<void(::grpc::Status)> f) {
-  ::grpc::internal::CallbackUnaryCall< ::olama::DatabaseRequest, ::olama::DatabaseResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_createDatabase_, context, request, response, std::move(f));
+void SearchEngine::Stub::experimental_async::createDatabase(::grpc::ClientContext* context, const ::olama::DatabaseRequest* request, ::olama::DatabaseResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_createDatabase_, context, request, response, std::move(f));
 }
 
-void SearchEngine::Stub::async::createDatabase(::grpc::ClientContext* context, const ::olama::DatabaseRequest* request, ::olama::DatabaseResponse* response, ::grpc::ClientUnaryReactor* reactor) {
-  ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_createDatabase_, context, request, response, reactor);
+void SearchEngine::Stub::experimental_async::createDatabase(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DatabaseResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_createDatabase_, context, request, response, std::move(f));
 }
 
-::grpc::ClientAsyncResponseReader< ::olama::DatabaseResponse>* SearchEngine::Stub::PrepareAsynccreateDatabaseRaw(::grpc::ClientContext* context, const ::olama::DatabaseRequest& request, ::grpc::CompletionQueue* cq) {
-  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::olama::DatabaseResponse, ::olama::DatabaseRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_createDatabase_, context, request);
+void SearchEngine::Stub::experimental_async::createDatabase(::grpc::ClientContext* context, const ::olama::DatabaseRequest* request, ::olama::DatabaseResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_createDatabase_, context, request, response, reactor);
+}
+
+void SearchEngine::Stub::experimental_async::createDatabase(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DatabaseResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_createDatabase_, context, request, response, reactor);
 }
 
 ::grpc::ClientAsyncResponseReader< ::olama::DatabaseResponse>* SearchEngine::Stub::AsynccreateDatabaseRaw(::grpc::ClientContext* context, const ::olama::DatabaseRequest& request, ::grpc::CompletionQueue* cq) {
-  auto* result =
-    this->PrepareAsynccreateDatabaseRaw(context, request, cq);
-  result->StartCall();
-  return result;
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::DatabaseResponse>::Create(channel_.get(), cq, rpcmethod_createDatabase_, context, request, true);
+}
+
+::grpc::ClientAsyncResponseReader< ::olama::DatabaseResponse>* SearchEngine::Stub::PrepareAsynccreateDatabaseRaw(::grpc::ClientContext* context, const ::olama::DatabaseRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::DatabaseResponse>::Create(channel_.get(), cq, rpcmethod_createDatabase_, context, request, false);
 }
 
 ::grpc::Status SearchEngine::Stub::dropDatabase(::grpc::ClientContext* context, const ::olama::DatabaseRequest& request, ::olama::DatabaseResponse* response) {
-  return ::grpc::internal::BlockingUnaryCall< ::olama::DatabaseRequest, ::olama::DatabaseResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_dropDatabase_, context, request, response);
+  return ::grpc::internal::BlockingUnaryCall(channel_.get(), rpcmethod_dropDatabase_, context, request, response);
 }
 
-void SearchEngine::Stub::async::dropDatabase(::grpc::ClientContext* context, const ::olama::DatabaseRequest* request, ::olama::DatabaseResponse* response, std::function<void(::grpc::Status)> f) {
-  ::grpc::internal::CallbackUnaryCall< ::olama::DatabaseRequest, ::olama::DatabaseResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_dropDatabase_, context, request, response, std::move(f));
+void SearchEngine::Stub::experimental_async::dropDatabase(::grpc::ClientContext* context, const ::olama::DatabaseRequest* request, ::olama::DatabaseResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_dropDatabase_, context, request, response, std::move(f));
 }
 
-void SearchEngine::Stub::async::dropDatabase(::grpc::ClientContext* context, const ::olama::DatabaseRequest* request, ::olama::DatabaseResponse* response, ::grpc::ClientUnaryReactor* reactor) {
-  ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_dropDatabase_, context, request, response, reactor);
+void SearchEngine::Stub::experimental_async::dropDatabase(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DatabaseResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_dropDatabase_, context, request, response, std::move(f));
 }
 
-::grpc::ClientAsyncResponseReader< ::olama::DatabaseResponse>* SearchEngine::Stub::PrepareAsyncdropDatabaseRaw(::grpc::ClientContext* context, const ::olama::DatabaseRequest& request, ::grpc::CompletionQueue* cq) {
-  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::olama::DatabaseResponse, ::olama::DatabaseRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_dropDatabase_, context, request);
+void SearchEngine::Stub::experimental_async::dropDatabase(::grpc::ClientContext* context, const ::olama::DatabaseRequest* request, ::olama::DatabaseResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_dropDatabase_, context, request, response, reactor);
+}
+
+void SearchEngine::Stub::experimental_async::dropDatabase(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DatabaseResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_dropDatabase_, context, request, response, reactor);
 }
 
 ::grpc::ClientAsyncResponseReader< ::olama::DatabaseResponse>* SearchEngine::Stub::AsyncdropDatabaseRaw(::grpc::ClientContext* context, const ::olama::DatabaseRequest& request, ::grpc::CompletionQueue* cq) {
-  auto* result =
-    this->PrepareAsyncdropDatabaseRaw(context, request, cq);
-  result->StartCall();
-  return result;
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::DatabaseResponse>::Create(channel_.get(), cq, rpcmethod_dropDatabase_, context, request, true);
+}
+
+::grpc::ClientAsyncResponseReader< ::olama::DatabaseResponse>* SearchEngine::Stub::PrepareAsyncdropDatabaseRaw(::grpc::ClientContext* context, const ::olama::DatabaseRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::DatabaseResponse>::Create(channel_.get(), cq, rpcmethod_dropDatabase_, context, request, false);
 }
 
 ::grpc::Status SearchEngine::Stub::listDatabases(::grpc::ClientContext* context, const ::olama::DatabaseRequest& request, ::olama::DatabaseResponse* response) {
-  return ::grpc::internal::BlockingUnaryCall< ::olama::DatabaseRequest, ::olama::DatabaseResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_listDatabases_, context, request, response);
+  return ::grpc::internal::BlockingUnaryCall(channel_.get(), rpcmethod_listDatabases_, context, request, response);
 }
 
-void SearchEngine::Stub::async::listDatabases(::grpc::ClientContext* context, const ::olama::DatabaseRequest* request, ::olama::DatabaseResponse* response, std::function<void(::grpc::Status)> f) {
-  ::grpc::internal::CallbackUnaryCall< ::olama::DatabaseRequest, ::olama::DatabaseResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_listDatabases_, context, request, response, std::move(f));
+void SearchEngine::Stub::experimental_async::listDatabases(::grpc::ClientContext* context, const ::olama::DatabaseRequest* request, ::olama::DatabaseResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_listDatabases_, context, request, response, std::move(f));
 }
 
-void SearchEngine::Stub::async::listDatabases(::grpc::ClientContext* context, const ::olama::DatabaseRequest* request, ::olama::DatabaseResponse* response, ::grpc::ClientUnaryReactor* reactor) {
-  ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_listDatabases_, context, request, response, reactor);
+void SearchEngine::Stub::experimental_async::listDatabases(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DatabaseResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc_impl::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_listDatabases_, context, request, response, std::move(f));
 }
 
-::grpc::ClientAsyncResponseReader< ::olama::DatabaseResponse>* SearchEngine::Stub::PrepareAsynclistDatabasesRaw(::grpc::ClientContext* context, const ::olama::DatabaseRequest& request, ::grpc::CompletionQueue* cq) {
-  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::olama::DatabaseResponse, ::olama::DatabaseRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_listDatabases_, context, request);
+void SearchEngine::Stub::experimental_async::listDatabases(::grpc::ClientContext* context, const ::olama::DatabaseRequest* request, ::olama::DatabaseResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_listDatabases_, context, request, response, reactor);
+}
+
+void SearchEngine::Stub::experimental_async::listDatabases(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::olama::DatabaseResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) {
+  ::grpc_impl::internal::ClientCallbackUnaryFactory::Create(stub_->channel_.get(), stub_->rpcmethod_listDatabases_, context, request, response, reactor);
 }
 
 ::grpc::ClientAsyncResponseReader< ::olama::DatabaseResponse>* SearchEngine::Stub::AsynclistDatabasesRaw(::grpc::ClientContext* context, const ::olama::DatabaseRequest& request, ::grpc::CompletionQueue* cq) {
-  auto* result =
-    this->PrepareAsynclistDatabasesRaw(context, request, cq);
-  result->StartCall();
-  return result;
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::DatabaseResponse>::Create(channel_.get(), cq, rpcmethod_listDatabases_, context, request, true);
+}
+
+::grpc::ClientAsyncResponseReader< ::olama::DatabaseResponse>* SearchEngine::Stub::PrepareAsynclistDatabasesRaw(::grpc::ClientContext* context, const ::olama::DatabaseRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc_impl::internal::ClientAsyncResponseReaderFactory< ::olama::DatabaseResponse>::Create(channel_.get(), cq, rpcmethod_listDatabases_, context, request, false);
 }
 
 SearchEngine::Service::Service() {
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       SearchEngine_method_names[0],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
-      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::AddAliasRequest, ::olama::UpdateAliasResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
-          [](SearchEngine::Service* service,
-             ::grpc::ServerContext* ctx,
-             const ::olama::AddAliasRequest* req,
-             ::olama::UpdateAliasResponse* resp) {
-               return service->setAlias(ctx, req, resp);
-             }, this)));
+      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::AddAliasRequest, ::olama::UpdateAliasResponse>(
+          std::mem_fn(&SearchEngine::Service::setAlias), this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       SearchEngine_method_names[1],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
-      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::GetAliasRequest, ::olama::GetAliasResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
-          [](SearchEngine::Service* service,
-             ::grpc::ServerContext* ctx,
-             const ::olama::GetAliasRequest* req,
-             ::olama::GetAliasResponse* resp) {
-               return service->getAlias(ctx, req, resp);
-             }, this)));
+      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::GetAliasRequest, ::olama::GetAliasResponse>(
+          std::mem_fn(&SearchEngine::Service::getAlias), this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       SearchEngine_method_names[2],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
-      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::RemoveAliasRequest, ::olama::UpdateAliasResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
-          [](SearchEngine::Service* service,
-             ::grpc::ServerContext* ctx,
-             const ::olama::RemoveAliasRequest* req,
-             ::olama::UpdateAliasResponse* resp) {
-               return service->deleteAlias(ctx, req, resp);
-             }, this)));
+      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::RemoveAliasRequest, ::olama::UpdateAliasResponse>(
+          std::mem_fn(&SearchEngine::Service::deleteAlias), this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       SearchEngine_method_names[3],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
-      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::CreateCollectionRequest, ::olama::CreateCollectionResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
-          [](SearchEngine::Service* service,
-             ::grpc::ServerContext* ctx,
-             const ::olama::CreateCollectionRequest* req,
-             ::olama::CreateCollectionResponse* resp) {
-               return service->createCollection(ctx, req, resp);
-             }, this)));
+      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::CreateCollectionRequest, ::olama::CreateCollectionResponse>(
+          std::mem_fn(&SearchEngine::Service::createCollection), this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       SearchEngine_method_names[4],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
-      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::DropCollectionRequest, ::olama::DropCollectionResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
-          [](SearchEngine::Service* service,
-             ::grpc::ServerContext* ctx,
-             const ::olama::DropCollectionRequest* req,
-             ::olama::DropCollectionResponse* resp) {
-               return service->dropCollection(ctx, req, resp);
-             }, this)));
+      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::DropCollectionRequest, ::olama::DropCollectionResponse>(
+          std::mem_fn(&SearchEngine::Service::dropCollection), this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       SearchEngine_method_names[5],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
-      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::TruncateCollectionRequest, ::olama::TruncateCollectionResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
-          [](SearchEngine::Service* service,
-             ::grpc::ServerContext* ctx,
-             const ::olama::TruncateCollectionRequest* req,
-             ::olama::TruncateCollectionResponse* resp) {
-               return service->truncateCollection(ctx, req, resp);
-             }, this)));
+      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::TruncateCollectionRequest, ::olama::TruncateCollectionResponse>(
+          std::mem_fn(&SearchEngine::Service::truncateCollection), this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       SearchEngine_method_names[6],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
-      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::DescribeCollectionRequest, ::olama::DescribeCollectionResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
-          [](SearchEngine::Service* service,
-             ::grpc::ServerContext* ctx,
-             const ::olama::DescribeCollectionRequest* req,
-             ::olama::DescribeCollectionResponse* resp) {
-               return service->describeCollection(ctx, req, resp);
-             }, this)));
+      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::DescribeCollectionRequest, ::olama::DescribeCollectionResponse>(
+          std::mem_fn(&SearchEngine::Service::describeCollection), this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       SearchEngine_method_names[7],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
-      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::ListCollectionsRequest, ::olama::ListCollectionsResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
-          [](SearchEngine::Service* service,
-             ::grpc::ServerContext* ctx,
-             const ::olama::ListCollectionsRequest* req,
-             ::olama::ListCollectionsResponse* resp) {
-               return service->listCollections(ctx, req, resp);
-             }, this)));
+      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::ListCollectionsRequest, ::olama::ListCollectionsResponse>(
+          std::mem_fn(&SearchEngine::Service::listCollections), this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       SearchEngine_method_names[8],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
-      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::RebuildIndexRequest, ::olama::RebuildIndexResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
-          [](SearchEngine::Service* service,
-             ::grpc::ServerContext* ctx,
-             const ::olama::RebuildIndexRequest* req,
-             ::olama::RebuildIndexResponse* resp) {
-               return service->rebuildIndex(ctx, req, resp);
-             }, this)));
+      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::RebuildIndexRequest, ::olama::RebuildIndexResponse>(
+          std::mem_fn(&SearchEngine::Service::rebuildIndex), this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       SearchEngine_method_names[9],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
-      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::UpsertRequest, ::olama::UpsertResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
-          [](SearchEngine::Service* service,
-             ::grpc::ServerContext* ctx,
-             const ::olama::UpsertRequest* req,
-             ::olama::UpsertResponse* resp) {
-               return service->upsert(ctx, req, resp);
-             }, this)));
+      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::UpsertRequest, ::olama::UpsertResponse>(
+          std::mem_fn(&SearchEngine::Service::upsert), this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       SearchEngine_method_names[10],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
-      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::UpdateRequest, ::olama::UpdateResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
-          [](SearchEngine::Service* service,
-             ::grpc::ServerContext* ctx,
-             const ::olama::UpdateRequest* req,
-             ::olama::UpdateResponse* resp) {
-               return service->update(ctx, req, resp);
-             }, this)));
+      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::UpdateRequest, ::olama::UpdateResponse>(
+          std::mem_fn(&SearchEngine::Service::update), this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       SearchEngine_method_names[11],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
-      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::QueryRequest, ::olama::QueryResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
-          [](SearchEngine::Service* service,
-             ::grpc::ServerContext* ctx,
-             const ::olama::QueryRequest* req,
-             ::olama::QueryResponse* resp) {
-               return service->query(ctx, req, resp);
-             }, this)));
+      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::QueryRequest, ::olama::QueryResponse>(
+          std::mem_fn(&SearchEngine::Service::query), this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       SearchEngine_method_names[12],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
-      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::SearchRequest, ::olama::SearchResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
-          [](SearchEngine::Service* service,
-             ::grpc::ServerContext* ctx,
-             const ::olama::SearchRequest* req,
-             ::olama::SearchResponse* resp) {
-               return service->search(ctx, req, resp);
-             }, this)));
+      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::SearchRequest, ::olama::SearchResponse>(
+          std::mem_fn(&SearchEngine::Service::search), this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       SearchEngine_method_names[13],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
-      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::DeleteRequest, ::olama::DeleteResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
-          [](SearchEngine::Service* service,
-             ::grpc::ServerContext* ctx,
-             const ::olama::DeleteRequest* req,
-             ::olama::DeleteResponse* resp) {
-               return service->dele(ctx, req, resp);
-             }, this)));
+      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::DeleteRequest, ::olama::DeleteResponse>(
+          std::mem_fn(&SearchEngine::Service::dele), this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       SearchEngine_method_names[14],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
-      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::DatabaseRequest, ::olama::DatabaseResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
-          [](SearchEngine::Service* service,
-             ::grpc::ServerContext* ctx,
-             const ::olama::DatabaseRequest* req,
-             ::olama::DatabaseResponse* resp) {
-               return service->createDatabase(ctx, req, resp);
-             }, this)));
+      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::DatabaseRequest, ::olama::DatabaseResponse>(
+          std::mem_fn(&SearchEngine::Service::createDatabase), this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       SearchEngine_method_names[15],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
-      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::DatabaseRequest, ::olama::DatabaseResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
-          [](SearchEngine::Service* service,
-             ::grpc::ServerContext* ctx,
-             const ::olama::DatabaseRequest* req,
-             ::olama::DatabaseResponse* resp) {
-               return service->dropDatabase(ctx, req, resp);
-             }, this)));
+      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::DatabaseRequest, ::olama::DatabaseResponse>(
+          std::mem_fn(&SearchEngine::Service::dropDatabase), this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       SearchEngine_method_names[16],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
-      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::DatabaseRequest, ::olama::DatabaseResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
-          [](SearchEngine::Service* service,
-             ::grpc::ServerContext* ctx,
-             const ::olama::DatabaseRequest* req,
-             ::olama::DatabaseResponse* resp) {
-               return service->listDatabases(ctx, req, resp);
-             }, this)));
+      new ::grpc::internal::RpcMethodHandler< SearchEngine::Service, ::olama::DatabaseRequest, ::olama::DatabaseResponse>(
+          std::mem_fn(&SearchEngine::Service::listDatabases), this)));
 }
 
 SearchEngine::Service::~Service() {

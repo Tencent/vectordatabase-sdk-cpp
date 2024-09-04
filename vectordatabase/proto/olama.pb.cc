@@ -5,6 +5,7 @@
 
 #include <algorithm>
 
+#include <google/protobuf/stubs/common.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite.h>
@@ -292,7 +293,7 @@ static void InitDefaultsscc_info_AddAliasRequest_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_AddAliasRequest_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_AddAliasRequest_olama_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_AddAliasRequest_olama_2eproto}, {}};
 
 static void InitDefaultsscc_info_AliasItem_olama_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -306,7 +307,7 @@ static void InitDefaultsscc_info_AliasItem_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_AliasItem_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_AliasItem_olama_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_AliasItem_olama_2eproto}, {}};
 
 static void InitDefaultsscc_info_CollectionConf_olama_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -320,7 +321,7 @@ static void InitDefaultsscc_info_CollectionConf_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<4> scc_info_CollectionConf_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 4, 0, InitDefaultsscc_info_CollectionConf_olama_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 4, InitDefaultsscc_info_CollectionConf_olama_2eproto}, {
       &scc_info_CollectionConf_FieldMetasEntry_DoNotUse_olama_2eproto.base,
       &scc_info_CollectionConf_OptionsEntry_DoNotUse_olama_2eproto.base,
       &scc_info_EmbeddingParams_olama_2eproto.base,
@@ -337,7 +338,7 @@ static void InitDefaultsscc_info_CollectionConf_FieldMetasEntry_DoNotUse_olama_2
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_CollectionConf_FieldMetasEntry_DoNotUse_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_CollectionConf_FieldMetasEntry_DoNotUse_olama_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_CollectionConf_FieldMetasEntry_DoNotUse_olama_2eproto}, {
       &scc_info_FieldMeta_olama_2eproto.base,}};
 
 static void InitDefaultsscc_info_CollectionConf_OptionsEntry_DoNotUse_olama_2eproto() {
@@ -351,7 +352,7 @@ static void InitDefaultsscc_info_CollectionConf_OptionsEntry_DoNotUse_olama_2epr
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_CollectionConf_OptionsEntry_DoNotUse_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_CollectionConf_OptionsEntry_DoNotUse_olama_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_CollectionConf_OptionsEntry_DoNotUse_olama_2eproto}, {}};
 
 static void InitDefaultsscc_info_CollectionState_olama_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -365,7 +366,7 @@ static void InitDefaultsscc_info_CollectionState_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<3> scc_info_CollectionState_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 3, 0, InitDefaultsscc_info_CollectionState_olama_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 3, InitDefaultsscc_info_CollectionState_olama_2eproto}, {
       &scc_info_CollectionConf_olama_2eproto.base,
       &scc_info_ShardCollectionState_olama_2eproto.base,
       &scc_info_CreateCollectionRequest_olama_2eproto.base,}};
@@ -382,7 +383,7 @@ static void InitDefaultsscc_info_CreateCollectionRequest_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<4> scc_info_CreateCollectionRequest_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 4, 0, InitDefaultsscc_info_CreateCollectionRequest_olama_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 4, InitDefaultsscc_info_CreateCollectionRequest_olama_2eproto}, {
       &scc_info_CreateCollectionRequest_IndexesEntry_DoNotUse_olama_2eproto.base,
       &scc_info_IndexStatus_olama_2eproto.base,
       &scc_info_EmbeddingParams_olama_2eproto.base,
@@ -399,7 +400,7 @@ static void InitDefaultsscc_info_CreateCollectionRequest_IndexesEntry_DoNotUse_o
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_CreateCollectionRequest_IndexesEntry_DoNotUse_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_CreateCollectionRequest_IndexesEntry_DoNotUse_olama_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_CreateCollectionRequest_IndexesEntry_DoNotUse_olama_2eproto}, {
       &scc_info_IndexColumn_olama_2eproto.base,}};
 
 static void InitDefaultsscc_info_CreateCollectionResponse_olama_2eproto() {
@@ -414,7 +415,7 @@ static void InitDefaultsscc_info_CreateCollectionResponse_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_CreateCollectionResponse_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_CreateCollectionResponse_olama_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_CreateCollectionResponse_olama_2eproto}, {}};
 
 static void InitDefaultsscc_info_DatabaseItem_olama_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -428,7 +429,7 @@ static void InitDefaultsscc_info_DatabaseItem_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_DatabaseItem_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_DatabaseItem_olama_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_DatabaseItem_olama_2eproto}, {}};
 
 static void InitDefaultsscc_info_DatabaseRequest_olama_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -442,7 +443,7 @@ static void InitDefaultsscc_info_DatabaseRequest_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_DatabaseRequest_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_DatabaseRequest_olama_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_DatabaseRequest_olama_2eproto}, {}};
 
 static void InitDefaultsscc_info_DatabaseResponse_olama_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -456,7 +457,7 @@ static void InitDefaultsscc_info_DatabaseResponse_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_DatabaseResponse_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_DatabaseResponse_olama_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_DatabaseResponse_olama_2eproto}, {
       &scc_info_DatabaseResponse_InfoEntry_DoNotUse_olama_2eproto.base,}};
 
 static void InitDefaultsscc_info_DatabaseResponse_InfoEntry_DoNotUse_olama_2eproto() {
@@ -470,7 +471,7 @@ static void InitDefaultsscc_info_DatabaseResponse_InfoEntry_DoNotUse_olama_2epro
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_DatabaseResponse_InfoEntry_DoNotUse_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_DatabaseResponse_InfoEntry_DoNotUse_olama_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_DatabaseResponse_InfoEntry_DoNotUse_olama_2eproto}, {
       &scc_info_DatabaseItem_olama_2eproto.base,}};
 
 static void InitDefaultsscc_info_DeleteRequest_olama_2eproto() {
@@ -485,7 +486,7 @@ static void InitDefaultsscc_info_DeleteRequest_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_DeleteRequest_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_DeleteRequest_olama_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_DeleteRequest_olama_2eproto}, {
       &scc_info_QueryCond_olama_2eproto.base,}};
 
 static void InitDefaultsscc_info_DeleteResponse_olama_2eproto() {
@@ -500,7 +501,7 @@ static void InitDefaultsscc_info_DeleteResponse_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_DeleteResponse_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_DeleteResponse_olama_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_DeleteResponse_olama_2eproto}, {}};
 
 static void InitDefaultsscc_info_DescribeCollectionRequest_olama_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -514,7 +515,7 @@ static void InitDefaultsscc_info_DescribeCollectionRequest_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_DescribeCollectionRequest_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_DescribeCollectionRequest_olama_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_DescribeCollectionRequest_olama_2eproto}, {}};
 
 static void InitDefaultsscc_info_DescribeCollectionResponse_olama_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -528,7 +529,7 @@ static void InitDefaultsscc_info_DescribeCollectionResponse_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_DescribeCollectionResponse_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_DescribeCollectionResponse_olama_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsscc_info_DescribeCollectionResponse_olama_2eproto}, {
       &scc_info_CreateCollectionRequest_olama_2eproto.base,
       &scc_info_CollectionState_olama_2eproto.base,}};
 
@@ -544,7 +545,7 @@ static void InitDefaultsscc_info_Document_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Document_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_Document_olama_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_Document_olama_2eproto}, {
       &scc_info_Document_FieldsEntry_DoNotUse_olama_2eproto.base,}};
 
 static void InitDefaultsscc_info_Document_FieldsEntry_DoNotUse_olama_2eproto() {
@@ -558,7 +559,7 @@ static void InitDefaultsscc_info_Document_FieldsEntry_DoNotUse_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Document_FieldsEntry_DoNotUse_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_Document_FieldsEntry_DoNotUse_olama_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_Document_FieldsEntry_DoNotUse_olama_2eproto}, {
       &scc_info_Field_olama_2eproto.base,}};
 
 static void InitDefaultsscc_info_DropCollectionRequest_olama_2eproto() {
@@ -573,7 +574,7 @@ static void InitDefaultsscc_info_DropCollectionRequest_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_DropCollectionRequest_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_DropCollectionRequest_olama_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_DropCollectionRequest_olama_2eproto}, {}};
 
 static void InitDefaultsscc_info_DropCollectionResponse_olama_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -587,7 +588,7 @@ static void InitDefaultsscc_info_DropCollectionResponse_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_DropCollectionResponse_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_DropCollectionResponse_olama_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_DropCollectionResponse_olama_2eproto}, {}};
 
 static void InitDefaultsscc_info_EmbeddingExtraInfo_olama_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -601,7 +602,7 @@ static void InitDefaultsscc_info_EmbeddingExtraInfo_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_EmbeddingExtraInfo_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_EmbeddingExtraInfo_olama_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_EmbeddingExtraInfo_olama_2eproto}, {}};
 
 static void InitDefaultsscc_info_EmbeddingParams_olama_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -615,7 +616,7 @@ static void InitDefaultsscc_info_EmbeddingParams_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_EmbeddingParams_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_EmbeddingParams_olama_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_EmbeddingParams_olama_2eproto}, {}};
 
 static void InitDefaultsscc_info_Field_olama_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -629,7 +630,7 @@ static void InitDefaultsscc_info_Field_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Field_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_Field_olama_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_Field_olama_2eproto}, {
       &scc_info_Field_StringArray_olama_2eproto.base,}};
 
 static void InitDefaultsscc_info_Field_StringArray_olama_2eproto() {
@@ -644,7 +645,7 @@ static void InitDefaultsscc_info_Field_StringArray_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Field_StringArray_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_Field_StringArray_olama_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_Field_StringArray_olama_2eproto}, {}};
 
 static void InitDefaultsscc_info_FieldMeta_olama_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -658,7 +659,7 @@ static void InitDefaultsscc_info_FieldMeta_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_FieldMeta_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_FieldMeta_olama_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_FieldMeta_olama_2eproto}, {}};
 
 static void InitDefaultsscc_info_Filter_olama_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -672,7 +673,7 @@ static void InitDefaultsscc_info_Filter_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Filter_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_Filter_olama_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_Filter_olama_2eproto}, {}};
 
 static void InitDefaultsscc_info_GetAliasRequest_olama_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -686,7 +687,7 @@ static void InitDefaultsscc_info_GetAliasRequest_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GetAliasRequest_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_GetAliasRequest_olama_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_GetAliasRequest_olama_2eproto}, {}};
 
 static void InitDefaultsscc_info_GetAliasResponse_olama_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -700,7 +701,7 @@ static void InitDefaultsscc_info_GetAliasResponse_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GetAliasResponse_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_GetAliasResponse_olama_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_GetAliasResponse_olama_2eproto}, {
       &scc_info_AliasItem_olama_2eproto.base,}};
 
 static void InitDefaultsscc_info_IndexColumn_olama_2eproto() {
@@ -715,7 +716,7 @@ static void InitDefaultsscc_info_IndexColumn_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_IndexColumn_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_IndexColumn_olama_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_IndexColumn_olama_2eproto}, {
       &scc_info_IndexParams_olama_2eproto.base,}};
 
 static void InitDefaultsscc_info_IndexParams_olama_2eproto() {
@@ -730,7 +731,7 @@ static void InitDefaultsscc_info_IndexParams_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_IndexParams_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_IndexParams_olama_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_IndexParams_olama_2eproto}, {}};
 
 static void InitDefaultsscc_info_IndexStatus_olama_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -744,7 +745,7 @@ static void InitDefaultsscc_info_IndexStatus_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_IndexStatus_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_IndexStatus_olama_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_IndexStatus_olama_2eproto}, {}};
 
 static void InitDefaultsscc_info_ListCollectionsRequest_olama_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -758,7 +759,7 @@ static void InitDefaultsscc_info_ListCollectionsRequest_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ListCollectionsRequest_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ListCollectionsRequest_olama_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_ListCollectionsRequest_olama_2eproto}, {}};
 
 static void InitDefaultsscc_info_ListCollectionsResponse_olama_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -772,7 +773,7 @@ static void InitDefaultsscc_info_ListCollectionsResponse_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ListCollectionsResponse_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_ListCollectionsResponse_olama_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsscc_info_ListCollectionsResponse_olama_2eproto}, {
       &scc_info_CreateCollectionRequest_olama_2eproto.base,
       &scc_info_CollectionState_olama_2eproto.base,}};
 
@@ -788,7 +789,7 @@ static void InitDefaultsscc_info_QueryCond_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_QueryCond_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_QueryCond_olama_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_QueryCond_olama_2eproto}, {}};
 
 static void InitDefaultsscc_info_QueryRequest_olama_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -802,7 +803,7 @@ static void InitDefaultsscc_info_QueryRequest_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_QueryRequest_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_QueryRequest_olama_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_QueryRequest_olama_2eproto}, {
       &scc_info_QueryCond_olama_2eproto.base,}};
 
 static void InitDefaultsscc_info_QueryResponse_olama_2eproto() {
@@ -817,7 +818,7 @@ static void InitDefaultsscc_info_QueryResponse_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_QueryResponse_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_QueryResponse_olama_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_QueryResponse_olama_2eproto}, {
       &scc_info_Document_olama_2eproto.base,}};
 
 static void InitDefaultsscc_info_RebuildIndexRequest_olama_2eproto() {
@@ -832,7 +833,7 @@ static void InitDefaultsscc_info_RebuildIndexRequest_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_RebuildIndexRequest_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_RebuildIndexRequest_olama_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_RebuildIndexRequest_olama_2eproto}, {}};
 
 static void InitDefaultsscc_info_RebuildIndexResponse_olama_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -846,7 +847,7 @@ static void InitDefaultsscc_info_RebuildIndexResponse_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_RebuildIndexResponse_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_RebuildIndexResponse_olama_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_RebuildIndexResponse_olama_2eproto}, {}};
 
 static void InitDefaultsscc_info_RemoveAliasRequest_olama_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -860,7 +861,7 @@ static void InitDefaultsscc_info_RemoveAliasRequest_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_RemoveAliasRequest_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_RemoveAliasRequest_olama_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_RemoveAliasRequest_olama_2eproto}, {}};
 
 static void InitDefaultsscc_info_SearchCond_olama_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -874,7 +875,7 @@ static void InitDefaultsscc_info_SearchCond_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_SearchCond_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_SearchCond_olama_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsscc_info_SearchCond_olama_2eproto}, {
       &scc_info_VectorArray_olama_2eproto.base,
       &scc_info_SearchParams_olama_2eproto.base,}};
 
@@ -890,7 +891,7 @@ static void InitDefaultsscc_info_SearchParams_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SearchParams_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_SearchParams_olama_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_SearchParams_olama_2eproto}, {}};
 
 static void InitDefaultsscc_info_SearchRequest_olama_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -904,7 +905,7 @@ static void InitDefaultsscc_info_SearchRequest_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_SearchRequest_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_SearchRequest_olama_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_SearchRequest_olama_2eproto}, {
       &scc_info_SearchCond_olama_2eproto.base,}};
 
 static void InitDefaultsscc_info_SearchResponse_olama_2eproto() {
@@ -919,7 +920,7 @@ static void InitDefaultsscc_info_SearchResponse_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_SearchResponse_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_SearchResponse_olama_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsscc_info_SearchResponse_olama_2eproto}, {
       &scc_info_SearchResult_olama_2eproto.base,
       &scc_info_EmbeddingExtraInfo_olama_2eproto.base,}};
 
@@ -935,7 +936,7 @@ static void InitDefaultsscc_info_SearchResult_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_SearchResult_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_SearchResult_olama_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_SearchResult_olama_2eproto}, {
       &scc_info_Document_olama_2eproto.base,}};
 
 static void InitDefaultsscc_info_Shard_olama_2eproto() {
@@ -950,7 +951,7 @@ static void InitDefaultsscc_info_Shard_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Shard_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_Shard_olama_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_Shard_olama_2eproto}, {
       &scc_info_ShardState_olama_2eproto.base,}};
 
 static void InitDefaultsscc_info_ShardCollectionState_olama_2eproto() {
@@ -965,7 +966,7 @@ static void InitDefaultsscc_info_ShardCollectionState_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_ShardCollectionState_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_ShardCollectionState_olama_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_ShardCollectionState_olama_2eproto}, {
       &scc_info_Shard_olama_2eproto.base,}};
 
 static void InitDefaultsscc_info_ShardConf_olama_2eproto() {
@@ -980,7 +981,7 @@ static void InitDefaultsscc_info_ShardConf_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_ShardConf_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_ShardConf_olama_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_ShardConf_olama_2eproto}, {
       &scc_info_CollectionConf_olama_2eproto.base,}};
 
 static void InitDefaultsscc_info_ShardState_olama_2eproto() {
@@ -995,7 +996,7 @@ static void InitDefaultsscc_info_ShardState_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ShardState_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ShardState_olama_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_ShardState_olama_2eproto}, {}};
 
 static void InitDefaultsscc_info_TTLConfig_olama_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -1009,7 +1010,7 @@ static void InitDefaultsscc_info_TTLConfig_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_TTLConfig_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_TTLConfig_olama_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_TTLConfig_olama_2eproto}, {}};
 
 static void InitDefaultsscc_info_TruncateCollectionRequest_olama_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -1023,7 +1024,7 @@ static void InitDefaultsscc_info_TruncateCollectionRequest_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_TruncateCollectionRequest_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_TruncateCollectionRequest_olama_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_TruncateCollectionRequest_olama_2eproto}, {}};
 
 static void InitDefaultsscc_info_TruncateCollectionResponse_olama_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -1037,7 +1038,7 @@ static void InitDefaultsscc_info_TruncateCollectionResponse_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_TruncateCollectionResponse_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_TruncateCollectionResponse_olama_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_TruncateCollectionResponse_olama_2eproto}, {}};
 
 static void InitDefaultsscc_info_UpdateAliasResponse_olama_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -1051,7 +1052,7 @@ static void InitDefaultsscc_info_UpdateAliasResponse_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_UpdateAliasResponse_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_UpdateAliasResponse_olama_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_UpdateAliasResponse_olama_2eproto}, {}};
 
 static void InitDefaultsscc_info_UpdateRequest_olama_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -1065,7 +1066,7 @@ static void InitDefaultsscc_info_UpdateRequest_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_UpdateRequest_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_UpdateRequest_olama_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsscc_info_UpdateRequest_olama_2eproto}, {
       &scc_info_QueryCond_olama_2eproto.base,
       &scc_info_Document_olama_2eproto.base,}};
 
@@ -1081,7 +1082,7 @@ static void InitDefaultsscc_info_UpdateResponse_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_UpdateResponse_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_UpdateResponse_olama_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_UpdateResponse_olama_2eproto}, {
       &scc_info_EmbeddingExtraInfo_olama_2eproto.base,}};
 
 static void InitDefaultsscc_info_UpsertRequest_olama_2eproto() {
@@ -1096,7 +1097,7 @@ static void InitDefaultsscc_info_UpsertRequest_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_UpsertRequest_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_UpsertRequest_olama_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_UpsertRequest_olama_2eproto}, {
       &scc_info_Document_olama_2eproto.base,}};
 
 static void InitDefaultsscc_info_UpsertResponse_olama_2eproto() {
@@ -1111,7 +1112,7 @@ static void InitDefaultsscc_info_UpsertResponse_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_UpsertResponse_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_UpsertResponse_olama_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_UpsertResponse_olama_2eproto}, {
       &scc_info_EmbeddingExtraInfo_olama_2eproto.base,}};
 
 static void InitDefaultsscc_info_VectorArray_olama_2eproto() {
@@ -1126,7 +1127,7 @@ static void InitDefaultsscc_info_VectorArray_olama_2eproto() {
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_VectorArray_olama_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_VectorArray_olama_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_VectorArray_olama_2eproto}, {}};
 
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_olama_2eproto[58];
 static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_olama_2eproto[6];
@@ -1810,7 +1811,7 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::olama::_DatabaseResponse_default_instance_),
 };
 
-const char descriptor_table_protodef_olama_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
+const char descriptor_table_protodef_olama_2eproto[] =
   "\n\013olama.proto\022\005olama\"\200\002\n\010Document\022\n\n\002id\030"
   "\001 \001(\t\022\016\n\006vector\030\002 \003(\002\022\r\n\005score\030\003 \001(\002\022+\n\006"
   "fields\030\004 \003(\0132\033.olama.Document.FieldsEntr"
@@ -2212,9 +2213,21 @@ void Document_FieldsEntry_DoNotUse::MergeFrom(
 
 void Document::InitAsDefaultInstance() {
 }
-class Document::_Internal {
+class Document::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int Document::kIdFieldNumber;
+const int Document::kVectorFieldNumber;
+const int Document::kScoreFieldNumber;
+const int Document::kFieldsFieldNumber;
+const int Document::kIndexIdFieldNumber;
+const int Document::kFromPeerFieldNumber;
+const int Document::kShardIdxFieldNumber;
+const int Document::kVectorOffsetFieldNumber;
+const int Document::kDocInfoFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 Document::Document()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -2228,15 +2241,15 @@ Document::Document(const Document& from)
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   fields_.MergeFrom(from.fields_);
   id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_id().empty()) {
+  if (from.id().size() > 0) {
     id_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.id_);
   }
   from_peer_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_from_peer().empty()) {
+  if (from.from_peer().size() > 0) {
     from_peer_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.from_peer_);
   }
   doc_info_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_doc_info().empty()) {
+  if (from.doc_info().size() > 0) {
     doc_info_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.doc_info_);
   }
   ::memcpy(&index_id_, &from.index_id_,
@@ -2292,6 +2305,7 @@ void Document::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* Document::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -2302,19 +2316,17 @@ const char* Document::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::i
       // string id = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_id();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.Document.id"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_id(), ptr, ctx, "olama.Document.id");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // repeated float vector = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedFloatParser(_internal_mutable_vector(), ptr, ctx);
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedFloatParser(mutable_vector(), ptr, ctx);
           CHK_(ptr);
         } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 21) {
-          _internal_add_vector(::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr));
+          add_vector(::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr));
           ptr += sizeof(float);
         } else goto handle_unusual;
         continue;
@@ -2334,7 +2346,7 @@ const char* Document::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::i
             ptr = ctx->ParseMessage(&fields_, ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<34>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 34);
         } else goto handle_unusual;
         continue;
       // uint64 index_id = 5;
@@ -2347,9 +2359,7 @@ const char* Document::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::i
       // string from_peer = 6;
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
-          auto str = _internal_mutable_from_peer();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.Document.from_peer"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_from_peer(), ptr, ctx, "olama.Document.from_peer");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -2370,8 +2380,7 @@ const char* Document::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::i
       // bytes doc_info = 9;
       case 9:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 74)) {
-          auto str = _internal_mutable_doc_info();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(mutable_doc_info(), ptr, ctx);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -2394,36 +2403,201 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool Document::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.Document)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string id = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_id()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->id().data(), static_cast<int>(this->id().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.Document.id"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Document::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:olama.Document)
+      // repeated float vector = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPackedPrimitive<
+                   float, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_FLOAT>(
+                 input, this->mutable_vector())));
+        } else if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (21 & 0xFF)) {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
+                   float, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_FLOAT>(
+                 1, 18u, input, this->mutable_vector())));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // float score = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (29 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   float, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_FLOAT>(
+                 input, &score_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // map<string, .olama.Field> fields = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
+          Document_FieldsEntry_DoNotUse::Parser< ::PROTOBUF_NAMESPACE_ID::internal::MapField<
+              Document_FieldsEntry_DoNotUse,
+              std::string, ::olama::Field,
+              ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_STRING,
+              ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_MESSAGE,
+              0 >,
+            ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::Field > > parser(&fields_);
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessageNoVirtual(
+              input, &parser));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            parser.key().data(), static_cast<int>(parser.key().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.Document.FieldsEntry.key"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint64 index_id = 5;
+      case 5: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (40 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
+                 input, &index_id_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string from_peer = 6;
+      case 6: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (50 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_from_peer()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->from_peer().data(), static_cast<int>(this->from_peer().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.Document.from_peer"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int32 shard_idx = 7;
+      case 7: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (56 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
+                 input, &shard_idx_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint64 vector_offset = 8;
+      case 8: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (64 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
+                 input, &vector_offset_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bytes doc_info = 9;
+      case 9: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (74 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_doc_info()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.Document)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.Document)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void Document::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.Document)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // string id = 1;
   if (this->id().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_id().data(), static_cast<int>(this->_internal_id().length()),
+      this->id().data(), static_cast<int>(this->id().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.Document.id");
-    target = stream->WriteStringMaybeAliased(
-        1, this->_internal_id(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->id(), output);
   }
 
   // repeated float vector = 2;
-  if (this->_internal_vector_size() > 0) {
-    target = stream->WriteFixedPacked(2, _internal_vector(), target);
+  if (this->vector_size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteTag(2, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
+    output->WriteVarint32(_vector_cached_byte_size_.load(
+        std::memory_order_relaxed));
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatArray(
+      this->vector().data(), this->vector_size(), output);
   }
 
   // float score = 3;
   if (!(this->score() <= 0 && this->score() >= 0)) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(3, this->_internal_score(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloat(3, this->score(), output);
   }
 
   // map<string, .olama.Field> fields = 4;
-  if (!this->_internal_fields().empty()) {
+  if (!this->fields().empty()) {
     typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::Field >::const_pointer
         ConstPtr;
     typedef ConstPtr SortItem;
@@ -2437,27 +2611,29 @@ failure:
       }
     };
 
-    if (stream->IsSerializationDeterministic() &&
-        this->_internal_fields().size() > 1) {
+    if (output->IsSerializationDeterministic() &&
+        this->fields().size() > 1) {
       ::std::unique_ptr<SortItem[]> items(
-          new SortItem[this->_internal_fields().size()]);
+          new SortItem[this->fields().size()]);
       typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::Field >::size_type size_type;
       size_type n = 0;
       for (::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::Field >::const_iterator
-          it = this->_internal_fields().begin();
-          it != this->_internal_fields().end(); ++it, ++n) {
+          it = this->fields().begin();
+          it != this->fields().end(); ++it, ++n) {
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
       for (size_type i = 0; i < n; i++) {
-        target = Document_FieldsEntry_DoNotUse::Funcs::InternalSerialize(4, items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second, target, stream);
+        Document_FieldsEntry_DoNotUse::MapEntryWrapper entry(nullptr, items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second);
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(4, entry, output);
         Utf8Check::Check(&(*items[static_cast<ptrdiff_t>(i)]));
       }
     } else {
       for (::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::Field >::const_iterator
-          it = this->_internal_fields().begin();
-          it != this->_internal_fields().end(); ++it) {
-        target = Document_FieldsEntry_DoNotUse::Funcs::InternalSerialize(4, it->first, it->second, target, stream);
+          it = this->fields().begin();
+          it != this->fields().end(); ++it) {
+        Document_FieldsEntry_DoNotUse::MapEntryWrapper entry(nullptr, it->first, it->second);
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(4, entry, output);
         Utf8Check::Check(&(*it));
       }
     }
@@ -2465,41 +2641,156 @@ failure:
 
   // uint64 index_id = 5;
   if (this->index_id() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(5, this->_internal_index_id(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64(5, this->index_id(), output);
   }
 
   // string from_peer = 6;
   if (this->from_peer().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_from_peer().data(), static_cast<int>(this->_internal_from_peer().length()),
+      this->from_peer().data(), static_cast<int>(this->from_peer().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.Document.from_peer");
-    target = stream->WriteStringMaybeAliased(
-        6, this->_internal_from_peer(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      6, this->from_peer(), output);
   }
 
   // int32 shard_idx = 7;
   if (this->shard_idx() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(7, this->_internal_shard_idx(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(7, this->shard_idx(), output);
   }
 
   // uint64 vector_offset = 8;
   if (this->vector_offset() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(8, this->_internal_vector_offset(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64(8, this->vector_offset(), output);
   }
 
   // bytes doc_info = 9;
   if (this->doc_info().size() > 0) {
-    target = stream->WriteBytesMaybeAliased(
-        9, this->_internal_doc_info(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBytesMaybeAliased(
+      9, this->doc_info(), output);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.Document)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* Document::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:olama.Document)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string id = 1;
+  if (this->id().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->id().data(), static_cast<int>(this->id().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.Document.id");
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->id(), target);
+  }
+
+  // repeated float vector = 2;
+  if (this->vector_size() > 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteTagToArray(
+      2,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
+      target);
+    target = ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream::WriteVarint32ToArray(
+        _vector_cached_byte_size_.load(std::memory_order_relaxed),
+         target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      WriteFloatNoTagToArray(this->vector_, target);
+  }
+
+  // float score = 3;
+  if (!(this->score() <= 0 && this->score() >= 0)) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(3, this->score(), target);
+  }
+
+  // map<string, .olama.Field> fields = 4;
+  if (!this->fields().empty()) {
+    typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::Field >::const_pointer
+        ConstPtr;
+    typedef ConstPtr SortItem;
+    typedef ::PROTOBUF_NAMESPACE_ID::internal::CompareByDerefFirst<SortItem> Less;
+    struct Utf8Check {
+      static void Check(ConstPtr p) {
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+          p->first.data(), static_cast<int>(p->first.length()),
+          ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+          "olama.Document.FieldsEntry.key");
+      }
+    };
+
+    if (false &&
+        this->fields().size() > 1) {
+      ::std::unique_ptr<SortItem[]> items(
+          new SortItem[this->fields().size()]);
+      typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::Field >::size_type size_type;
+      size_type n = 0;
+      for (::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::Field >::const_iterator
+          it = this->fields().begin();
+          it != this->fields().end(); ++it, ++n) {
+        items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
+      }
+      ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
+      for (size_type i = 0; i < n; i++) {
+        Document_FieldsEntry_DoNotUse::MapEntryWrapper entry(nullptr, items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second);
+        target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::InternalWriteMessageNoVirtualToArray(4, entry, target);
+        Utf8Check::Check(&(*items[static_cast<ptrdiff_t>(i)]));
+      }
+    } else {
+      for (::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::Field >::const_iterator
+          it = this->fields().begin();
+          it != this->fields().end(); ++it) {
+        Document_FieldsEntry_DoNotUse::MapEntryWrapper entry(nullptr, it->first, it->second);
+        target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::InternalWriteMessageNoVirtualToArray(4, entry, target);
+        Utf8Check::Check(&(*it));
+      }
+    }
+  }
+
+  // uint64 index_id = 5;
+  if (this->index_id() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(5, this->index_id(), target);
+  }
+
+  // string from_peer = 6;
+  if (this->from_peer().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->from_peer().data(), static_cast<int>(this->from_peer().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.Document.from_peer");
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        6, this->from_peer(), target);
+  }
+
+  // int32 shard_idx = 7;
+  if (this->shard_idx() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(7, this->shard_idx(), target);
+  }
+
+  // uint64 vector_offset = 8;
+  if (this->vector_offset() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(8, this->vector_offset(), target);
+  }
+
+  // bytes doc_info = 9;
+  if (this->doc_info().size() > 0) {
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBytesToArray(
+        9, this->doc_info(), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.Document)
   return target;
@@ -2509,13 +2800,18 @@ size_t Document::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.Document)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated float vector = 2;
   {
-    unsigned int count = static_cast<unsigned int>(this->_internal_vector_size());
+    unsigned int count = static_cast<unsigned int>(this->vector_size());
     size_t data_size = 4UL * count;
     if (data_size > 0) {
       total_size += 1 +
@@ -2530,39 +2826,41 @@ size_t Document::ByteSizeLong() const {
 
   // map<string, .olama.Field> fields = 4;
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->_internal_fields_size());
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->fields_size());
   for (::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::Field >::const_iterator
-      it = this->_internal_fields().begin();
-      it != this->_internal_fields().end(); ++it) {
-    total_size += Document_FieldsEntry_DoNotUse::Funcs::ByteSizeLong(it->first, it->second);
+      it = this->fields().begin();
+      it != this->fields().end(); ++it) {
+    Document_FieldsEntry_DoNotUse::MapEntryWrapper entry(nullptr, it->first, it->second);
+    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+        MessageSizeNoVirtual(entry);
   }
 
   // string id = 1;
   if (this->id().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_id());
+        this->id());
   }
 
   // string from_peer = 6;
   if (this->from_peer().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_from_peer());
+        this->from_peer());
   }
 
   // bytes doc_info = 9;
   if (this->doc_info().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::BytesSize(
-        this->_internal_doc_info());
+        this->doc_info());
   }
 
   // uint64 index_id = 5;
   if (this->index_id() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->_internal_index_id());
+        this->index_id());
   }
 
   // float score = 3;
@@ -2574,20 +2872,16 @@ size_t Document::ByteSizeLong() const {
   if (this->shard_idx() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_shard_idx());
+        this->shard_idx());
   }
 
   // uint64 vector_offset = 8;
   if (this->vector_offset() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->_internal_vector_offset());
+        this->vector_offset());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -2630,16 +2924,16 @@ void Document::MergeFrom(const Document& from) {
     doc_info_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.doc_info_);
   }
   if (from.index_id() != 0) {
-    _internal_set_index_id(from._internal_index_id());
+    set_index_id(from.index_id());
   }
   if (!(from.score() <= 0 && from.score() >= 0)) {
-    _internal_set_score(from._internal_score());
+    set_score(from.score());
   }
   if (from.shard_idx() != 0) {
-    _internal_set_shard_idx(from._internal_shard_idx());
+    set_shard_idx(from.shard_idx());
   }
   if (from.vector_offset() != 0) {
-    _internal_set_vector_offset(from._internal_vector_offset());
+    set_vector_offset(from.vector_offset());
   }
 }
 
@@ -2661,6 +2955,10 @@ bool Document::IsInitialized() const {
   return true;
 }
 
+void Document::Swap(Document* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void Document::InternalSwap(Document* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -2687,9 +2985,13 @@ void Document::InternalSwap(Document* other) {
 
 void Field_StringArray::InitAsDefaultInstance() {
 }
-class Field_StringArray::_Internal {
+class Field_StringArray::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int Field_StringArray::kStrArrFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 Field_StringArray::Field_StringArray()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -2735,6 +3037,7 @@ void Field_StringArray::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* Field_StringArray::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -2748,11 +3051,10 @@ const char* Field_StringArray::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
           ptr -= 1;
           do {
             ptr += 1;
-            auto str = _internal_add_str_arr();
-            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(add_str_arr(), ptr, ctx);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 10);
         } else goto handle_unusual;
         continue;
       default: {
@@ -2774,22 +3076,83 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool Field_StringArray::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.Field.StringArray)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // repeated bytes str_arr = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadBytes(
+                input, this->add_str_arr()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Field_StringArray::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.Field.StringArray)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.Field.StringArray)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void Field_StringArray::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.Field.StringArray)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated bytes str_arr = 1;
+  for (int i = 0, n = this->str_arr_size(); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBytes(
+      1, this->str_arr(i), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.Field.StringArray)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* Field_StringArray::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.Field.StringArray)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated bytes str_arr = 1;
-  for (int i = 0, n = this->_internal_str_arr_size(); i < n; i++) {
-    const auto& s = this->_internal_str_arr(i);
-    target = stream->WriteBytes(1, s, target);
+  for (int i = 0, n = this->str_arr_size(); i < n; i++) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      WriteBytesToArray(1, this->str_arr(i), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.Field.StringArray)
   return target;
@@ -2799,22 +3162,23 @@ size_t Field_StringArray::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.Field.StringArray)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated bytes str_arr = 1;
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(str_arr_.size());
-  for (int i = 0, n = str_arr_.size(); i < n; i++) {
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->str_arr_size());
+  for (int i = 0, n = this->str_arr_size(); i < n; i++) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::BytesSize(
-      str_arr_.Get(i));
+      this->str_arr(i));
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -2863,10 +3227,14 @@ bool Field_StringArray::IsInitialized() const {
   return true;
 }
 
+void Field_StringArray::Swap(Field_StringArray* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void Field_StringArray::InternalSwap(Field_StringArray* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  str_arr_.InternalSwap(&other->str_arr_);
+  str_arr_.InternalSwap(CastToBase(&other->str_arr_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Field_StringArray::GetMetadata() const {
@@ -2884,13 +3252,13 @@ void Field::InitAsDefaultInstance() {
   ::olama::_Field_default_instance_.val_str_arr_ = const_cast< ::olama::Field_StringArray*>(
       ::olama::Field_StringArray::internal_default_instance());
 }
-class Field::_Internal {
+class Field::HasBitSetters {
  public:
   static const ::olama::Field_StringArray& val_str_arr(const Field* msg);
 };
 
 const ::olama::Field_StringArray&
-Field::_Internal::val_str_arr(const Field* msg) {
+Field::HasBitSetters::val_str_arr(const Field* msg) {
   return *msg->oneof_val_.val_str_arr_;
 }
 void Field::set_allocated_val_str_arr(::olama::Field_StringArray* val_str_arr) {
@@ -2907,6 +3275,13 @@ void Field::set_allocated_val_str_arr(::olama::Field_StringArray* val_str_arr) {
   }
   // @@protoc_insertion_point(field_set_allocated:olama.Field.val_str_arr)
 }
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int Field::kValStrFieldNumber;
+const int Field::kValU64FieldNumber;
+const int Field::kValDoubleFieldNumber;
+const int Field::kValStrArrFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
 Field::Field()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
@@ -2919,19 +3294,19 @@ Field::Field(const Field& from)
   clear_has_oneof_val();
   switch (from.oneof_val_case()) {
     case kValStr: {
-      _internal_set_val_str(from._internal_val_str());
+      set_val_str(from.val_str());
       break;
     }
     case kValU64: {
-      _internal_set_val_u64(from._internal_val_u64());
+      set_val_u64(from.val_u64());
       break;
     }
     case kValDouble: {
-      _internal_set_val_double(from._internal_val_double());
+      set_val_double(from.val_double());
       break;
     }
     case kValStrArr: {
-      _internal_mutable_val_str_arr()->::olama::Field_StringArray::MergeFrom(from._internal_val_str_arr());
+      mutable_val_str_arr()->::olama::Field_StringArray::MergeFrom(from.val_str_arr());
       break;
     }
     case ONEOF_VAL_NOT_SET: {
@@ -3003,6 +3378,7 @@ void Field::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* Field::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -3013,29 +3389,28 @@ const char* Field::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::inte
       // bytes val_str = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_val_str();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(mutable_val_str(), ptr, ctx);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // uint64 val_u64 = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          _internal_set_val_u64(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
+          set_val_u64(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // double val_double = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 25)) {
-          _internal_set_val_double(::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr));
+          set_val_double(::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr));
           ptr += sizeof(double);
         } else goto handle_unusual;
         continue;
       // .olama.Field.StringArray val_str_arr = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
-          ptr = ctx->ParseMessage(_internal_mutable_val_str_arr(), ptr);
+          ptr = ctx->ParseMessage(mutable_val_str_arr(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -3058,42 +3433,156 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool Field::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.Field)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // bytes val_str = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_val_str()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Field::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+      // uint64 val_u64 = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
+          clear_oneof_val();
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
+                 input, &oneof_val_.val_u64_)));
+          set_has_val_u64();
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // double val_double = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (25 & 0xFF)) {
+          clear_oneof_val();
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   double, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_DOUBLE>(
+                 input, &oneof_val_.val_double_)));
+          set_has_val_double();
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .olama.Field.StringArray val_str_arr = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+               input, mutable_val_str_arr()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.Field)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.Field)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void Field::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.Field)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // bytes val_str = 1;
+  if (has_val_str()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBytesMaybeAliased(
+      1, this->val_str(), output);
+  }
+
+  // uint64 val_u64 = 2;
+  if (has_val_u64()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64(2, this->val_u64(), output);
+  }
+
+  // double val_double = 3;
+  if (has_val_double()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDouble(3, this->val_double(), output);
+  }
+
+  // .olama.Field.StringArray val_str_arr = 4;
+  if (has_val_str_arr()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      4, HasBitSetters::val_str_arr(this), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.Field)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* Field::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.Field)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // bytes val_str = 1;
-  if (_internal_has_val_str()) {
-    target = stream->WriteBytesMaybeAliased(
-        1, this->_internal_val_str(), target);
+  if (has_val_str()) {
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBytesToArray(
+        1, this->val_str(), target);
   }
 
   // uint64 val_u64 = 2;
-  if (_internal_has_val_u64()) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(2, this->_internal_val_u64(), target);
+  if (has_val_u64()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(2, this->val_u64(), target);
   }
 
   // double val_double = 3;
-  if (_internal_has_val_double()) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(3, this->_internal_val_double(), target);
+  if (has_val_double()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(3, this->val_double(), target);
   }
 
   // .olama.Field.StringArray val_str_arr = 4;
-  if (_internal_has_val_str_arr()) {
-    target = stream->EnsureSpace(target);
+  if (has_val_str_arr()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        4, _Internal::val_str_arr(this), target, stream);
+      InternalWriteMessageToArray(
+        4, HasBitSetters::val_str_arr(this), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.Field)
   return target;
@@ -3103,6 +3592,11 @@ size_t Field::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.Field)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -3112,14 +3606,14 @@ size_t Field::ByteSizeLong() const {
     case kValStr: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::BytesSize(
-          this->_internal_val_str());
+          this->val_str());
       break;
     }
     // uint64 val_u64 = 2;
     case kValU64: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-          this->_internal_val_u64());
+          this->val_u64());
       break;
     }
     // double val_double = 3;
@@ -3137,10 +3631,6 @@ size_t Field::ByteSizeLong() const {
     case ONEOF_VAL_NOT_SET: {
       break;
     }
-  }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
   }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
@@ -3171,19 +3661,19 @@ void Field::MergeFrom(const Field& from) {
 
   switch (from.oneof_val_case()) {
     case kValStr: {
-      _internal_set_val_str(from._internal_val_str());
+      set_val_str(from.val_str());
       break;
     }
     case kValU64: {
-      _internal_set_val_u64(from._internal_val_u64());
+      set_val_u64(from.val_u64());
       break;
     }
     case kValDouble: {
-      _internal_set_val_double(from._internal_val_double());
+      set_val_double(from.val_double());
       break;
     }
     case kValStrArr: {
-      _internal_mutable_val_str_arr()->::olama::Field_StringArray::MergeFrom(from._internal_val_str_arr());
+      mutable_val_str_arr()->::olama::Field_StringArray::MergeFrom(from.val_str_arr());
       break;
     }
     case ONEOF_VAL_NOT_SET: {
@@ -3210,6 +3700,10 @@ bool Field::IsInitialized() const {
   return true;
 }
 
+void Field::Swap(Field* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void Field::InternalSwap(Field* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -3226,9 +3720,20 @@ void Field::InternalSwap(Field* other) {
 
 void ShardState::InitAsDefaultInstance() {
 }
-class ShardState::_Internal {
+class ShardState::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int ShardState::kDataStateFieldNumber;
+const int ShardState::kEstimateIndexMemSizeFieldNumber;
+const int ShardState::kSnapshotingFieldNumber;
+const int ShardState::kLastAppliedIndexFieldNumber;
+const int ShardState::kLastAppliedTermFieldNumber;
+const int ShardState::kIdSeedFieldNumber;
+const int ShardState::kAddedItemsFieldNumber;
+const int ShardState::kDataStateChangeTimeFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 ShardState::ShardState()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -3280,6 +3785,7 @@ void ShardState::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ShardState::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -3292,7 +3798,7 @@ const char* ShardState::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
           ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
-          _internal_set_data_state(static_cast<::olama::ShardDataState>(val));
+          set_data_state(static_cast<::olama::ShardDataState>(val));
         } else goto handle_unusual;
         continue;
       // uint64 estimate_index_mem_size = 2;
@@ -3363,65 +3869,247 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool ShardState::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.ShardState)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // .olama.ShardDataState data_state = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
+          int value = 0;
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_data_state(static_cast< ::olama::ShardDataState >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ShardState::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+      // uint64 estimate_index_mem_size = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
+                 input, &estimate_index_mem_size_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool snapshoting = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &snapshoting_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 last_applied_index = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 input, &last_applied_index_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 last_applied_term = 5;
+      case 5: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (40 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 input, &last_applied_term_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 id_seed = 6;
+      case 6: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (48 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 input, &id_seed_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint64 added_items = 7;
+      case 7: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (56 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
+                 input, &added_items_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 data_state_change_time = 8;
+      case 8: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (64 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 input, &data_state_change_time_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.ShardState)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.ShardState)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void ShardState::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.ShardState)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .olama.ShardDataState data_state = 1;
+  if (this->data_state() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
+      1, this->data_state(), output);
+  }
+
+  // uint64 estimate_index_mem_size = 2;
+  if (this->estimate_index_mem_size() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64(2, this->estimate_index_mem_size(), output);
+  }
+
+  // bool snapshoting = 3;
+  if (this->snapshoting() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(3, this->snapshoting(), output);
+  }
+
+  // int64 last_applied_index = 4;
+  if (this->last_applied_index() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(4, this->last_applied_index(), output);
+  }
+
+  // int64 last_applied_term = 5;
+  if (this->last_applied_term() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(5, this->last_applied_term(), output);
+  }
+
+  // int64 id_seed = 6;
+  if (this->id_seed() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(6, this->id_seed(), output);
+  }
+
+  // uint64 added_items = 7;
+  if (this->added_items() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64(7, this->added_items(), output);
+  }
+
+  // int64 data_state_change_time = 8;
+  if (this->data_state_change_time() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(8, this->data_state_change_time(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.ShardState)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* ShardState::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.ShardState)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .olama.ShardDataState data_state = 1;
   if (this->data_state() != 0) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_internal_data_state(), target);
+      1, this->data_state(), target);
   }
 
   // uint64 estimate_index_mem_size = 2;
   if (this->estimate_index_mem_size() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(2, this->_internal_estimate_index_mem_size(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(2, this->estimate_index_mem_size(), target);
   }
 
   // bool snapshoting = 3;
   if (this->snapshoting() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_snapshoting(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->snapshoting(), target);
   }
 
   // int64 last_applied_index = 4;
   if (this->last_applied_index() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_last_applied_index(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->last_applied_index(), target);
   }
 
   // int64 last_applied_term = 5;
   if (this->last_applied_term() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_last_applied_term(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->last_applied_term(), target);
   }
 
   // int64 id_seed = 6;
   if (this->id_seed() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(6, this->_internal_id_seed(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(6, this->id_seed(), target);
   }
 
   // uint64 added_items = 7;
   if (this->added_items() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(7, this->_internal_added_items(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(7, this->added_items(), target);
   }
 
   // int64 data_state_change_time = 8;
   if (this->data_state_change_time() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(8, this->_internal_data_state_change_time(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(8, this->data_state_change_time(), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.ShardState)
   return target;
@@ -3431,6 +4119,11 @@ size_t ShardState::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.ShardState)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -3439,13 +4132,13 @@ size_t ShardState::ByteSizeLong() const {
   if (this->estimate_index_mem_size() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->_internal_estimate_index_mem_size());
+        this->estimate_index_mem_size());
   }
 
   // .olama.ShardDataState data_state = 1;
   if (this->data_state() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_data_state());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->data_state());
   }
 
   // bool snapshoting = 3;
@@ -3457,41 +4150,37 @@ size_t ShardState::ByteSizeLong() const {
   if (this->last_applied_index() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_last_applied_index());
+        this->last_applied_index());
   }
 
   // int64 last_applied_term = 5;
   if (this->last_applied_term() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_last_applied_term());
+        this->last_applied_term());
   }
 
   // int64 id_seed = 6;
   if (this->id_seed() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_id_seed());
+        this->id_seed());
   }
 
   // uint64 added_items = 7;
   if (this->added_items() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->_internal_added_items());
+        this->added_items());
   }
 
   // int64 data_state_change_time = 8;
   if (this->data_state_change_time() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_data_state_change_time());
+        this->data_state_change_time());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -3520,28 +4209,28 @@ void ShardState::MergeFrom(const ShardState& from) {
   (void) cached_has_bits;
 
   if (from.estimate_index_mem_size() != 0) {
-    _internal_set_estimate_index_mem_size(from._internal_estimate_index_mem_size());
+    set_estimate_index_mem_size(from.estimate_index_mem_size());
   }
   if (from.data_state() != 0) {
-    _internal_set_data_state(from._internal_data_state());
+    set_data_state(from.data_state());
   }
   if (from.snapshoting() != 0) {
-    _internal_set_snapshoting(from._internal_snapshoting());
+    set_snapshoting(from.snapshoting());
   }
   if (from.last_applied_index() != 0) {
-    _internal_set_last_applied_index(from._internal_last_applied_index());
+    set_last_applied_index(from.last_applied_index());
   }
   if (from.last_applied_term() != 0) {
-    _internal_set_last_applied_term(from._internal_last_applied_term());
+    set_last_applied_term(from.last_applied_term());
   }
   if (from.id_seed() != 0) {
-    _internal_set_id_seed(from._internal_id_seed());
+    set_id_seed(from.id_seed());
   }
   if (from.added_items() != 0) {
-    _internal_set_added_items(from._internal_added_items());
+    set_added_items(from.added_items());
   }
   if (from.data_state_change_time() != 0) {
-    _internal_set_data_state_change_time(from._internal_data_state_change_time());
+    set_data_state_change_time(from.data_state_change_time());
   }
 }
 
@@ -3563,6 +4252,10 @@ bool ShardState::IsInitialized() const {
   return true;
 }
 
+void ShardState::Swap(ShardState* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void ShardState::InternalSwap(ShardState* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -3587,15 +4280,26 @@ void Shard::InitAsDefaultInstance() {
   ::olama::_Shard_default_instance_._instance.get_mutable()->state_ = const_cast< ::olama::ShardState*>(
       ::olama::ShardState::internal_default_instance());
 }
-class Shard::_Internal {
+class Shard::HasBitSetters {
  public:
   static const ::olama::ShardState& state(const Shard* msg);
 };
 
 const ::olama::ShardState&
-Shard::_Internal::state(const Shard* msg) {
+Shard::HasBitSetters::state(const Shard* msg) {
   return *msg->state_;
 }
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int Shard::kCollectionFieldNumber;
+const int Shard::kShardIdxFieldNumber;
+const int Shard::kIsLeaderFieldNumber;
+const int Shard::kFollowingFieldNumber;
+const int Shard::kStateFieldNumber;
+const int Shard::kNodesFieldNumber;
+const int Shard::kFromNodeFieldNumber;
+const int Shard::kVersionFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
 Shard::Shard()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
@@ -3607,14 +4311,14 @@ Shard::Shard(const Shard& from)
       nodes_(from.nodes_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   collection_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_collection().empty()) {
+  if (from.collection().size() > 0) {
     collection_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.collection_);
   }
   from_node_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_from_node().empty()) {
+  if (from.from_node().size() > 0) {
     from_node_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.from_node_);
   }
-  if (from._internal_has_state()) {
+  if (from.has_state()) {
     state_ = new ::olama::ShardState(*from.state_);
   } else {
     state_ = nullptr;
@@ -3673,6 +4377,7 @@ void Shard::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* Shard::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -3683,9 +4388,7 @@ const char* Shard::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::inte
       // string collection = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_collection();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.Shard.collection"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_collection(), ptr, ctx, "olama.Shard.collection");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -3713,7 +4416,7 @@ const char* Shard::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::inte
       // .olama.ShardState state = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
-          ptr = ctx->ParseMessage(_internal_mutable_state(), ptr);
+          ptr = ctx->ParseMessage(mutable_state(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -3723,20 +4426,16 @@ const char* Shard::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::inte
           ptr -= 1;
           do {
             ptr += 1;
-            auto str = _internal_add_nodes();
-            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-            CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.Shard.nodes"));
+            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(add_nodes(), ptr, ctx, "olama.Shard.nodes");
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<50>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 50);
         } else goto handle_unusual;
         continue;
       // string from_node = 7;
       case 7:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
-          auto str = _internal_mutable_from_node();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.Shard.from_node"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_from_node(), ptr, ctx, "olama.Shard.from_node");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -3766,9 +4465,218 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool Shard::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.Shard)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string collection = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_collection()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->collection().data(), static_cast<int>(this->collection().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.Shard.collection"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Shard::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+      // int32 shard_idx = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
+                 input, &shard_idx_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool is_leader = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &is_leader_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool following = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &following_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .olama.ShardState state = 5;
+      case 5: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (42 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+               input, mutable_state()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated string nodes = 6;
+      case 6: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (50 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->add_nodes()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->nodes(this->nodes_size() - 1).data(),
+            static_cast<int>(this->nodes(this->nodes_size() - 1).length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.Shard.nodes"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string from_node = 7;
+      case 7: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (58 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_from_node()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->from_node().data(), static_cast<int>(this->from_node().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.Shard.from_node"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 version = 8;
+      case 8: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (64 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 input, &version_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.Shard)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.Shard)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void Shard::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.Shard)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string collection = 1;
+  if (this->collection().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->collection().data(), static_cast<int>(this->collection().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.Shard.collection");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->collection(), output);
+  }
+
+  // int32 shard_idx = 2;
+  if (this->shard_idx() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(2, this->shard_idx(), output);
+  }
+
+  // bool is_leader = 3;
+  if (this->is_leader() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(3, this->is_leader(), output);
+  }
+
+  // bool following = 4;
+  if (this->following() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(4, this->following(), output);
+  }
+
+  // .olama.ShardState state = 5;
+  if (this->has_state()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      5, HasBitSetters::state(this), output);
+  }
+
+  // repeated string nodes = 6;
+  for (int i = 0, n = this->nodes_size(); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->nodes(i).data(), static_cast<int>(this->nodes(i).length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.Shard.nodes");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteString(
+      6, this->nodes(i), output);
+  }
+
+  // string from_node = 7;
+  if (this->from_node().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->from_node().data(), static_cast<int>(this->from_node().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.Shard.from_node");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      7, this->from_node(), output);
+  }
+
+  // int64 version = 8;
+  if (this->version() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(8, this->version(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.Shard)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* Shard::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.Shard)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3776,68 +4684,65 @@ failure:
   // string collection = 1;
   if (this->collection().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_collection().data(), static_cast<int>(this->_internal_collection().length()),
+      this->collection().data(), static_cast<int>(this->collection().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.Shard.collection");
-    target = stream->WriteStringMaybeAliased(
-        1, this->_internal_collection(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->collection(), target);
   }
 
   // int32 shard_idx = 2;
   if (this->shard_idx() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_shard_idx(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->shard_idx(), target);
   }
 
   // bool is_leader = 3;
   if (this->is_leader() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_is_leader(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->is_leader(), target);
   }
 
   // bool following = 4;
   if (this->following() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(4, this->_internal_following(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(4, this->following(), target);
   }
 
   // .olama.ShardState state = 5;
   if (this->has_state()) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        5, _Internal::state(this), target, stream);
+      InternalWriteMessageToArray(
+        5, HasBitSetters::state(this), target);
   }
 
   // repeated string nodes = 6;
-  for (int i = 0, n = this->_internal_nodes_size(); i < n; i++) {
-    const auto& s = this->_internal_nodes(i);
+  for (int i = 0, n = this->nodes_size(); i < n; i++) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      s.data(), static_cast<int>(s.length()),
+      this->nodes(i).data(), static_cast<int>(this->nodes(i).length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.Shard.nodes");
-    target = stream->WriteString(6, s, target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      WriteStringToArray(6, this->nodes(i), target);
   }
 
   // string from_node = 7;
   if (this->from_node().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_from_node().data(), static_cast<int>(this->_internal_from_node().length()),
+      this->from_node().data(), static_cast<int>(this->from_node().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.Shard.from_node");
-    target = stream->WriteStringMaybeAliased(
-        7, this->_internal_from_node(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        7, this->from_node(), target);
   }
 
   // int64 version = 8;
   if (this->version() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(8, this->_internal_version(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(8, this->version(), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.Shard)
   return target;
@@ -3847,30 +4752,35 @@ size_t Shard::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.Shard)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated string nodes = 6;
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(nodes_.size());
-  for (int i = 0, n = nodes_.size(); i < n; i++) {
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->nodes_size());
+  for (int i = 0, n = this->nodes_size(); i < n; i++) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-      nodes_.Get(i));
+      this->nodes(i));
   }
 
   // string collection = 1;
   if (this->collection().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_collection());
+        this->collection());
   }
 
   // string from_node = 7;
   if (this->from_node().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_from_node());
+        this->from_node());
   }
 
   // .olama.ShardState state = 5;
@@ -3884,7 +4794,7 @@ size_t Shard::ByteSizeLong() const {
   if (this->shard_idx() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_shard_idx());
+        this->shard_idx());
   }
 
   // bool is_leader = 3;
@@ -3901,13 +4811,9 @@ size_t Shard::ByteSizeLong() const {
   if (this->version() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_version());
+        this->version());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -3945,19 +4851,19 @@ void Shard::MergeFrom(const Shard& from) {
     from_node_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.from_node_);
   }
   if (from.has_state()) {
-    _internal_mutable_state()->::olama::ShardState::MergeFrom(from._internal_state());
+    mutable_state()->::olama::ShardState::MergeFrom(from.state());
   }
   if (from.shard_idx() != 0) {
-    _internal_set_shard_idx(from._internal_shard_idx());
+    set_shard_idx(from.shard_idx());
   }
   if (from.is_leader() != 0) {
-    _internal_set_is_leader(from._internal_is_leader());
+    set_is_leader(from.is_leader());
   }
   if (from.following() != 0) {
-    _internal_set_following(from._internal_following());
+    set_following(from.following());
   }
   if (from.version() != 0) {
-    _internal_set_version(from._internal_version());
+    set_version(from.version());
   }
 }
 
@@ -3979,10 +4885,14 @@ bool Shard::IsInitialized() const {
   return true;
 }
 
+void Shard::Swap(Shard* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void Shard::InternalSwap(Shard* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  nodes_.InternalSwap(&other->nodes_);
+  nodes_.InternalSwap(CastToBase(&other->nodes_));
   collection_.Swap(&other->collection_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   from_node_.Swap(&other->from_node_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
@@ -4003,9 +4913,14 @@ void Shard::InternalSwap(Shard* other) {
 
 void AliasItem::InitAsDefaultInstance() {
 }
-class AliasItem::_Internal {
+class AliasItem::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int AliasItem::kAliasFieldNumber;
+const int AliasItem::kCollectionFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 AliasItem::AliasItem()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -4017,11 +4932,11 @@ AliasItem::AliasItem(const AliasItem& from)
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   alias_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_alias().empty()) {
+  if (from.alias().size() > 0) {
     alias_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.alias_);
   }
   collection_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_collection().empty()) {
+  if (from.collection().size() > 0) {
     collection_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.collection_);
   }
   // @@protoc_insertion_point(copy_constructor:olama.AliasItem)
@@ -4063,6 +4978,7 @@ void AliasItem::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* AliasItem::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -4073,18 +4989,14 @@ const char* AliasItem::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
       // string alias = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_alias();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.AliasItem.alias"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_alias(), ptr, ctx, "olama.AliasItem.alias");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string collection = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_collection();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.AliasItem.collection"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_collection(), ptr, ctx, "olama.AliasItem.collection");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -4107,9 +5019,103 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool AliasItem::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.AliasItem)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string alias = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_alias()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->alias().data(), static_cast<int>(this->alias().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.AliasItem.alias"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
 
-::PROTOBUF_NAMESPACE_ID::uint8* AliasItem::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+      // string collection = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_collection()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->collection().data(), static_cast<int>(this->collection().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.AliasItem.collection"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.AliasItem)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.AliasItem)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void AliasItem::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.AliasItem)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string alias = 1;
+  if (this->alias().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->alias().data(), static_cast<int>(this->alias().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.AliasItem.alias");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->alias(), output);
+  }
+
+  // string collection = 2;
+  if (this->collection().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->collection().data(), static_cast<int>(this->collection().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.AliasItem.collection");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->collection(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.AliasItem)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* AliasItem::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.AliasItem)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4117,26 +5123,28 @@ failure:
   // string alias = 1;
   if (this->alias().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_alias().data(), static_cast<int>(this->_internal_alias().length()),
+      this->alias().data(), static_cast<int>(this->alias().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.AliasItem.alias");
-    target = stream->WriteStringMaybeAliased(
-        1, this->_internal_alias(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->alias(), target);
   }
 
   // string collection = 2;
   if (this->collection().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_collection().data(), static_cast<int>(this->_internal_collection().length()),
+      this->collection().data(), static_cast<int>(this->collection().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.AliasItem.collection");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_collection(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->collection(), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.AliasItem)
   return target;
@@ -4146,6 +5154,11 @@ size_t AliasItem::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.AliasItem)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -4154,20 +5167,16 @@ size_t AliasItem::ByteSizeLong() const {
   if (this->alias().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_alias());
+        this->alias());
   }
 
   // string collection = 2;
   if (this->collection().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_collection());
+        this->collection());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -4223,6 +5232,10 @@ bool AliasItem::IsInitialized() const {
   return true;
 }
 
+void AliasItem::Swap(AliasItem* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void AliasItem::InternalSwap(AliasItem* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -4241,9 +5254,14 @@ void AliasItem::InternalSwap(AliasItem* other) {
 
 void DatabaseItem::InitAsDefaultInstance() {
 }
-class DatabaseItem::_Internal {
+class DatabaseItem::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int DatabaseItem::kCreateTimeFieldNumber;
+const int DatabaseItem::kDbTypeFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 DatabaseItem::DatabaseItem()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -4295,6 +5313,7 @@ void DatabaseItem::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* DatabaseItem::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -4314,7 +5333,7 @@ const char* DatabaseItem::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
-          _internal_set_db_type(static_cast<::olama::DataType>(val));
+          set_db_type(static_cast<::olama::DataType>(val));
         } else goto handle_unusual;
         continue;
       default: {
@@ -4336,29 +5355,109 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool DatabaseItem::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.DatabaseItem)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int64 create_time = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
 
-::PROTOBUF_NAMESPACE_ID::uint8* DatabaseItem::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 input, &create_time_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .olama.DataType db_type = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
+          int value = 0;
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_db_type(static_cast< ::olama::DataType >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.DatabaseItem)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.DatabaseItem)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void DatabaseItem::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.DatabaseItem)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int64 create_time = 1;
+  if (this->create_time() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(1, this->create_time(), output);
+  }
+
+  // .olama.DataType db_type = 2;
+  if (this->db_type() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
+      2, this->db_type(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.DatabaseItem)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* DatabaseItem::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.DatabaseItem)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int64 create_time = 1;
   if (this->create_time() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_create_time(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->create_time(), target);
   }
 
   // .olama.DataType db_type = 2;
   if (this->db_type() != 0) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      2, this->_internal_db_type(), target);
+      2, this->db_type(), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.DatabaseItem)
   return target;
@@ -4368,6 +5467,11 @@ size_t DatabaseItem::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.DatabaseItem)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -4376,19 +5480,15 @@ size_t DatabaseItem::ByteSizeLong() const {
   if (this->create_time() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_create_time());
+        this->create_time());
   }
 
   // .olama.DataType db_type = 2;
   if (this->db_type() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_db_type());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->db_type());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -4417,10 +5517,10 @@ void DatabaseItem::MergeFrom(const DatabaseItem& from) {
   (void) cached_has_bits;
 
   if (from.create_time() != 0) {
-    _internal_set_create_time(from._internal_create_time());
+    set_create_time(from.create_time());
   }
   if (from.db_type() != 0) {
-    _internal_set_db_type(from._internal_db_type());
+    set_db_type(from.db_type());
   }
 }
 
@@ -4442,6 +5542,10 @@ bool DatabaseItem::IsInitialized() const {
   return true;
 }
 
+void DatabaseItem::Swap(DatabaseItem* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void DatabaseItem::InternalSwap(DatabaseItem* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -4458,9 +5562,15 @@ void DatabaseItem::InternalSwap(DatabaseItem* other) {
 
 void EmbeddingParams::InitAsDefaultInstance() {
 }
-class EmbeddingParams::_Internal {
+class EmbeddingParams::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int EmbeddingParams::kFieldFieldNumber;
+const int EmbeddingParams::kVectorFieldFieldNumber;
+const int EmbeddingParams::kModelNameFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EmbeddingParams::EmbeddingParams()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -4472,15 +5582,15 @@ EmbeddingParams::EmbeddingParams(const EmbeddingParams& from)
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   field_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_field().empty()) {
+  if (from.field().size() > 0) {
     field_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.field_);
   }
   vector_field_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_vector_field().empty()) {
+  if (from.vector_field().size() > 0) {
     vector_field_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.vector_field_);
   }
   model_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_model_name().empty()) {
+  if (from.model_name().size() > 0) {
     model_name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.model_name_);
   }
   // @@protoc_insertion_point(copy_constructor:olama.EmbeddingParams)
@@ -4525,6 +5635,7 @@ void EmbeddingParams::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* EmbeddingParams::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -4535,27 +5646,21 @@ const char* EmbeddingParams::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
       // string field = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_field();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.EmbeddingParams.field"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_field(), ptr, ctx, "olama.EmbeddingParams.field");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string vector_field = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_vector_field();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.EmbeddingParams.vector_field"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_vector_field(), ptr, ctx, "olama.EmbeddingParams.vector_field");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string model_name = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          auto str = _internal_mutable_model_name();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.EmbeddingParams.model_name"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_model_name(), ptr, ctx, "olama.EmbeddingParams.model_name");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -4578,9 +5683,128 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool EmbeddingParams::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.EmbeddingParams)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string field = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_field()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->field().data(), static_cast<int>(this->field().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.EmbeddingParams.field"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
 
-::PROTOBUF_NAMESPACE_ID::uint8* EmbeddingParams::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+      // string vector_field = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_vector_field()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->vector_field().data(), static_cast<int>(this->vector_field().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.EmbeddingParams.vector_field"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string model_name = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_model_name()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->model_name().data(), static_cast<int>(this->model_name().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.EmbeddingParams.model_name"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.EmbeddingParams)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.EmbeddingParams)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void EmbeddingParams::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.EmbeddingParams)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string field = 1;
+  if (this->field().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->field().data(), static_cast<int>(this->field().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.EmbeddingParams.field");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->field(), output);
+  }
+
+  // string vector_field = 2;
+  if (this->vector_field().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->vector_field().data(), static_cast<int>(this->vector_field().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.EmbeddingParams.vector_field");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->vector_field(), output);
+  }
+
+  // string model_name = 3;
+  if (this->model_name().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->model_name().data(), static_cast<int>(this->model_name().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.EmbeddingParams.model_name");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      3, this->model_name(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.EmbeddingParams)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* EmbeddingParams::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.EmbeddingParams)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4588,36 +5812,39 @@ failure:
   // string field = 1;
   if (this->field().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_field().data(), static_cast<int>(this->_internal_field().length()),
+      this->field().data(), static_cast<int>(this->field().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.EmbeddingParams.field");
-    target = stream->WriteStringMaybeAliased(
-        1, this->_internal_field(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->field(), target);
   }
 
   // string vector_field = 2;
   if (this->vector_field().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_vector_field().data(), static_cast<int>(this->_internal_vector_field().length()),
+      this->vector_field().data(), static_cast<int>(this->vector_field().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.EmbeddingParams.vector_field");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_vector_field(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->vector_field(), target);
   }
 
   // string model_name = 3;
   if (this->model_name().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_model_name().data(), static_cast<int>(this->_internal_model_name().length()),
+      this->model_name().data(), static_cast<int>(this->model_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.EmbeddingParams.model_name");
-    target = stream->WriteStringMaybeAliased(
-        3, this->_internal_model_name(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        3, this->model_name(), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.EmbeddingParams)
   return target;
@@ -4627,6 +5854,11 @@ size_t EmbeddingParams::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.EmbeddingParams)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -4635,27 +5867,23 @@ size_t EmbeddingParams::ByteSizeLong() const {
   if (this->field().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_field());
+        this->field());
   }
 
   // string vector_field = 2;
   if (this->vector_field().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_vector_field());
+        this->vector_field());
   }
 
   // string model_name = 3;
   if (this->model_name().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_model_name());
+        this->model_name());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -4715,6 +5943,10 @@ bool EmbeddingParams::IsInitialized() const {
   return true;
 }
 
+void EmbeddingParams::Swap(EmbeddingParams* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void EmbeddingParams::InternalSwap(EmbeddingParams* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -4773,20 +6005,40 @@ void CollectionConf::InitAsDefaultInstance() {
   ::olama::_CollectionConf_default_instance_._instance.get_mutable()->ttlconfig_ = const_cast< ::olama::TTLConfig*>(
       ::olama::TTLConfig::internal_default_instance());
 }
-class CollectionConf::_Internal {
+class CollectionConf::HasBitSetters {
  public:
   static const ::olama::EmbeddingParams& embedding_params(const CollectionConf* msg);
   static const ::olama::TTLConfig& ttlconfig(const CollectionConf* msg);
 };
 
 const ::olama::EmbeddingParams&
-CollectionConf::_Internal::embedding_params(const CollectionConf* msg) {
+CollectionConf::HasBitSetters::embedding_params(const CollectionConf* msg) {
   return *msg->embedding_params_;
 }
 const ::olama::TTLConfig&
-CollectionConf::_Internal::ttlconfig(const CollectionConf* msg) {
+CollectionConf::HasBitSetters::ttlconfig(const CollectionConf* msg) {
   return *msg->ttlconfig_;
 }
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int CollectionConf::kDatabaseFieldNumber;
+const int CollectionConf::kCollectionFieldNumber;
+const int CollectionConf::kDescriptionFieldNumber;
+const int CollectionConf::kNumberOfShardsFieldNumber;
+const int CollectionConf::kNumberOfReplicasFieldNumber;
+const int CollectionConf::kDimensionFieldNumber;
+const int CollectionConf::kMetricFieldNumber;
+const int CollectionConf::kNprobeFieldNumber;
+const int CollectionConf::kEngineFieldNumber;
+const int CollectionConf::kModelDescFieldNumber;
+const int CollectionConf::kFieldMetasFieldNumber;
+const int CollectionConf::kOptionsFieldNumber;
+const int CollectionConf::kNlistFieldNumber;
+const int CollectionConf::kEmbeddingParamsFieldNumber;
+const int CollectionConf::kDataTypeFieldNumber;
+const int CollectionConf::kVersionFieldNumber;
+const int CollectionConf::kTtlConfigFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
 CollectionConf::CollectionConf()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
@@ -4799,27 +6051,27 @@ CollectionConf::CollectionConf(const CollectionConf& from)
   field_metas_.MergeFrom(from.field_metas_);
   options_.MergeFrom(from.options_);
   database_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_database().empty()) {
+  if (from.database().size() > 0) {
     database_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.database_);
   }
   collection_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_collection().empty()) {
+  if (from.collection().size() > 0) {
     collection_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.collection_);
   }
   description_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_description().empty()) {
+  if (from.description().size() > 0) {
     description_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.description_);
   }
   model_desc_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_model_desc().empty()) {
+  if (from.model_desc().size() > 0) {
     model_desc_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.model_desc_);
   }
-  if (from._internal_has_embedding_params()) {
+  if (from.has_embedding_params()) {
     embedding_params_ = new ::olama::EmbeddingParams(*from.embedding_params_);
   } else {
     embedding_params_ = nullptr;
   }
-  if (from._internal_has_ttlconfig()) {
+  if (from.has_ttlconfig()) {
     ttlconfig_ = new ::olama::TTLConfig(*from.ttlconfig_);
   } else {
     ttlconfig_ = nullptr;
@@ -4890,6 +6142,7 @@ void CollectionConf::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* CollectionConf::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -4900,27 +6153,21 @@ const char* CollectionConf::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
       // string database = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_database();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.CollectionConf.database"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_database(), ptr, ctx, "olama.CollectionConf.database");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string collection = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_collection();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.CollectionConf.collection"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_collection(), ptr, ctx, "olama.CollectionConf.collection");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string description = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          auto str = _internal_mutable_description();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.CollectionConf.description"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_description(), ptr, ctx, "olama.CollectionConf.description");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -4950,7 +6197,7 @@ const char* CollectionConf::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
           ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
-          _internal_set_metric(static_cast<::olama::IndexMetricType>(val));
+          set_metric(static_cast<::olama::IndexMetricType>(val));
         } else goto handle_unusual;
         continue;
       // uint32 nprobe = 8;
@@ -4965,15 +6212,13 @@ const char* CollectionConf::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 88)) {
           ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
-          _internal_set_engine(static_cast<::olama::IndexEngineType>(val));
+          set_engine(static_cast<::olama::IndexEngineType>(val));
         } else goto handle_unusual;
         continue;
       // string model_desc = 12;
       case 12:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 98)) {
-          auto str = _internal_mutable_model_desc();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.CollectionConf.model_desc"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_model_desc(), ptr, ctx, "olama.CollectionConf.model_desc");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -4986,7 +6231,7 @@ const char* CollectionConf::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
             ptr = ctx->ParseMessage(&field_metas_, ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<122>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 122);
         } else goto handle_unusual;
         continue;
       // map<string, string> options = 16;
@@ -4998,7 +6243,7 @@ const char* CollectionConf::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
             ptr = ctx->ParseMessage(&options_, ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<130>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint16>(ptr) == 386);
         } else goto handle_unusual;
         continue;
       // uint32 nlist = 17;
@@ -5011,7 +6256,7 @@ const char* CollectionConf::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
       // .olama.EmbeddingParams embedding_params = 18;
       case 18:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 146)) {
-          ptr = ctx->ParseMessage(_internal_mutable_embedding_params(), ptr);
+          ptr = ctx->ParseMessage(mutable_embedding_params(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -5020,7 +6265,7 @@ const char* CollectionConf::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 152)) {
           ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
-          _internal_set_data_type(static_cast<::olama::DataType>(val));
+          set_data_type(static_cast<::olama::DataType>(val));
         } else goto handle_unusual;
         continue;
       // int64 version = 20;
@@ -5033,7 +6278,7 @@ const char* CollectionConf::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
       // .olama.TTLConfig ttlConfig = 21;
       case 21:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 170)) {
-          ptr = ctx->ParseMessage(_internal_mutable_ttlconfig(), ptr);
+          ptr = ctx->ParseMessage(mutable_ttlconfig(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -5056,93 +6301,368 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool CollectionConf::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.CollectionConf)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(16383u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string database = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_database()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->database().data(), static_cast<int>(this->database().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.CollectionConf.database"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
 
-::PROTOBUF_NAMESPACE_ID::uint8* CollectionConf::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:olama.CollectionConf)
+      // string collection = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_collection()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->collection().data(), static_cast<int>(this->collection().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.CollectionConf.collection"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string description = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_description()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->description().data(), static_cast<int>(this->description().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.CollectionConf.description"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint32 number_of_shards = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &number_of_shards_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint32 number_of_replicas = 5;
+      case 5: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (40 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &number_of_replicas_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint32 dimension = 6;
+      case 6: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (48 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &dimension_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .olama.IndexMetricType metric = 7;
+      case 7: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (56 & 0xFF)) {
+          int value = 0;
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_metric(static_cast< ::olama::IndexMetricType >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint32 nprobe = 8;
+      case 8: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (64 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &nprobe_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .olama.IndexEngineType engine = 11;
+      case 11: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (88 & 0xFF)) {
+          int value = 0;
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_engine(static_cast< ::olama::IndexEngineType >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string model_desc = 12;
+      case 12: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (98 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_model_desc()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->model_desc().data(), static_cast<int>(this->model_desc().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.CollectionConf.model_desc"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // map<string, .olama.FieldMeta> field_metas = 15;
+      case 15: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (122 & 0xFF)) {
+          CollectionConf_FieldMetasEntry_DoNotUse::Parser< ::PROTOBUF_NAMESPACE_ID::internal::MapField<
+              CollectionConf_FieldMetasEntry_DoNotUse,
+              std::string, ::olama::FieldMeta,
+              ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_STRING,
+              ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_MESSAGE,
+              0 >,
+            ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::FieldMeta > > parser(&field_metas_);
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessageNoVirtual(
+              input, &parser));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            parser.key().data(), static_cast<int>(parser.key().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.CollectionConf.FieldMetasEntry.key"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // map<string, string> options = 16;
+      case 16: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (130 & 0xFF)) {
+          CollectionConf_OptionsEntry_DoNotUse::Parser< ::PROTOBUF_NAMESPACE_ID::internal::MapField<
+              CollectionConf_OptionsEntry_DoNotUse,
+              std::string, std::string,
+              ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_STRING,
+              ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_STRING,
+              0 >,
+            ::PROTOBUF_NAMESPACE_ID::Map< std::string, std::string > > parser(&options_);
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessageNoVirtual(
+              input, &parser));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            parser.key().data(), static_cast<int>(parser.key().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.CollectionConf.OptionsEntry.key"));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            parser.value().data(), static_cast<int>(parser.value().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.CollectionConf.OptionsEntry.value"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint32 nlist = 17;
+      case 17: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (136 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &nlist_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .olama.EmbeddingParams embedding_params = 18;
+      case 18: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (146 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+               input, mutable_embedding_params()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .olama.DataType data_type = 19;
+      case 19: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (152 & 0xFF)) {
+          int value = 0;
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_data_type(static_cast< ::olama::DataType >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 version = 20;
+      case 20: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (160 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 input, &version_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .olama.TTLConfig ttlConfig = 21;
+      case 21: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (170 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+               input, mutable_ttlconfig()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.CollectionConf)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.CollectionConf)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void CollectionConf::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.CollectionConf)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // string database = 1;
   if (this->database().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_database().data(), static_cast<int>(this->_internal_database().length()),
+      this->database().data(), static_cast<int>(this->database().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.CollectionConf.database");
-    target = stream->WriteStringMaybeAliased(
-        1, this->_internal_database(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->database(), output);
   }
 
   // string collection = 2;
   if (this->collection().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_collection().data(), static_cast<int>(this->_internal_collection().length()),
+      this->collection().data(), static_cast<int>(this->collection().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.CollectionConf.collection");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_collection(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->collection(), output);
   }
 
   // string description = 3;
   if (this->description().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_description().data(), static_cast<int>(this->_internal_description().length()),
+      this->description().data(), static_cast<int>(this->description().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.CollectionConf.description");
-    target = stream->WriteStringMaybeAliased(
-        3, this->_internal_description(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      3, this->description(), output);
   }
 
   // uint32 number_of_shards = 4;
   if (this->number_of_shards() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(4, this->_internal_number_of_shards(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32(4, this->number_of_shards(), output);
   }
 
   // uint32 number_of_replicas = 5;
   if (this->number_of_replicas() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(5, this->_internal_number_of_replicas(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32(5, this->number_of_replicas(), output);
   }
 
   // uint32 dimension = 6;
   if (this->dimension() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(6, this->_internal_dimension(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32(6, this->dimension(), output);
   }
 
   // .olama.IndexMetricType metric = 7;
   if (this->metric() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      7, this->_internal_metric(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
+      7, this->metric(), output);
   }
 
   // uint32 nprobe = 8;
   if (this->nprobe() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(8, this->_internal_nprobe(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32(8, this->nprobe(), output);
   }
 
   // .olama.IndexEngineType engine = 11;
   if (this->engine() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      11, this->_internal_engine(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
+      11, this->engine(), output);
   }
 
   // string model_desc = 12;
   if (this->model_desc().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_model_desc().data(), static_cast<int>(this->_internal_model_desc().length()),
+      this->model_desc().data(), static_cast<int>(this->model_desc().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.CollectionConf.model_desc");
-    target = stream->WriteStringMaybeAliased(
-        12, this->_internal_model_desc(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      12, this->model_desc(), output);
   }
 
   // map<string, .olama.FieldMeta> field_metas = 15;
-  if (!this->_internal_field_metas().empty()) {
+  if (!this->field_metas().empty()) {
     typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::FieldMeta >::const_pointer
         ConstPtr;
     typedef ConstPtr SortItem;
@@ -5156,34 +6676,36 @@ failure:
       }
     };
 
-    if (stream->IsSerializationDeterministic() &&
-        this->_internal_field_metas().size() > 1) {
+    if (output->IsSerializationDeterministic() &&
+        this->field_metas().size() > 1) {
       ::std::unique_ptr<SortItem[]> items(
-          new SortItem[this->_internal_field_metas().size()]);
+          new SortItem[this->field_metas().size()]);
       typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::FieldMeta >::size_type size_type;
       size_type n = 0;
       for (::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::FieldMeta >::const_iterator
-          it = this->_internal_field_metas().begin();
-          it != this->_internal_field_metas().end(); ++it, ++n) {
+          it = this->field_metas().begin();
+          it != this->field_metas().end(); ++it, ++n) {
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
       for (size_type i = 0; i < n; i++) {
-        target = CollectionConf_FieldMetasEntry_DoNotUse::Funcs::InternalSerialize(15, items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second, target, stream);
+        CollectionConf_FieldMetasEntry_DoNotUse::MapEntryWrapper entry(nullptr, items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second);
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(15, entry, output);
         Utf8Check::Check(&(*items[static_cast<ptrdiff_t>(i)]));
       }
     } else {
       for (::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::FieldMeta >::const_iterator
-          it = this->_internal_field_metas().begin();
-          it != this->_internal_field_metas().end(); ++it) {
-        target = CollectionConf_FieldMetasEntry_DoNotUse::Funcs::InternalSerialize(15, it->first, it->second, target, stream);
+          it = this->field_metas().begin();
+          it != this->field_metas().end(); ++it) {
+        CollectionConf_FieldMetasEntry_DoNotUse::MapEntryWrapper entry(nullptr, it->first, it->second);
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(15, entry, output);
         Utf8Check::Check(&(*it));
       }
     }
   }
 
   // map<string, string> options = 16;
-  if (!this->_internal_options().empty()) {
+  if (!this->options().empty()) {
     typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, std::string >::const_pointer
         ConstPtr;
     typedef ConstPtr SortItem;
@@ -5201,27 +6723,29 @@ failure:
       }
     };
 
-    if (stream->IsSerializationDeterministic() &&
-        this->_internal_options().size() > 1) {
+    if (output->IsSerializationDeterministic() &&
+        this->options().size() > 1) {
       ::std::unique_ptr<SortItem[]> items(
-          new SortItem[this->_internal_options().size()]);
+          new SortItem[this->options().size()]);
       typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, std::string >::size_type size_type;
       size_type n = 0;
       for (::PROTOBUF_NAMESPACE_ID::Map< std::string, std::string >::const_iterator
-          it = this->_internal_options().begin();
-          it != this->_internal_options().end(); ++it, ++n) {
+          it = this->options().begin();
+          it != this->options().end(); ++it, ++n) {
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
       for (size_type i = 0; i < n; i++) {
-        target = CollectionConf_OptionsEntry_DoNotUse::Funcs::InternalSerialize(16, items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second, target, stream);
+        CollectionConf_OptionsEntry_DoNotUse::MapEntryWrapper entry(nullptr, items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second);
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(16, entry, output);
         Utf8Check::Check(&(*items[static_cast<ptrdiff_t>(i)]));
       }
     } else {
       for (::PROTOBUF_NAMESPACE_ID::Map< std::string, std::string >::const_iterator
-          it = this->_internal_options().begin();
-          it != this->_internal_options().end(); ++it) {
-        target = CollectionConf_OptionsEntry_DoNotUse::Funcs::InternalSerialize(16, it->first, it->second, target, stream);
+          it = this->options().begin();
+          it != this->options().end(); ++it) {
+        CollectionConf_OptionsEntry_DoNotUse::MapEntryWrapper entry(nullptr, it->first, it->second);
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(16, entry, output);
         Utf8Check::Check(&(*it));
       }
     }
@@ -5229,42 +6753,244 @@ failure:
 
   // uint32 nlist = 17;
   if (this->nlist() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(17, this->_internal_nlist(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32(17, this->nlist(), output);
   }
 
   // .olama.EmbeddingParams embedding_params = 18;
   if (this->has_embedding_params()) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        18, _Internal::embedding_params(this), target, stream);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      18, HasBitSetters::embedding_params(this), output);
   }
 
   // .olama.DataType data_type = 19;
   if (this->data_type() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      19, this->_internal_data_type(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
+      19, this->data_type(), output);
   }
 
   // int64 version = 20;
   if (this->version() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(20, this->_internal_version(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(20, this->version(), output);
   }
 
   // .olama.TTLConfig ttlConfig = 21;
   if (this->has_ttlconfig()) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        21, _Internal::ttlconfig(this), target, stream);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      21, HasBitSetters::ttlconfig(this), output);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.CollectionConf)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* CollectionConf::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:olama.CollectionConf)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string database = 1;
+  if (this->database().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->database().data(), static_cast<int>(this->database().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.CollectionConf.database");
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->database(), target);
+  }
+
+  // string collection = 2;
+  if (this->collection().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->collection().data(), static_cast<int>(this->collection().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.CollectionConf.collection");
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->collection(), target);
+  }
+
+  // string description = 3;
+  if (this->description().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->description().data(), static_cast<int>(this->description().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.CollectionConf.description");
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        3, this->description(), target);
+  }
+
+  // uint32 number_of_shards = 4;
+  if (this->number_of_shards() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(4, this->number_of_shards(), target);
+  }
+
+  // uint32 number_of_replicas = 5;
+  if (this->number_of_replicas() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(5, this->number_of_replicas(), target);
+  }
+
+  // uint32 dimension = 6;
+  if (this->dimension() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(6, this->dimension(), target);
+  }
+
+  // .olama.IndexMetricType metric = 7;
+  if (this->metric() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+      7, this->metric(), target);
+  }
+
+  // uint32 nprobe = 8;
+  if (this->nprobe() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(8, this->nprobe(), target);
+  }
+
+  // .olama.IndexEngineType engine = 11;
+  if (this->engine() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+      11, this->engine(), target);
+  }
+
+  // string model_desc = 12;
+  if (this->model_desc().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->model_desc().data(), static_cast<int>(this->model_desc().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.CollectionConf.model_desc");
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        12, this->model_desc(), target);
+  }
+
+  // map<string, .olama.FieldMeta> field_metas = 15;
+  if (!this->field_metas().empty()) {
+    typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::FieldMeta >::const_pointer
+        ConstPtr;
+    typedef ConstPtr SortItem;
+    typedef ::PROTOBUF_NAMESPACE_ID::internal::CompareByDerefFirst<SortItem> Less;
+    struct Utf8Check {
+      static void Check(ConstPtr p) {
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+          p->first.data(), static_cast<int>(p->first.length()),
+          ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+          "olama.CollectionConf.FieldMetasEntry.key");
+      }
+    };
+
+    if (false &&
+        this->field_metas().size() > 1) {
+      ::std::unique_ptr<SortItem[]> items(
+          new SortItem[this->field_metas().size()]);
+      typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::FieldMeta >::size_type size_type;
+      size_type n = 0;
+      for (::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::FieldMeta >::const_iterator
+          it = this->field_metas().begin();
+          it != this->field_metas().end(); ++it, ++n) {
+        items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
+      }
+      ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
+      for (size_type i = 0; i < n; i++) {
+        CollectionConf_FieldMetasEntry_DoNotUse::MapEntryWrapper entry(nullptr, items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second);
+        target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::InternalWriteMessageNoVirtualToArray(15, entry, target);
+        Utf8Check::Check(&(*items[static_cast<ptrdiff_t>(i)]));
+      }
+    } else {
+      for (::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::FieldMeta >::const_iterator
+          it = this->field_metas().begin();
+          it != this->field_metas().end(); ++it) {
+        CollectionConf_FieldMetasEntry_DoNotUse::MapEntryWrapper entry(nullptr, it->first, it->second);
+        target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::InternalWriteMessageNoVirtualToArray(15, entry, target);
+        Utf8Check::Check(&(*it));
+      }
+    }
+  }
+
+  // map<string, string> options = 16;
+  if (!this->options().empty()) {
+    typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, std::string >::const_pointer
+        ConstPtr;
+    typedef ConstPtr SortItem;
+    typedef ::PROTOBUF_NAMESPACE_ID::internal::CompareByDerefFirst<SortItem> Less;
+    struct Utf8Check {
+      static void Check(ConstPtr p) {
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+          p->first.data(), static_cast<int>(p->first.length()),
+          ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+          "olama.CollectionConf.OptionsEntry.key");
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+          p->second.data(), static_cast<int>(p->second.length()),
+          ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+          "olama.CollectionConf.OptionsEntry.value");
+      }
+    };
+
+    if (false &&
+        this->options().size() > 1) {
+      ::std::unique_ptr<SortItem[]> items(
+          new SortItem[this->options().size()]);
+      typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, std::string >::size_type size_type;
+      size_type n = 0;
+      for (::PROTOBUF_NAMESPACE_ID::Map< std::string, std::string >::const_iterator
+          it = this->options().begin();
+          it != this->options().end(); ++it, ++n) {
+        items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
+      }
+      ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
+      for (size_type i = 0; i < n; i++) {
+        CollectionConf_OptionsEntry_DoNotUse::MapEntryWrapper entry(nullptr, items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second);
+        target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::InternalWriteMessageNoVirtualToArray(16, entry, target);
+        Utf8Check::Check(&(*items[static_cast<ptrdiff_t>(i)]));
+      }
+    } else {
+      for (::PROTOBUF_NAMESPACE_ID::Map< std::string, std::string >::const_iterator
+          it = this->options().begin();
+          it != this->options().end(); ++it) {
+        CollectionConf_OptionsEntry_DoNotUse::MapEntryWrapper entry(nullptr, it->first, it->second);
+        target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::InternalWriteMessageNoVirtualToArray(16, entry, target);
+        Utf8Check::Check(&(*it));
+      }
+    }
+  }
+
+  // uint32 nlist = 17;
+  if (this->nlist() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(17, this->nlist(), target);
+  }
+
+  // .olama.EmbeddingParams embedding_params = 18;
+  if (this->has_embedding_params()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        18, HasBitSetters::embedding_params(this), target);
+  }
+
+  // .olama.DataType data_type = 19;
+  if (this->data_type() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+      19, this->data_type(), target);
+  }
+
+  // int64 version = 20;
+  if (this->version() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(20, this->version(), target);
+  }
+
+  // .olama.TTLConfig ttlConfig = 21;
+  if (this->has_ttlconfig()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        21, HasBitSetters::ttlconfig(this), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.CollectionConf)
   return target;
@@ -5274,54 +7000,63 @@ size_t CollectionConf::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.CollectionConf)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // map<string, .olama.FieldMeta> field_metas = 15;
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->_internal_field_metas_size());
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->field_metas_size());
   for (::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::FieldMeta >::const_iterator
-      it = this->_internal_field_metas().begin();
-      it != this->_internal_field_metas().end(); ++it) {
-    total_size += CollectionConf_FieldMetasEntry_DoNotUse::Funcs::ByteSizeLong(it->first, it->second);
+      it = this->field_metas().begin();
+      it != this->field_metas().end(); ++it) {
+    CollectionConf_FieldMetasEntry_DoNotUse::MapEntryWrapper entry(nullptr, it->first, it->second);
+    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+        MessageSizeNoVirtual(entry);
   }
 
   // map<string, string> options = 16;
   total_size += 2 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->_internal_options_size());
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->options_size());
   for (::PROTOBUF_NAMESPACE_ID::Map< std::string, std::string >::const_iterator
-      it = this->_internal_options().begin();
-      it != this->_internal_options().end(); ++it) {
-    total_size += CollectionConf_OptionsEntry_DoNotUse::Funcs::ByteSizeLong(it->first, it->second);
+      it = this->options().begin();
+      it != this->options().end(); ++it) {
+    CollectionConf_OptionsEntry_DoNotUse::MapEntryWrapper entry(nullptr, it->first, it->second);
+    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+        MessageSizeNoVirtual(entry);
   }
 
   // string database = 1;
   if (this->database().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_database());
+        this->database());
   }
 
   // string collection = 2;
   if (this->collection().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_collection());
+        this->collection());
   }
 
   // string description = 3;
   if (this->description().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_description());
+        this->description());
   }
 
   // string model_desc = 12;
   if (this->model_desc().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_model_desc());
+        this->model_desc());
   }
 
   // .olama.EmbeddingParams embedding_params = 18;
@@ -5342,66 +7077,62 @@ size_t CollectionConf::ByteSizeLong() const {
   if (this->number_of_shards() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_number_of_shards());
+        this->number_of_shards());
   }
 
   // uint32 number_of_replicas = 5;
   if (this->number_of_replicas() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_number_of_replicas());
+        this->number_of_replicas());
   }
 
   // uint32 dimension = 6;
   if (this->dimension() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_dimension());
+        this->dimension());
   }
 
   // .olama.IndexMetricType metric = 7;
   if (this->metric() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_metric());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->metric());
   }
 
   // uint32 nprobe = 8;
   if (this->nprobe() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_nprobe());
+        this->nprobe());
   }
 
   // .olama.IndexEngineType engine = 11;
   if (this->engine() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_engine());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->engine());
   }
 
   // uint32 nlist = 17;
   if (this->nlist() != 0) {
     total_size += 2 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_nlist());
+        this->nlist());
   }
 
   // .olama.DataType data_type = 19;
   if (this->data_type() != 0) {
     total_size += 2 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_data_type());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->data_type());
   }
 
   // int64 version = 20;
   if (this->version() != 0) {
     total_size += 2 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_version());
+        this->version());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -5448,37 +7179,37 @@ void CollectionConf::MergeFrom(const CollectionConf& from) {
     model_desc_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.model_desc_);
   }
   if (from.has_embedding_params()) {
-    _internal_mutable_embedding_params()->::olama::EmbeddingParams::MergeFrom(from._internal_embedding_params());
+    mutable_embedding_params()->::olama::EmbeddingParams::MergeFrom(from.embedding_params());
   }
   if (from.has_ttlconfig()) {
-    _internal_mutable_ttlconfig()->::olama::TTLConfig::MergeFrom(from._internal_ttlconfig());
+    mutable_ttlconfig()->::olama::TTLConfig::MergeFrom(from.ttlconfig());
   }
   if (from.number_of_shards() != 0) {
-    _internal_set_number_of_shards(from._internal_number_of_shards());
+    set_number_of_shards(from.number_of_shards());
   }
   if (from.number_of_replicas() != 0) {
-    _internal_set_number_of_replicas(from._internal_number_of_replicas());
+    set_number_of_replicas(from.number_of_replicas());
   }
   if (from.dimension() != 0) {
-    _internal_set_dimension(from._internal_dimension());
+    set_dimension(from.dimension());
   }
   if (from.metric() != 0) {
-    _internal_set_metric(from._internal_metric());
+    set_metric(from.metric());
   }
   if (from.nprobe() != 0) {
-    _internal_set_nprobe(from._internal_nprobe());
+    set_nprobe(from.nprobe());
   }
   if (from.engine() != 0) {
-    _internal_set_engine(from._internal_engine());
+    set_engine(from.engine());
   }
   if (from.nlist() != 0) {
-    _internal_set_nlist(from._internal_nlist());
+    set_nlist(from.nlist());
   }
   if (from.data_type() != 0) {
-    _internal_set_data_type(from._internal_data_type());
+    set_data_type(from.data_type());
   }
   if (from.version() != 0) {
-    _internal_set_version(from._internal_version());
+    set_version(from.version());
   }
 }
 
@@ -5500,6 +7231,10 @@ bool CollectionConf::IsInitialized() const {
   return true;
 }
 
+void CollectionConf::Swap(CollectionConf* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void CollectionConf::InternalSwap(CollectionConf* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -5535,9 +7270,14 @@ void CollectionConf::InternalSwap(CollectionConf* other) {
 
 void FieldMeta::InitAsDefaultInstance() {
 }
-class FieldMeta::_Internal {
+class FieldMeta::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int FieldMeta::kFieldTypeFieldNumber;
+const int FieldMeta::kFieldElementTypeFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 FieldMeta::FieldMeta()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -5589,6 +7329,7 @@ void FieldMeta::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* FieldMeta::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -5601,7 +7342,7 @@ const char* FieldMeta::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
           ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
-          _internal_set_field_type(static_cast<::olama::FieldType>(val));
+          set_field_type(static_cast<::olama::FieldType>(val));
         } else goto handle_unusual;
         continue;
       // .olama.FieldElementType field_element_type = 2;
@@ -5609,7 +7350,7 @@ const char* FieldMeta::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
-          _internal_set_field_element_type(static_cast<::olama::FieldElementType>(val));
+          set_field_element_type(static_cast<::olama::FieldElementType>(val));
         } else goto handle_unusual;
         continue;
       default: {
@@ -5631,30 +7372,112 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool FieldMeta::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.FieldMeta)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // .olama.FieldType field_type = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
+          int value = 0;
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_field_type(static_cast< ::olama::FieldType >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
 
-::PROTOBUF_NAMESPACE_ID::uint8* FieldMeta::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+      // .olama.FieldElementType field_element_type = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
+          int value = 0;
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_field_element_type(static_cast< ::olama::FieldElementType >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.FieldMeta)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.FieldMeta)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void FieldMeta::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.FieldMeta)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .olama.FieldType field_type = 1;
+  if (this->field_type() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
+      1, this->field_type(), output);
+  }
+
+  // .olama.FieldElementType field_element_type = 2;
+  if (this->field_element_type() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
+      2, this->field_element_type(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.FieldMeta)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* FieldMeta::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.FieldMeta)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .olama.FieldType field_type = 1;
   if (this->field_type() != 0) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      1, this->_internal_field_type(), target);
+      1, this->field_type(), target);
   }
 
   // .olama.FieldElementType field_element_type = 2;
   if (this->field_element_type() != 0) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      2, this->_internal_field_element_type(), target);
+      2, this->field_element_type(), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.FieldMeta)
   return target;
@@ -5664,6 +7487,11 @@ size_t FieldMeta::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.FieldMeta)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -5671,19 +7499,15 @@ size_t FieldMeta::ByteSizeLong() const {
   // .olama.FieldType field_type = 1;
   if (this->field_type() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_field_type());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->field_type());
   }
 
   // .olama.FieldElementType field_element_type = 2;
   if (this->field_element_type() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_field_element_type());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->field_element_type());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -5712,10 +7536,10 @@ void FieldMeta::MergeFrom(const FieldMeta& from) {
   (void) cached_has_bits;
 
   if (from.field_type() != 0) {
-    _internal_set_field_type(from._internal_field_type());
+    set_field_type(from.field_type());
   }
   if (from.field_element_type() != 0) {
-    _internal_set_field_element_type(from._internal_field_element_type());
+    set_field_element_type(from.field_element_type());
   }
 }
 
@@ -5737,6 +7561,10 @@ bool FieldMeta::IsInitialized() const {
   return true;
 }
 
+void FieldMeta::Swap(FieldMeta* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void FieldMeta::InternalSwap(FieldMeta* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -5755,15 +7583,22 @@ void ShardConf::InitAsDefaultInstance() {
   ::olama::_ShardConf_default_instance_._instance.get_mutable()->conf_ = const_cast< ::olama::CollectionConf*>(
       ::olama::CollectionConf::internal_default_instance());
 }
-class ShardConf::_Internal {
+class ShardConf::HasBitSetters {
  public:
   static const ::olama::CollectionConf& conf(const ShardConf* msg);
 };
 
 const ::olama::CollectionConf&
-ShardConf::_Internal::conf(const ShardConf* msg) {
+ShardConf::HasBitSetters::conf(const ShardConf* msg) {
   return *msg->conf_;
 }
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int ShardConf::kCollectionFieldNumber;
+const int ShardConf::kShardIdxFieldNumber;
+const int ShardConf::kConfFieldNumber;
+const int ShardConf::kNodesFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
 ShardConf::ShardConf()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
@@ -5775,10 +7610,10 @@ ShardConf::ShardConf(const ShardConf& from)
       nodes_(from.nodes_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   collection_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_collection().empty()) {
+  if (from.collection().size() > 0) {
     collection_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.collection_);
   }
-  if (from._internal_has_conf()) {
+  if (from.has_conf()) {
     conf_ = new ::olama::CollectionConf(*from.conf_);
   } else {
     conf_ = nullptr;
@@ -5830,6 +7665,7 @@ void ShardConf::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ShardConf::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -5840,9 +7676,7 @@ const char* ShardConf::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
       // string collection = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_collection();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.ShardConf.collection"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_collection(), ptr, ctx, "olama.ShardConf.collection");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -5856,7 +7690,7 @@ const char* ShardConf::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
       // .olama.CollectionConf conf = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          ptr = ctx->ParseMessage(_internal_mutable_conf(), ptr);
+          ptr = ctx->ParseMessage(mutable_conf(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -5866,12 +7700,10 @@ const char* ShardConf::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
           ptr -= 1;
           do {
             ptr += 1;
-            auto str = _internal_add_nodes();
-            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-            CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.ShardConf.nodes"));
+            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(add_nodes(), ptr, ctx, "olama.ShardConf.nodes");
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<34>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 34);
         } else goto handle_unusual;
         continue;
       default: {
@@ -5893,9 +7725,139 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool ShardConf::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.ShardConf)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string collection = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_collection()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->collection().data(), static_cast<int>(this->collection().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.ShardConf.collection"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ShardConf::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+      // int32 shard_idx = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
+                 input, &shard_idx_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .olama.CollectionConf conf = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+               input, mutable_conf()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated string nodes = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->add_nodes()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->nodes(this->nodes_size() - 1).data(),
+            static_cast<int>(this->nodes(this->nodes_size() - 1).length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.ShardConf.nodes"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.ShardConf)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.ShardConf)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void ShardConf::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.ShardConf)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string collection = 1;
+  if (this->collection().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->collection().data(), static_cast<int>(this->collection().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.ShardConf.collection");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->collection(), output);
+  }
+
+  // int32 shard_idx = 2;
+  if (this->shard_idx() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(2, this->shard_idx(), output);
+  }
+
+  // .olama.CollectionConf conf = 3;
+  if (this->has_conf()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      3, HasBitSetters::conf(this), output);
+  }
+
+  // repeated string nodes = 4;
+  for (int i = 0, n = this->nodes_size(); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->nodes(i).data(), static_cast<int>(this->nodes(i).length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.ShardConf.nodes");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteString(
+      4, this->nodes(i), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.ShardConf)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* ShardConf::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.ShardConf)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -5903,40 +7865,39 @@ failure:
   // string collection = 1;
   if (this->collection().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_collection().data(), static_cast<int>(this->_internal_collection().length()),
+      this->collection().data(), static_cast<int>(this->collection().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.ShardConf.collection");
-    target = stream->WriteStringMaybeAliased(
-        1, this->_internal_collection(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->collection(), target);
   }
 
   // int32 shard_idx = 2;
   if (this->shard_idx() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_shard_idx(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->shard_idx(), target);
   }
 
   // .olama.CollectionConf conf = 3;
   if (this->has_conf()) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::conf(this), target, stream);
+      InternalWriteMessageToArray(
+        3, HasBitSetters::conf(this), target);
   }
 
   // repeated string nodes = 4;
-  for (int i = 0, n = this->_internal_nodes_size(); i < n; i++) {
-    const auto& s = this->_internal_nodes(i);
+  for (int i = 0, n = this->nodes_size(); i < n; i++) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      s.data(), static_cast<int>(s.length()),
+      this->nodes(i).data(), static_cast<int>(this->nodes(i).length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.ShardConf.nodes");
-    target = stream->WriteString(4, s, target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      WriteStringToArray(4, this->nodes(i), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.ShardConf)
   return target;
@@ -5946,23 +7907,28 @@ size_t ShardConf::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.ShardConf)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated string nodes = 4;
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(nodes_.size());
-  for (int i = 0, n = nodes_.size(); i < n; i++) {
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->nodes_size());
+  for (int i = 0, n = this->nodes_size(); i < n; i++) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-      nodes_.Get(i));
+      this->nodes(i));
   }
 
   // string collection = 1;
   if (this->collection().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_collection());
+        this->collection());
   }
 
   // .olama.CollectionConf conf = 3;
@@ -5976,13 +7942,9 @@ size_t ShardConf::ByteSizeLong() const {
   if (this->shard_idx() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_shard_idx());
+        this->shard_idx());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -6016,10 +7978,10 @@ void ShardConf::MergeFrom(const ShardConf& from) {
     collection_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.collection_);
   }
   if (from.has_conf()) {
-    _internal_mutable_conf()->::olama::CollectionConf::MergeFrom(from._internal_conf());
+    mutable_conf()->::olama::CollectionConf::MergeFrom(from.conf());
   }
   if (from.shard_idx() != 0) {
-    _internal_set_shard_idx(from._internal_shard_idx());
+    set_shard_idx(from.shard_idx());
   }
 }
 
@@ -6041,10 +8003,14 @@ bool ShardConf::IsInitialized() const {
   return true;
 }
 
+void ShardConf::Swap(ShardConf* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void ShardConf::InternalSwap(ShardConf* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  nodes_.InternalSwap(&other->nodes_);
+  nodes_.InternalSwap(CastToBase(&other->nodes_));
   collection_.Swap(&other->collection_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(conf_, other->conf_);
@@ -6060,9 +8026,14 @@ void ShardConf::InternalSwap(ShardConf* other) {
 
 void TTLConfig::InitAsDefaultInstance() {
 }
-class TTLConfig::_Internal {
+class TTLConfig::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int TTLConfig::kEnableFieldNumber;
+const int TTLConfig::kTimeFieldFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TTLConfig::TTLConfig()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -6074,7 +8045,7 @@ TTLConfig::TTLConfig(const TTLConfig& from)
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   timefield_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_timefield().empty()) {
+  if (from.timefield().size() > 0) {
     timefield_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.timefield_);
   }
   enable_ = from.enable_;
@@ -6116,6 +8087,7 @@ void TTLConfig::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* TTLConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -6133,9 +8105,7 @@ const char* TTLConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
       // string timeField = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_timefield();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.TTLConfig.timeField"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_timefield(), ptr, ctx, "olama.TTLConfig.timeField");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -6158,32 +8128,119 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool TTLConfig::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.TTLConfig)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // bool enable = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
 
-::PROTOBUF_NAMESPACE_ID::uint8* TTLConfig::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &enable_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string timeField = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_timefield()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->timefield().data(), static_cast<int>(this->timefield().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.TTLConfig.timeField"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.TTLConfig)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.TTLConfig)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void TTLConfig::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.TTLConfig)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // bool enable = 1;
+  if (this->enable() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(1, this->enable(), output);
+  }
+
+  // string timeField = 2;
+  if (this->timefield().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->timefield().data(), static_cast<int>(this->timefield().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.TTLConfig.timeField");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->timefield(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.TTLConfig)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* TTLConfig::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.TTLConfig)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // bool enable = 1;
   if (this->enable() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(1, this->_internal_enable(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(1, this->enable(), target);
   }
 
   // string timeField = 2;
   if (this->timefield().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_timefield().data(), static_cast<int>(this->_internal_timefield().length()),
+      this->timefield().data(), static_cast<int>(this->timefield().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.TTLConfig.timeField");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_timefield(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->timefield(), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.TTLConfig)
   return target;
@@ -6193,6 +8250,11 @@ size_t TTLConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.TTLConfig)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -6201,7 +8263,7 @@ size_t TTLConfig::ByteSizeLong() const {
   if (this->timefield().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_timefield());
+        this->timefield());
   }
 
   // bool enable = 1;
@@ -6209,10 +8271,6 @@ size_t TTLConfig::ByteSizeLong() const {
     total_size += 1 + 1;
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -6245,7 +8303,7 @@ void TTLConfig::MergeFrom(const TTLConfig& from) {
     timefield_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.timefield_);
   }
   if (from.enable() != 0) {
-    _internal_set_enable(from._internal_enable());
+    set_enable(from.enable());
   }
 }
 
@@ -6267,6 +8325,10 @@ bool TTLConfig::IsInitialized() const {
   return true;
 }
 
+void TTLConfig::Swap(TTLConfig* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void TTLConfig::InternalSwap(TTLConfig* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -6284,9 +8346,22 @@ void TTLConfig::InternalSwap(TTLConfig* other) {
 
 void ShardCollectionState::InitAsDefaultInstance() {
 }
-class ShardCollectionState::_Internal {
+class ShardCollectionState::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int ShardCollectionState::kShardIdxFieldNumber;
+const int ShardCollectionState::kLeaderFieldNumber;
+const int ShardCollectionState::kNodePeersFieldNumber;
+const int ShardCollectionState::kAllocateStartMsFieldNumber;
+const int ShardCollectionState::kAllocateStopMsFieldNumber;
+const int ShardCollectionState::kLeaderMsFieldNumber;
+const int ShardCollectionState::kAllocatingFieldNumber;
+const int ShardCollectionState::kShardsFieldNumber;
+const int ShardCollectionState::kCreatingFieldNumber;
+const int ShardCollectionState::kRemovingFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 ShardCollectionState::ShardCollectionState()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -6300,7 +8375,7 @@ ShardCollectionState::ShardCollectionState(const ShardCollectionState& from)
       shards_(from.shards_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   leader_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_leader().empty()) {
+  if (from.leader().size() > 0) {
     leader_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.leader_);
   }
   ::memcpy(&allocate_start_ms_, &from.allocate_start_ms_,
@@ -6350,6 +8425,7 @@ void ShardCollectionState::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ShardCollectionState::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -6367,9 +8443,7 @@ const char* ShardCollectionState::_InternalParse(const char* ptr, ::PROTOBUF_NAM
       // string leader = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_leader();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.ShardCollectionState.leader"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_leader(), ptr, ctx, "olama.ShardCollectionState.leader");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -6379,12 +8453,10 @@ const char* ShardCollectionState::_InternalParse(const char* ptr, ::PROTOBUF_NAM
           ptr -= 1;
           do {
             ptr += 1;
-            auto str = _internal_add_node_peers();
-            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-            CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.ShardCollectionState.node_peers"));
+            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(add_node_peers(), ptr, ctx, "olama.ShardCollectionState.node_peers");
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<26>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 26);
         } else goto handle_unusual;
         continue;
       // int64 allocate_start_ms = 4;
@@ -6421,10 +8493,10 @@ const char* ShardCollectionState::_InternalParse(const char* ptr, ::PROTOBUF_NAM
           ptr -= 1;
           do {
             ptr += 1;
-            ptr = ctx->ParseMessage(_internal_add_shards(), ptr);
+            ptr = ctx->ParseMessage(add_shards(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<66>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 66);
         } else goto handle_unusual;
         continue;
       // bool creating = 9;
@@ -6460,86 +8532,321 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool ShardCollectionState::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.ShardCollectionState)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int32 shard_idx = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
 
-::PROTOBUF_NAMESPACE_ID::uint8* ShardCollectionState::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
+                 input, &shard_idx_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string leader = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_leader()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->leader().data(), static_cast<int>(this->leader().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.ShardCollectionState.leader"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated string node_peers = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->add_node_peers()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->node_peers(this->node_peers_size() - 1).data(),
+            static_cast<int>(this->node_peers(this->node_peers_size() - 1).length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.ShardCollectionState.node_peers"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 allocate_start_ms = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 input, &allocate_start_ms_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 allocate_stop_ms = 5;
+      case 5: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (40 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 input, &allocate_stop_ms_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 leader_ms = 6;
+      case 6: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (48 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 input, &leader_ms_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool allocating = 7;
+      case 7: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (56 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &allocating_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated .olama.Shard shards = 8;
+      case 8: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (66 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+                input, add_shards()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool creating = 9;
+      case 9: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (72 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &creating_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool removing = 10;
+      case 10: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (80 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &removing_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.ShardCollectionState)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.ShardCollectionState)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void ShardCollectionState::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.ShardCollectionState)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 shard_idx = 1;
+  if (this->shard_idx() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(1, this->shard_idx(), output);
+  }
+
+  // string leader = 2;
+  if (this->leader().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->leader().data(), static_cast<int>(this->leader().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.ShardCollectionState.leader");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->leader(), output);
+  }
+
+  // repeated string node_peers = 3;
+  for (int i = 0, n = this->node_peers_size(); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->node_peers(i).data(), static_cast<int>(this->node_peers(i).length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.ShardCollectionState.node_peers");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteString(
+      3, this->node_peers(i), output);
+  }
+
+  // int64 allocate_start_ms = 4;
+  if (this->allocate_start_ms() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(4, this->allocate_start_ms(), output);
+  }
+
+  // int64 allocate_stop_ms = 5;
+  if (this->allocate_stop_ms() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(5, this->allocate_stop_ms(), output);
+  }
+
+  // int64 leader_ms = 6;
+  if (this->leader_ms() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(6, this->leader_ms(), output);
+  }
+
+  // bool allocating = 7;
+  if (this->allocating() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(7, this->allocating(), output);
+  }
+
+  // repeated .olama.Shard shards = 8;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->shards_size()); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      8,
+      this->shards(static_cast<int>(i)),
+      output);
+  }
+
+  // bool creating = 9;
+  if (this->creating() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(9, this->creating(), output);
+  }
+
+  // bool removing = 10;
+  if (this->removing() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(10, this->removing(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.ShardCollectionState)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* ShardCollectionState::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.ShardCollectionState)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 shard_idx = 1;
   if (this->shard_idx() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_shard_idx(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->shard_idx(), target);
   }
 
   // string leader = 2;
   if (this->leader().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_leader().data(), static_cast<int>(this->_internal_leader().length()),
+      this->leader().data(), static_cast<int>(this->leader().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.ShardCollectionState.leader");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_leader(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->leader(), target);
   }
 
   // repeated string node_peers = 3;
-  for (int i = 0, n = this->_internal_node_peers_size(); i < n; i++) {
-    const auto& s = this->_internal_node_peers(i);
+  for (int i = 0, n = this->node_peers_size(); i < n; i++) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      s.data(), static_cast<int>(s.length()),
+      this->node_peers(i).data(), static_cast<int>(this->node_peers(i).length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.ShardCollectionState.node_peers");
-    target = stream->WriteString(3, s, target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      WriteStringToArray(3, this->node_peers(i), target);
   }
 
   // int64 allocate_start_ms = 4;
   if (this->allocate_start_ms() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_allocate_start_ms(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->allocate_start_ms(), target);
   }
 
   // int64 allocate_stop_ms = 5;
   if (this->allocate_stop_ms() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_allocate_stop_ms(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->allocate_stop_ms(), target);
   }
 
   // int64 leader_ms = 6;
   if (this->leader_ms() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(6, this->_internal_leader_ms(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(6, this->leader_ms(), target);
   }
 
   // bool allocating = 7;
   if (this->allocating() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(7, this->_internal_allocating(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(7, this->allocating(), target);
   }
 
   // repeated .olama.Shard shards = 8;
   for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_shards_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+      n = static_cast<unsigned int>(this->shards_size()); i < n; i++) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(8, this->_internal_shards(i), target, stream);
+      InternalWriteMessageToArray(
+        8, this->shards(static_cast<int>(i)), target);
   }
 
   // bool creating = 9;
   if (this->creating() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(9, this->_internal_creating(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(9, this->creating(), target);
   }
 
   // bool removing = 10;
   if (this->removing() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(10, this->_internal_removing(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(10, this->removing(), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.ShardCollectionState)
   return target;
@@ -6549,58 +8856,67 @@ size_t ShardCollectionState::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.ShardCollectionState)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated string node_peers = 3;
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(node_peers_.size());
-  for (int i = 0, n = node_peers_.size(); i < n; i++) {
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->node_peers_size());
+  for (int i = 0, n = this->node_peers_size(); i < n; i++) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-      node_peers_.Get(i));
+      this->node_peers(i));
   }
 
   // repeated .olama.Shard shards = 8;
-  total_size += 1UL * this->_internal_shards_size();
-  for (const auto& msg : this->shards_) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  {
+    unsigned int count = static_cast<unsigned int>(this->shards_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          this->shards(static_cast<int>(i)));
+    }
   }
 
   // string leader = 2;
   if (this->leader().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_leader());
+        this->leader());
   }
 
   // int64 allocate_start_ms = 4;
   if (this->allocate_start_ms() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_allocate_start_ms());
+        this->allocate_start_ms());
   }
 
   // int64 allocate_stop_ms = 5;
   if (this->allocate_stop_ms() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_allocate_stop_ms());
+        this->allocate_stop_ms());
   }
 
   // int64 leader_ms = 6;
   if (this->leader_ms() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_leader_ms());
+        this->leader_ms());
   }
 
   // int32 shard_idx = 1;
   if (this->shard_idx() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_shard_idx());
+        this->shard_idx());
   }
 
   // bool allocating = 7;
@@ -6618,10 +8934,6 @@ size_t ShardCollectionState::ByteSizeLong() const {
     total_size += 1 + 1;
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -6656,25 +8968,25 @@ void ShardCollectionState::MergeFrom(const ShardCollectionState& from) {
     leader_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.leader_);
   }
   if (from.allocate_start_ms() != 0) {
-    _internal_set_allocate_start_ms(from._internal_allocate_start_ms());
+    set_allocate_start_ms(from.allocate_start_ms());
   }
   if (from.allocate_stop_ms() != 0) {
-    _internal_set_allocate_stop_ms(from._internal_allocate_stop_ms());
+    set_allocate_stop_ms(from.allocate_stop_ms());
   }
   if (from.leader_ms() != 0) {
-    _internal_set_leader_ms(from._internal_leader_ms());
+    set_leader_ms(from.leader_ms());
   }
   if (from.shard_idx() != 0) {
-    _internal_set_shard_idx(from._internal_shard_idx());
+    set_shard_idx(from.shard_idx());
   }
   if (from.allocating() != 0) {
-    _internal_set_allocating(from._internal_allocating());
+    set_allocating(from.allocating());
   }
   if (from.creating() != 0) {
-    _internal_set_creating(from._internal_creating());
+    set_creating(from.creating());
   }
   if (from.removing() != 0) {
-    _internal_set_removing(from._internal_removing());
+    set_removing(from.removing());
   }
 }
 
@@ -6696,11 +9008,15 @@ bool ShardCollectionState::IsInitialized() const {
   return true;
 }
 
+void ShardCollectionState::Swap(ShardCollectionState* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void ShardCollectionState::InternalSwap(ShardCollectionState* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  node_peers_.InternalSwap(&other->node_peers_);
-  shards_.InternalSwap(&other->shards_);
+  node_peers_.InternalSwap(CastToBase(&other->node_peers_));
+  CastToBase(&shards_)->InternalSwap(CastToBase(&other->shards_));
   leader_.Swap(&other->leader_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(allocate_start_ms_, other->allocate_start_ms_);
@@ -6725,20 +9041,30 @@ void CollectionState::InitAsDefaultInstance() {
   ::olama::_CollectionState_default_instance_._instance.get_mutable()->req_ = const_cast< ::olama::CreateCollectionRequest*>(
       ::olama::CreateCollectionRequest::internal_default_instance());
 }
-class CollectionState::_Internal {
+class CollectionState::HasBitSetters {
  public:
   static const ::olama::CollectionConf& conf(const CollectionState* msg);
   static const ::olama::CreateCollectionRequest& req(const CollectionState* msg);
 };
 
 const ::olama::CollectionConf&
-CollectionState::_Internal::conf(const CollectionState* msg) {
+CollectionState::HasBitSetters::conf(const CollectionState* msg) {
   return *msg->conf_;
 }
 const ::olama::CreateCollectionRequest&
-CollectionState::_Internal::req(const CollectionState* msg) {
+CollectionState::HasBitSetters::req(const CollectionState* msg) {
   return *msg->req_;
 }
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int CollectionState::kCollectionFieldNumber;
+const int CollectionState::kConfFieldNumber;
+const int CollectionState::kShardsFieldNumber;
+const int CollectionState::kSizeFieldNumber;
+const int CollectionState::kCreateTimeFieldNumber;
+const int CollectionState::kReqFieldNumber;
+const int CollectionState::kIndexStateFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
 CollectionState::CollectionState()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
@@ -6750,15 +9076,15 @@ CollectionState::CollectionState(const CollectionState& from)
       shards_(from.shards_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   collection_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_collection().empty()) {
+  if (from.collection().size() > 0) {
     collection_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.collection_);
   }
-  if (from._internal_has_conf()) {
+  if (from.has_conf()) {
     conf_ = new ::olama::CollectionConf(*from.conf_);
   } else {
     conf_ = nullptr;
   }
-  if (from._internal_has_req()) {
+  if (from.has_req()) {
     req_ = new ::olama::CreateCollectionRequest(*from.req_);
   } else {
     req_ = nullptr;
@@ -6819,6 +9145,7 @@ void CollectionState::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* CollectionState::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -6829,16 +9156,14 @@ const char* CollectionState::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
       // string collection = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_collection();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.CollectionState.collection"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_collection(), ptr, ctx, "olama.CollectionState.collection");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .olama.CollectionConf conf = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ctx->ParseMessage(_internal_mutable_conf(), ptr);
+          ptr = ctx->ParseMessage(mutable_conf(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -6848,10 +9173,10 @@ const char* CollectionState::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
           ptr -= 1;
           do {
             ptr += 1;
-            ptr = ctx->ParseMessage(_internal_add_shards(), ptr);
+            ptr = ctx->ParseMessage(add_shards(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<26>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 26);
         } else goto handle_unusual;
         continue;
       // uint64 size = 4;
@@ -6871,7 +9196,7 @@ const char* CollectionState::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
       // .olama.CreateCollectionRequest req = 6;
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
-          ptr = ctx->ParseMessage(_internal_mutable_req(), ptr);
+          ptr = ctx->ParseMessage(mutable_req(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -6880,7 +9205,7 @@ const char* CollectionState::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
           ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
-          _internal_set_index_state(static_cast<::olama::ShardDataState>(val));
+          set_index_state(static_cast<::olama::ShardDataState>(val));
         } else goto handle_unusual;
         continue;
       default: {
@@ -6902,9 +9227,188 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool CollectionState::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.CollectionState)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string collection = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_collection()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->collection().data(), static_cast<int>(this->collection().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.CollectionState.collection"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
 
-::PROTOBUF_NAMESPACE_ID::uint8* CollectionState::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+      // .olama.CollectionConf conf = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+               input, mutable_conf()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated .olama.ShardCollectionState shards = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+                input, add_shards()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint64 size = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
+                 input, &size_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 create_time = 5;
+      case 5: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (40 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 input, &create_time_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .olama.CreateCollectionRequest req = 6;
+      case 6: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (50 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+               input, mutable_req()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .olama.ShardDataState index_state = 8;
+      case 8: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (64 & 0xFF)) {
+          int value = 0;
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_index_state(static_cast< ::olama::ShardDataState >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.CollectionState)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.CollectionState)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void CollectionState::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.CollectionState)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string collection = 1;
+  if (this->collection().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->collection().data(), static_cast<int>(this->collection().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.CollectionState.collection");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->collection(), output);
+  }
+
+  // .olama.CollectionConf conf = 2;
+  if (this->has_conf()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2, HasBitSetters::conf(this), output);
+  }
+
+  // repeated .olama.ShardCollectionState shards = 3;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->shards_size()); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      3,
+      this->shards(static_cast<int>(i)),
+      output);
+  }
+
+  // uint64 size = 4;
+  if (this->size() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64(4, this->size(), output);
+  }
+
+  // int64 create_time = 5;
+  if (this->create_time() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(5, this->create_time(), output);
+  }
+
+  // .olama.CreateCollectionRequest req = 6;
+  if (this->has_req()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      6, HasBitSetters::req(this), output);
+  }
+
+  // .olama.ShardDataState index_state = 8;
+  if (this->index_state() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
+      8, this->index_state(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.CollectionState)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* CollectionState::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.CollectionState)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -6912,59 +9416,55 @@ failure:
   // string collection = 1;
   if (this->collection().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_collection().data(), static_cast<int>(this->_internal_collection().length()),
+      this->collection().data(), static_cast<int>(this->collection().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.CollectionState.collection");
-    target = stream->WriteStringMaybeAliased(
-        1, this->_internal_collection(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->collection(), target);
   }
 
   // .olama.CollectionConf conf = 2;
   if (this->has_conf()) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::conf(this), target, stream);
+      InternalWriteMessageToArray(
+        2, HasBitSetters::conf(this), target);
   }
 
   // repeated .olama.ShardCollectionState shards = 3;
   for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_shards_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+      n = static_cast<unsigned int>(this->shards_size()); i < n; i++) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(3, this->_internal_shards(i), target, stream);
+      InternalWriteMessageToArray(
+        3, this->shards(static_cast<int>(i)), target);
   }
 
   // uint64 size = 4;
   if (this->size() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(4, this->_internal_size(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(4, this->size(), target);
   }
 
   // int64 create_time = 5;
   if (this->create_time() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_create_time(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->create_time(), target);
   }
 
   // .olama.CreateCollectionRequest req = 6;
   if (this->has_req()) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        6, _Internal::req(this), target, stream);
+      InternalWriteMessageToArray(
+        6, HasBitSetters::req(this), target);
   }
 
   // .olama.ShardDataState index_state = 8;
   if (this->index_state() != 0) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      8, this->_internal_index_state(), target);
+      8, this->index_state(), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.CollectionState)
   return target;
@@ -6974,22 +9474,31 @@ size_t CollectionState::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.CollectionState)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .olama.ShardCollectionState shards = 3;
-  total_size += 1UL * this->_internal_shards_size();
-  for (const auto& msg : this->shards_) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  {
+    unsigned int count = static_cast<unsigned int>(this->shards_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          this->shards(static_cast<int>(i)));
+    }
   }
 
   // string collection = 1;
   if (this->collection().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_collection());
+        this->collection());
   }
 
   // .olama.CollectionConf conf = 2;
@@ -7010,26 +9519,22 @@ size_t CollectionState::ByteSizeLong() const {
   if (this->size() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->_internal_size());
+        this->size());
   }
 
   // int64 create_time = 5;
   if (this->create_time() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_create_time());
+        this->create_time());
   }
 
   // .olama.ShardDataState index_state = 8;
   if (this->index_state() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_index_state());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->index_state());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -7063,19 +9568,19 @@ void CollectionState::MergeFrom(const CollectionState& from) {
     collection_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.collection_);
   }
   if (from.has_conf()) {
-    _internal_mutable_conf()->::olama::CollectionConf::MergeFrom(from._internal_conf());
+    mutable_conf()->::olama::CollectionConf::MergeFrom(from.conf());
   }
   if (from.has_req()) {
-    _internal_mutable_req()->::olama::CreateCollectionRequest::MergeFrom(from._internal_req());
+    mutable_req()->::olama::CreateCollectionRequest::MergeFrom(from.req());
   }
   if (from.size() != 0) {
-    _internal_set_size(from._internal_size());
+    set_size(from.size());
   }
   if (from.create_time() != 0) {
-    _internal_set_create_time(from._internal_create_time());
+    set_create_time(from.create_time());
   }
   if (from.index_state() != 0) {
-    _internal_set_index_state(from._internal_index_state());
+    set_index_state(from.index_state());
   }
 }
 
@@ -7097,10 +9602,14 @@ bool CollectionState::IsInitialized() const {
   return true;
 }
 
+void CollectionState::Swap(CollectionState* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void CollectionState::InternalSwap(CollectionState* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  shards_.InternalSwap(&other->shards_);
+  CastToBase(&shards_)->InternalSwap(CastToBase(&other->shards_));
   collection_.Swap(&other->collection_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(conf_, other->conf_);
@@ -7119,9 +9628,15 @@ void CollectionState::InternalSwap(CollectionState* other) {
 
 void AddAliasRequest::InitAsDefaultInstance() {
 }
-class AddAliasRequest::_Internal {
+class AddAliasRequest::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int AddAliasRequest::kDatabaseFieldNumber;
+const int AddAliasRequest::kCollectionFieldNumber;
+const int AddAliasRequest::kAliasFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 AddAliasRequest::AddAliasRequest()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -7133,15 +9648,15 @@ AddAliasRequest::AddAliasRequest(const AddAliasRequest& from)
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   database_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_database().empty()) {
+  if (from.database().size() > 0) {
     database_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.database_);
   }
   collection_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_collection().empty()) {
+  if (from.collection().size() > 0) {
     collection_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.collection_);
   }
   alias_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_alias().empty()) {
+  if (from.alias().size() > 0) {
     alias_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.alias_);
   }
   // @@protoc_insertion_point(copy_constructor:olama.AddAliasRequest)
@@ -7186,6 +9701,7 @@ void AddAliasRequest::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* AddAliasRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -7196,27 +9712,21 @@ const char* AddAliasRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
       // string database = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_database();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.AddAliasRequest.database"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_database(), ptr, ctx, "olama.AddAliasRequest.database");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string collection = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_collection();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.AddAliasRequest.collection"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_collection(), ptr, ctx, "olama.AddAliasRequest.collection");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string alias = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          auto str = _internal_mutable_alias();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.AddAliasRequest.alias"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_alias(), ptr, ctx, "olama.AddAliasRequest.alias");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -7239,9 +9749,128 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool AddAliasRequest::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.AddAliasRequest)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string database = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_database()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->database().data(), static_cast<int>(this->database().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.AddAliasRequest.database"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
 
-::PROTOBUF_NAMESPACE_ID::uint8* AddAliasRequest::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+      // string collection = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_collection()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->collection().data(), static_cast<int>(this->collection().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.AddAliasRequest.collection"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string alias = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_alias()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->alias().data(), static_cast<int>(this->alias().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.AddAliasRequest.alias"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.AddAliasRequest)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.AddAliasRequest)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void AddAliasRequest::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.AddAliasRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string database = 1;
+  if (this->database().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->database().data(), static_cast<int>(this->database().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.AddAliasRequest.database");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->database(), output);
+  }
+
+  // string collection = 2;
+  if (this->collection().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->collection().data(), static_cast<int>(this->collection().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.AddAliasRequest.collection");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->collection(), output);
+  }
+
+  // string alias = 3;
+  if (this->alias().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->alias().data(), static_cast<int>(this->alias().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.AddAliasRequest.alias");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      3, this->alias(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.AddAliasRequest)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* AddAliasRequest::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.AddAliasRequest)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -7249,36 +9878,39 @@ failure:
   // string database = 1;
   if (this->database().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_database().data(), static_cast<int>(this->_internal_database().length()),
+      this->database().data(), static_cast<int>(this->database().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.AddAliasRequest.database");
-    target = stream->WriteStringMaybeAliased(
-        1, this->_internal_database(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->database(), target);
   }
 
   // string collection = 2;
   if (this->collection().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_collection().data(), static_cast<int>(this->_internal_collection().length()),
+      this->collection().data(), static_cast<int>(this->collection().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.AddAliasRequest.collection");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_collection(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->collection(), target);
   }
 
   // string alias = 3;
   if (this->alias().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_alias().data(), static_cast<int>(this->_internal_alias().length()),
+      this->alias().data(), static_cast<int>(this->alias().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.AddAliasRequest.alias");
-    target = stream->WriteStringMaybeAliased(
-        3, this->_internal_alias(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        3, this->alias(), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.AddAliasRequest)
   return target;
@@ -7288,6 +9920,11 @@ size_t AddAliasRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.AddAliasRequest)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -7296,27 +9933,23 @@ size_t AddAliasRequest::ByteSizeLong() const {
   if (this->database().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_database());
+        this->database());
   }
 
   // string collection = 2;
   if (this->collection().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_collection());
+        this->collection());
   }
 
   // string alias = 3;
   if (this->alias().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_alias());
+        this->alias());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -7376,6 +10009,10 @@ bool AddAliasRequest::IsInitialized() const {
   return true;
 }
 
+void AddAliasRequest::Swap(AddAliasRequest* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void AddAliasRequest::InternalSwap(AddAliasRequest* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -7396,9 +10033,14 @@ void AddAliasRequest::InternalSwap(AddAliasRequest* other) {
 
 void RemoveAliasRequest::InitAsDefaultInstance() {
 }
-class RemoveAliasRequest::_Internal {
+class RemoveAliasRequest::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int RemoveAliasRequest::kDatabaseFieldNumber;
+const int RemoveAliasRequest::kAliasFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 RemoveAliasRequest::RemoveAliasRequest()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -7410,11 +10052,11 @@ RemoveAliasRequest::RemoveAliasRequest(const RemoveAliasRequest& from)
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   database_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_database().empty()) {
+  if (from.database().size() > 0) {
     database_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.database_);
   }
   alias_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_alias().empty()) {
+  if (from.alias().size() > 0) {
     alias_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.alias_);
   }
   // @@protoc_insertion_point(copy_constructor:olama.RemoveAliasRequest)
@@ -7456,6 +10098,7 @@ void RemoveAliasRequest::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* RemoveAliasRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -7466,18 +10109,14 @@ const char* RemoveAliasRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
       // string database = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_database();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.RemoveAliasRequest.database"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_database(), ptr, ctx, "olama.RemoveAliasRequest.database");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string alias = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_alias();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.RemoveAliasRequest.alias"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_alias(), ptr, ctx, "olama.RemoveAliasRequest.alias");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -7500,9 +10139,103 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool RemoveAliasRequest::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.RemoveAliasRequest)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string database = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_database()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->database().data(), static_cast<int>(this->database().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.RemoveAliasRequest.database"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
 
-::PROTOBUF_NAMESPACE_ID::uint8* RemoveAliasRequest::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+      // string alias = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_alias()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->alias().data(), static_cast<int>(this->alias().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.RemoveAliasRequest.alias"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.RemoveAliasRequest)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.RemoveAliasRequest)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void RemoveAliasRequest::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.RemoveAliasRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string database = 1;
+  if (this->database().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->database().data(), static_cast<int>(this->database().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.RemoveAliasRequest.database");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->database(), output);
+  }
+
+  // string alias = 2;
+  if (this->alias().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->alias().data(), static_cast<int>(this->alias().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.RemoveAliasRequest.alias");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->alias(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.RemoveAliasRequest)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* RemoveAliasRequest::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.RemoveAliasRequest)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -7510,26 +10243,28 @@ failure:
   // string database = 1;
   if (this->database().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_database().data(), static_cast<int>(this->_internal_database().length()),
+      this->database().data(), static_cast<int>(this->database().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.RemoveAliasRequest.database");
-    target = stream->WriteStringMaybeAliased(
-        1, this->_internal_database(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->database(), target);
   }
 
   // string alias = 2;
   if (this->alias().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_alias().data(), static_cast<int>(this->_internal_alias().length()),
+      this->alias().data(), static_cast<int>(this->alias().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.RemoveAliasRequest.alias");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_alias(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->alias(), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.RemoveAliasRequest)
   return target;
@@ -7539,6 +10274,11 @@ size_t RemoveAliasRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.RemoveAliasRequest)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -7547,20 +10287,16 @@ size_t RemoveAliasRequest::ByteSizeLong() const {
   if (this->database().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_database());
+        this->database());
   }
 
   // string alias = 2;
   if (this->alias().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_alias());
+        this->alias());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -7616,6 +10352,10 @@ bool RemoveAliasRequest::IsInitialized() const {
   return true;
 }
 
+void RemoveAliasRequest::Swap(RemoveAliasRequest* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void RemoveAliasRequest::InternalSwap(RemoveAliasRequest* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -7634,9 +10374,16 @@ void RemoveAliasRequest::InternalSwap(RemoveAliasRequest* other) {
 
 void UpdateAliasResponse::InitAsDefaultInstance() {
 }
-class UpdateAliasResponse::_Internal {
+class UpdateAliasResponse::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int UpdateAliasResponse::kCodeFieldNumber;
+const int UpdateAliasResponse::kMsgFieldNumber;
+const int UpdateAliasResponse::kRedirectFieldNumber;
+const int UpdateAliasResponse::kAffectedCountFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 UpdateAliasResponse::UpdateAliasResponse()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -7648,11 +10395,11 @@ UpdateAliasResponse::UpdateAliasResponse(const UpdateAliasResponse& from)
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   msg_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_msg().empty()) {
+  if (from.msg().size() > 0) {
     msg_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.msg_);
   }
   redirect_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_redirect().empty()) {
+  if (from.redirect().size() > 0) {
     redirect_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.redirect_);
   }
   ::memcpy(&affectedcount_, &from.affectedcount_,
@@ -7703,6 +10450,7 @@ void UpdateAliasResponse::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* UpdateAliasResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -7720,18 +10468,14 @@ const char* UpdateAliasResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAME
       // string msg = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_msg();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.UpdateAliasResponse.msg"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_msg(), ptr, ctx, "olama.UpdateAliasResponse.msg");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string redirect = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          auto str = _internal_mutable_redirect();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.UpdateAliasResponse.redirect"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_redirect(), ptr, ctx, "olama.UpdateAliasResponse.redirect");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -7761,48 +10505,178 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool UpdateAliasResponse::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.UpdateAliasResponse)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int32 code = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
 
-::PROTOBUF_NAMESPACE_ID::uint8* UpdateAliasResponse::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
+                 input, &code_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string msg = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_msg()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->msg().data(), static_cast<int>(this->msg().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.UpdateAliasResponse.msg"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string redirect = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_redirect()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->redirect().data(), static_cast<int>(this->redirect().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.UpdateAliasResponse.redirect"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint64 affectedCount = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
+                 input, &affectedcount_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.UpdateAliasResponse)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.UpdateAliasResponse)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void UpdateAliasResponse::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.UpdateAliasResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 code = 1;
+  if (this->code() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(1, this->code(), output);
+  }
+
+  // string msg = 2;
+  if (this->msg().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->msg().data(), static_cast<int>(this->msg().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.UpdateAliasResponse.msg");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->msg(), output);
+  }
+
+  // string redirect = 3;
+  if (this->redirect().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->redirect().data(), static_cast<int>(this->redirect().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.UpdateAliasResponse.redirect");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      3, this->redirect(), output);
+  }
+
+  // uint64 affectedCount = 4;
+  if (this->affectedcount() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64(4, this->affectedcount(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.UpdateAliasResponse)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* UpdateAliasResponse::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.UpdateAliasResponse)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 code = 1;
   if (this->code() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_code(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->code(), target);
   }
 
   // string msg = 2;
   if (this->msg().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_msg().data(), static_cast<int>(this->_internal_msg().length()),
+      this->msg().data(), static_cast<int>(this->msg().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.UpdateAliasResponse.msg");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_msg(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->msg(), target);
   }
 
   // string redirect = 3;
   if (this->redirect().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_redirect().data(), static_cast<int>(this->_internal_redirect().length()),
+      this->redirect().data(), static_cast<int>(this->redirect().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.UpdateAliasResponse.redirect");
-    target = stream->WriteStringMaybeAliased(
-        3, this->_internal_redirect(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        3, this->redirect(), target);
   }
 
   // uint64 affectedCount = 4;
   if (this->affectedcount() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(4, this->_internal_affectedcount(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(4, this->affectedcount(), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.UpdateAliasResponse)
   return target;
@@ -7812,6 +10686,11 @@ size_t UpdateAliasResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.UpdateAliasResponse)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -7820,34 +10699,30 @@ size_t UpdateAliasResponse::ByteSizeLong() const {
   if (this->msg().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_msg());
+        this->msg());
   }
 
   // string redirect = 3;
   if (this->redirect().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_redirect());
+        this->redirect());
   }
 
   // uint64 affectedCount = 4;
   if (this->affectedcount() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->_internal_affectedcount());
+        this->affectedcount());
   }
 
   // int32 code = 1;
   if (this->code() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_code());
+        this->code());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -7884,10 +10759,10 @@ void UpdateAliasResponse::MergeFrom(const UpdateAliasResponse& from) {
     redirect_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.redirect_);
   }
   if (from.affectedcount() != 0) {
-    _internal_set_affectedcount(from._internal_affectedcount());
+    set_affectedcount(from.affectedcount());
   }
   if (from.code() != 0) {
-    _internal_set_code(from._internal_code());
+    set_code(from.code());
   }
 }
 
@@ -7909,6 +10784,10 @@ bool UpdateAliasResponse::IsInitialized() const {
   return true;
 }
 
+void UpdateAliasResponse::Swap(UpdateAliasResponse* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void UpdateAliasResponse::InternalSwap(UpdateAliasResponse* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -7929,9 +10808,14 @@ void UpdateAliasResponse::InternalSwap(UpdateAliasResponse* other) {
 
 void GetAliasRequest::InitAsDefaultInstance() {
 }
-class GetAliasRequest::_Internal {
+class GetAliasRequest::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int GetAliasRequest::kDatabaseFieldNumber;
+const int GetAliasRequest::kAliasFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 GetAliasRequest::GetAliasRequest()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -7943,11 +10827,11 @@ GetAliasRequest::GetAliasRequest(const GetAliasRequest& from)
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   database_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_database().empty()) {
+  if (from.database().size() > 0) {
     database_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.database_);
   }
   alias_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_alias().empty()) {
+  if (from.alias().size() > 0) {
     alias_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.alias_);
   }
   // @@protoc_insertion_point(copy_constructor:olama.GetAliasRequest)
@@ -7989,6 +10873,7 @@ void GetAliasRequest::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* GetAliasRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -7999,18 +10884,14 @@ const char* GetAliasRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
       // string database = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_database();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.GetAliasRequest.database"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_database(), ptr, ctx, "olama.GetAliasRequest.database");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string alias = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_alias();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.GetAliasRequest.alias"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_alias(), ptr, ctx, "olama.GetAliasRequest.alias");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -8033,9 +10914,103 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool GetAliasRequest::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.GetAliasRequest)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string database = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_database()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->database().data(), static_cast<int>(this->database().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.GetAliasRequest.database"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GetAliasRequest::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+      // string alias = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_alias()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->alias().data(), static_cast<int>(this->alias().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.GetAliasRequest.alias"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.GetAliasRequest)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.GetAliasRequest)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void GetAliasRequest::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.GetAliasRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string database = 1;
+  if (this->database().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->database().data(), static_cast<int>(this->database().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.GetAliasRequest.database");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->database(), output);
+  }
+
+  // string alias = 2;
+  if (this->alias().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->alias().data(), static_cast<int>(this->alias().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.GetAliasRequest.alias");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->alias(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.GetAliasRequest)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* GetAliasRequest::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.GetAliasRequest)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -8043,26 +11018,28 @@ failure:
   // string database = 1;
   if (this->database().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_database().data(), static_cast<int>(this->_internal_database().length()),
+      this->database().data(), static_cast<int>(this->database().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.GetAliasRequest.database");
-    target = stream->WriteStringMaybeAliased(
-        1, this->_internal_database(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->database(), target);
   }
 
   // string alias = 2;
   if (this->alias().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_alias().data(), static_cast<int>(this->_internal_alias().length()),
+      this->alias().data(), static_cast<int>(this->alias().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.GetAliasRequest.alias");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_alias(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->alias(), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.GetAliasRequest)
   return target;
@@ -8072,6 +11049,11 @@ size_t GetAliasRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.GetAliasRequest)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -8080,20 +11062,16 @@ size_t GetAliasRequest::ByteSizeLong() const {
   if (this->database().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_database());
+        this->database());
   }
 
   // string alias = 2;
   if (this->alias().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_alias());
+        this->alias());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -8149,6 +11127,10 @@ bool GetAliasRequest::IsInitialized() const {
   return true;
 }
 
+void GetAliasRequest::Swap(GetAliasRequest* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void GetAliasRequest::InternalSwap(GetAliasRequest* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -8167,9 +11149,16 @@ void GetAliasRequest::InternalSwap(GetAliasRequest* other) {
 
 void GetAliasResponse::InitAsDefaultInstance() {
 }
-class GetAliasResponse::_Internal {
+class GetAliasResponse::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int GetAliasResponse::kCodeFieldNumber;
+const int GetAliasResponse::kMsgFieldNumber;
+const int GetAliasResponse::kRedirectFieldNumber;
+const int GetAliasResponse::kAliasesFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 GetAliasResponse::GetAliasResponse()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -8182,11 +11171,11 @@ GetAliasResponse::GetAliasResponse(const GetAliasResponse& from)
       aliases_(from.aliases_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   msg_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_msg().empty()) {
+  if (from.msg().size() > 0) {
     msg_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.msg_);
   }
   redirect_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_redirect().empty()) {
+  if (from.redirect().size() > 0) {
     redirect_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.redirect_);
   }
   code_ = from.code_;
@@ -8232,6 +11221,7 @@ void GetAliasResponse::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* GetAliasResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -8249,18 +11239,14 @@ const char* GetAliasResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
       // string msg = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_msg();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.GetAliasResponse.msg"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_msg(), ptr, ctx, "olama.GetAliasResponse.msg");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string redirect = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          auto str = _internal_mutable_redirect();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.GetAliasResponse.redirect"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_redirect(), ptr, ctx, "olama.GetAliasResponse.redirect");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -8270,10 +11256,10 @@ const char* GetAliasResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           ptr -= 1;
           do {
             ptr += 1;
-            ptr = ctx->ParseMessage(_internal_add_aliases(), ptr);
+            ptr = ctx->ParseMessage(add_aliases(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<34>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 34);
         } else goto handle_unusual;
         continue;
       default: {
@@ -8295,50 +11281,183 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool GetAliasResponse::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.GetAliasResponse)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int32 code = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
 
-::PROTOBUF_NAMESPACE_ID::uint8* GetAliasResponse::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
+                 input, &code_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string msg = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_msg()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->msg().data(), static_cast<int>(this->msg().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.GetAliasResponse.msg"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string redirect = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_redirect()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->redirect().data(), static_cast<int>(this->redirect().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.GetAliasResponse.redirect"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated .olama.AliasItem aliases = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+                input, add_aliases()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.GetAliasResponse)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.GetAliasResponse)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void GetAliasResponse::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.GetAliasResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 code = 1;
+  if (this->code() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(1, this->code(), output);
+  }
+
+  // string msg = 2;
+  if (this->msg().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->msg().data(), static_cast<int>(this->msg().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.GetAliasResponse.msg");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->msg(), output);
+  }
+
+  // string redirect = 3;
+  if (this->redirect().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->redirect().data(), static_cast<int>(this->redirect().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.GetAliasResponse.redirect");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      3, this->redirect(), output);
+  }
+
+  // repeated .olama.AliasItem aliases = 4;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->aliases_size()); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      4,
+      this->aliases(static_cast<int>(i)),
+      output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.GetAliasResponse)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* GetAliasResponse::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.GetAliasResponse)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 code = 1;
   if (this->code() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_code(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->code(), target);
   }
 
   // string msg = 2;
   if (this->msg().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_msg().data(), static_cast<int>(this->_internal_msg().length()),
+      this->msg().data(), static_cast<int>(this->msg().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.GetAliasResponse.msg");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_msg(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->msg(), target);
   }
 
   // string redirect = 3;
   if (this->redirect().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_redirect().data(), static_cast<int>(this->_internal_redirect().length()),
+      this->redirect().data(), static_cast<int>(this->redirect().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.GetAliasResponse.redirect");
-    target = stream->WriteStringMaybeAliased(
-        3, this->_internal_redirect(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        3, this->redirect(), target);
   }
 
   // repeated .olama.AliasItem aliases = 4;
   for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_aliases_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+      n = static_cast<unsigned int>(this->aliases_size()); i < n; i++) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(4, this->_internal_aliases(i), target, stream);
+      InternalWriteMessageToArray(
+        4, this->aliases(static_cast<int>(i)), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.GetAliasResponse)
   return target;
@@ -8348,42 +11467,47 @@ size_t GetAliasResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.GetAliasResponse)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .olama.AliasItem aliases = 4;
-  total_size += 1UL * this->_internal_aliases_size();
-  for (const auto& msg : this->aliases_) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  {
+    unsigned int count = static_cast<unsigned int>(this->aliases_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          this->aliases(static_cast<int>(i)));
+    }
   }
 
   // string msg = 2;
   if (this->msg().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_msg());
+        this->msg());
   }
 
   // string redirect = 3;
   if (this->redirect().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_redirect());
+        this->redirect());
   }
 
   // int32 code = 1;
   if (this->code() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_code());
+        this->code());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -8421,7 +11545,7 @@ void GetAliasResponse::MergeFrom(const GetAliasResponse& from) {
     redirect_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.redirect_);
   }
   if (from.code() != 0) {
-    _internal_set_code(from._internal_code());
+    set_code(from.code());
   }
 }
 
@@ -8443,10 +11567,14 @@ bool GetAliasResponse::IsInitialized() const {
   return true;
 }
 
+void GetAliasResponse::Swap(GetAliasResponse* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void GetAliasResponse::InternalSwap(GetAliasResponse* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  aliases_.InternalSwap(&other->aliases_);
+  CastToBase(&aliases_)->InternalSwap(CastToBase(&other->aliases_));
   msg_.Swap(&other->msg_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   redirect_.Swap(&other->redirect_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
@@ -8463,9 +11591,15 @@ void GetAliasResponse::InternalSwap(GetAliasResponse* other) {
 
 void DescribeCollectionRequest::InitAsDefaultInstance() {
 }
-class DescribeCollectionRequest::_Internal {
+class DescribeCollectionRequest::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int DescribeCollectionRequest::kDatabaseFieldNumber;
+const int DescribeCollectionRequest::kCollectionFieldNumber;
+const int DescribeCollectionRequest::kTransferFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 DescribeCollectionRequest::DescribeCollectionRequest()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -8477,11 +11611,11 @@ DescribeCollectionRequest::DescribeCollectionRequest(const DescribeCollectionReq
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   database_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_database().empty()) {
+  if (from.database().size() > 0) {
     database_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.database_);
   }
   collection_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_collection().empty()) {
+  if (from.collection().size() > 0) {
     collection_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.collection_);
   }
   transfer_ = from.transfer_;
@@ -8526,6 +11660,7 @@ void DescribeCollectionRequest::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* DescribeCollectionRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -8536,18 +11671,14 @@ const char* DescribeCollectionRequest::_InternalParse(const char* ptr, ::PROTOBU
       // string database = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_database();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.DescribeCollectionRequest.database"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_database(), ptr, ctx, "olama.DescribeCollectionRequest.database");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string collection = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_collection();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.DescribeCollectionRequest.collection"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_collection(), ptr, ctx, "olama.DescribeCollectionRequest.collection");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -8577,9 +11708,121 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool DescribeCollectionRequest::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.DescribeCollectionRequest)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string database = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_database()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->database().data(), static_cast<int>(this->database().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.DescribeCollectionRequest.database"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
 
-::PROTOBUF_NAMESPACE_ID::uint8* DescribeCollectionRequest::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+      // string collection = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_collection()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->collection().data(), static_cast<int>(this->collection().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.DescribeCollectionRequest.collection"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool transfer = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &transfer_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.DescribeCollectionRequest)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.DescribeCollectionRequest)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void DescribeCollectionRequest::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.DescribeCollectionRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string database = 1;
+  if (this->database().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->database().data(), static_cast<int>(this->database().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.DescribeCollectionRequest.database");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->database(), output);
+  }
+
+  // string collection = 2;
+  if (this->collection().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->collection().data(), static_cast<int>(this->collection().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.DescribeCollectionRequest.collection");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->collection(), output);
+  }
+
+  // bool transfer = 3;
+  if (this->transfer() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(3, this->transfer(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.DescribeCollectionRequest)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* DescribeCollectionRequest::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.DescribeCollectionRequest)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -8587,32 +11830,33 @@ failure:
   // string database = 1;
   if (this->database().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_database().data(), static_cast<int>(this->_internal_database().length()),
+      this->database().data(), static_cast<int>(this->database().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.DescribeCollectionRequest.database");
-    target = stream->WriteStringMaybeAliased(
-        1, this->_internal_database(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->database(), target);
   }
 
   // string collection = 2;
   if (this->collection().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_collection().data(), static_cast<int>(this->_internal_collection().length()),
+      this->collection().data(), static_cast<int>(this->collection().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.DescribeCollectionRequest.collection");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_collection(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->collection(), target);
   }
 
   // bool transfer = 3;
   if (this->transfer() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_transfer(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->transfer(), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.DescribeCollectionRequest)
   return target;
@@ -8622,6 +11866,11 @@ size_t DescribeCollectionRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.DescribeCollectionRequest)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -8630,14 +11879,14 @@ size_t DescribeCollectionRequest::ByteSizeLong() const {
   if (this->database().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_database());
+        this->database());
   }
 
   // string collection = 2;
   if (this->collection().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_collection());
+        this->collection());
   }
 
   // bool transfer = 3;
@@ -8645,10 +11894,6 @@ size_t DescribeCollectionRequest::ByteSizeLong() const {
     total_size += 1 + 1;
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -8685,7 +11930,7 @@ void DescribeCollectionRequest::MergeFrom(const DescribeCollectionRequest& from)
     collection_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.collection_);
   }
   if (from.transfer() != 0) {
-    _internal_set_transfer(from._internal_transfer());
+    set_transfer(from.transfer());
   }
 }
 
@@ -8707,6 +11952,10 @@ bool DescribeCollectionRequest::IsInitialized() const {
   return true;
 }
 
+void DescribeCollectionRequest::Swap(DescribeCollectionRequest* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void DescribeCollectionRequest::InternalSwap(DescribeCollectionRequest* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -8730,20 +11979,28 @@ void DescribeCollectionResponse::InitAsDefaultInstance() {
   ::olama::_DescribeCollectionResponse_default_instance_._instance.get_mutable()->state_ = const_cast< ::olama::CollectionState*>(
       ::olama::CollectionState::internal_default_instance());
 }
-class DescribeCollectionResponse::_Internal {
+class DescribeCollectionResponse::HasBitSetters {
  public:
   static const ::olama::CreateCollectionRequest& collection(const DescribeCollectionResponse* msg);
   static const ::olama::CollectionState& state(const DescribeCollectionResponse* msg);
 };
 
 const ::olama::CreateCollectionRequest&
-DescribeCollectionResponse::_Internal::collection(const DescribeCollectionResponse* msg) {
+DescribeCollectionResponse::HasBitSetters::collection(const DescribeCollectionResponse* msg) {
   return *msg->collection_;
 }
 const ::olama::CollectionState&
-DescribeCollectionResponse::_Internal::state(const DescribeCollectionResponse* msg) {
+DescribeCollectionResponse::HasBitSetters::state(const DescribeCollectionResponse* msg) {
   return *msg->state_;
 }
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int DescribeCollectionResponse::kCodeFieldNumber;
+const int DescribeCollectionResponse::kMsgFieldNumber;
+const int DescribeCollectionResponse::kRedirectFieldNumber;
+const int DescribeCollectionResponse::kCollectionFieldNumber;
+const int DescribeCollectionResponse::kStateFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
 DescribeCollectionResponse::DescribeCollectionResponse()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
@@ -8754,19 +12011,19 @@ DescribeCollectionResponse::DescribeCollectionResponse(const DescribeCollectionR
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   msg_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_msg().empty()) {
+  if (from.msg().size() > 0) {
     msg_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.msg_);
   }
   redirect_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_redirect().empty()) {
+  if (from.redirect().size() > 0) {
     redirect_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.redirect_);
   }
-  if (from._internal_has_collection()) {
+  if (from.has_collection()) {
     collection_ = new ::olama::CreateCollectionRequest(*from.collection_);
   } else {
     collection_ = nullptr;
   }
-  if (from._internal_has_state()) {
+  if (from.has_state()) {
     state_ = new ::olama::CollectionState(*from.state_);
   } else {
     state_ = nullptr;
@@ -8825,6 +12082,7 @@ void DescribeCollectionResponse::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* DescribeCollectionResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -8842,32 +12100,28 @@ const char* DescribeCollectionResponse::_InternalParse(const char* ptr, ::PROTOB
       // string msg = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_msg();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.DescribeCollectionResponse.msg"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_msg(), ptr, ctx, "olama.DescribeCollectionResponse.msg");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string redirect = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          auto str = _internal_mutable_redirect();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.DescribeCollectionResponse.redirect"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_redirect(), ptr, ctx, "olama.DescribeCollectionResponse.redirect");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .olama.CreateCollectionRequest collection = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
-          ptr = ctx->ParseMessage(_internal_mutable_collection(), ptr);
+          ptr = ctx->ParseMessage(mutable_collection(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .olama.CollectionState state = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
-          ptr = ctx->ParseMessage(_internal_mutable_state(), ptr);
+          ptr = ctx->ParseMessage(mutable_state(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -8890,58 +12144,203 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool DescribeCollectionResponse::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.DescribeCollectionResponse)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int32 code = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
 
-::PROTOBUF_NAMESPACE_ID::uint8* DescribeCollectionResponse::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
+                 input, &code_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string msg = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_msg()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->msg().data(), static_cast<int>(this->msg().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.DescribeCollectionResponse.msg"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string redirect = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_redirect()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->redirect().data(), static_cast<int>(this->redirect().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.DescribeCollectionResponse.redirect"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .olama.CreateCollectionRequest collection = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+               input, mutable_collection()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .olama.CollectionState state = 5;
+      case 5: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (42 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+               input, mutable_state()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.DescribeCollectionResponse)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.DescribeCollectionResponse)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void DescribeCollectionResponse::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.DescribeCollectionResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 code = 1;
+  if (this->code() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(1, this->code(), output);
+  }
+
+  // string msg = 2;
+  if (this->msg().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->msg().data(), static_cast<int>(this->msg().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.DescribeCollectionResponse.msg");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->msg(), output);
+  }
+
+  // string redirect = 3;
+  if (this->redirect().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->redirect().data(), static_cast<int>(this->redirect().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.DescribeCollectionResponse.redirect");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      3, this->redirect(), output);
+  }
+
+  // .olama.CreateCollectionRequest collection = 4;
+  if (this->has_collection()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      4, HasBitSetters::collection(this), output);
+  }
+
+  // .olama.CollectionState state = 5;
+  if (this->has_state()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      5, HasBitSetters::state(this), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.DescribeCollectionResponse)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* DescribeCollectionResponse::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.DescribeCollectionResponse)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 code = 1;
   if (this->code() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_code(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->code(), target);
   }
 
   // string msg = 2;
   if (this->msg().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_msg().data(), static_cast<int>(this->_internal_msg().length()),
+      this->msg().data(), static_cast<int>(this->msg().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.DescribeCollectionResponse.msg");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_msg(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->msg(), target);
   }
 
   // string redirect = 3;
   if (this->redirect().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_redirect().data(), static_cast<int>(this->_internal_redirect().length()),
+      this->redirect().data(), static_cast<int>(this->redirect().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.DescribeCollectionResponse.redirect");
-    target = stream->WriteStringMaybeAliased(
-        3, this->_internal_redirect(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        3, this->redirect(), target);
   }
 
   // .olama.CreateCollectionRequest collection = 4;
   if (this->has_collection()) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        4, _Internal::collection(this), target, stream);
+      InternalWriteMessageToArray(
+        4, HasBitSetters::collection(this), target);
   }
 
   // .olama.CollectionState state = 5;
   if (this->has_state()) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        5, _Internal::state(this), target, stream);
+      InternalWriteMessageToArray(
+        5, HasBitSetters::state(this), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.DescribeCollectionResponse)
   return target;
@@ -8951,6 +12350,11 @@ size_t DescribeCollectionResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.DescribeCollectionResponse)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -8959,14 +12363,14 @@ size_t DescribeCollectionResponse::ByteSizeLong() const {
   if (this->msg().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_msg());
+        this->msg());
   }
 
   // string redirect = 3;
   if (this->redirect().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_redirect());
+        this->redirect());
   }
 
   // .olama.CreateCollectionRequest collection = 4;
@@ -8987,13 +12391,9 @@ size_t DescribeCollectionResponse::ByteSizeLong() const {
   if (this->code() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_code());
+        this->code());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -9030,13 +12430,13 @@ void DescribeCollectionResponse::MergeFrom(const DescribeCollectionResponse& fro
     redirect_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.redirect_);
   }
   if (from.has_collection()) {
-    _internal_mutable_collection()->::olama::CreateCollectionRequest::MergeFrom(from._internal_collection());
+    mutable_collection()->::olama::CreateCollectionRequest::MergeFrom(from.collection());
   }
   if (from.has_state()) {
-    _internal_mutable_state()->::olama::CollectionState::MergeFrom(from._internal_state());
+    mutable_state()->::olama::CollectionState::MergeFrom(from.state());
   }
   if (from.code() != 0) {
-    _internal_set_code(from._internal_code());
+    set_code(from.code());
   }
 }
 
@@ -9058,6 +12458,10 @@ bool DescribeCollectionResponse::IsInitialized() const {
   return true;
 }
 
+void DescribeCollectionResponse::Swap(DescribeCollectionResponse* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void DescribeCollectionResponse::InternalSwap(DescribeCollectionResponse* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -9079,9 +12483,14 @@ void DescribeCollectionResponse::InternalSwap(DescribeCollectionResponse* other)
 
 void ListCollectionsRequest::InitAsDefaultInstance() {
 }
-class ListCollectionsRequest::_Internal {
+class ListCollectionsRequest::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int ListCollectionsRequest::kDatabaseFieldNumber;
+const int ListCollectionsRequest::kTransferFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 ListCollectionsRequest::ListCollectionsRequest()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -9093,7 +12502,7 @@ ListCollectionsRequest::ListCollectionsRequest(const ListCollectionsRequest& fro
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   database_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_database().empty()) {
+  if (from.database().size() > 0) {
     database_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.database_);
   }
   transfer_ = from.transfer_;
@@ -9135,6 +12544,7 @@ void ListCollectionsRequest::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ListCollectionsRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -9145,9 +12555,7 @@ const char* ListCollectionsRequest::_InternalParse(const char* ptr, ::PROTOBUF_N
       // string database = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_database();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.ListCollectionsRequest.database"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_database(), ptr, ctx, "olama.ListCollectionsRequest.database");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -9177,9 +12585,96 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool ListCollectionsRequest::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.ListCollectionsRequest)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string database = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_database()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->database().data(), static_cast<int>(this->database().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.ListCollectionsRequest.database"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ListCollectionsRequest::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+      // bool transfer = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &transfer_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.ListCollectionsRequest)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.ListCollectionsRequest)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void ListCollectionsRequest::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.ListCollectionsRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string database = 1;
+  if (this->database().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->database().data(), static_cast<int>(this->database().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.ListCollectionsRequest.database");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->database(), output);
+  }
+
+  // bool transfer = 2;
+  if (this->transfer() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(2, this->transfer(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.ListCollectionsRequest)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* ListCollectionsRequest::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.ListCollectionsRequest)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -9187,22 +12682,22 @@ failure:
   // string database = 1;
   if (this->database().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_database().data(), static_cast<int>(this->_internal_database().length()),
+      this->database().data(), static_cast<int>(this->database().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.ListCollectionsRequest.database");
-    target = stream->WriteStringMaybeAliased(
-        1, this->_internal_database(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->database(), target);
   }
 
   // bool transfer = 2;
   if (this->transfer() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(2, this->_internal_transfer(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(2, this->transfer(), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.ListCollectionsRequest)
   return target;
@@ -9212,6 +12707,11 @@ size_t ListCollectionsRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.ListCollectionsRequest)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -9220,7 +12720,7 @@ size_t ListCollectionsRequest::ByteSizeLong() const {
   if (this->database().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_database());
+        this->database());
   }
 
   // bool transfer = 2;
@@ -9228,10 +12728,6 @@ size_t ListCollectionsRequest::ByteSizeLong() const {
     total_size += 1 + 1;
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -9264,7 +12760,7 @@ void ListCollectionsRequest::MergeFrom(const ListCollectionsRequest& from) {
     database_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.database_);
   }
   if (from.transfer() != 0) {
-    _internal_set_transfer(from._internal_transfer());
+    set_transfer(from.transfer());
   }
 }
 
@@ -9286,6 +12782,10 @@ bool ListCollectionsRequest::IsInitialized() const {
   return true;
 }
 
+void ListCollectionsRequest::Swap(ListCollectionsRequest* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void ListCollectionsRequest::InternalSwap(ListCollectionsRequest* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -9303,9 +12803,17 @@ void ListCollectionsRequest::InternalSwap(ListCollectionsRequest* other) {
 
 void ListCollectionsResponse::InitAsDefaultInstance() {
 }
-class ListCollectionsResponse::_Internal {
+class ListCollectionsResponse::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int ListCollectionsResponse::kCodeFieldNumber;
+const int ListCollectionsResponse::kMsgFieldNumber;
+const int ListCollectionsResponse::kRedirectFieldNumber;
+const int ListCollectionsResponse::kCollectionsFieldNumber;
+const int ListCollectionsResponse::kStatesFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 ListCollectionsResponse::ListCollectionsResponse()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -9319,11 +12827,11 @@ ListCollectionsResponse::ListCollectionsResponse(const ListCollectionsResponse& 
       states_(from.states_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   msg_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_msg().empty()) {
+  if (from.msg().size() > 0) {
     msg_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.msg_);
   }
   redirect_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_redirect().empty()) {
+  if (from.redirect().size() > 0) {
     redirect_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.redirect_);
   }
   code_ = from.code_;
@@ -9370,6 +12878,7 @@ void ListCollectionsResponse::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ListCollectionsResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -9387,18 +12896,14 @@ const char* ListCollectionsResponse::_InternalParse(const char* ptr, ::PROTOBUF_
       // string msg = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_msg();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.ListCollectionsResponse.msg"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_msg(), ptr, ctx, "olama.ListCollectionsResponse.msg");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string redirect = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          auto str = _internal_mutable_redirect();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.ListCollectionsResponse.redirect"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_redirect(), ptr, ctx, "olama.ListCollectionsResponse.redirect");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -9408,10 +12913,10 @@ const char* ListCollectionsResponse::_InternalParse(const char* ptr, ::PROTOBUF_
           ptr -= 1;
           do {
             ptr += 1;
-            ptr = ctx->ParseMessage(_internal_add_collections(), ptr);
+            ptr = ctx->ParseMessage(add_collections(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<34>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 34);
         } else goto handle_unusual;
         continue;
       // repeated .olama.CollectionState states = 5;
@@ -9420,10 +12925,10 @@ const char* ListCollectionsResponse::_InternalParse(const char* ptr, ::PROTOBUF_
           ptr -= 1;
           do {
             ptr += 1;
-            ptr = ctx->ParseMessage(_internal_add_states(), ptr);
+            ptr = ctx->ParseMessage(add_states(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<42>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 42);
         } else goto handle_unusual;
         continue;
       default: {
@@ -9445,58 +12950,211 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool ListCollectionsResponse::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.ListCollectionsResponse)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int32 code = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
 
-::PROTOBUF_NAMESPACE_ID::uint8* ListCollectionsResponse::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
+                 input, &code_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string msg = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_msg()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->msg().data(), static_cast<int>(this->msg().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.ListCollectionsResponse.msg"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string redirect = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_redirect()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->redirect().data(), static_cast<int>(this->redirect().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.ListCollectionsResponse.redirect"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated .olama.CreateCollectionRequest collections = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+                input, add_collections()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated .olama.CollectionState states = 5;
+      case 5: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (42 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+                input, add_states()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.ListCollectionsResponse)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.ListCollectionsResponse)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void ListCollectionsResponse::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.ListCollectionsResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 code = 1;
+  if (this->code() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(1, this->code(), output);
+  }
+
+  // string msg = 2;
+  if (this->msg().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->msg().data(), static_cast<int>(this->msg().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.ListCollectionsResponse.msg");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->msg(), output);
+  }
+
+  // string redirect = 3;
+  if (this->redirect().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->redirect().data(), static_cast<int>(this->redirect().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.ListCollectionsResponse.redirect");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      3, this->redirect(), output);
+  }
+
+  // repeated .olama.CreateCollectionRequest collections = 4;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->collections_size()); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      4,
+      this->collections(static_cast<int>(i)),
+      output);
+  }
+
+  // repeated .olama.CollectionState states = 5;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->states_size()); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      5,
+      this->states(static_cast<int>(i)),
+      output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.ListCollectionsResponse)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* ListCollectionsResponse::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.ListCollectionsResponse)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 code = 1;
   if (this->code() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_code(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->code(), target);
   }
 
   // string msg = 2;
   if (this->msg().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_msg().data(), static_cast<int>(this->_internal_msg().length()),
+      this->msg().data(), static_cast<int>(this->msg().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.ListCollectionsResponse.msg");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_msg(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->msg(), target);
   }
 
   // string redirect = 3;
   if (this->redirect().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_redirect().data(), static_cast<int>(this->_internal_redirect().length()),
+      this->redirect().data(), static_cast<int>(this->redirect().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.ListCollectionsResponse.redirect");
-    target = stream->WriteStringMaybeAliased(
-        3, this->_internal_redirect(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        3, this->redirect(), target);
   }
 
   // repeated .olama.CreateCollectionRequest collections = 4;
   for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_collections_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+      n = static_cast<unsigned int>(this->collections_size()); i < n; i++) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(4, this->_internal_collections(i), target, stream);
+      InternalWriteMessageToArray(
+        4, this->collections(static_cast<int>(i)), target);
   }
 
   // repeated .olama.CollectionState states = 5;
   for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_states_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+      n = static_cast<unsigned int>(this->states_size()); i < n; i++) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(5, this->_internal_states(i), target, stream);
+      InternalWriteMessageToArray(
+        5, this->states(static_cast<int>(i)), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.ListCollectionsResponse)
   return target;
@@ -9506,49 +13164,58 @@ size_t ListCollectionsResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.ListCollectionsResponse)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .olama.CreateCollectionRequest collections = 4;
-  total_size += 1UL * this->_internal_collections_size();
-  for (const auto& msg : this->collections_) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  {
+    unsigned int count = static_cast<unsigned int>(this->collections_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          this->collections(static_cast<int>(i)));
+    }
   }
 
   // repeated .olama.CollectionState states = 5;
-  total_size += 1UL * this->_internal_states_size();
-  for (const auto& msg : this->states_) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  {
+    unsigned int count = static_cast<unsigned int>(this->states_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          this->states(static_cast<int>(i)));
+    }
   }
 
   // string msg = 2;
   if (this->msg().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_msg());
+        this->msg());
   }
 
   // string redirect = 3;
   if (this->redirect().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_redirect());
+        this->redirect());
   }
 
   // int32 code = 1;
   if (this->code() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_code());
+        this->code());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -9587,7 +13254,7 @@ void ListCollectionsResponse::MergeFrom(const ListCollectionsResponse& from) {
     redirect_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.redirect_);
   }
   if (from.code() != 0) {
-    _internal_set_code(from._internal_code());
+    set_code(from.code());
   }
 }
 
@@ -9609,11 +13276,15 @@ bool ListCollectionsResponse::IsInitialized() const {
   return true;
 }
 
+void ListCollectionsResponse::Swap(ListCollectionsResponse* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void ListCollectionsResponse::InternalSwap(ListCollectionsResponse* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  collections_.InternalSwap(&other->collections_);
-  states_.InternalSwap(&other->states_);
+  CastToBase(&collections_)->InternalSwap(CastToBase(&other->collections_));
+  CastToBase(&states_)->InternalSwap(CastToBase(&other->states_));
   msg_.Swap(&other->msg_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   redirect_.Swap(&other->redirect_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
@@ -9630,9 +13301,16 @@ void ListCollectionsResponse::InternalSwap(ListCollectionsResponse* other) {
 
 void IndexParams::InitAsDefaultInstance() {
 }
-class IndexParams::_Internal {
+class IndexParams::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int IndexParams::kMFieldNumber;
+const int IndexParams::kEfConstructionFieldNumber;
+const int IndexParams::kNprobeFieldNumber;
+const int IndexParams::kNlistFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 IndexParams::IndexParams()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -9684,6 +13362,7 @@ void IndexParams::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* IndexParams::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -9738,40 +13417,152 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool IndexParams::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.IndexParams)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // uint32 M = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
 
-::PROTOBUF_NAMESPACE_ID::uint8* IndexParams::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &m_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint32 efConstruction = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &efconstruction_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint32 nprobe = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &nprobe_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint32 nlist = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &nlist_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.IndexParams)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.IndexParams)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void IndexParams::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.IndexParams)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // uint32 M = 1;
+  if (this->m() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32(1, this->m(), output);
+  }
+
+  // uint32 efConstruction = 2;
+  if (this->efconstruction() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32(2, this->efconstruction(), output);
+  }
+
+  // uint32 nprobe = 3;
+  if (this->nprobe() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32(3, this->nprobe(), output);
+  }
+
+  // uint32 nlist = 4;
+  if (this->nlist() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32(4, this->nlist(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.IndexParams)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* IndexParams::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.IndexParams)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // uint32 M = 1;
   if (this->m() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_m(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->m(), target);
   }
 
   // uint32 efConstruction = 2;
   if (this->efconstruction() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_efconstruction(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->efconstruction(), target);
   }
 
   // uint32 nprobe = 3;
   if (this->nprobe() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(3, this->_internal_nprobe(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(3, this->nprobe(), target);
   }
 
   // uint32 nlist = 4;
   if (this->nlist() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(4, this->_internal_nlist(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(4, this->nlist(), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.IndexParams)
   return target;
@@ -9781,6 +13572,11 @@ size_t IndexParams::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.IndexParams)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -9789,34 +13585,30 @@ size_t IndexParams::ByteSizeLong() const {
   if (this->m() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_m());
+        this->m());
   }
 
   // uint32 efConstruction = 2;
   if (this->efconstruction() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_efconstruction());
+        this->efconstruction());
   }
 
   // uint32 nprobe = 3;
   if (this->nprobe() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_nprobe());
+        this->nprobe());
   }
 
   // uint32 nlist = 4;
   if (this->nlist() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_nlist());
+        this->nlist());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -9845,16 +13637,16 @@ void IndexParams::MergeFrom(const IndexParams& from) {
   (void) cached_has_bits;
 
   if (from.m() != 0) {
-    _internal_set_m(from._internal_m());
+    set_m(from.m());
   }
   if (from.efconstruction() != 0) {
-    _internal_set_efconstruction(from._internal_efconstruction());
+    set_efconstruction(from.efconstruction());
   }
   if (from.nprobe() != 0) {
-    _internal_set_nprobe(from._internal_nprobe());
+    set_nprobe(from.nprobe());
   }
   if (from.nlist() != 0) {
-    _internal_set_nlist(from._internal_nlist());
+    set_nlist(from.nlist());
   }
 }
 
@@ -9876,6 +13668,10 @@ bool IndexParams::IsInitialized() const {
   return true;
 }
 
+void IndexParams::Swap(IndexParams* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void IndexParams::InternalSwap(IndexParams* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -9896,15 +13692,25 @@ void IndexColumn::InitAsDefaultInstance() {
   ::olama::_IndexColumn_default_instance_._instance.get_mutable()->params_ = const_cast< ::olama::IndexParams*>(
       ::olama::IndexParams::internal_default_instance());
 }
-class IndexColumn::_Internal {
+class IndexColumn::HasBitSetters {
  public:
   static const ::olama::IndexParams& params(const IndexColumn* msg);
 };
 
 const ::olama::IndexParams&
-IndexColumn::_Internal::params(const IndexColumn* msg) {
+IndexColumn::HasBitSetters::params(const IndexColumn* msg) {
   return *msg->params_;
 }
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int IndexColumn::kFieldNameFieldNumber;
+const int IndexColumn::kFieldTypeFieldNumber;
+const int IndexColumn::kIndexTypeFieldNumber;
+const int IndexColumn::kDimensionFieldNumber;
+const int IndexColumn::kMetricTypeFieldNumber;
+const int IndexColumn::kParamsFieldNumber;
+const int IndexColumn::kFieldElementTypeFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
 IndexColumn::IndexColumn()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
@@ -9915,26 +13721,26 @@ IndexColumn::IndexColumn(const IndexColumn& from)
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   fieldname_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_fieldname().empty()) {
+  if (from.fieldname().size() > 0) {
     fieldname_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.fieldname_);
   }
   fieldtype_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_fieldtype().empty()) {
+  if (from.fieldtype().size() > 0) {
     fieldtype_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.fieldtype_);
   }
   indextype_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_indextype().empty()) {
+  if (from.indextype().size() > 0) {
     indextype_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.indextype_);
   }
   metrictype_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_metrictype().empty()) {
+  if (from.metrictype().size() > 0) {
     metrictype_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.metrictype_);
   }
   fieldelementtype_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_fieldelementtype().empty()) {
+  if (from.fieldelementtype().size() > 0) {
     fieldelementtype_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.fieldelementtype_);
   }
-  if (from._internal_has_params()) {
+  if (from.has_params()) {
     params_ = new ::olama::IndexParams(*from.params_);
   } else {
     params_ = nullptr;
@@ -9997,6 +13803,7 @@ void IndexColumn::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* IndexColumn::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -10007,27 +13814,21 @@ const char* IndexColumn::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID
       // string fieldName = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_fieldname();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.IndexColumn.fieldName"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_fieldname(), ptr, ctx, "olama.IndexColumn.fieldName");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string fieldType = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_fieldtype();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.IndexColumn.fieldType"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_fieldtype(), ptr, ctx, "olama.IndexColumn.fieldType");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string indexType = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          auto str = _internal_mutable_indextype();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.IndexColumn.indexType"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_indextype(), ptr, ctx, "olama.IndexColumn.indexType");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -10041,25 +13842,21 @@ const char* IndexColumn::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID
       // string metricType = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
-          auto str = _internal_mutable_metrictype();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.IndexColumn.metricType"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_metrictype(), ptr, ctx, "olama.IndexColumn.metricType");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .olama.IndexParams params = 8;
       case 8:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 66)) {
-          ptr = ctx->ParseMessage(_internal_mutable_params(), ptr);
+          ptr = ctx->ParseMessage(mutable_params(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string fieldElementType = 9;
       case 9:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 74)) {
-          auto str = _internal_mutable_fieldelementtype();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.IndexColumn.fieldElementType"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_fieldelementtype(), ptr, ctx, "olama.IndexColumn.fieldElementType");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -10082,9 +13879,213 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool IndexColumn::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.IndexColumn)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string fieldName = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_fieldname()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->fieldname().data(), static_cast<int>(this->fieldname().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.IndexColumn.fieldName"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
 
-::PROTOBUF_NAMESPACE_ID::uint8* IndexColumn::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+      // string fieldType = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_fieldtype()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->fieldtype().data(), static_cast<int>(this->fieldtype().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.IndexColumn.fieldType"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string indexType = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_indextype()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->indextype().data(), static_cast<int>(this->indextype().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.IndexColumn.indexType"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint32 dimension = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &dimension_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string metricType = 5;
+      case 5: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (42 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_metrictype()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->metrictype().data(), static_cast<int>(this->metrictype().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.IndexColumn.metricType"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .olama.IndexParams params = 8;
+      case 8: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (66 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+               input, mutable_params()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string fieldElementType = 9;
+      case 9: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (74 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_fieldelementtype()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->fieldelementtype().data(), static_cast<int>(this->fieldelementtype().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.IndexColumn.fieldElementType"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.IndexColumn)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.IndexColumn)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void IndexColumn::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.IndexColumn)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string fieldName = 1;
+  if (this->fieldname().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->fieldname().data(), static_cast<int>(this->fieldname().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.IndexColumn.fieldName");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->fieldname(), output);
+  }
+
+  // string fieldType = 2;
+  if (this->fieldtype().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->fieldtype().data(), static_cast<int>(this->fieldtype().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.IndexColumn.fieldType");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->fieldtype(), output);
+  }
+
+  // string indexType = 3;
+  if (this->indextype().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->indextype().data(), static_cast<int>(this->indextype().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.IndexColumn.indexType");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      3, this->indextype(), output);
+  }
+
+  // uint32 dimension = 4;
+  if (this->dimension() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32(4, this->dimension(), output);
+  }
+
+  // string metricType = 5;
+  if (this->metrictype().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->metrictype().data(), static_cast<int>(this->metrictype().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.IndexColumn.metricType");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      5, this->metrictype(), output);
+  }
+
+  // .olama.IndexParams params = 8;
+  if (this->has_params()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      8, HasBitSetters::params(this), output);
+  }
+
+  // string fieldElementType = 9;
+  if (this->fieldelementtype().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->fieldelementtype().data(), static_cast<int>(this->fieldelementtype().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.IndexColumn.fieldElementType");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      9, this->fieldelementtype(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.IndexColumn)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* IndexColumn::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.IndexColumn)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -10092,70 +14093,73 @@ failure:
   // string fieldName = 1;
   if (this->fieldname().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_fieldname().data(), static_cast<int>(this->_internal_fieldname().length()),
+      this->fieldname().data(), static_cast<int>(this->fieldname().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.IndexColumn.fieldName");
-    target = stream->WriteStringMaybeAliased(
-        1, this->_internal_fieldname(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->fieldname(), target);
   }
 
   // string fieldType = 2;
   if (this->fieldtype().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_fieldtype().data(), static_cast<int>(this->_internal_fieldtype().length()),
+      this->fieldtype().data(), static_cast<int>(this->fieldtype().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.IndexColumn.fieldType");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_fieldtype(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->fieldtype(), target);
   }
 
   // string indexType = 3;
   if (this->indextype().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_indextype().data(), static_cast<int>(this->_internal_indextype().length()),
+      this->indextype().data(), static_cast<int>(this->indextype().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.IndexColumn.indexType");
-    target = stream->WriteStringMaybeAliased(
-        3, this->_internal_indextype(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        3, this->indextype(), target);
   }
 
   // uint32 dimension = 4;
   if (this->dimension() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(4, this->_internal_dimension(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(4, this->dimension(), target);
   }
 
   // string metricType = 5;
   if (this->metrictype().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_metrictype().data(), static_cast<int>(this->_internal_metrictype().length()),
+      this->metrictype().data(), static_cast<int>(this->metrictype().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.IndexColumn.metricType");
-    target = stream->WriteStringMaybeAliased(
-        5, this->_internal_metrictype(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        5, this->metrictype(), target);
   }
 
   // .olama.IndexParams params = 8;
   if (this->has_params()) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        8, _Internal::params(this), target, stream);
+      InternalWriteMessageToArray(
+        8, HasBitSetters::params(this), target);
   }
 
   // string fieldElementType = 9;
   if (this->fieldelementtype().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_fieldelementtype().data(), static_cast<int>(this->_internal_fieldelementtype().length()),
+      this->fieldelementtype().data(), static_cast<int>(this->fieldelementtype().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.IndexColumn.fieldElementType");
-    target = stream->WriteStringMaybeAliased(
-        9, this->_internal_fieldelementtype(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        9, this->fieldelementtype(), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.IndexColumn)
   return target;
@@ -10165,6 +14169,11 @@ size_t IndexColumn::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.IndexColumn)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -10173,35 +14182,35 @@ size_t IndexColumn::ByteSizeLong() const {
   if (this->fieldname().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_fieldname());
+        this->fieldname());
   }
 
   // string fieldType = 2;
   if (this->fieldtype().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_fieldtype());
+        this->fieldtype());
   }
 
   // string indexType = 3;
   if (this->indextype().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_indextype());
+        this->indextype());
   }
 
   // string metricType = 5;
   if (this->metrictype().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_metrictype());
+        this->metrictype());
   }
 
   // string fieldElementType = 9;
   if (this->fieldelementtype().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_fieldelementtype());
+        this->fieldelementtype());
   }
 
   // .olama.IndexParams params = 8;
@@ -10215,13 +14224,9 @@ size_t IndexColumn::ByteSizeLong() const {
   if (this->dimension() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_dimension());
+        this->dimension());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -10270,10 +14275,10 @@ void IndexColumn::MergeFrom(const IndexColumn& from) {
     fieldelementtype_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.fieldelementtype_);
   }
   if (from.has_params()) {
-    _internal_mutable_params()->::olama::IndexParams::MergeFrom(from._internal_params());
+    mutable_params()->::olama::IndexParams::MergeFrom(from.params());
   }
   if (from.dimension() != 0) {
-    _internal_set_dimension(from._internal_dimension());
+    set_dimension(from.dimension());
   }
 }
 
@@ -10295,6 +14300,10 @@ bool IndexColumn::IsInitialized() const {
   return true;
 }
 
+void IndexColumn::Swap(IndexColumn* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void IndexColumn::InternalSwap(IndexColumn* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -10321,9 +14330,15 @@ void IndexColumn::InternalSwap(IndexColumn* other) {
 
 void IndexStatus::InitAsDefaultInstance() {
 }
-class IndexStatus::_Internal {
+class IndexStatus::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int IndexStatus::kStatusFieldNumber;
+const int IndexStatus::kProgressFieldNumber;
+const int IndexStatus::kStartTimeFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 IndexStatus::IndexStatus()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -10335,15 +14350,15 @@ IndexStatus::IndexStatus(const IndexStatus& from)
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   status_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_status().empty()) {
+  if (from.status().size() > 0) {
     status_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.status_);
   }
   progress_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_progress().empty()) {
+  if (from.progress().size() > 0) {
     progress_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.progress_);
   }
   starttime_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_starttime().empty()) {
+  if (from.starttime().size() > 0) {
     starttime_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.starttime_);
   }
   // @@protoc_insertion_point(copy_constructor:olama.IndexStatus)
@@ -10388,6 +14403,7 @@ void IndexStatus::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* IndexStatus::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -10398,27 +14414,21 @@ const char* IndexStatus::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID
       // string status = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_status();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.IndexStatus.status"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_status(), ptr, ctx, "olama.IndexStatus.status");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string progress = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_progress();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.IndexStatus.progress"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_progress(), ptr, ctx, "olama.IndexStatus.progress");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string startTime = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          auto str = _internal_mutable_starttime();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.IndexStatus.startTime"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_starttime(), ptr, ctx, "olama.IndexStatus.startTime");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -10441,9 +14451,128 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool IndexStatus::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.IndexStatus)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string status = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_status()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->status().data(), static_cast<int>(this->status().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.IndexStatus.status"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
 
-::PROTOBUF_NAMESPACE_ID::uint8* IndexStatus::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+      // string progress = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_progress()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->progress().data(), static_cast<int>(this->progress().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.IndexStatus.progress"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string startTime = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_starttime()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->starttime().data(), static_cast<int>(this->starttime().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.IndexStatus.startTime"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.IndexStatus)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.IndexStatus)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void IndexStatus::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.IndexStatus)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string status = 1;
+  if (this->status().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->status().data(), static_cast<int>(this->status().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.IndexStatus.status");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->status(), output);
+  }
+
+  // string progress = 2;
+  if (this->progress().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->progress().data(), static_cast<int>(this->progress().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.IndexStatus.progress");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->progress(), output);
+  }
+
+  // string startTime = 3;
+  if (this->starttime().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->starttime().data(), static_cast<int>(this->starttime().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.IndexStatus.startTime");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      3, this->starttime(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.IndexStatus)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* IndexStatus::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.IndexStatus)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -10451,36 +14580,39 @@ failure:
   // string status = 1;
   if (this->status().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_status().data(), static_cast<int>(this->_internal_status().length()),
+      this->status().data(), static_cast<int>(this->status().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.IndexStatus.status");
-    target = stream->WriteStringMaybeAliased(
-        1, this->_internal_status(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->status(), target);
   }
 
   // string progress = 2;
   if (this->progress().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_progress().data(), static_cast<int>(this->_internal_progress().length()),
+      this->progress().data(), static_cast<int>(this->progress().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.IndexStatus.progress");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_progress(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->progress(), target);
   }
 
   // string startTime = 3;
   if (this->starttime().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_starttime().data(), static_cast<int>(this->_internal_starttime().length()),
+      this->starttime().data(), static_cast<int>(this->starttime().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.IndexStatus.startTime");
-    target = stream->WriteStringMaybeAliased(
-        3, this->_internal_starttime(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        3, this->starttime(), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.IndexStatus)
   return target;
@@ -10490,6 +14622,11 @@ size_t IndexStatus::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.IndexStatus)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -10498,27 +14635,23 @@ size_t IndexStatus::ByteSizeLong() const {
   if (this->status().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_status());
+        this->status());
   }
 
   // string progress = 2;
   if (this->progress().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_progress());
+        this->progress());
   }
 
   // string startTime = 3;
   if (this->starttime().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_starttime());
+        this->starttime());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -10578,6 +14711,10 @@ bool IndexStatus::IsInitialized() const {
   return true;
 }
 
+void IndexStatus::Swap(IndexStatus* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void IndexStatus::InternalSwap(IndexStatus* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -10621,7 +14758,7 @@ void CreateCollectionRequest::InitAsDefaultInstance() {
   ::olama::_CreateCollectionRequest_default_instance_._instance.get_mutable()->ttlconfig_ = const_cast< ::olama::TTLConfig*>(
       ::olama::TTLConfig::internal_default_instance());
 }
-class CreateCollectionRequest::_Internal {
+class CreateCollectionRequest::HasBitSetters {
  public:
   static const ::olama::IndexStatus& indexstatus(const CreateCollectionRequest* msg);
   static const ::olama::EmbeddingParams& embeddingparams(const CreateCollectionRequest* msg);
@@ -10629,17 +14766,33 @@ class CreateCollectionRequest::_Internal {
 };
 
 const ::olama::IndexStatus&
-CreateCollectionRequest::_Internal::indexstatus(const CreateCollectionRequest* msg) {
+CreateCollectionRequest::HasBitSetters::indexstatus(const CreateCollectionRequest* msg) {
   return *msg->indexstatus_;
 }
 const ::olama::EmbeddingParams&
-CreateCollectionRequest::_Internal::embeddingparams(const CreateCollectionRequest* msg) {
+CreateCollectionRequest::HasBitSetters::embeddingparams(const CreateCollectionRequest* msg) {
   return *msg->embeddingparams_;
 }
 const ::olama::TTLConfig&
-CreateCollectionRequest::_Internal::ttlconfig(const CreateCollectionRequest* msg) {
+CreateCollectionRequest::HasBitSetters::ttlconfig(const CreateCollectionRequest* msg) {
   return *msg->ttlconfig_;
 }
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int CreateCollectionRequest::kDatabaseFieldNumber;
+const int CreateCollectionRequest::kCollectionFieldNumber;
+const int CreateCollectionRequest::kReplicaNumFieldNumber;
+const int CreateCollectionRequest::kShardNumFieldNumber;
+const int CreateCollectionRequest::kSizeFieldNumber;
+const int CreateCollectionRequest::kCreateTimeFieldNumber;
+const int CreateCollectionRequest::kDescriptionFieldNumber;
+const int CreateCollectionRequest::kIndexesFieldNumber;
+const int CreateCollectionRequest::kIndexStatusFieldNumber;
+const int CreateCollectionRequest::kAliasListFieldNumber;
+const int CreateCollectionRequest::kEmbeddingParamsFieldNumber;
+const int CreateCollectionRequest::kVersionFieldNumber;
+const int CreateCollectionRequest::kTtlConfigFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
 CreateCollectionRequest::CreateCollectionRequest()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
@@ -10652,32 +14805,32 @@ CreateCollectionRequest::CreateCollectionRequest(const CreateCollectionRequest& 
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   indexes_.MergeFrom(from.indexes_);
   database_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_database().empty()) {
+  if (from.database().size() > 0) {
     database_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.database_);
   }
   collection_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_collection().empty()) {
+  if (from.collection().size() > 0) {
     collection_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.collection_);
   }
   createtime_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_createtime().empty()) {
+  if (from.createtime().size() > 0) {
     createtime_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.createtime_);
   }
   description_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_description().empty()) {
+  if (from.description().size() > 0) {
     description_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.description_);
   }
-  if (from._internal_has_indexstatus()) {
+  if (from.has_indexstatus()) {
     indexstatus_ = new ::olama::IndexStatus(*from.indexstatus_);
   } else {
     indexstatus_ = nullptr;
   }
-  if (from._internal_has_embeddingparams()) {
+  if (from.has_embeddingparams()) {
     embeddingparams_ = new ::olama::EmbeddingParams(*from.embeddingparams_);
   } else {
     embeddingparams_ = nullptr;
   }
-  if (from._internal_has_ttlconfig()) {
+  if (from.has_ttlconfig()) {
     ttlconfig_ = new ::olama::TTLConfig(*from.ttlconfig_);
   } else {
     ttlconfig_ = nullptr;
@@ -10753,6 +14906,7 @@ void CreateCollectionRequest::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* CreateCollectionRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -10763,18 +14917,14 @@ const char* CreateCollectionRequest::_InternalParse(const char* ptr, ::PROTOBUF_
       // string database = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_database();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.CreateCollectionRequest.database"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_database(), ptr, ctx, "olama.CreateCollectionRequest.database");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string collection = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_collection();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.CreateCollectionRequest.collection"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_collection(), ptr, ctx, "olama.CreateCollectionRequest.collection");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -10802,18 +14952,14 @@ const char* CreateCollectionRequest::_InternalParse(const char* ptr, ::PROTOBUF_
       // string createTime = 6;
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
-          auto str = _internal_mutable_createtime();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.CreateCollectionRequest.createTime"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_createtime(), ptr, ctx, "olama.CreateCollectionRequest.createTime");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string description = 7;
       case 7:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
-          auto str = _internal_mutable_description();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.CreateCollectionRequest.description"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_description(), ptr, ctx, "olama.CreateCollectionRequest.description");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -10826,13 +14972,13 @@ const char* CreateCollectionRequest::_InternalParse(const char* ptr, ::PROTOBUF_
             ptr = ctx->ParseMessage(&indexes_, ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<66>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 66);
         } else goto handle_unusual;
         continue;
       // .olama.IndexStatus indexStatus = 9;
       case 9:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 74)) {
-          ptr = ctx->ParseMessage(_internal_mutable_indexstatus(), ptr);
+          ptr = ctx->ParseMessage(mutable_indexstatus(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -10842,18 +14988,16 @@ const char* CreateCollectionRequest::_InternalParse(const char* ptr, ::PROTOBUF_
           ptr -= 1;
           do {
             ptr += 1;
-            auto str = _internal_add_alias_list();
-            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-            CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.CreateCollectionRequest.alias_list"));
+            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(add_alias_list(), ptr, ctx, "olama.CreateCollectionRequest.alias_list");
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<82>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 82);
         } else goto handle_unusual;
         continue;
       // .olama.EmbeddingParams embeddingParams = 11;
       case 11:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 90)) {
-          ptr = ctx->ParseMessage(_internal_mutable_embeddingparams(), ptr);
+          ptr = ctx->ParseMessage(mutable_embeddingparams(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -10867,7 +15011,7 @@ const char* CreateCollectionRequest::_InternalParse(const char* ptr, ::PROTOBUF_
       // .olama.TTLConfig ttlConfig = 13;
       case 13:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 106)) {
-          ptr = ctx->ParseMessage(_internal_mutable_ttlconfig(), ptr);
+          ptr = ctx->ParseMessage(mutable_ttlconfig(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -10890,73 +15034,284 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool CreateCollectionRequest::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.CreateCollectionRequest)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string database = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_database()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->database().data(), static_cast<int>(this->database().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.CreateCollectionRequest.database"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
 
-::PROTOBUF_NAMESPACE_ID::uint8* CreateCollectionRequest::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:olama.CreateCollectionRequest)
+      // string collection = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_collection()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->collection().data(), static_cast<int>(this->collection().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.CreateCollectionRequest.collection"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint32 replicaNum = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &replicanum_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint32 shardNum = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &shardnum_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint64 size = 5;
+      case 5: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (40 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
+                 input, &size_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string createTime = 6;
+      case 6: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (50 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_createtime()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->createtime().data(), static_cast<int>(this->createtime().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.CreateCollectionRequest.createTime"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string description = 7;
+      case 7: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (58 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_description()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->description().data(), static_cast<int>(this->description().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.CreateCollectionRequest.description"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // map<string, .olama.IndexColumn> indexes = 8;
+      case 8: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (66 & 0xFF)) {
+          CreateCollectionRequest_IndexesEntry_DoNotUse::Parser< ::PROTOBUF_NAMESPACE_ID::internal::MapField<
+              CreateCollectionRequest_IndexesEntry_DoNotUse,
+              std::string, ::olama::IndexColumn,
+              ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_STRING,
+              ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_MESSAGE,
+              0 >,
+            ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::IndexColumn > > parser(&indexes_);
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessageNoVirtual(
+              input, &parser));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            parser.key().data(), static_cast<int>(parser.key().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.CreateCollectionRequest.IndexesEntry.key"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .olama.IndexStatus indexStatus = 9;
+      case 9: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (74 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+               input, mutable_indexstatus()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated string alias_list = 10;
+      case 10: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (82 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->add_alias_list()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->alias_list(this->alias_list_size() - 1).data(),
+            static_cast<int>(this->alias_list(this->alias_list_size() - 1).length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.CreateCollectionRequest.alias_list"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .olama.EmbeddingParams embeddingParams = 11;
+      case 11: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (90 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+               input, mutable_embeddingparams()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 version = 12;
+      case 12: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (96 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 input, &version_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .olama.TTLConfig ttlConfig = 13;
+      case 13: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (106 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+               input, mutable_ttlconfig()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.CreateCollectionRequest)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.CreateCollectionRequest)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void CreateCollectionRequest::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.CreateCollectionRequest)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // string database = 1;
   if (this->database().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_database().data(), static_cast<int>(this->_internal_database().length()),
+      this->database().data(), static_cast<int>(this->database().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.CreateCollectionRequest.database");
-    target = stream->WriteStringMaybeAliased(
-        1, this->_internal_database(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->database(), output);
   }
 
   // string collection = 2;
   if (this->collection().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_collection().data(), static_cast<int>(this->_internal_collection().length()),
+      this->collection().data(), static_cast<int>(this->collection().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.CreateCollectionRequest.collection");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_collection(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->collection(), output);
   }
 
   // uint32 replicaNum = 3;
   if (this->replicanum() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(3, this->_internal_replicanum(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32(3, this->replicanum(), output);
   }
 
   // uint32 shardNum = 4;
   if (this->shardnum() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(4, this->_internal_shardnum(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32(4, this->shardnum(), output);
   }
 
   // uint64 size = 5;
   if (this->size() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(5, this->_internal_size(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64(5, this->size(), output);
   }
 
   // string createTime = 6;
   if (this->createtime().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_createtime().data(), static_cast<int>(this->_internal_createtime().length()),
+      this->createtime().data(), static_cast<int>(this->createtime().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.CreateCollectionRequest.createTime");
-    target = stream->WriteStringMaybeAliased(
-        6, this->_internal_createtime(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      6, this->createtime(), output);
   }
 
   // string description = 7;
   if (this->description().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_description().data(), static_cast<int>(this->_internal_description().length()),
+      this->description().data(), static_cast<int>(this->description().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.CreateCollectionRequest.description");
-    target = stream->WriteStringMaybeAliased(
-        7, this->_internal_description(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      7, this->description(), output);
   }
 
   // map<string, .olama.IndexColumn> indexes = 8;
-  if (!this->_internal_indexes().empty()) {
+  if (!this->indexes().empty()) {
     typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::IndexColumn >::const_pointer
         ConstPtr;
     typedef ConstPtr SortItem;
@@ -10970,27 +15325,29 @@ failure:
       }
     };
 
-    if (stream->IsSerializationDeterministic() &&
-        this->_internal_indexes().size() > 1) {
+    if (output->IsSerializationDeterministic() &&
+        this->indexes().size() > 1) {
       ::std::unique_ptr<SortItem[]> items(
-          new SortItem[this->_internal_indexes().size()]);
+          new SortItem[this->indexes().size()]);
       typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::IndexColumn >::size_type size_type;
       size_type n = 0;
       for (::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::IndexColumn >::const_iterator
-          it = this->_internal_indexes().begin();
-          it != this->_internal_indexes().end(); ++it, ++n) {
+          it = this->indexes().begin();
+          it != this->indexes().end(); ++it, ++n) {
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
       for (size_type i = 0; i < n; i++) {
-        target = CreateCollectionRequest_IndexesEntry_DoNotUse::Funcs::InternalSerialize(8, items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second, target, stream);
+        CreateCollectionRequest_IndexesEntry_DoNotUse::MapEntryWrapper entry(nullptr, items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second);
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(8, entry, output);
         Utf8Check::Check(&(*items[static_cast<ptrdiff_t>(i)]));
       }
     } else {
       for (::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::IndexColumn >::const_iterator
-          it = this->_internal_indexes().begin();
-          it != this->_internal_indexes().end(); ++it) {
-        target = CreateCollectionRequest_IndexesEntry_DoNotUse::Funcs::InternalSerialize(8, it->first, it->second, target, stream);
+          it = this->indexes().begin();
+          it != this->indexes().end(); ++it) {
+        CreateCollectionRequest_IndexesEntry_DoNotUse::MapEntryWrapper entry(nullptr, it->first, it->second);
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(8, entry, output);
         Utf8Check::Check(&(*it));
       }
     }
@@ -10998,47 +15355,191 @@ failure:
 
   // .olama.IndexStatus indexStatus = 9;
   if (this->has_indexstatus()) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        9, _Internal::indexstatus(this), target, stream);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      9, HasBitSetters::indexstatus(this), output);
   }
 
   // repeated string alias_list = 10;
-  for (int i = 0, n = this->_internal_alias_list_size(); i < n; i++) {
-    const auto& s = this->_internal_alias_list(i);
+  for (int i = 0, n = this->alias_list_size(); i < n; i++) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      s.data(), static_cast<int>(s.length()),
+      this->alias_list(i).data(), static_cast<int>(this->alias_list(i).length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.CreateCollectionRequest.alias_list");
-    target = stream->WriteString(10, s, target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteString(
+      10, this->alias_list(i), output);
   }
 
   // .olama.EmbeddingParams embeddingParams = 11;
   if (this->has_embeddingparams()) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        11, _Internal::embeddingparams(this), target, stream);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      11, HasBitSetters::embeddingparams(this), output);
   }
 
   // int64 version = 12;
   if (this->version() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(12, this->_internal_version(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(12, this->version(), output);
   }
 
   // .olama.TTLConfig ttlConfig = 13;
   if (this->has_ttlconfig()) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        13, _Internal::ttlconfig(this), target, stream);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      13, HasBitSetters::ttlconfig(this), output);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.CreateCollectionRequest)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* CreateCollectionRequest::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:olama.CreateCollectionRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string database = 1;
+  if (this->database().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->database().data(), static_cast<int>(this->database().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.CreateCollectionRequest.database");
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->database(), target);
+  }
+
+  // string collection = 2;
+  if (this->collection().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->collection().data(), static_cast<int>(this->collection().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.CreateCollectionRequest.collection");
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->collection(), target);
+  }
+
+  // uint32 replicaNum = 3;
+  if (this->replicanum() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(3, this->replicanum(), target);
+  }
+
+  // uint32 shardNum = 4;
+  if (this->shardnum() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(4, this->shardnum(), target);
+  }
+
+  // uint64 size = 5;
+  if (this->size() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(5, this->size(), target);
+  }
+
+  // string createTime = 6;
+  if (this->createtime().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->createtime().data(), static_cast<int>(this->createtime().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.CreateCollectionRequest.createTime");
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        6, this->createtime(), target);
+  }
+
+  // string description = 7;
+  if (this->description().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->description().data(), static_cast<int>(this->description().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.CreateCollectionRequest.description");
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        7, this->description(), target);
+  }
+
+  // map<string, .olama.IndexColumn> indexes = 8;
+  if (!this->indexes().empty()) {
+    typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::IndexColumn >::const_pointer
+        ConstPtr;
+    typedef ConstPtr SortItem;
+    typedef ::PROTOBUF_NAMESPACE_ID::internal::CompareByDerefFirst<SortItem> Less;
+    struct Utf8Check {
+      static void Check(ConstPtr p) {
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+          p->first.data(), static_cast<int>(p->first.length()),
+          ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+          "olama.CreateCollectionRequest.IndexesEntry.key");
+      }
+    };
+
+    if (false &&
+        this->indexes().size() > 1) {
+      ::std::unique_ptr<SortItem[]> items(
+          new SortItem[this->indexes().size()]);
+      typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::IndexColumn >::size_type size_type;
+      size_type n = 0;
+      for (::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::IndexColumn >::const_iterator
+          it = this->indexes().begin();
+          it != this->indexes().end(); ++it, ++n) {
+        items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
+      }
+      ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
+      for (size_type i = 0; i < n; i++) {
+        CreateCollectionRequest_IndexesEntry_DoNotUse::MapEntryWrapper entry(nullptr, items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second);
+        target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::InternalWriteMessageNoVirtualToArray(8, entry, target);
+        Utf8Check::Check(&(*items[static_cast<ptrdiff_t>(i)]));
+      }
+    } else {
+      for (::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::IndexColumn >::const_iterator
+          it = this->indexes().begin();
+          it != this->indexes().end(); ++it) {
+        CreateCollectionRequest_IndexesEntry_DoNotUse::MapEntryWrapper entry(nullptr, it->first, it->second);
+        target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::InternalWriteMessageNoVirtualToArray(8, entry, target);
+        Utf8Check::Check(&(*it));
+      }
+    }
+  }
+
+  // .olama.IndexStatus indexStatus = 9;
+  if (this->has_indexstatus()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        9, HasBitSetters::indexstatus(this), target);
+  }
+
+  // repeated string alias_list = 10;
+  for (int i = 0, n = this->alias_list_size(); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->alias_list(i).data(), static_cast<int>(this->alias_list(i).length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.CreateCollectionRequest.alias_list");
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      WriteStringToArray(10, this->alias_list(i), target);
+  }
+
+  // .olama.EmbeddingParams embeddingParams = 11;
+  if (this->has_embeddingparams()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        11, HasBitSetters::embeddingparams(this), target);
+  }
+
+  // int64 version = 12;
+  if (this->version() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(12, this->version(), target);
+  }
+
+  // .olama.TTLConfig ttlConfig = 13;
+  if (this->has_ttlconfig()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        13, HasBitSetters::ttlconfig(this), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.CreateCollectionRequest)
   return target;
@@ -11048,53 +15549,60 @@ size_t CreateCollectionRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.CreateCollectionRequest)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // map<string, .olama.IndexColumn> indexes = 8;
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->_internal_indexes_size());
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->indexes_size());
   for (::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::IndexColumn >::const_iterator
-      it = this->_internal_indexes().begin();
-      it != this->_internal_indexes().end(); ++it) {
-    total_size += CreateCollectionRequest_IndexesEntry_DoNotUse::Funcs::ByteSizeLong(it->first, it->second);
+      it = this->indexes().begin();
+      it != this->indexes().end(); ++it) {
+    CreateCollectionRequest_IndexesEntry_DoNotUse::MapEntryWrapper entry(nullptr, it->first, it->second);
+    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+        MessageSizeNoVirtual(entry);
   }
 
   // repeated string alias_list = 10;
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(alias_list_.size());
-  for (int i = 0, n = alias_list_.size(); i < n; i++) {
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->alias_list_size());
+  for (int i = 0, n = this->alias_list_size(); i < n; i++) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-      alias_list_.Get(i));
+      this->alias_list(i));
   }
 
   // string database = 1;
   if (this->database().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_database());
+        this->database());
   }
 
   // string collection = 2;
   if (this->collection().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_collection());
+        this->collection());
   }
 
   // string createTime = 6;
   if (this->createtime().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_createtime());
+        this->createtime());
   }
 
   // string description = 7;
   if (this->description().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_description());
+        this->description());
   }
 
   // .olama.IndexStatus indexStatus = 9;
@@ -11122,34 +15630,30 @@ size_t CreateCollectionRequest::ByteSizeLong() const {
   if (this->replicanum() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_replicanum());
+        this->replicanum());
   }
 
   // uint32 shardNum = 4;
   if (this->shardnum() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_shardnum());
+        this->shardnum());
   }
 
   // uint64 size = 5;
   if (this->size() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->_internal_size());
+        this->size());
   }
 
   // int64 version = 12;
   if (this->version() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_version());
+        this->version());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -11196,25 +15700,25 @@ void CreateCollectionRequest::MergeFrom(const CreateCollectionRequest& from) {
     description_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.description_);
   }
   if (from.has_indexstatus()) {
-    _internal_mutable_indexstatus()->::olama::IndexStatus::MergeFrom(from._internal_indexstatus());
+    mutable_indexstatus()->::olama::IndexStatus::MergeFrom(from.indexstatus());
   }
   if (from.has_embeddingparams()) {
-    _internal_mutable_embeddingparams()->::olama::EmbeddingParams::MergeFrom(from._internal_embeddingparams());
+    mutable_embeddingparams()->::olama::EmbeddingParams::MergeFrom(from.embeddingparams());
   }
   if (from.has_ttlconfig()) {
-    _internal_mutable_ttlconfig()->::olama::TTLConfig::MergeFrom(from._internal_ttlconfig());
+    mutable_ttlconfig()->::olama::TTLConfig::MergeFrom(from.ttlconfig());
   }
   if (from.replicanum() != 0) {
-    _internal_set_replicanum(from._internal_replicanum());
+    set_replicanum(from.replicanum());
   }
   if (from.shardnum() != 0) {
-    _internal_set_shardnum(from._internal_shardnum());
+    set_shardnum(from.shardnum());
   }
   if (from.size() != 0) {
-    _internal_set_size(from._internal_size());
+    set_size(from.size());
   }
   if (from.version() != 0) {
-    _internal_set_version(from._internal_version());
+    set_version(from.version());
   }
 }
 
@@ -11236,11 +15740,15 @@ bool CreateCollectionRequest::IsInitialized() const {
   return true;
 }
 
+void CreateCollectionRequest::Swap(CreateCollectionRequest* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void CreateCollectionRequest::InternalSwap(CreateCollectionRequest* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
   indexes_.Swap(&other->indexes_);
-  alias_list_.InternalSwap(&other->alias_list_);
+  alias_list_.InternalSwap(CastToBase(&other->alias_list_));
   database_.Swap(&other->database_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   collection_.Swap(&other->collection_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
@@ -11267,9 +15775,16 @@ void CreateCollectionRequest::InternalSwap(CreateCollectionRequest* other) {
 
 void CreateCollectionResponse::InitAsDefaultInstance() {
 }
-class CreateCollectionResponse::_Internal {
+class CreateCollectionResponse::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int CreateCollectionResponse::kCodeFieldNumber;
+const int CreateCollectionResponse::kMsgFieldNumber;
+const int CreateCollectionResponse::kRedirectFieldNumber;
+const int CreateCollectionResponse::kAffectedCountFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CreateCollectionResponse::CreateCollectionResponse()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -11281,11 +15796,11 @@ CreateCollectionResponse::CreateCollectionResponse(const CreateCollectionRespons
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   msg_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_msg().empty()) {
+  if (from.msg().size() > 0) {
     msg_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.msg_);
   }
   redirect_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_redirect().empty()) {
+  if (from.redirect().size() > 0) {
     redirect_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.redirect_);
   }
   ::memcpy(&affectedcount_, &from.affectedcount_,
@@ -11336,6 +15851,7 @@ void CreateCollectionResponse::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* CreateCollectionResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -11353,18 +15869,14 @@ const char* CreateCollectionResponse::_InternalParse(const char* ptr, ::PROTOBUF
       // string msg = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_msg();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.CreateCollectionResponse.msg"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_msg(), ptr, ctx, "olama.CreateCollectionResponse.msg");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string redirect = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          auto str = _internal_mutable_redirect();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.CreateCollectionResponse.redirect"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_redirect(), ptr, ctx, "olama.CreateCollectionResponse.redirect");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -11394,48 +15906,178 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool CreateCollectionResponse::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.CreateCollectionResponse)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int32 code = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
 
-::PROTOBUF_NAMESPACE_ID::uint8* CreateCollectionResponse::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
+                 input, &code_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string msg = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_msg()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->msg().data(), static_cast<int>(this->msg().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.CreateCollectionResponse.msg"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string redirect = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_redirect()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->redirect().data(), static_cast<int>(this->redirect().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.CreateCollectionResponse.redirect"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint64 affectedCount = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
+                 input, &affectedcount_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.CreateCollectionResponse)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.CreateCollectionResponse)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void CreateCollectionResponse::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.CreateCollectionResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 code = 1;
+  if (this->code() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(1, this->code(), output);
+  }
+
+  // string msg = 2;
+  if (this->msg().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->msg().data(), static_cast<int>(this->msg().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.CreateCollectionResponse.msg");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->msg(), output);
+  }
+
+  // string redirect = 3;
+  if (this->redirect().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->redirect().data(), static_cast<int>(this->redirect().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.CreateCollectionResponse.redirect");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      3, this->redirect(), output);
+  }
+
+  // uint64 affectedCount = 4;
+  if (this->affectedcount() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64(4, this->affectedcount(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.CreateCollectionResponse)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* CreateCollectionResponse::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.CreateCollectionResponse)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 code = 1;
   if (this->code() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_code(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->code(), target);
   }
 
   // string msg = 2;
   if (this->msg().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_msg().data(), static_cast<int>(this->_internal_msg().length()),
+      this->msg().data(), static_cast<int>(this->msg().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.CreateCollectionResponse.msg");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_msg(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->msg(), target);
   }
 
   // string redirect = 3;
   if (this->redirect().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_redirect().data(), static_cast<int>(this->_internal_redirect().length()),
+      this->redirect().data(), static_cast<int>(this->redirect().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.CreateCollectionResponse.redirect");
-    target = stream->WriteStringMaybeAliased(
-        3, this->_internal_redirect(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        3, this->redirect(), target);
   }
 
   // uint64 affectedCount = 4;
   if (this->affectedcount() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(4, this->_internal_affectedcount(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(4, this->affectedcount(), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.CreateCollectionResponse)
   return target;
@@ -11445,6 +16087,11 @@ size_t CreateCollectionResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.CreateCollectionResponse)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -11453,34 +16100,30 @@ size_t CreateCollectionResponse::ByteSizeLong() const {
   if (this->msg().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_msg());
+        this->msg());
   }
 
   // string redirect = 3;
   if (this->redirect().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_redirect());
+        this->redirect());
   }
 
   // uint64 affectedCount = 4;
   if (this->affectedcount() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->_internal_affectedcount());
+        this->affectedcount());
   }
 
   // int32 code = 1;
   if (this->code() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_code());
+        this->code());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -11517,10 +16160,10 @@ void CreateCollectionResponse::MergeFrom(const CreateCollectionResponse& from) {
     redirect_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.redirect_);
   }
   if (from.affectedcount() != 0) {
-    _internal_set_affectedcount(from._internal_affectedcount());
+    set_affectedcount(from.affectedcount());
   }
   if (from.code() != 0) {
-    _internal_set_code(from._internal_code());
+    set_code(from.code());
   }
 }
 
@@ -11542,6 +16185,10 @@ bool CreateCollectionResponse::IsInitialized() const {
   return true;
 }
 
+void CreateCollectionResponse::Swap(CreateCollectionResponse* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void CreateCollectionResponse::InternalSwap(CreateCollectionResponse* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -11562,9 +16209,16 @@ void CreateCollectionResponse::InternalSwap(CreateCollectionResponse* other) {
 
 void DropCollectionRequest::InitAsDefaultInstance() {
 }
-class DropCollectionRequest::_Internal {
+class DropCollectionRequest::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int DropCollectionRequest::kDatabaseFieldNumber;
+const int DropCollectionRequest::kCollectionFieldNumber;
+const int DropCollectionRequest::kForceFieldNumber;
+const int DropCollectionRequest::kWithoutAliasFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 DropCollectionRequest::DropCollectionRequest()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -11576,11 +16230,11 @@ DropCollectionRequest::DropCollectionRequest(const DropCollectionRequest& from)
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   database_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_database().empty()) {
+  if (from.database().size() > 0) {
     database_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.database_);
   }
   collection_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_collection().empty()) {
+  if (from.collection().size() > 0) {
     collection_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.collection_);
   }
   ::memcpy(&force_, &from.force_,
@@ -11631,6 +16285,7 @@ void DropCollectionRequest::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* DropCollectionRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -11641,18 +16296,14 @@ const char* DropCollectionRequest::_InternalParse(const char* ptr, ::PROTOBUF_NA
       // string database = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_database();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.DropCollectionRequest.database"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_database(), ptr, ctx, "olama.DropCollectionRequest.database");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string collection = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_collection();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.DropCollectionRequest.collection"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_collection(), ptr, ctx, "olama.DropCollectionRequest.collection");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -11689,9 +16340,139 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool DropCollectionRequest::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.DropCollectionRequest)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string database = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_database()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->database().data(), static_cast<int>(this->database().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.DropCollectionRequest.database"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
 
-::PROTOBUF_NAMESPACE_ID::uint8* DropCollectionRequest::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+      // string collection = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_collection()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->collection().data(), static_cast<int>(this->collection().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.DropCollectionRequest.collection"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool force = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &force_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool without_alias = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &without_alias_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.DropCollectionRequest)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.DropCollectionRequest)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void DropCollectionRequest::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.DropCollectionRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string database = 1;
+  if (this->database().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->database().data(), static_cast<int>(this->database().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.DropCollectionRequest.database");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->database(), output);
+  }
+
+  // string collection = 2;
+  if (this->collection().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->collection().data(), static_cast<int>(this->collection().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.DropCollectionRequest.collection");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->collection(), output);
+  }
+
+  // bool force = 3;
+  if (this->force() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(3, this->force(), output);
+  }
+
+  // bool without_alias = 4;
+  if (this->without_alias() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(4, this->without_alias(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.DropCollectionRequest)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* DropCollectionRequest::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.DropCollectionRequest)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -11699,38 +16480,38 @@ failure:
   // string database = 1;
   if (this->database().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_database().data(), static_cast<int>(this->_internal_database().length()),
+      this->database().data(), static_cast<int>(this->database().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.DropCollectionRequest.database");
-    target = stream->WriteStringMaybeAliased(
-        1, this->_internal_database(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->database(), target);
   }
 
   // string collection = 2;
   if (this->collection().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_collection().data(), static_cast<int>(this->_internal_collection().length()),
+      this->collection().data(), static_cast<int>(this->collection().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.DropCollectionRequest.collection");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_collection(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->collection(), target);
   }
 
   // bool force = 3;
   if (this->force() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_force(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->force(), target);
   }
 
   // bool without_alias = 4;
   if (this->without_alias() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(4, this->_internal_without_alias(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(4, this->without_alias(), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.DropCollectionRequest)
   return target;
@@ -11740,6 +16521,11 @@ size_t DropCollectionRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.DropCollectionRequest)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -11748,14 +16534,14 @@ size_t DropCollectionRequest::ByteSizeLong() const {
   if (this->database().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_database());
+        this->database());
   }
 
   // string collection = 2;
   if (this->collection().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_collection());
+        this->collection());
   }
 
   // bool force = 3;
@@ -11768,10 +16554,6 @@ size_t DropCollectionRequest::ByteSizeLong() const {
     total_size += 1 + 1;
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -11808,10 +16590,10 @@ void DropCollectionRequest::MergeFrom(const DropCollectionRequest& from) {
     collection_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.collection_);
   }
   if (from.force() != 0) {
-    _internal_set_force(from._internal_force());
+    set_force(from.force());
   }
   if (from.without_alias() != 0) {
-    _internal_set_without_alias(from._internal_without_alias());
+    set_without_alias(from.without_alias());
   }
 }
 
@@ -11833,6 +16615,10 @@ bool DropCollectionRequest::IsInitialized() const {
   return true;
 }
 
+void DropCollectionRequest::Swap(DropCollectionRequest* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void DropCollectionRequest::InternalSwap(DropCollectionRequest* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -11853,9 +16639,16 @@ void DropCollectionRequest::InternalSwap(DropCollectionRequest* other) {
 
 void DropCollectionResponse::InitAsDefaultInstance() {
 }
-class DropCollectionResponse::_Internal {
+class DropCollectionResponse::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int DropCollectionResponse::kCodeFieldNumber;
+const int DropCollectionResponse::kMsgFieldNumber;
+const int DropCollectionResponse::kRedirectFieldNumber;
+const int DropCollectionResponse::kAffectedCountFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 DropCollectionResponse::DropCollectionResponse()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -11867,11 +16660,11 @@ DropCollectionResponse::DropCollectionResponse(const DropCollectionResponse& fro
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   msg_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_msg().empty()) {
+  if (from.msg().size() > 0) {
     msg_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.msg_);
   }
   redirect_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_redirect().empty()) {
+  if (from.redirect().size() > 0) {
     redirect_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.redirect_);
   }
   ::memcpy(&affectedcount_, &from.affectedcount_,
@@ -11922,6 +16715,7 @@ void DropCollectionResponse::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* DropCollectionResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -11939,18 +16733,14 @@ const char* DropCollectionResponse::_InternalParse(const char* ptr, ::PROTOBUF_N
       // string msg = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_msg();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.DropCollectionResponse.msg"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_msg(), ptr, ctx, "olama.DropCollectionResponse.msg");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string redirect = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          auto str = _internal_mutable_redirect();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.DropCollectionResponse.redirect"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_redirect(), ptr, ctx, "olama.DropCollectionResponse.redirect");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -11980,48 +16770,178 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool DropCollectionResponse::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.DropCollectionResponse)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int32 code = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
 
-::PROTOBUF_NAMESPACE_ID::uint8* DropCollectionResponse::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
+                 input, &code_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string msg = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_msg()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->msg().data(), static_cast<int>(this->msg().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.DropCollectionResponse.msg"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string redirect = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_redirect()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->redirect().data(), static_cast<int>(this->redirect().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.DropCollectionResponse.redirect"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint64 affectedCount = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
+                 input, &affectedcount_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.DropCollectionResponse)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.DropCollectionResponse)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void DropCollectionResponse::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.DropCollectionResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 code = 1;
+  if (this->code() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(1, this->code(), output);
+  }
+
+  // string msg = 2;
+  if (this->msg().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->msg().data(), static_cast<int>(this->msg().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.DropCollectionResponse.msg");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->msg(), output);
+  }
+
+  // string redirect = 3;
+  if (this->redirect().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->redirect().data(), static_cast<int>(this->redirect().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.DropCollectionResponse.redirect");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      3, this->redirect(), output);
+  }
+
+  // uint64 affectedCount = 4;
+  if (this->affectedcount() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64(4, this->affectedcount(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.DropCollectionResponse)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* DropCollectionResponse::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.DropCollectionResponse)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 code = 1;
   if (this->code() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_code(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->code(), target);
   }
 
   // string msg = 2;
   if (this->msg().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_msg().data(), static_cast<int>(this->_internal_msg().length()),
+      this->msg().data(), static_cast<int>(this->msg().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.DropCollectionResponse.msg");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_msg(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->msg(), target);
   }
 
   // string redirect = 3;
   if (this->redirect().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_redirect().data(), static_cast<int>(this->_internal_redirect().length()),
+      this->redirect().data(), static_cast<int>(this->redirect().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.DropCollectionResponse.redirect");
-    target = stream->WriteStringMaybeAliased(
-        3, this->_internal_redirect(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        3, this->redirect(), target);
   }
 
   // uint64 affectedCount = 4;
   if (this->affectedcount() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(4, this->_internal_affectedcount(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(4, this->affectedcount(), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.DropCollectionResponse)
   return target;
@@ -12031,6 +16951,11 @@ size_t DropCollectionResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.DropCollectionResponse)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -12039,34 +16964,30 @@ size_t DropCollectionResponse::ByteSizeLong() const {
   if (this->msg().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_msg());
+        this->msg());
   }
 
   // string redirect = 3;
   if (this->redirect().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_redirect());
+        this->redirect());
   }
 
   // uint64 affectedCount = 4;
   if (this->affectedcount() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->_internal_affectedcount());
+        this->affectedcount());
   }
 
   // int32 code = 1;
   if (this->code() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_code());
+        this->code());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -12103,10 +17024,10 @@ void DropCollectionResponse::MergeFrom(const DropCollectionResponse& from) {
     redirect_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.redirect_);
   }
   if (from.affectedcount() != 0) {
-    _internal_set_affectedcount(from._internal_affectedcount());
+    set_affectedcount(from.affectedcount());
   }
   if (from.code() != 0) {
-    _internal_set_code(from._internal_code());
+    set_code(from.code());
   }
 }
 
@@ -12128,6 +17049,10 @@ bool DropCollectionResponse::IsInitialized() const {
   return true;
 }
 
+void DropCollectionResponse::Swap(DropCollectionResponse* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void DropCollectionResponse::InternalSwap(DropCollectionResponse* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -12148,9 +17073,15 @@ void DropCollectionResponse::InternalSwap(DropCollectionResponse* other) {
 
 void TruncateCollectionRequest::InitAsDefaultInstance() {
 }
-class TruncateCollectionRequest::_Internal {
+class TruncateCollectionRequest::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int TruncateCollectionRequest::kDatabaseFieldNumber;
+const int TruncateCollectionRequest::kCollectionFieldNumber;
+const int TruncateCollectionRequest::kOnlyTruncateAnnIndexFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TruncateCollectionRequest::TruncateCollectionRequest()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -12162,11 +17093,11 @@ TruncateCollectionRequest::TruncateCollectionRequest(const TruncateCollectionReq
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   database_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_database().empty()) {
+  if (from.database().size() > 0) {
     database_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.database_);
   }
   collection_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_collection().empty()) {
+  if (from.collection().size() > 0) {
     collection_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.collection_);
   }
   only_truncate_ann_index_ = from.only_truncate_ann_index_;
@@ -12211,6 +17142,7 @@ void TruncateCollectionRequest::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* TruncateCollectionRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -12221,18 +17153,14 @@ const char* TruncateCollectionRequest::_InternalParse(const char* ptr, ::PROTOBU
       // string database = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_database();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.TruncateCollectionRequest.database"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_database(), ptr, ctx, "olama.TruncateCollectionRequest.database");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string collection = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_collection();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.TruncateCollectionRequest.collection"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_collection(), ptr, ctx, "olama.TruncateCollectionRequest.collection");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -12262,9 +17190,121 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool TruncateCollectionRequest::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.TruncateCollectionRequest)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string database = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_database()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->database().data(), static_cast<int>(this->database().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.TruncateCollectionRequest.database"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
 
-::PROTOBUF_NAMESPACE_ID::uint8* TruncateCollectionRequest::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+      // string collection = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_collection()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->collection().data(), static_cast<int>(this->collection().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.TruncateCollectionRequest.collection"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool only_truncate_ann_index = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &only_truncate_ann_index_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.TruncateCollectionRequest)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.TruncateCollectionRequest)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void TruncateCollectionRequest::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.TruncateCollectionRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string database = 1;
+  if (this->database().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->database().data(), static_cast<int>(this->database().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.TruncateCollectionRequest.database");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->database(), output);
+  }
+
+  // string collection = 2;
+  if (this->collection().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->collection().data(), static_cast<int>(this->collection().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.TruncateCollectionRequest.collection");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->collection(), output);
+  }
+
+  // bool only_truncate_ann_index = 3;
+  if (this->only_truncate_ann_index() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(3, this->only_truncate_ann_index(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.TruncateCollectionRequest)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* TruncateCollectionRequest::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.TruncateCollectionRequest)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -12272,32 +17312,33 @@ failure:
   // string database = 1;
   if (this->database().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_database().data(), static_cast<int>(this->_internal_database().length()),
+      this->database().data(), static_cast<int>(this->database().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.TruncateCollectionRequest.database");
-    target = stream->WriteStringMaybeAliased(
-        1, this->_internal_database(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->database(), target);
   }
 
   // string collection = 2;
   if (this->collection().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_collection().data(), static_cast<int>(this->_internal_collection().length()),
+      this->collection().data(), static_cast<int>(this->collection().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.TruncateCollectionRequest.collection");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_collection(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->collection(), target);
   }
 
   // bool only_truncate_ann_index = 3;
   if (this->only_truncate_ann_index() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_only_truncate_ann_index(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->only_truncate_ann_index(), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.TruncateCollectionRequest)
   return target;
@@ -12307,6 +17348,11 @@ size_t TruncateCollectionRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.TruncateCollectionRequest)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -12315,14 +17361,14 @@ size_t TruncateCollectionRequest::ByteSizeLong() const {
   if (this->database().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_database());
+        this->database());
   }
 
   // string collection = 2;
   if (this->collection().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_collection());
+        this->collection());
   }
 
   // bool only_truncate_ann_index = 3;
@@ -12330,10 +17376,6 @@ size_t TruncateCollectionRequest::ByteSizeLong() const {
     total_size += 1 + 1;
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -12370,7 +17412,7 @@ void TruncateCollectionRequest::MergeFrom(const TruncateCollectionRequest& from)
     collection_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.collection_);
   }
   if (from.only_truncate_ann_index() != 0) {
-    _internal_set_only_truncate_ann_index(from._internal_only_truncate_ann_index());
+    set_only_truncate_ann_index(from.only_truncate_ann_index());
   }
 }
 
@@ -12392,6 +17434,10 @@ bool TruncateCollectionRequest::IsInitialized() const {
   return true;
 }
 
+void TruncateCollectionRequest::Swap(TruncateCollectionRequest* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void TruncateCollectionRequest::InternalSwap(TruncateCollectionRequest* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -12411,9 +17457,16 @@ void TruncateCollectionRequest::InternalSwap(TruncateCollectionRequest* other) {
 
 void TruncateCollectionResponse::InitAsDefaultInstance() {
 }
-class TruncateCollectionResponse::_Internal {
+class TruncateCollectionResponse::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int TruncateCollectionResponse::kCodeFieldNumber;
+const int TruncateCollectionResponse::kMsgFieldNumber;
+const int TruncateCollectionResponse::kRedirectFieldNumber;
+const int TruncateCollectionResponse::kAffectedCountFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TruncateCollectionResponse::TruncateCollectionResponse()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -12425,11 +17478,11 @@ TruncateCollectionResponse::TruncateCollectionResponse(const TruncateCollectionR
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   msg_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_msg().empty()) {
+  if (from.msg().size() > 0) {
     msg_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.msg_);
   }
   redirect_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_redirect().empty()) {
+  if (from.redirect().size() > 0) {
     redirect_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.redirect_);
   }
   ::memcpy(&affectedcount_, &from.affectedcount_,
@@ -12480,6 +17533,7 @@ void TruncateCollectionResponse::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* TruncateCollectionResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -12497,18 +17551,14 @@ const char* TruncateCollectionResponse::_InternalParse(const char* ptr, ::PROTOB
       // string msg = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_msg();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.TruncateCollectionResponse.msg"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_msg(), ptr, ctx, "olama.TruncateCollectionResponse.msg");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string redirect = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          auto str = _internal_mutable_redirect();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.TruncateCollectionResponse.redirect"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_redirect(), ptr, ctx, "olama.TruncateCollectionResponse.redirect");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -12538,48 +17588,178 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool TruncateCollectionResponse::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.TruncateCollectionResponse)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int32 code = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
 
-::PROTOBUF_NAMESPACE_ID::uint8* TruncateCollectionResponse::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
+                 input, &code_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string msg = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_msg()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->msg().data(), static_cast<int>(this->msg().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.TruncateCollectionResponse.msg"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string redirect = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_redirect()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->redirect().data(), static_cast<int>(this->redirect().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.TruncateCollectionResponse.redirect"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint64 affectedCount = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
+                 input, &affectedcount_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.TruncateCollectionResponse)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.TruncateCollectionResponse)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void TruncateCollectionResponse::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.TruncateCollectionResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 code = 1;
+  if (this->code() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(1, this->code(), output);
+  }
+
+  // string msg = 2;
+  if (this->msg().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->msg().data(), static_cast<int>(this->msg().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.TruncateCollectionResponse.msg");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->msg(), output);
+  }
+
+  // string redirect = 3;
+  if (this->redirect().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->redirect().data(), static_cast<int>(this->redirect().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.TruncateCollectionResponse.redirect");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      3, this->redirect(), output);
+  }
+
+  // uint64 affectedCount = 4;
+  if (this->affectedcount() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64(4, this->affectedcount(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.TruncateCollectionResponse)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* TruncateCollectionResponse::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.TruncateCollectionResponse)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 code = 1;
   if (this->code() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_code(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->code(), target);
   }
 
   // string msg = 2;
   if (this->msg().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_msg().data(), static_cast<int>(this->_internal_msg().length()),
+      this->msg().data(), static_cast<int>(this->msg().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.TruncateCollectionResponse.msg");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_msg(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->msg(), target);
   }
 
   // string redirect = 3;
   if (this->redirect().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_redirect().data(), static_cast<int>(this->_internal_redirect().length()),
+      this->redirect().data(), static_cast<int>(this->redirect().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.TruncateCollectionResponse.redirect");
-    target = stream->WriteStringMaybeAliased(
-        3, this->_internal_redirect(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        3, this->redirect(), target);
   }
 
   // uint64 affectedCount = 4;
   if (this->affectedcount() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(4, this->_internal_affectedcount(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(4, this->affectedcount(), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.TruncateCollectionResponse)
   return target;
@@ -12589,6 +17769,11 @@ size_t TruncateCollectionResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.TruncateCollectionResponse)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -12597,34 +17782,30 @@ size_t TruncateCollectionResponse::ByteSizeLong() const {
   if (this->msg().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_msg());
+        this->msg());
   }
 
   // string redirect = 3;
   if (this->redirect().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_redirect());
+        this->redirect());
   }
 
   // uint64 affectedCount = 4;
   if (this->affectedcount() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->_internal_affectedcount());
+        this->affectedcount());
   }
 
   // int32 code = 1;
   if (this->code() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_code());
+        this->code());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -12661,10 +17842,10 @@ void TruncateCollectionResponse::MergeFrom(const TruncateCollectionResponse& fro
     redirect_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.redirect_);
   }
   if (from.affectedcount() != 0) {
-    _internal_set_affectedcount(from._internal_affectedcount());
+    set_affectedcount(from.affectedcount());
   }
   if (from.code() != 0) {
-    _internal_set_code(from._internal_code());
+    set_code(from.code());
   }
 }
 
@@ -12686,6 +17867,10 @@ bool TruncateCollectionResponse::IsInitialized() const {
   return true;
 }
 
+void TruncateCollectionResponse::Swap(TruncateCollectionResponse* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void TruncateCollectionResponse::InternalSwap(TruncateCollectionResponse* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -12706,9 +17891,18 @@ void TruncateCollectionResponse::InternalSwap(TruncateCollectionResponse* other)
 
 void RebuildIndexRequest::InitAsDefaultInstance() {
 }
-class RebuildIndexRequest::_Internal {
+class RebuildIndexRequest::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int RebuildIndexRequest::kDatabaseFieldNumber;
+const int RebuildIndexRequest::kCollectionFieldNumber;
+const int RebuildIndexRequest::kDropBeforeRebuildFieldNumber;
+const int RebuildIndexRequest::kThrottleFieldNumber;
+const int RebuildIndexRequest::kDisableTrainFieldNumber;
+const int RebuildIndexRequest::kForceRebuildFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 RebuildIndexRequest::RebuildIndexRequest()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -12720,11 +17914,11 @@ RebuildIndexRequest::RebuildIndexRequest(const RebuildIndexRequest& from)
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   database_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_database().empty()) {
+  if (from.database().size() > 0) {
     database_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.database_);
   }
   collection_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_collection().empty()) {
+  if (from.collection().size() > 0) {
     collection_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.collection_);
   }
   ::memcpy(&throttle_, &from.throttle_,
@@ -12775,6 +17969,7 @@ void RebuildIndexRequest::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* RebuildIndexRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -12785,18 +17980,14 @@ const char* RebuildIndexRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAME
       // string database = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_database();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.RebuildIndexRequest.database"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_database(), ptr, ctx, "olama.RebuildIndexRequest.database");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string collection = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_collection();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.RebuildIndexRequest.collection"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_collection(), ptr, ctx, "olama.RebuildIndexRequest.collection");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -12847,9 +18038,175 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool RebuildIndexRequest::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.RebuildIndexRequest)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string database = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_database()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->database().data(), static_cast<int>(this->database().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.RebuildIndexRequest.database"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
 
-::PROTOBUF_NAMESPACE_ID::uint8* RebuildIndexRequest::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+      // string collection = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_collection()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->collection().data(), static_cast<int>(this->collection().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.RebuildIndexRequest.collection"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool dropBeforeRebuild = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &dropbeforerebuild_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int32 throttle = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
+                 input, &throttle_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool disable_train = 5;
+      case 5: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (40 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &disable_train_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool force_rebuild = 6;
+      case 6: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (48 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &force_rebuild_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.RebuildIndexRequest)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.RebuildIndexRequest)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void RebuildIndexRequest::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.RebuildIndexRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string database = 1;
+  if (this->database().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->database().data(), static_cast<int>(this->database().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.RebuildIndexRequest.database");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->database(), output);
+  }
+
+  // string collection = 2;
+  if (this->collection().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->collection().data(), static_cast<int>(this->collection().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.RebuildIndexRequest.collection");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->collection(), output);
+  }
+
+  // bool dropBeforeRebuild = 3;
+  if (this->dropbeforerebuild() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(3, this->dropbeforerebuild(), output);
+  }
+
+  // int32 throttle = 4;
+  if (this->throttle() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(4, this->throttle(), output);
+  }
+
+  // bool disable_train = 5;
+  if (this->disable_train() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(5, this->disable_train(), output);
+  }
+
+  // bool force_rebuild = 6;
+  if (this->force_rebuild() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(6, this->force_rebuild(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.RebuildIndexRequest)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* RebuildIndexRequest::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.RebuildIndexRequest)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -12857,50 +18214,48 @@ failure:
   // string database = 1;
   if (this->database().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_database().data(), static_cast<int>(this->_internal_database().length()),
+      this->database().data(), static_cast<int>(this->database().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.RebuildIndexRequest.database");
-    target = stream->WriteStringMaybeAliased(
-        1, this->_internal_database(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->database(), target);
   }
 
   // string collection = 2;
   if (this->collection().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_collection().data(), static_cast<int>(this->_internal_collection().length()),
+      this->collection().data(), static_cast<int>(this->collection().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.RebuildIndexRequest.collection");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_collection(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->collection(), target);
   }
 
   // bool dropBeforeRebuild = 3;
   if (this->dropbeforerebuild() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_dropbeforerebuild(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->dropbeforerebuild(), target);
   }
 
   // int32 throttle = 4;
   if (this->throttle() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_throttle(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->throttle(), target);
   }
 
   // bool disable_train = 5;
   if (this->disable_train() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(5, this->_internal_disable_train(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(5, this->disable_train(), target);
   }
 
   // bool force_rebuild = 6;
   if (this->force_rebuild() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(6, this->_internal_force_rebuild(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(6, this->force_rebuild(), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.RebuildIndexRequest)
   return target;
@@ -12910,6 +18265,11 @@ size_t RebuildIndexRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.RebuildIndexRequest)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -12918,21 +18278,21 @@ size_t RebuildIndexRequest::ByteSizeLong() const {
   if (this->database().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_database());
+        this->database());
   }
 
   // string collection = 2;
   if (this->collection().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_collection());
+        this->collection());
   }
 
   // int32 throttle = 4;
   if (this->throttle() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_throttle());
+        this->throttle());
   }
 
   // bool dropBeforeRebuild = 3;
@@ -12950,10 +18310,6 @@ size_t RebuildIndexRequest::ByteSizeLong() const {
     total_size += 1 + 1;
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -12990,16 +18346,16 @@ void RebuildIndexRequest::MergeFrom(const RebuildIndexRequest& from) {
     collection_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.collection_);
   }
   if (from.throttle() != 0) {
-    _internal_set_throttle(from._internal_throttle());
+    set_throttle(from.throttle());
   }
   if (from.dropbeforerebuild() != 0) {
-    _internal_set_dropbeforerebuild(from._internal_dropbeforerebuild());
+    set_dropbeforerebuild(from.dropbeforerebuild());
   }
   if (from.disable_train() != 0) {
-    _internal_set_disable_train(from._internal_disable_train());
+    set_disable_train(from.disable_train());
   }
   if (from.force_rebuild() != 0) {
-    _internal_set_force_rebuild(from._internal_force_rebuild());
+    set_force_rebuild(from.force_rebuild());
   }
 }
 
@@ -13021,6 +18377,10 @@ bool RebuildIndexRequest::IsInitialized() const {
   return true;
 }
 
+void RebuildIndexRequest::Swap(RebuildIndexRequest* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void RebuildIndexRequest::InternalSwap(RebuildIndexRequest* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -13043,9 +18403,16 @@ void RebuildIndexRequest::InternalSwap(RebuildIndexRequest* other) {
 
 void RebuildIndexResponse::InitAsDefaultInstance() {
 }
-class RebuildIndexResponse::_Internal {
+class RebuildIndexResponse::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int RebuildIndexResponse::kCodeFieldNumber;
+const int RebuildIndexResponse::kMsgFieldNumber;
+const int RebuildIndexResponse::kRedirectFieldNumber;
+const int RebuildIndexResponse::kTaskIdsFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 RebuildIndexResponse::RebuildIndexResponse()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -13058,11 +18425,11 @@ RebuildIndexResponse::RebuildIndexResponse(const RebuildIndexResponse& from)
       task_ids_(from.task_ids_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   msg_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_msg().empty()) {
+  if (from.msg().size() > 0) {
     msg_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.msg_);
   }
   redirect_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_redirect().empty()) {
+  if (from.redirect().size() > 0) {
     redirect_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.redirect_);
   }
   code_ = from.code_;
@@ -13108,6 +18475,7 @@ void RebuildIndexResponse::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* RebuildIndexResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -13125,18 +18493,14 @@ const char* RebuildIndexResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAM
       // string msg = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_msg();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.RebuildIndexResponse.msg"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_msg(), ptr, ctx, "olama.RebuildIndexResponse.msg");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string redirect = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          auto str = _internal_mutable_redirect();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.RebuildIndexResponse.redirect"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_redirect(), ptr, ctx, "olama.RebuildIndexResponse.redirect");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -13146,12 +18510,10 @@ const char* RebuildIndexResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAM
           ptr -= 1;
           do {
             ptr += 1;
-            auto str = _internal_add_task_ids();
-            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-            CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.RebuildIndexResponse.task_ids"));
+            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(add_task_ids(), ptr, ctx, "olama.RebuildIndexResponse.task_ids");
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<34>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 34);
         } else goto handle_unusual;
         continue;
       default: {
@@ -13173,52 +18535,191 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool RebuildIndexResponse::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.RebuildIndexResponse)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int32 code = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
 
-::PROTOBUF_NAMESPACE_ID::uint8* RebuildIndexResponse::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
+                 input, &code_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string msg = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_msg()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->msg().data(), static_cast<int>(this->msg().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.RebuildIndexResponse.msg"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string redirect = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_redirect()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->redirect().data(), static_cast<int>(this->redirect().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.RebuildIndexResponse.redirect"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated string task_ids = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->add_task_ids()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->task_ids(this->task_ids_size() - 1).data(),
+            static_cast<int>(this->task_ids(this->task_ids_size() - 1).length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.RebuildIndexResponse.task_ids"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.RebuildIndexResponse)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.RebuildIndexResponse)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void RebuildIndexResponse::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.RebuildIndexResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 code = 1;
+  if (this->code() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(1, this->code(), output);
+  }
+
+  // string msg = 2;
+  if (this->msg().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->msg().data(), static_cast<int>(this->msg().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.RebuildIndexResponse.msg");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->msg(), output);
+  }
+
+  // string redirect = 3;
+  if (this->redirect().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->redirect().data(), static_cast<int>(this->redirect().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.RebuildIndexResponse.redirect");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      3, this->redirect(), output);
+  }
+
+  // repeated string task_ids = 4;
+  for (int i = 0, n = this->task_ids_size(); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->task_ids(i).data(), static_cast<int>(this->task_ids(i).length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.RebuildIndexResponse.task_ids");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteString(
+      4, this->task_ids(i), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.RebuildIndexResponse)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* RebuildIndexResponse::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.RebuildIndexResponse)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 code = 1;
   if (this->code() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_code(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->code(), target);
   }
 
   // string msg = 2;
   if (this->msg().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_msg().data(), static_cast<int>(this->_internal_msg().length()),
+      this->msg().data(), static_cast<int>(this->msg().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.RebuildIndexResponse.msg");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_msg(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->msg(), target);
   }
 
   // string redirect = 3;
   if (this->redirect().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_redirect().data(), static_cast<int>(this->_internal_redirect().length()),
+      this->redirect().data(), static_cast<int>(this->redirect().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.RebuildIndexResponse.redirect");
-    target = stream->WriteStringMaybeAliased(
-        3, this->_internal_redirect(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        3, this->redirect(), target);
   }
 
   // repeated string task_ids = 4;
-  for (int i = 0, n = this->_internal_task_ids_size(); i < n; i++) {
-    const auto& s = this->_internal_task_ids(i);
+  for (int i = 0, n = this->task_ids_size(); i < n; i++) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      s.data(), static_cast<int>(s.length()),
+      this->task_ids(i).data(), static_cast<int>(this->task_ids(i).length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.RebuildIndexResponse.task_ids");
-    target = stream->WriteString(4, s, target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      WriteStringToArray(4, this->task_ids(i), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.RebuildIndexResponse)
   return target;
@@ -13228,43 +18729,44 @@ size_t RebuildIndexResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.RebuildIndexResponse)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated string task_ids = 4;
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(task_ids_.size());
-  for (int i = 0, n = task_ids_.size(); i < n; i++) {
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->task_ids_size());
+  for (int i = 0, n = this->task_ids_size(); i < n; i++) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-      task_ids_.Get(i));
+      this->task_ids(i));
   }
 
   // string msg = 2;
   if (this->msg().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_msg());
+        this->msg());
   }
 
   // string redirect = 3;
   if (this->redirect().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_redirect());
+        this->redirect());
   }
 
   // int32 code = 1;
   if (this->code() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_code());
+        this->code());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -13302,7 +18804,7 @@ void RebuildIndexResponse::MergeFrom(const RebuildIndexResponse& from) {
     redirect_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.redirect_);
   }
   if (from.code() != 0) {
-    _internal_set_code(from._internal_code());
+    set_code(from.code());
   }
 }
 
@@ -13324,10 +18826,14 @@ bool RebuildIndexResponse::IsInitialized() const {
   return true;
 }
 
+void RebuildIndexResponse::Swap(RebuildIndexResponse* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void RebuildIndexResponse::InternalSwap(RebuildIndexResponse* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  task_ids_.InternalSwap(&other->task_ids_);
+  task_ids_.InternalSwap(CastToBase(&other->task_ids_));
   msg_.Swap(&other->msg_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   redirect_.Swap(&other->redirect_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
@@ -13344,9 +18850,16 @@ void RebuildIndexResponse::InternalSwap(RebuildIndexResponse* other) {
 
 void UpsertRequest::InitAsDefaultInstance() {
 }
-class UpsertRequest::_Internal {
+class UpsertRequest::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int UpsertRequest::kDatabaseFieldNumber;
+const int UpsertRequest::kCollectionFieldNumber;
+const int UpsertRequest::kBuildIndexFieldNumber;
+const int UpsertRequest::kDocumentsFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 UpsertRequest::UpsertRequest()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -13359,11 +18872,11 @@ UpsertRequest::UpsertRequest(const UpsertRequest& from)
       documents_(from.documents_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   database_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_database().empty()) {
+  if (from.database().size() > 0) {
     database_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.database_);
   }
   collection_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_collection().empty()) {
+  if (from.collection().size() > 0) {
     collection_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.collection_);
   }
   buildindex_ = from.buildindex_;
@@ -13409,6 +18922,7 @@ void UpsertRequest::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* UpsertRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -13419,18 +18933,14 @@ const char* UpsertRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
       // string database = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_database();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.UpsertRequest.database"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_database(), ptr, ctx, "olama.UpsertRequest.database");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string collection = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_collection();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.UpsertRequest.collection"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_collection(), ptr, ctx, "olama.UpsertRequest.collection");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -13447,10 +18957,10 @@ const char* UpsertRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
           ptr -= 1;
           do {
             ptr += 1;
-            ptr = ctx->ParseMessage(_internal_add_documents(), ptr);
+            ptr = ctx->ParseMessage(add_documents(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<34>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 34);
         } else goto handle_unusual;
         continue;
       default: {
@@ -13472,9 +18982,141 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool UpsertRequest::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.UpsertRequest)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string database = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_database()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->database().data(), static_cast<int>(this->database().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.UpsertRequest.database"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
 
-::PROTOBUF_NAMESPACE_ID::uint8* UpsertRequest::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+      // string collection = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_collection()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->collection().data(), static_cast<int>(this->collection().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.UpsertRequest.collection"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool buildIndex = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &buildindex_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated .olama.Document documents = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+                input, add_documents()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.UpsertRequest)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.UpsertRequest)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void UpsertRequest::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.UpsertRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string database = 1;
+  if (this->database().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->database().data(), static_cast<int>(this->database().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.UpsertRequest.database");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->database(), output);
+  }
+
+  // string collection = 2;
+  if (this->collection().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->collection().data(), static_cast<int>(this->collection().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.UpsertRequest.collection");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->collection(), output);
+  }
+
+  // bool buildIndex = 3;
+  if (this->buildindex() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(3, this->buildindex(), output);
+  }
+
+  // repeated .olama.Document documents = 4;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->documents_size()); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      4,
+      this->documents(static_cast<int>(i)),
+      output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.UpsertRequest)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* UpsertRequest::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.UpsertRequest)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -13482,40 +19124,41 @@ failure:
   // string database = 1;
   if (this->database().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_database().data(), static_cast<int>(this->_internal_database().length()),
+      this->database().data(), static_cast<int>(this->database().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.UpsertRequest.database");
-    target = stream->WriteStringMaybeAliased(
-        1, this->_internal_database(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->database(), target);
   }
 
   // string collection = 2;
   if (this->collection().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_collection().data(), static_cast<int>(this->_internal_collection().length()),
+      this->collection().data(), static_cast<int>(this->collection().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.UpsertRequest.collection");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_collection(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->collection(), target);
   }
 
   // bool buildIndex = 3;
   if (this->buildindex() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_buildindex(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->buildindex(), target);
   }
 
   // repeated .olama.Document documents = 4;
   for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_documents_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+      n = static_cast<unsigned int>(this->documents_size()); i < n; i++) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(4, this->_internal_documents(i), target, stream);
+      InternalWriteMessageToArray(
+        4, this->documents(static_cast<int>(i)), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.UpsertRequest)
   return target;
@@ -13525,29 +19168,38 @@ size_t UpsertRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.UpsertRequest)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .olama.Document documents = 4;
-  total_size += 1UL * this->_internal_documents_size();
-  for (const auto& msg : this->documents_) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  {
+    unsigned int count = static_cast<unsigned int>(this->documents_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          this->documents(static_cast<int>(i)));
+    }
   }
 
   // string database = 1;
   if (this->database().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_database());
+        this->database());
   }
 
   // string collection = 2;
   if (this->collection().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_collection());
+        this->collection());
   }
 
   // bool buildIndex = 3;
@@ -13555,10 +19207,6 @@ size_t UpsertRequest::ByteSizeLong() const {
     total_size += 1 + 1;
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -13596,7 +19244,7 @@ void UpsertRequest::MergeFrom(const UpsertRequest& from) {
     collection_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.collection_);
   }
   if (from.buildindex() != 0) {
-    _internal_set_buildindex(from._internal_buildindex());
+    set_buildindex(from.buildindex());
   }
 }
 
@@ -13618,10 +19266,14 @@ bool UpsertRequest::IsInitialized() const {
   return true;
 }
 
+void UpsertRequest::Swap(UpsertRequest* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void UpsertRequest::InternalSwap(UpsertRequest* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  documents_.InternalSwap(&other->documents_);
+  CastToBase(&documents_)->InternalSwap(CastToBase(&other->documents_));
   database_.Swap(&other->database_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   collection_.Swap(&other->collection_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
@@ -13638,9 +19290,13 @@ void UpsertRequest::InternalSwap(UpsertRequest* other) {
 
 void EmbeddingExtraInfo::InitAsDefaultInstance() {
 }
-class EmbeddingExtraInfo::_Internal {
+class EmbeddingExtraInfo::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int EmbeddingExtraInfo::kTokenUsedFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EmbeddingExtraInfo::EmbeddingExtraInfo()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -13686,6 +19342,7 @@ void EmbeddingExtraInfo::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* EmbeddingExtraInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -13719,22 +19376,83 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool EmbeddingExtraInfo::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.EmbeddingExtraInfo)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // uint64 token_used = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
 
-::PROTOBUF_NAMESPACE_ID::uint8* EmbeddingExtraInfo::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
+                 input, &token_used_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.EmbeddingExtraInfo)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.EmbeddingExtraInfo)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void EmbeddingExtraInfo::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.EmbeddingExtraInfo)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // uint64 token_used = 1;
+  if (this->token_used() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64(1, this->token_used(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.EmbeddingExtraInfo)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* EmbeddingExtraInfo::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.EmbeddingExtraInfo)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // uint64 token_used = 1;
   if (this->token_used() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(1, this->_internal_token_used(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(1, this->token_used(), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.EmbeddingExtraInfo)
   return target;
@@ -13744,6 +19462,11 @@ size_t EmbeddingExtraInfo::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.EmbeddingExtraInfo)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -13752,13 +19475,9 @@ size_t EmbeddingExtraInfo::ByteSizeLong() const {
   if (this->token_used() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->_internal_token_used());
+        this->token_used());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -13787,7 +19506,7 @@ void EmbeddingExtraInfo::MergeFrom(const EmbeddingExtraInfo& from) {
   (void) cached_has_bits;
 
   if (from.token_used() != 0) {
-    _internal_set_token_used(from._internal_token_used());
+    set_token_used(from.token_used());
   }
 }
 
@@ -13809,6 +19528,10 @@ bool EmbeddingExtraInfo::IsInitialized() const {
   return true;
 }
 
+void EmbeddingExtraInfo::Swap(EmbeddingExtraInfo* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void EmbeddingExtraInfo::InternalSwap(EmbeddingExtraInfo* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -13826,15 +19549,24 @@ void UpsertResponse::InitAsDefaultInstance() {
   ::olama::_UpsertResponse_default_instance_._instance.get_mutable()->embedding_extra_info_ = const_cast< ::olama::EmbeddingExtraInfo*>(
       ::olama::EmbeddingExtraInfo::internal_default_instance());
 }
-class UpsertResponse::_Internal {
+class UpsertResponse::HasBitSetters {
  public:
   static const ::olama::EmbeddingExtraInfo& embedding_extra_info(const UpsertResponse* msg);
 };
 
 const ::olama::EmbeddingExtraInfo&
-UpsertResponse::_Internal::embedding_extra_info(const UpsertResponse* msg) {
+UpsertResponse::HasBitSetters::embedding_extra_info(const UpsertResponse* msg) {
   return *msg->embedding_extra_info_;
 }
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int UpsertResponse::kCodeFieldNumber;
+const int UpsertResponse::kMsgFieldNumber;
+const int UpsertResponse::kRedirectFieldNumber;
+const int UpsertResponse::kAffectedCountFieldNumber;
+const int UpsertResponse::kWarningFieldNumber;
+const int UpsertResponse::kEmbeddingExtraInfoFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
 UpsertResponse::UpsertResponse()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
@@ -13845,18 +19577,18 @@ UpsertResponse::UpsertResponse(const UpsertResponse& from)
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   msg_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_msg().empty()) {
+  if (from.msg().size() > 0) {
     msg_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.msg_);
   }
   redirect_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_redirect().empty()) {
+  if (from.redirect().size() > 0) {
     redirect_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.redirect_);
   }
   warning_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_warning().empty()) {
+  if (from.warning().size() > 0) {
     warning_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.warning_);
   }
-  if (from._internal_has_embedding_extra_info()) {
+  if (from.has_embedding_extra_info()) {
     embedding_extra_info_ = new ::olama::EmbeddingExtraInfo(*from.embedding_extra_info_);
   } else {
     embedding_extra_info_ = nullptr;
@@ -13917,6 +19649,7 @@ void UpsertResponse::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* UpsertResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -13934,18 +19667,14 @@ const char* UpsertResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
       // string msg = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_msg();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.UpsertResponse.msg"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_msg(), ptr, ctx, "olama.UpsertResponse.msg");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string redirect = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          auto str = _internal_mutable_redirect();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.UpsertResponse.redirect"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_redirect(), ptr, ctx, "olama.UpsertResponse.redirect");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -13959,16 +19688,14 @@ const char* UpsertResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
       // string warning = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
-          auto str = _internal_mutable_warning();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.UpsertResponse.warning"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_warning(), ptr, ctx, "olama.UpsertResponse.warning");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .olama.EmbeddingExtraInfo embedding_extra_info = 6;
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
-          ptr = ctx->ParseMessage(_internal_mutable_embedding_extra_info(), ptr);
+          ptr = ctx->ParseMessage(mutable_embedding_extra_info(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -13991,66 +19718,238 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool UpsertResponse::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.UpsertResponse)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int32 code = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
 
-::PROTOBUF_NAMESPACE_ID::uint8* UpsertResponse::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
+                 input, &code_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string msg = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_msg()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->msg().data(), static_cast<int>(this->msg().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.UpsertResponse.msg"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string redirect = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_redirect()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->redirect().data(), static_cast<int>(this->redirect().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.UpsertResponse.redirect"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint64 affectedCount = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
+                 input, &affectedcount_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string warning = 5;
+      case 5: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (42 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_warning()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->warning().data(), static_cast<int>(this->warning().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.UpsertResponse.warning"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .olama.EmbeddingExtraInfo embedding_extra_info = 6;
+      case 6: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (50 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+               input, mutable_embedding_extra_info()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.UpsertResponse)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.UpsertResponse)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void UpsertResponse::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.UpsertResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 code = 1;
+  if (this->code() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(1, this->code(), output);
+  }
+
+  // string msg = 2;
+  if (this->msg().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->msg().data(), static_cast<int>(this->msg().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.UpsertResponse.msg");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->msg(), output);
+  }
+
+  // string redirect = 3;
+  if (this->redirect().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->redirect().data(), static_cast<int>(this->redirect().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.UpsertResponse.redirect");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      3, this->redirect(), output);
+  }
+
+  // uint64 affectedCount = 4;
+  if (this->affectedcount() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64(4, this->affectedcount(), output);
+  }
+
+  // string warning = 5;
+  if (this->warning().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->warning().data(), static_cast<int>(this->warning().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.UpsertResponse.warning");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      5, this->warning(), output);
+  }
+
+  // .olama.EmbeddingExtraInfo embedding_extra_info = 6;
+  if (this->has_embedding_extra_info()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      6, HasBitSetters::embedding_extra_info(this), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.UpsertResponse)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* UpsertResponse::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.UpsertResponse)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 code = 1;
   if (this->code() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_code(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->code(), target);
   }
 
   // string msg = 2;
   if (this->msg().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_msg().data(), static_cast<int>(this->_internal_msg().length()),
+      this->msg().data(), static_cast<int>(this->msg().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.UpsertResponse.msg");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_msg(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->msg(), target);
   }
 
   // string redirect = 3;
   if (this->redirect().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_redirect().data(), static_cast<int>(this->_internal_redirect().length()),
+      this->redirect().data(), static_cast<int>(this->redirect().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.UpsertResponse.redirect");
-    target = stream->WriteStringMaybeAliased(
-        3, this->_internal_redirect(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        3, this->redirect(), target);
   }
 
   // uint64 affectedCount = 4;
   if (this->affectedcount() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(4, this->_internal_affectedcount(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(4, this->affectedcount(), target);
   }
 
   // string warning = 5;
   if (this->warning().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_warning().data(), static_cast<int>(this->_internal_warning().length()),
+      this->warning().data(), static_cast<int>(this->warning().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.UpsertResponse.warning");
-    target = stream->WriteStringMaybeAliased(
-        5, this->_internal_warning(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        5, this->warning(), target);
   }
 
   // .olama.EmbeddingExtraInfo embedding_extra_info = 6;
   if (this->has_embedding_extra_info()) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        6, _Internal::embedding_extra_info(this), target, stream);
+      InternalWriteMessageToArray(
+        6, HasBitSetters::embedding_extra_info(this), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.UpsertResponse)
   return target;
@@ -14060,6 +19959,11 @@ size_t UpsertResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.UpsertResponse)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -14068,21 +19972,21 @@ size_t UpsertResponse::ByteSizeLong() const {
   if (this->msg().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_msg());
+        this->msg());
   }
 
   // string redirect = 3;
   if (this->redirect().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_redirect());
+        this->redirect());
   }
 
   // string warning = 5;
   if (this->warning().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_warning());
+        this->warning());
   }
 
   // .olama.EmbeddingExtraInfo embedding_extra_info = 6;
@@ -14096,20 +20000,16 @@ size_t UpsertResponse::ByteSizeLong() const {
   if (this->affectedcount() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->_internal_affectedcount());
+        this->affectedcount());
   }
 
   // int32 code = 1;
   if (this->code() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_code());
+        this->code());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -14150,13 +20050,13 @@ void UpsertResponse::MergeFrom(const UpsertResponse& from) {
     warning_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.warning_);
   }
   if (from.has_embedding_extra_info()) {
-    _internal_mutable_embedding_extra_info()->::olama::EmbeddingExtraInfo::MergeFrom(from._internal_embedding_extra_info());
+    mutable_embedding_extra_info()->::olama::EmbeddingExtraInfo::MergeFrom(from.embedding_extra_info());
   }
   if (from.affectedcount() != 0) {
-    _internal_set_affectedcount(from._internal_affectedcount());
+    set_affectedcount(from.affectedcount());
   }
   if (from.code() != 0) {
-    _internal_set_code(from._internal_code());
+    set_code(from.code());
   }
 }
 
@@ -14178,6 +20078,10 @@ bool UpsertResponse::IsInitialized() const {
   return true;
 }
 
+void UpsertResponse::Swap(UpsertResponse* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void UpsertResponse::InternalSwap(UpsertResponse* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -14205,20 +20109,27 @@ void UpdateRequest::InitAsDefaultInstance() {
   ::olama::_UpdateRequest_default_instance_._instance.get_mutable()->update_ = const_cast< ::olama::Document*>(
       ::olama::Document::internal_default_instance());
 }
-class UpdateRequest::_Internal {
+class UpdateRequest::HasBitSetters {
  public:
   static const ::olama::QueryCond& query(const UpdateRequest* msg);
   static const ::olama::Document& update(const UpdateRequest* msg);
 };
 
 const ::olama::QueryCond&
-UpdateRequest::_Internal::query(const UpdateRequest* msg) {
+UpdateRequest::HasBitSetters::query(const UpdateRequest* msg) {
   return *msg->query_;
 }
 const ::olama::Document&
-UpdateRequest::_Internal::update(const UpdateRequest* msg) {
+UpdateRequest::HasBitSetters::update(const UpdateRequest* msg) {
   return *msg->update_;
 }
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int UpdateRequest::kDatabaseFieldNumber;
+const int UpdateRequest::kCollectionFieldNumber;
+const int UpdateRequest::kQueryFieldNumber;
+const int UpdateRequest::kUpdateFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
 UpdateRequest::UpdateRequest()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
@@ -14229,19 +20140,19 @@ UpdateRequest::UpdateRequest(const UpdateRequest& from)
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   database_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_database().empty()) {
+  if (from.database().size() > 0) {
     database_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.database_);
   }
   collection_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_collection().empty()) {
+  if (from.collection().size() > 0) {
     collection_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.collection_);
   }
-  if (from._internal_has_query()) {
+  if (from.has_query()) {
     query_ = new ::olama::QueryCond(*from.query_);
   } else {
     query_ = nullptr;
   }
-  if (from._internal_has_update()) {
+  if (from.has_update()) {
     update_ = new ::olama::Document(*from.update_);
   } else {
     update_ = nullptr;
@@ -14298,6 +20209,7 @@ void UpdateRequest::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* UpdateRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -14308,32 +20220,28 @@ const char* UpdateRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
       // string database = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_database();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.UpdateRequest.database"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_database(), ptr, ctx, "olama.UpdateRequest.database");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string collection = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_collection();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.UpdateRequest.collection"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_collection(), ptr, ctx, "olama.UpdateRequest.collection");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .olama.QueryCond query = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          ptr = ctx->ParseMessage(_internal_mutable_query(), ptr);
+          ptr = ctx->ParseMessage(mutable_query(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .olama.Document update = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
-          ptr = ctx->ParseMessage(_internal_mutable_update(), ptr);
+          ptr = ctx->ParseMessage(mutable_update(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -14356,9 +20264,137 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool UpdateRequest::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.UpdateRequest)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string database = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_database()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->database().data(), static_cast<int>(this->database().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.UpdateRequest.database"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
 
-::PROTOBUF_NAMESPACE_ID::uint8* UpdateRequest::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+      // string collection = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_collection()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->collection().data(), static_cast<int>(this->collection().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.UpdateRequest.collection"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .olama.QueryCond query = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+               input, mutable_query()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .olama.Document update = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+               input, mutable_update()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.UpdateRequest)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.UpdateRequest)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void UpdateRequest::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.UpdateRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string database = 1;
+  if (this->database().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->database().data(), static_cast<int>(this->database().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.UpdateRequest.database");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->database(), output);
+  }
+
+  // string collection = 2;
+  if (this->collection().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->collection().data(), static_cast<int>(this->collection().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.UpdateRequest.collection");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->collection(), output);
+  }
+
+  // .olama.QueryCond query = 3;
+  if (this->has_query()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      3, HasBitSetters::query(this), output);
+  }
+
+  // .olama.Document update = 4;
+  if (this->has_update()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      4, HasBitSetters::update(this), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.UpdateRequest)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* UpdateRequest::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.UpdateRequest)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -14366,42 +20402,42 @@ failure:
   // string database = 1;
   if (this->database().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_database().data(), static_cast<int>(this->_internal_database().length()),
+      this->database().data(), static_cast<int>(this->database().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.UpdateRequest.database");
-    target = stream->WriteStringMaybeAliased(
-        1, this->_internal_database(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->database(), target);
   }
 
   // string collection = 2;
   if (this->collection().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_collection().data(), static_cast<int>(this->_internal_collection().length()),
+      this->collection().data(), static_cast<int>(this->collection().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.UpdateRequest.collection");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_collection(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->collection(), target);
   }
 
   // .olama.QueryCond query = 3;
   if (this->has_query()) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::query(this), target, stream);
+      InternalWriteMessageToArray(
+        3, HasBitSetters::query(this), target);
   }
 
   // .olama.Document update = 4;
   if (this->has_update()) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        4, _Internal::update(this), target, stream);
+      InternalWriteMessageToArray(
+        4, HasBitSetters::update(this), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.UpdateRequest)
   return target;
@@ -14411,6 +20447,11 @@ size_t UpdateRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.UpdateRequest)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -14419,14 +20460,14 @@ size_t UpdateRequest::ByteSizeLong() const {
   if (this->database().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_database());
+        this->database());
   }
 
   // string collection = 2;
   if (this->collection().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_collection());
+        this->collection());
   }
 
   // .olama.QueryCond query = 3;
@@ -14443,10 +20484,6 @@ size_t UpdateRequest::ByteSizeLong() const {
         *update_);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -14483,10 +20520,10 @@ void UpdateRequest::MergeFrom(const UpdateRequest& from) {
     collection_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.collection_);
   }
   if (from.has_query()) {
-    _internal_mutable_query()->::olama::QueryCond::MergeFrom(from._internal_query());
+    mutable_query()->::olama::QueryCond::MergeFrom(from.query());
   }
   if (from.has_update()) {
-    _internal_mutable_update()->::olama::Document::MergeFrom(from._internal_update());
+    mutable_update()->::olama::Document::MergeFrom(from.update());
   }
 }
 
@@ -14508,6 +20545,10 @@ bool UpdateRequest::IsInitialized() const {
   return true;
 }
 
+void UpdateRequest::Swap(UpdateRequest* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void UpdateRequest::InternalSwap(UpdateRequest* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -14530,15 +20571,24 @@ void UpdateResponse::InitAsDefaultInstance() {
   ::olama::_UpdateResponse_default_instance_._instance.get_mutable()->embedding_extra_info_ = const_cast< ::olama::EmbeddingExtraInfo*>(
       ::olama::EmbeddingExtraInfo::internal_default_instance());
 }
-class UpdateResponse::_Internal {
+class UpdateResponse::HasBitSetters {
  public:
   static const ::olama::EmbeddingExtraInfo& embedding_extra_info(const UpdateResponse* msg);
 };
 
 const ::olama::EmbeddingExtraInfo&
-UpdateResponse::_Internal::embedding_extra_info(const UpdateResponse* msg) {
+UpdateResponse::HasBitSetters::embedding_extra_info(const UpdateResponse* msg) {
   return *msg->embedding_extra_info_;
 }
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int UpdateResponse::kCodeFieldNumber;
+const int UpdateResponse::kMsgFieldNumber;
+const int UpdateResponse::kRedirectFieldNumber;
+const int UpdateResponse::kAffectedCountFieldNumber;
+const int UpdateResponse::kWarningFieldNumber;
+const int UpdateResponse::kEmbeddingExtraInfoFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
 UpdateResponse::UpdateResponse()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
@@ -14549,18 +20599,18 @@ UpdateResponse::UpdateResponse(const UpdateResponse& from)
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   msg_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_msg().empty()) {
+  if (from.msg().size() > 0) {
     msg_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.msg_);
   }
   redirect_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_redirect().empty()) {
+  if (from.redirect().size() > 0) {
     redirect_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.redirect_);
   }
   warning_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_warning().empty()) {
+  if (from.warning().size() > 0) {
     warning_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.warning_);
   }
-  if (from._internal_has_embedding_extra_info()) {
+  if (from.has_embedding_extra_info()) {
     embedding_extra_info_ = new ::olama::EmbeddingExtraInfo(*from.embedding_extra_info_);
   } else {
     embedding_extra_info_ = nullptr;
@@ -14621,6 +20671,7 @@ void UpdateResponse::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* UpdateResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -14638,18 +20689,14 @@ const char* UpdateResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
       // string msg = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_msg();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.UpdateResponse.msg"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_msg(), ptr, ctx, "olama.UpdateResponse.msg");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string redirect = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          auto str = _internal_mutable_redirect();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.UpdateResponse.redirect"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_redirect(), ptr, ctx, "olama.UpdateResponse.redirect");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -14663,16 +20710,14 @@ const char* UpdateResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
       // string warning = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
-          auto str = _internal_mutable_warning();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.UpdateResponse.warning"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_warning(), ptr, ctx, "olama.UpdateResponse.warning");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .olama.EmbeddingExtraInfo embedding_extra_info = 6;
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
-          ptr = ctx->ParseMessage(_internal_mutable_embedding_extra_info(), ptr);
+          ptr = ctx->ParseMessage(mutable_embedding_extra_info(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -14695,66 +20740,238 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool UpdateResponse::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.UpdateResponse)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int32 code = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
 
-::PROTOBUF_NAMESPACE_ID::uint8* UpdateResponse::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
+                 input, &code_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string msg = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_msg()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->msg().data(), static_cast<int>(this->msg().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.UpdateResponse.msg"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string redirect = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_redirect()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->redirect().data(), static_cast<int>(this->redirect().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.UpdateResponse.redirect"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint64 affectedCount = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
+                 input, &affectedcount_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string warning = 5;
+      case 5: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (42 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_warning()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->warning().data(), static_cast<int>(this->warning().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.UpdateResponse.warning"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .olama.EmbeddingExtraInfo embedding_extra_info = 6;
+      case 6: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (50 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+               input, mutable_embedding_extra_info()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.UpdateResponse)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.UpdateResponse)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void UpdateResponse::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.UpdateResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 code = 1;
+  if (this->code() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(1, this->code(), output);
+  }
+
+  // string msg = 2;
+  if (this->msg().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->msg().data(), static_cast<int>(this->msg().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.UpdateResponse.msg");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->msg(), output);
+  }
+
+  // string redirect = 3;
+  if (this->redirect().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->redirect().data(), static_cast<int>(this->redirect().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.UpdateResponse.redirect");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      3, this->redirect(), output);
+  }
+
+  // uint64 affectedCount = 4;
+  if (this->affectedcount() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64(4, this->affectedcount(), output);
+  }
+
+  // string warning = 5;
+  if (this->warning().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->warning().data(), static_cast<int>(this->warning().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.UpdateResponse.warning");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      5, this->warning(), output);
+  }
+
+  // .olama.EmbeddingExtraInfo embedding_extra_info = 6;
+  if (this->has_embedding_extra_info()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      6, HasBitSetters::embedding_extra_info(this), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.UpdateResponse)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* UpdateResponse::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.UpdateResponse)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 code = 1;
   if (this->code() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_code(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->code(), target);
   }
 
   // string msg = 2;
   if (this->msg().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_msg().data(), static_cast<int>(this->_internal_msg().length()),
+      this->msg().data(), static_cast<int>(this->msg().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.UpdateResponse.msg");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_msg(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->msg(), target);
   }
 
   // string redirect = 3;
   if (this->redirect().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_redirect().data(), static_cast<int>(this->_internal_redirect().length()),
+      this->redirect().data(), static_cast<int>(this->redirect().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.UpdateResponse.redirect");
-    target = stream->WriteStringMaybeAliased(
-        3, this->_internal_redirect(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        3, this->redirect(), target);
   }
 
   // uint64 affectedCount = 4;
   if (this->affectedcount() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(4, this->_internal_affectedcount(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(4, this->affectedcount(), target);
   }
 
   // string warning = 5;
   if (this->warning().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_warning().data(), static_cast<int>(this->_internal_warning().length()),
+      this->warning().data(), static_cast<int>(this->warning().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.UpdateResponse.warning");
-    target = stream->WriteStringMaybeAliased(
-        5, this->_internal_warning(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        5, this->warning(), target);
   }
 
   // .olama.EmbeddingExtraInfo embedding_extra_info = 6;
   if (this->has_embedding_extra_info()) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        6, _Internal::embedding_extra_info(this), target, stream);
+      InternalWriteMessageToArray(
+        6, HasBitSetters::embedding_extra_info(this), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.UpdateResponse)
   return target;
@@ -14764,6 +20981,11 @@ size_t UpdateResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.UpdateResponse)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -14772,21 +20994,21 @@ size_t UpdateResponse::ByteSizeLong() const {
   if (this->msg().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_msg());
+        this->msg());
   }
 
   // string redirect = 3;
   if (this->redirect().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_redirect());
+        this->redirect());
   }
 
   // string warning = 5;
   if (this->warning().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_warning());
+        this->warning());
   }
 
   // .olama.EmbeddingExtraInfo embedding_extra_info = 6;
@@ -14800,20 +21022,16 @@ size_t UpdateResponse::ByteSizeLong() const {
   if (this->affectedcount() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->_internal_affectedcount());
+        this->affectedcount());
   }
 
   // int32 code = 1;
   if (this->code() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_code());
+        this->code());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -14854,13 +21072,13 @@ void UpdateResponse::MergeFrom(const UpdateResponse& from) {
     warning_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.warning_);
   }
   if (from.has_embedding_extra_info()) {
-    _internal_mutable_embedding_extra_info()->::olama::EmbeddingExtraInfo::MergeFrom(from._internal_embedding_extra_info());
+    mutable_embedding_extra_info()->::olama::EmbeddingExtraInfo::MergeFrom(from.embedding_extra_info());
   }
   if (from.affectedcount() != 0) {
-    _internal_set_affectedcount(from._internal_affectedcount());
+    set_affectedcount(from.affectedcount());
   }
   if (from.code() != 0) {
-    _internal_set_code(from._internal_code());
+    set_code(from.code());
   }
 }
 
@@ -14882,6 +21100,10 @@ bool UpdateResponse::IsInitialized() const {
   return true;
 }
 
+void UpdateResponse::Swap(UpdateResponse* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void UpdateResponse::InternalSwap(UpdateResponse* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -14907,15 +21129,21 @@ void DeleteRequest::InitAsDefaultInstance() {
   ::olama::_DeleteRequest_default_instance_._instance.get_mutable()->query_ = const_cast< ::olama::QueryCond*>(
       ::olama::QueryCond::internal_default_instance());
 }
-class DeleteRequest::_Internal {
+class DeleteRequest::HasBitSetters {
  public:
   static const ::olama::QueryCond& query(const DeleteRequest* msg);
 };
 
 const ::olama::QueryCond&
-DeleteRequest::_Internal::query(const DeleteRequest* msg) {
+DeleteRequest::HasBitSetters::query(const DeleteRequest* msg) {
   return *msg->query_;
 }
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int DeleteRequest::kDatabaseFieldNumber;
+const int DeleteRequest::kCollectionFieldNumber;
+const int DeleteRequest::kQueryFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
 DeleteRequest::DeleteRequest()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
@@ -14926,14 +21154,14 @@ DeleteRequest::DeleteRequest(const DeleteRequest& from)
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   database_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_database().empty()) {
+  if (from.database().size() > 0) {
     database_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.database_);
   }
   collection_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_collection().empty()) {
+  if (from.collection().size() > 0) {
     collection_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.collection_);
   }
-  if (from._internal_has_query()) {
+  if (from.has_query()) {
     query_ = new ::olama::QueryCond(*from.query_);
   } else {
     query_ = nullptr;
@@ -14983,6 +21211,7 @@ void DeleteRequest::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* DeleteRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -14993,25 +21222,21 @@ const char* DeleteRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
       // string database = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_database();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.DeleteRequest.database"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_database(), ptr, ctx, "olama.DeleteRequest.database");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string collection = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_collection();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.DeleteRequest.collection"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_collection(), ptr, ctx, "olama.DeleteRequest.collection");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .olama.QueryCond query = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          ptr = ctx->ParseMessage(_internal_mutable_query(), ptr);
+          ptr = ctx->ParseMessage(mutable_query(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -15034,9 +21259,120 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool DeleteRequest::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.DeleteRequest)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string database = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_database()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->database().data(), static_cast<int>(this->database().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.DeleteRequest.database"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
 
-::PROTOBUF_NAMESPACE_ID::uint8* DeleteRequest::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+      // string collection = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_collection()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->collection().data(), static_cast<int>(this->collection().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.DeleteRequest.collection"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .olama.QueryCond query = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+               input, mutable_query()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.DeleteRequest)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.DeleteRequest)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void DeleteRequest::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.DeleteRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string database = 1;
+  if (this->database().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->database().data(), static_cast<int>(this->database().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.DeleteRequest.database");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->database(), output);
+  }
+
+  // string collection = 2;
+  if (this->collection().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->collection().data(), static_cast<int>(this->collection().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.DeleteRequest.collection");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->collection(), output);
+  }
+
+  // .olama.QueryCond query = 3;
+  if (this->has_query()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      3, HasBitSetters::query(this), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.DeleteRequest)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* DeleteRequest::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.DeleteRequest)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -15044,34 +21380,35 @@ failure:
   // string database = 1;
   if (this->database().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_database().data(), static_cast<int>(this->_internal_database().length()),
+      this->database().data(), static_cast<int>(this->database().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.DeleteRequest.database");
-    target = stream->WriteStringMaybeAliased(
-        1, this->_internal_database(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->database(), target);
   }
 
   // string collection = 2;
   if (this->collection().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_collection().data(), static_cast<int>(this->_internal_collection().length()),
+      this->collection().data(), static_cast<int>(this->collection().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.DeleteRequest.collection");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_collection(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->collection(), target);
   }
 
   // .olama.QueryCond query = 3;
   if (this->has_query()) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::query(this), target, stream);
+      InternalWriteMessageToArray(
+        3, HasBitSetters::query(this), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.DeleteRequest)
   return target;
@@ -15081,6 +21418,11 @@ size_t DeleteRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.DeleteRequest)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -15089,14 +21431,14 @@ size_t DeleteRequest::ByteSizeLong() const {
   if (this->database().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_database());
+        this->database());
   }
 
   // string collection = 2;
   if (this->collection().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_collection());
+        this->collection());
   }
 
   // .olama.QueryCond query = 3;
@@ -15106,10 +21448,6 @@ size_t DeleteRequest::ByteSizeLong() const {
         *query_);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -15146,7 +21484,7 @@ void DeleteRequest::MergeFrom(const DeleteRequest& from) {
     collection_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.collection_);
   }
   if (from.has_query()) {
-    _internal_mutable_query()->::olama::QueryCond::MergeFrom(from._internal_query());
+    mutable_query()->::olama::QueryCond::MergeFrom(from.query());
   }
 }
 
@@ -15168,6 +21506,10 @@ bool DeleteRequest::IsInitialized() const {
   return true;
 }
 
+void DeleteRequest::Swap(DeleteRequest* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void DeleteRequest::InternalSwap(DeleteRequest* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -15187,9 +21529,16 @@ void DeleteRequest::InternalSwap(DeleteRequest* other) {
 
 void DeleteResponse::InitAsDefaultInstance() {
 }
-class DeleteResponse::_Internal {
+class DeleteResponse::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int DeleteResponse::kCodeFieldNumber;
+const int DeleteResponse::kMsgFieldNumber;
+const int DeleteResponse::kRedirectFieldNumber;
+const int DeleteResponse::kAffectedCountFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 DeleteResponse::DeleteResponse()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -15201,11 +21550,11 @@ DeleteResponse::DeleteResponse(const DeleteResponse& from)
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   msg_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_msg().empty()) {
+  if (from.msg().size() > 0) {
     msg_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.msg_);
   }
   redirect_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_redirect().empty()) {
+  if (from.redirect().size() > 0) {
     redirect_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.redirect_);
   }
   ::memcpy(&affectedcount_, &from.affectedcount_,
@@ -15256,6 +21605,7 @@ void DeleteResponse::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* DeleteResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -15273,18 +21623,14 @@ const char* DeleteResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
       // string msg = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_msg();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.DeleteResponse.msg"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_msg(), ptr, ctx, "olama.DeleteResponse.msg");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string redirect = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          auto str = _internal_mutable_redirect();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.DeleteResponse.redirect"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_redirect(), ptr, ctx, "olama.DeleteResponse.redirect");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -15314,48 +21660,178 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool DeleteResponse::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.DeleteResponse)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int32 code = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
 
-::PROTOBUF_NAMESPACE_ID::uint8* DeleteResponse::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
+                 input, &code_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string msg = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_msg()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->msg().data(), static_cast<int>(this->msg().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.DeleteResponse.msg"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string redirect = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_redirect()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->redirect().data(), static_cast<int>(this->redirect().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.DeleteResponse.redirect"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint64 affectedCount = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
+                 input, &affectedcount_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.DeleteResponse)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.DeleteResponse)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void DeleteResponse::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.DeleteResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 code = 1;
+  if (this->code() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(1, this->code(), output);
+  }
+
+  // string msg = 2;
+  if (this->msg().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->msg().data(), static_cast<int>(this->msg().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.DeleteResponse.msg");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->msg(), output);
+  }
+
+  // string redirect = 3;
+  if (this->redirect().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->redirect().data(), static_cast<int>(this->redirect().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.DeleteResponse.redirect");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      3, this->redirect(), output);
+  }
+
+  // uint64 affectedCount = 4;
+  if (this->affectedcount() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64(4, this->affectedcount(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.DeleteResponse)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* DeleteResponse::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.DeleteResponse)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 code = 1;
   if (this->code() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_code(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->code(), target);
   }
 
   // string msg = 2;
   if (this->msg().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_msg().data(), static_cast<int>(this->_internal_msg().length()),
+      this->msg().data(), static_cast<int>(this->msg().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.DeleteResponse.msg");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_msg(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->msg(), target);
   }
 
   // string redirect = 3;
   if (this->redirect().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_redirect().data(), static_cast<int>(this->_internal_redirect().length()),
+      this->redirect().data(), static_cast<int>(this->redirect().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.DeleteResponse.redirect");
-    target = stream->WriteStringMaybeAliased(
-        3, this->_internal_redirect(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        3, this->redirect(), target);
   }
 
   // uint64 affectedCount = 4;
   if (this->affectedcount() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(4, this->_internal_affectedcount(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(4, this->affectedcount(), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.DeleteResponse)
   return target;
@@ -15365,6 +21841,11 @@ size_t DeleteResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.DeleteResponse)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -15373,34 +21854,30 @@ size_t DeleteResponse::ByteSizeLong() const {
   if (this->msg().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_msg());
+        this->msg());
   }
 
   // string redirect = 3;
   if (this->redirect().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_redirect());
+        this->redirect());
   }
 
   // uint64 affectedCount = 4;
   if (this->affectedcount() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->_internal_affectedcount());
+        this->affectedcount());
   }
 
   // int32 code = 1;
   if (this->code() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_code());
+        this->code());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -15437,10 +21914,10 @@ void DeleteResponse::MergeFrom(const DeleteResponse& from) {
     redirect_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.redirect_);
   }
   if (from.affectedcount() != 0) {
-    _internal_set_affectedcount(from._internal_affectedcount());
+    set_affectedcount(from.affectedcount());
   }
   if (from.code() != 0) {
-    _internal_set_code(from._internal_code());
+    set_code(from.code());
   }
 }
 
@@ -15462,6 +21939,10 @@ bool DeleteResponse::IsInitialized() const {
   return true;
 }
 
+void DeleteResponse::Swap(DeleteResponse* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void DeleteResponse::InternalSwap(DeleteResponse* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -15482,9 +21963,19 @@ void DeleteResponse::InternalSwap(DeleteResponse* other) {
 
 void QueryCond::InitAsDefaultInstance() {
 }
-class QueryCond::_Internal {
+class QueryCond::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int QueryCond::kDocumentIdsFieldNumber;
+const int QueryCond::kIndexIdsFieldNumber;
+const int QueryCond::kRetrieveVectorFieldNumber;
+const int QueryCond::kFilterFieldNumber;
+const int QueryCond::kLimitFieldNumber;
+const int QueryCond::kOffsetFieldNumber;
+const int QueryCond::kOutputFieldsFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 QueryCond::QueryCond()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -15499,7 +21990,7 @@ QueryCond::QueryCond(const QueryCond& from)
       outputfields_(from.outputfields_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   filter_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_filter().empty()) {
+  if (from.filter().size() > 0) {
     filter_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.filter_);
   }
   ::memcpy(&limit_, &from.limit_,
@@ -15550,6 +22041,7 @@ void QueryCond::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* QueryCond::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -15563,21 +22055,19 @@ const char* QueryCond::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
           ptr -= 1;
           do {
             ptr += 1;
-            auto str = _internal_add_documentids();
-            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-            CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.QueryCond.documentIds"));
+            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(add_documentids(), ptr, ctx, "olama.QueryCond.documentIds");
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 10);
         } else goto handle_unusual;
         continue;
       // repeated uint64 indexIds = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedUInt64Parser(_internal_mutable_indexids(), ptr, ctx);
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedUInt64Parser(mutable_indexids(), ptr, ctx);
           CHK_(ptr);
         } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16) {
-          _internal_add_indexids(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
+          add_indexids(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -15591,9 +22081,7 @@ const char* QueryCond::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
       // string filter = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
-          auto str = _internal_mutable_filter();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.QueryCond.filter"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_filter(), ptr, ctx, "olama.QueryCond.filter");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -15617,12 +22105,10 @@ const char* QueryCond::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
           ptr -= 1;
           do {
             ptr += 1;
-            auto str = _internal_add_outputfields();
-            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-            CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.QueryCond.outputFields"));
+            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(add_outputfields(), ptr, ctx, "olama.QueryCond.outputFields");
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<58>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 58);
         } else goto handle_unusual;
         continue;
       default: {
@@ -15644,73 +22130,277 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool QueryCond::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.QueryCond)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // repeated string documentIds = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->add_documentids()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->documentids(this->documentids_size() - 1).data(),
+            static_cast<int>(this->documentids(this->documentids_size() - 1).length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.QueryCond.documentIds"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
 
-::PROTOBUF_NAMESPACE_ID::uint8* QueryCond::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:olama.QueryCond)
+      // repeated uint64 indexIds = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPackedPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
+                 input, this->mutable_indexids())));
+        } else if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
+                   ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
+                 1, 18u, input, this->mutable_indexids())));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool retrieveVector = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &retrievevector_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string filter = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_filter()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->filter().data(), static_cast<int>(this->filter().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.QueryCond.filter"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 limit = 5;
+      case 5: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (40 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 input, &limit_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // int64 offset = 6;
+      case 6: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (48 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
+                 input, &offset_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated string outputFields = 7;
+      case 7: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (58 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->add_outputfields()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->outputfields(this->outputfields_size() - 1).data(),
+            static_cast<int>(this->outputfields(this->outputfields_size() - 1).length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.QueryCond.outputFields"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.QueryCond)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.QueryCond)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void QueryCond::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.QueryCond)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated string documentIds = 1;
-  for (int i = 0, n = this->_internal_documentids_size(); i < n; i++) {
-    const auto& s = this->_internal_documentids(i);
+  for (int i = 0, n = this->documentids_size(); i < n; i++) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      s.data(), static_cast<int>(s.length()),
+      this->documentids(i).data(), static_cast<int>(this->documentids(i).length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.QueryCond.documentIds");
-    target = stream->WriteString(1, s, target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteString(
+      1, this->documentids(i), output);
   }
 
   // repeated uint64 indexIds = 2;
-  {
-    int byte_size = _indexids_cached_byte_size_.load(std::memory_order_relaxed);
-    if (byte_size > 0) {
-      target = stream->WriteUInt64Packed(
-          2, _internal_indexids(), byte_size, target);
-    }
+  if (this->indexids_size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteTag(2, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
+    output->WriteVarint32(_indexids_cached_byte_size_.load(
+        std::memory_order_relaxed));
+  }
+  for (int i = 0, n = this->indexids_size(); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64NoTag(
+      this->indexids(i), output);
   }
 
   // bool retrieveVector = 3;
   if (this->retrievevector() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_retrievevector(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(3, this->retrievevector(), output);
   }
 
   // string filter = 4;
   if (this->filter().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_filter().data(), static_cast<int>(this->_internal_filter().length()),
+      this->filter().data(), static_cast<int>(this->filter().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.QueryCond.filter");
-    target = stream->WriteStringMaybeAliased(
-        4, this->_internal_filter(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      4, this->filter(), output);
   }
 
   // int64 limit = 5;
   if (this->limit() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_limit(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(5, this->limit(), output);
   }
 
   // int64 offset = 6;
   if (this->offset() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(6, this->_internal_offset(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(6, this->offset(), output);
   }
 
   // repeated string outputFields = 7;
-  for (int i = 0, n = this->_internal_outputfields_size(); i < n; i++) {
-    const auto& s = this->_internal_outputfields(i);
+  for (int i = 0, n = this->outputfields_size(); i < n; i++) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      s.data(), static_cast<int>(s.length()),
+      this->outputfields(i).data(), static_cast<int>(this->outputfields(i).length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.QueryCond.outputFields");
-    target = stream->WriteString(7, s, target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteString(
+      7, this->outputfields(i), output);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.QueryCond)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* QueryCond::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:olama.QueryCond)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated string documentIds = 1;
+  for (int i = 0, n = this->documentids_size(); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->documentids(i).data(), static_cast<int>(this->documentids(i).length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.QueryCond.documentIds");
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      WriteStringToArray(1, this->documentids(i), target);
+  }
+
+  // repeated uint64 indexIds = 2;
+  if (this->indexids_size() > 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteTagToArray(
+      2,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
+      target);
+    target = ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream::WriteVarint32ToArray(
+        _indexids_cached_byte_size_.load(std::memory_order_relaxed),
+         target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      WriteUInt64NoTagToArray(this->indexids_, target);
+  }
+
+  // bool retrieveVector = 3;
+  if (this->retrievevector() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->retrievevector(), target);
+  }
+
+  // string filter = 4;
+  if (this->filter().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->filter().data(), static_cast<int>(this->filter().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.QueryCond.filter");
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        4, this->filter(), target);
+  }
+
+  // int64 limit = 5;
+  if (this->limit() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->limit(), target);
+  }
+
+  // int64 offset = 6;
+  if (this->offset() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(6, this->offset(), target);
+  }
+
+  // repeated string outputFields = 7;
+  for (int i = 0, n = this->outputfields_size(); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->outputfields(i).data(), static_cast<int>(this->outputfields(i).length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.QueryCond.outputFields");
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      WriteStringToArray(7, this->outputfields(i), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.QueryCond)
   return target;
@@ -15720,16 +22410,21 @@ size_t QueryCond::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.QueryCond)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated string documentIds = 1;
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(documentids_.size());
-  for (int i = 0, n = documentids_.size(); i < n; i++) {
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->documentids_size());
+  for (int i = 0, n = this->documentids_size(); i < n; i++) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-      documentids_.Get(i));
+      this->documentids(i));
   }
 
   // repeated uint64 indexIds = 2;
@@ -15749,31 +22444,31 @@ size_t QueryCond::ByteSizeLong() const {
 
   // repeated string outputFields = 7;
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(outputfields_.size());
-  for (int i = 0, n = outputfields_.size(); i < n; i++) {
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->outputfields_size());
+  for (int i = 0, n = this->outputfields_size(); i < n; i++) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-      outputfields_.Get(i));
+      this->outputfields(i));
   }
 
   // string filter = 4;
   if (this->filter().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_filter());
+        this->filter());
   }
 
   // int64 limit = 5;
   if (this->limit() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_limit());
+        this->limit());
   }
 
   // int64 offset = 6;
   if (this->offset() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_offset());
+        this->offset());
   }
 
   // bool retrieveVector = 3;
@@ -15781,10 +22476,6 @@ size_t QueryCond::ByteSizeLong() const {
     total_size += 1 + 1;
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -15820,13 +22511,13 @@ void QueryCond::MergeFrom(const QueryCond& from) {
     filter_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.filter_);
   }
   if (from.limit() != 0) {
-    _internal_set_limit(from._internal_limit());
+    set_limit(from.limit());
   }
   if (from.offset() != 0) {
-    _internal_set_offset(from._internal_offset());
+    set_offset(from.offset());
   }
   if (from.retrievevector() != 0) {
-    _internal_set_retrievevector(from._internal_retrievevector());
+    set_retrievevector(from.retrievevector());
   }
 }
 
@@ -15848,12 +22539,16 @@ bool QueryCond::IsInitialized() const {
   return true;
 }
 
+void QueryCond::Swap(QueryCond* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void QueryCond::InternalSwap(QueryCond* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  documentids_.InternalSwap(&other->documentids_);
+  documentids_.InternalSwap(CastToBase(&other->documentids_));
   indexids_.InternalSwap(&other->indexids_);
-  outputfields_.InternalSwap(&other->outputfields_);
+  outputfields_.InternalSwap(CastToBase(&other->outputfields_));
   filter_.Swap(&other->filter_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(limit_, other->limit_);
@@ -15872,15 +22567,22 @@ void QueryRequest::InitAsDefaultInstance() {
   ::olama::_QueryRequest_default_instance_._instance.get_mutable()->query_ = const_cast< ::olama::QueryCond*>(
       ::olama::QueryCond::internal_default_instance());
 }
-class QueryRequest::_Internal {
+class QueryRequest::HasBitSetters {
  public:
   static const ::olama::QueryCond& query(const QueryRequest* msg);
 };
 
 const ::olama::QueryCond&
-QueryRequest::_Internal::query(const QueryRequest* msg) {
+QueryRequest::HasBitSetters::query(const QueryRequest* msg) {
   return *msg->query_;
 }
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int QueryRequest::kDatabaseFieldNumber;
+const int QueryRequest::kCollectionFieldNumber;
+const int QueryRequest::kQueryFieldNumber;
+const int QueryRequest::kReadConsistencyFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
 QueryRequest::QueryRequest()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
@@ -15891,18 +22593,18 @@ QueryRequest::QueryRequest(const QueryRequest& from)
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   database_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_database().empty()) {
+  if (from.database().size() > 0) {
     database_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.database_);
   }
   collection_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_collection().empty()) {
+  if (from.collection().size() > 0) {
     collection_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.collection_);
   }
   readconsistency_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_readconsistency().empty()) {
+  if (from.readconsistency().size() > 0) {
     readconsistency_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.readconsistency_);
   }
-  if (from._internal_has_query()) {
+  if (from.has_query()) {
     query_ = new ::olama::QueryCond(*from.query_);
   } else {
     query_ = nullptr;
@@ -15955,6 +22657,7 @@ void QueryRequest::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* QueryRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -15965,34 +22668,28 @@ const char* QueryRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
       // string database = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_database();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.QueryRequest.database"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_database(), ptr, ctx, "olama.QueryRequest.database");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string collection = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_collection();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.QueryRequest.collection"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_collection(), ptr, ctx, "olama.QueryRequest.collection");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .olama.QueryCond query = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          ptr = ctx->ParseMessage(_internal_mutable_query(), ptr);
+          ptr = ctx->ParseMessage(mutable_query(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string readConsistency = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
-          auto str = _internal_mutable_readconsistency();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.QueryRequest.readConsistency"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_readconsistency(), ptr, ctx, "olama.QueryRequest.readConsistency");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -16015,9 +22712,145 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool QueryRequest::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.QueryRequest)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string database = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_database()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->database().data(), static_cast<int>(this->database().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.QueryRequest.database"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
 
-::PROTOBUF_NAMESPACE_ID::uint8* QueryRequest::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+      // string collection = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_collection()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->collection().data(), static_cast<int>(this->collection().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.QueryRequest.collection"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .olama.QueryCond query = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+               input, mutable_query()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string readConsistency = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_readconsistency()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->readconsistency().data(), static_cast<int>(this->readconsistency().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.QueryRequest.readConsistency"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.QueryRequest)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.QueryRequest)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void QueryRequest::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.QueryRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string database = 1;
+  if (this->database().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->database().data(), static_cast<int>(this->database().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.QueryRequest.database");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->database(), output);
+  }
+
+  // string collection = 2;
+  if (this->collection().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->collection().data(), static_cast<int>(this->collection().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.QueryRequest.collection");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->collection(), output);
+  }
+
+  // .olama.QueryCond query = 3;
+  if (this->has_query()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      3, HasBitSetters::query(this), output);
+  }
+
+  // string readConsistency = 4;
+  if (this->readconsistency().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->readconsistency().data(), static_cast<int>(this->readconsistency().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.QueryRequest.readConsistency");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      4, this->readconsistency(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.QueryRequest)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* QueryRequest::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.QueryRequest)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -16025,44 +22858,46 @@ failure:
   // string database = 1;
   if (this->database().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_database().data(), static_cast<int>(this->_internal_database().length()),
+      this->database().data(), static_cast<int>(this->database().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.QueryRequest.database");
-    target = stream->WriteStringMaybeAliased(
-        1, this->_internal_database(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->database(), target);
   }
 
   // string collection = 2;
   if (this->collection().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_collection().data(), static_cast<int>(this->_internal_collection().length()),
+      this->collection().data(), static_cast<int>(this->collection().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.QueryRequest.collection");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_collection(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->collection(), target);
   }
 
   // .olama.QueryCond query = 3;
   if (this->has_query()) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::query(this), target, stream);
+      InternalWriteMessageToArray(
+        3, HasBitSetters::query(this), target);
   }
 
   // string readConsistency = 4;
   if (this->readconsistency().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_readconsistency().data(), static_cast<int>(this->_internal_readconsistency().length()),
+      this->readconsistency().data(), static_cast<int>(this->readconsistency().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.QueryRequest.readConsistency");
-    target = stream->WriteStringMaybeAliased(
-        4, this->_internal_readconsistency(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        4, this->readconsistency(), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.QueryRequest)
   return target;
@@ -16072,6 +22907,11 @@ size_t QueryRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.QueryRequest)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -16080,21 +22920,21 @@ size_t QueryRequest::ByteSizeLong() const {
   if (this->database().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_database());
+        this->database());
   }
 
   // string collection = 2;
   if (this->collection().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_collection());
+        this->collection());
   }
 
   // string readConsistency = 4;
   if (this->readconsistency().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_readconsistency());
+        this->readconsistency());
   }
 
   // .olama.QueryCond query = 3;
@@ -16104,10 +22944,6 @@ size_t QueryRequest::ByteSizeLong() const {
         *query_);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -16148,7 +22984,7 @@ void QueryRequest::MergeFrom(const QueryRequest& from) {
     readconsistency_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.readconsistency_);
   }
   if (from.has_query()) {
-    _internal_mutable_query()->::olama::QueryCond::MergeFrom(from._internal_query());
+    mutable_query()->::olama::QueryCond::MergeFrom(from.query());
   }
 }
 
@@ -16170,6 +23006,10 @@ bool QueryRequest::IsInitialized() const {
   return true;
 }
 
+void QueryRequest::Swap(QueryRequest* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void QueryRequest::InternalSwap(QueryRequest* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -16191,9 +23031,17 @@ void QueryRequest::InternalSwap(QueryRequest* other) {
 
 void QueryResponse::InitAsDefaultInstance() {
 }
-class QueryResponse::_Internal {
+class QueryResponse::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int QueryResponse::kCodeFieldNumber;
+const int QueryResponse::kMsgFieldNumber;
+const int QueryResponse::kRedirectFieldNumber;
+const int QueryResponse::kDocumentsFieldNumber;
+const int QueryResponse::kCountFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 QueryResponse::QueryResponse()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -16206,11 +23054,11 @@ QueryResponse::QueryResponse(const QueryResponse& from)
       documents_(from.documents_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   msg_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_msg().empty()) {
+  if (from.msg().size() > 0) {
     msg_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.msg_);
   }
   redirect_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_redirect().empty()) {
+  if (from.redirect().size() > 0) {
     redirect_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.redirect_);
   }
   ::memcpy(&count_, &from.count_,
@@ -16262,6 +23110,7 @@ void QueryResponse::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* QueryResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -16279,18 +23128,14 @@ const char* QueryResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
       // string msg = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_msg();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.QueryResponse.msg"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_msg(), ptr, ctx, "olama.QueryResponse.msg");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string redirect = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          auto str = _internal_mutable_redirect();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.QueryResponse.redirect"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_redirect(), ptr, ctx, "olama.QueryResponse.redirect");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -16300,10 +23145,10 @@ const char* QueryResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
           ptr -= 1;
           do {
             ptr += 1;
-            ptr = ctx->ParseMessage(_internal_add_documents(), ptr);
+            ptr = ctx->ParseMessage(add_documents(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<34>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 34);
         } else goto handle_unusual;
         continue;
       // uint64 count = 5;
@@ -16332,56 +23177,206 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool QueryResponse::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.QueryResponse)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int32 code = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
 
-::PROTOBUF_NAMESPACE_ID::uint8* QueryResponse::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
+                 input, &code_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string msg = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_msg()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->msg().data(), static_cast<int>(this->msg().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.QueryResponse.msg"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string redirect = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_redirect()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->redirect().data(), static_cast<int>(this->redirect().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.QueryResponse.redirect"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated .olama.Document documents = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+                input, add_documents()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint64 count = 5;
+      case 5: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (40 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
+                 input, &count_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.QueryResponse)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.QueryResponse)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void QueryResponse::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.QueryResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 code = 1;
+  if (this->code() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(1, this->code(), output);
+  }
+
+  // string msg = 2;
+  if (this->msg().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->msg().data(), static_cast<int>(this->msg().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.QueryResponse.msg");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->msg(), output);
+  }
+
+  // string redirect = 3;
+  if (this->redirect().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->redirect().data(), static_cast<int>(this->redirect().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.QueryResponse.redirect");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      3, this->redirect(), output);
+  }
+
+  // repeated .olama.Document documents = 4;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->documents_size()); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      4,
+      this->documents(static_cast<int>(i)),
+      output);
+  }
+
+  // uint64 count = 5;
+  if (this->count() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64(5, this->count(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.QueryResponse)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* QueryResponse::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.QueryResponse)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 code = 1;
   if (this->code() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_code(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->code(), target);
   }
 
   // string msg = 2;
   if (this->msg().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_msg().data(), static_cast<int>(this->_internal_msg().length()),
+      this->msg().data(), static_cast<int>(this->msg().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.QueryResponse.msg");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_msg(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->msg(), target);
   }
 
   // string redirect = 3;
   if (this->redirect().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_redirect().data(), static_cast<int>(this->_internal_redirect().length()),
+      this->redirect().data(), static_cast<int>(this->redirect().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.QueryResponse.redirect");
-    target = stream->WriteStringMaybeAliased(
-        3, this->_internal_redirect(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        3, this->redirect(), target);
   }
 
   // repeated .olama.Document documents = 4;
   for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_documents_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+      n = static_cast<unsigned int>(this->documents_size()); i < n; i++) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(4, this->_internal_documents(i), target, stream);
+      InternalWriteMessageToArray(
+        4, this->documents(static_cast<int>(i)), target);
   }
 
   // uint64 count = 5;
   if (this->count() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(5, this->_internal_count(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(5, this->count(), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.QueryResponse)
   return target;
@@ -16391,49 +23386,54 @@ size_t QueryResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.QueryResponse)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .olama.Document documents = 4;
-  total_size += 1UL * this->_internal_documents_size();
-  for (const auto& msg : this->documents_) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  {
+    unsigned int count = static_cast<unsigned int>(this->documents_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          this->documents(static_cast<int>(i)));
+    }
   }
 
   // string msg = 2;
   if (this->msg().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_msg());
+        this->msg());
   }
 
   // string redirect = 3;
   if (this->redirect().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_redirect());
+        this->redirect());
   }
 
   // uint64 count = 5;
   if (this->count() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->_internal_count());
+        this->count());
   }
 
   // int32 code = 1;
   if (this->code() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_code());
+        this->code());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -16471,10 +23471,10 @@ void QueryResponse::MergeFrom(const QueryResponse& from) {
     redirect_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.redirect_);
   }
   if (from.count() != 0) {
-    _internal_set_count(from._internal_count());
+    set_count(from.count());
   }
   if (from.code() != 0) {
-    _internal_set_code(from._internal_code());
+    set_code(from.code());
   }
 }
 
@@ -16496,10 +23496,14 @@ bool QueryResponse::IsInitialized() const {
   return true;
 }
 
+void QueryResponse::Swap(QueryResponse* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void QueryResponse::InternalSwap(QueryResponse* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  documents_.InternalSwap(&other->documents_);
+  CastToBase(&documents_)->InternalSwap(CastToBase(&other->documents_));
   msg_.Swap(&other->msg_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   redirect_.Swap(&other->redirect_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
@@ -16517,9 +23521,13 @@ void QueryResponse::InternalSwap(QueryResponse* other) {
 
 void SearchResult::InitAsDefaultInstance() {
 }
-class SearchResult::_Internal {
+class SearchResult::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int SearchResult::kDocumentsFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 SearchResult::SearchResult()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -16565,6 +23573,7 @@ void SearchResult::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* SearchResult::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -16578,10 +23587,10 @@ const char* SearchResult::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
           ptr -= 1;
           do {
             ptr += 1;
-            ptr = ctx->ParseMessage(_internal_add_documents(), ptr);
+            ptr = ctx->ParseMessage(add_documents(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 10);
         } else goto handle_unusual;
         continue;
       default: {
@@ -16603,24 +23612,88 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool SearchResult::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.SearchResult)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // repeated .olama.Document documents = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+                input, add_documents()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SearchResult::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.SearchResult)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.SearchResult)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void SearchResult::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.SearchResult)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated .olama.Document documents = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->documents_size()); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1,
+      this->documents(static_cast<int>(i)),
+      output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.SearchResult)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* SearchResult::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.SearchResult)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated .olama.Document documents = 1;
   for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_documents_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+      n = static_cast<unsigned int>(this->documents_size()); i < n; i++) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, this->_internal_documents(i), target, stream);
+      InternalWriteMessageToArray(
+        1, this->documents(static_cast<int>(i)), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.SearchResult)
   return target;
@@ -16630,21 +23703,26 @@ size_t SearchResult::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.SearchResult)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .olama.Document documents = 1;
-  total_size += 1UL * this->_internal_documents_size();
-  for (const auto& msg : this->documents_) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  {
+    unsigned int count = static_cast<unsigned int>(this->documents_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          this->documents(static_cast<int>(i)));
+    }
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -16693,10 +23771,14 @@ bool SearchResult::IsInitialized() const {
   return true;
 }
 
+void SearchResult::Swap(SearchResult* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void SearchResult::InternalSwap(SearchResult* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  documents_.InternalSwap(&other->documents_);
+  CastToBase(&documents_)->InternalSwap(CastToBase(&other->documents_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SearchResult::GetMetadata() const {
@@ -16708,9 +23790,15 @@ void SearchResult::InternalSwap(SearchResult* other) {
 
 void SearchParams::InitAsDefaultInstance() {
 }
-class SearchParams::_Internal {
+class SearchParams::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int SearchParams::kNprobeFieldNumber;
+const int SearchParams::kEfFieldNumber;
+const int SearchParams::kRadiusFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 SearchParams::SearchParams()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -16762,6 +23850,7 @@ void SearchParams::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* SearchParams::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -16809,34 +23898,129 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool SearchParams::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.SearchParams)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // uint32 nprobe = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
 
-::PROTOBUF_NAMESPACE_ID::uint8* SearchParams::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &nprobe_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint32 ef = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &ef_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // float radius = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (29 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   float, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_FLOAT>(
+                 input, &radius_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.SearchParams)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.SearchParams)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void SearchParams::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.SearchParams)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // uint32 nprobe = 1;
+  if (this->nprobe() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32(1, this->nprobe(), output);
+  }
+
+  // uint32 ef = 2;
+  if (this->ef() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32(2, this->ef(), output);
+  }
+
+  // float radius = 3;
+  if (!(this->radius() <= 0 && this->radius() >= 0)) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloat(3, this->radius(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.SearchParams)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* SearchParams::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.SearchParams)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // uint32 nprobe = 1;
   if (this->nprobe() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_nprobe(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->nprobe(), target);
   }
 
   // uint32 ef = 2;
   if (this->ef() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_ef(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->ef(), target);
   }
 
   // float radius = 3;
   if (!(this->radius() <= 0 && this->radius() >= 0)) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(3, this->_internal_radius(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(3, this->radius(), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.SearchParams)
   return target;
@@ -16846,6 +24030,11 @@ size_t SearchParams::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.SearchParams)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -16854,14 +24043,14 @@ size_t SearchParams::ByteSizeLong() const {
   if (this->nprobe() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_nprobe());
+        this->nprobe());
   }
 
   // uint32 ef = 2;
   if (this->ef() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_ef());
+        this->ef());
   }
 
   // float radius = 3;
@@ -16869,10 +24058,6 @@ size_t SearchParams::ByteSizeLong() const {
     total_size += 1 + 4;
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -16901,13 +24086,13 @@ void SearchParams::MergeFrom(const SearchParams& from) {
   (void) cached_has_bits;
 
   if (from.nprobe() != 0) {
-    _internal_set_nprobe(from._internal_nprobe());
+    set_nprobe(from.nprobe());
   }
   if (from.ef() != 0) {
-    _internal_set_ef(from._internal_ef());
+    set_ef(from.ef());
   }
   if (!(from.radius() <= 0 && from.radius() >= 0)) {
-    _internal_set_radius(from._internal_radius());
+    set_radius(from.radius());
   }
 }
 
@@ -16929,6 +24114,10 @@ bool SearchParams::IsInitialized() const {
   return true;
 }
 
+void SearchParams::Swap(SearchParams* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void SearchParams::InternalSwap(SearchParams* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -16946,9 +24135,13 @@ void SearchParams::InternalSwap(SearchParams* other) {
 
 void VectorArray::InitAsDefaultInstance() {
 }
-class VectorArray::_Internal {
+class VectorArray::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int VectorArray::kVectorFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 VectorArray::VectorArray()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -16993,6 +24186,7 @@ void VectorArray::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* VectorArray::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -17003,10 +24197,10 @@ const char* VectorArray::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID
       // repeated float vector = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedFloatParser(_internal_mutable_vector(), ptr, ctx);
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedFloatParser(mutable_vector(), ptr, ctx);
           CHK_(ptr);
         } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 13) {
-          _internal_add_vector(::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr));
+          add_vector(::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr));
           ptr += sizeof(float);
         } else goto handle_unusual;
         continue;
@@ -17029,21 +24223,98 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool VectorArray::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.VectorArray)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // repeated float vector = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPackedPrimitive<
+                   float, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_FLOAT>(
+                 input, this->mutable_vector())));
+        } else if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (13 & 0xFF)) {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
+                   float, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_FLOAT>(
+                 1, 10u, input, this->mutable_vector())));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
 
-::PROTOBUF_NAMESPACE_ID::uint8* VectorArray::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.VectorArray)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.VectorArray)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void VectorArray::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.VectorArray)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated float vector = 1;
+  if (this->vector_size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteTag(1, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
+    output->WriteVarint32(_vector_cached_byte_size_.load(
+        std::memory_order_relaxed));
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatArray(
+      this->vector().data(), this->vector_size(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.VectorArray)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* VectorArray::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.VectorArray)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated float vector = 1;
-  if (this->_internal_vector_size() > 0) {
-    target = stream->WriteFixedPacked(1, _internal_vector(), target);
+  if (this->vector_size() > 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteTagToArray(
+      1,
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
+      target);
+    target = ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream::WriteVarint32ToArray(
+        _vector_cached_byte_size_.load(std::memory_order_relaxed),
+         target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      WriteFloatNoTagToArray(this->vector_, target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.VectorArray)
   return target;
@@ -17053,13 +24324,18 @@ size_t VectorArray::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.VectorArray)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated float vector = 1;
   {
-    unsigned int count = static_cast<unsigned int>(this->_internal_vector_size());
+    unsigned int count = static_cast<unsigned int>(this->vector_size());
     size_t data_size = 4UL * count;
     if (data_size > 0) {
       total_size += 1 +
@@ -17072,10 +24348,6 @@ size_t VectorArray::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -17124,6 +24396,10 @@ bool VectorArray::IsInitialized() const {
   return true;
 }
 
+void VectorArray::Swap(VectorArray* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void VectorArray::InternalSwap(VectorArray* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -17141,15 +24417,26 @@ void SearchCond::InitAsDefaultInstance() {
   ::olama::_SearchCond_default_instance_._instance.get_mutable()->params_ = const_cast< ::olama::SearchParams*>(
       ::olama::SearchParams::internal_default_instance());
 }
-class SearchCond::_Internal {
+class SearchCond::HasBitSetters {
  public:
   static const ::olama::SearchParams& params(const SearchCond* msg);
 };
 
 const ::olama::SearchParams&
-SearchCond::_Internal::params(const SearchCond* msg) {
+SearchCond::HasBitSetters::params(const SearchCond* msg) {
   return *msg->params_;
 }
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int SearchCond::kVectorsFieldNumber;
+const int SearchCond::kDocumentIdsFieldNumber;
+const int SearchCond::kParamsFieldNumber;
+const int SearchCond::kFilterFieldNumber;
+const int SearchCond::kRetrieveVectorFieldNumber;
+const int SearchCond::kLimitFieldNumber;
+const int SearchCond::kOutputfieldsFieldNumber;
+const int SearchCond::kEmbeddingItemsFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
 SearchCond::SearchCond()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
@@ -17164,10 +24451,10 @@ SearchCond::SearchCond(const SearchCond& from)
       embeddingitems_(from.embeddingitems_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   filter_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_filter().empty()) {
+  if (from.filter().size() > 0) {
     filter_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.filter_);
   }
-  if (from._internal_has_params()) {
+  if (from.has_params()) {
     params_ = new ::olama::SearchParams(*from.params_);
   } else {
     params_ = nullptr;
@@ -17226,6 +24513,7 @@ void SearchCond::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* SearchCond::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -17239,10 +24527,10 @@ const char* SearchCond::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
           ptr -= 1;
           do {
             ptr += 1;
-            ptr = ctx->ParseMessage(_internal_add_vectors(), ptr);
+            ptr = ctx->ParseMessage(add_vectors(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 10);
         } else goto handle_unusual;
         continue;
       // repeated string documentIds = 2;
@@ -17251,27 +24539,23 @@ const char* SearchCond::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
           ptr -= 1;
           do {
             ptr += 1;
-            auto str = _internal_add_documentids();
-            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-            CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.SearchCond.documentIds"));
+            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(add_documentids(), ptr, ctx, "olama.SearchCond.documentIds");
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 18);
         } else goto handle_unusual;
         continue;
       // .olama.SearchParams params = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          ptr = ctx->ParseMessage(_internal_mutable_params(), ptr);
+          ptr = ctx->ParseMessage(mutable_params(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string filter = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
-          auto str = _internal_mutable_filter();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.SearchCond.filter"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_filter(), ptr, ctx, "olama.SearchCond.filter");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -17295,12 +24579,10 @@ const char* SearchCond::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
           ptr -= 1;
           do {
             ptr += 1;
-            auto str = _internal_add_outputfields();
-            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-            CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.SearchCond.outputfields"));
+            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(add_outputfields(), ptr, ctx, "olama.SearchCond.outputfields");
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<58>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 58);
         } else goto handle_unusual;
         continue;
       // repeated string embeddingItems = 8;
@@ -17309,12 +24591,10 @@ const char* SearchCond::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
           ptr -= 1;
           do {
             ptr += 1;
-            auto str = _internal_add_embeddingitems();
-            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-            CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.SearchCond.embeddingItems"));
+            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(add_embeddingitems(), ptr, ctx, "olama.SearchCond.embeddingItems");
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<66>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 66);
         } else goto handle_unusual;
         continue;
       default: {
@@ -17336,84 +24616,302 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool SearchCond::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.SearchCond)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // repeated .olama.VectorArray vectors = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+                input, add_vectors()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SearchCond::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+      // repeated string documentIds = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->add_documentids()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->documentids(this->documentids_size() - 1).data(),
+            static_cast<int>(this->documentids(this->documentids_size() - 1).length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.SearchCond.documentIds"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .olama.SearchParams params = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+               input, mutable_params()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string filter = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_filter()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->filter().data(), static_cast<int>(this->filter().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.SearchCond.filter"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // bool retrieveVector = 5;
+      case 5: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (40 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &retrievevector_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint32 limit = 6;
+      case 6: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (48 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &limit_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated string outputfields = 7;
+      case 7: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (58 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->add_outputfields()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->outputfields(this->outputfields_size() - 1).data(),
+            static_cast<int>(this->outputfields(this->outputfields_size() - 1).length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.SearchCond.outputfields"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated string embeddingItems = 8;
+      case 8: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (66 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->add_embeddingitems()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->embeddingitems(this->embeddingitems_size() - 1).data(),
+            static_cast<int>(this->embeddingitems(this->embeddingitems_size() - 1).length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.SearchCond.embeddingItems"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.SearchCond)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.SearchCond)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void SearchCond::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.SearchCond)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated .olama.VectorArray vectors = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->vectors_size()); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1,
+      this->vectors(static_cast<int>(i)),
+      output);
+  }
+
+  // repeated string documentIds = 2;
+  for (int i = 0, n = this->documentids_size(); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->documentids(i).data(), static_cast<int>(this->documentids(i).length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.SearchCond.documentIds");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteString(
+      2, this->documentids(i), output);
+  }
+
+  // .olama.SearchParams params = 3;
+  if (this->has_params()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      3, HasBitSetters::params(this), output);
+  }
+
+  // string filter = 4;
+  if (this->filter().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->filter().data(), static_cast<int>(this->filter().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.SearchCond.filter");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      4, this->filter(), output);
+  }
+
+  // bool retrieveVector = 5;
+  if (this->retrievevector() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(5, this->retrievevector(), output);
+  }
+
+  // uint32 limit = 6;
+  if (this->limit() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32(6, this->limit(), output);
+  }
+
+  // repeated string outputfields = 7;
+  for (int i = 0, n = this->outputfields_size(); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->outputfields(i).data(), static_cast<int>(this->outputfields(i).length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.SearchCond.outputfields");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteString(
+      7, this->outputfields(i), output);
+  }
+
+  // repeated string embeddingItems = 8;
+  for (int i = 0, n = this->embeddingitems_size(); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->embeddingitems(i).data(), static_cast<int>(this->embeddingitems(i).length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.SearchCond.embeddingItems");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteString(
+      8, this->embeddingitems(i), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.SearchCond)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* SearchCond::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.SearchCond)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated .olama.VectorArray vectors = 1;
   for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_vectors_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+      n = static_cast<unsigned int>(this->vectors_size()); i < n; i++) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, this->_internal_vectors(i), target, stream);
+      InternalWriteMessageToArray(
+        1, this->vectors(static_cast<int>(i)), target);
   }
 
   // repeated string documentIds = 2;
-  for (int i = 0, n = this->_internal_documentids_size(); i < n; i++) {
-    const auto& s = this->_internal_documentids(i);
+  for (int i = 0, n = this->documentids_size(); i < n; i++) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      s.data(), static_cast<int>(s.length()),
+      this->documentids(i).data(), static_cast<int>(this->documentids(i).length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.SearchCond.documentIds");
-    target = stream->WriteString(2, s, target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      WriteStringToArray(2, this->documentids(i), target);
   }
 
   // .olama.SearchParams params = 3;
   if (this->has_params()) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::params(this), target, stream);
+      InternalWriteMessageToArray(
+        3, HasBitSetters::params(this), target);
   }
 
   // string filter = 4;
   if (this->filter().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_filter().data(), static_cast<int>(this->_internal_filter().length()),
+      this->filter().data(), static_cast<int>(this->filter().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.SearchCond.filter");
-    target = stream->WriteStringMaybeAliased(
-        4, this->_internal_filter(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        4, this->filter(), target);
   }
 
   // bool retrieveVector = 5;
   if (this->retrievevector() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(5, this->_internal_retrievevector(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(5, this->retrievevector(), target);
   }
 
   // uint32 limit = 6;
   if (this->limit() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(6, this->_internal_limit(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(6, this->limit(), target);
   }
 
   // repeated string outputfields = 7;
-  for (int i = 0, n = this->_internal_outputfields_size(); i < n; i++) {
-    const auto& s = this->_internal_outputfields(i);
+  for (int i = 0, n = this->outputfields_size(); i < n; i++) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      s.data(), static_cast<int>(s.length()),
+      this->outputfields(i).data(), static_cast<int>(this->outputfields(i).length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.SearchCond.outputfields");
-    target = stream->WriteString(7, s, target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      WriteStringToArray(7, this->outputfields(i), target);
   }
 
   // repeated string embeddingItems = 8;
-  for (int i = 0, n = this->_internal_embeddingitems_size(); i < n; i++) {
-    const auto& s = this->_internal_embeddingitems(i);
+  for (int i = 0, n = this->embeddingitems_size(); i < n; i++) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      s.data(), static_cast<int>(s.length()),
+      this->embeddingitems(i).data(), static_cast<int>(this->embeddingitems(i).length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.SearchCond.embeddingItems");
-    target = stream->WriteString(8, s, target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      WriteStringToArray(8, this->embeddingitems(i), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.SearchCond)
   return target;
@@ -17423,46 +24921,55 @@ size_t SearchCond::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.SearchCond)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .olama.VectorArray vectors = 1;
-  total_size += 1UL * this->_internal_vectors_size();
-  for (const auto& msg : this->vectors_) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  {
+    unsigned int count = static_cast<unsigned int>(this->vectors_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          this->vectors(static_cast<int>(i)));
+    }
   }
 
   // repeated string documentIds = 2;
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(documentids_.size());
-  for (int i = 0, n = documentids_.size(); i < n; i++) {
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->documentids_size());
+  for (int i = 0, n = this->documentids_size(); i < n; i++) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-      documentids_.Get(i));
+      this->documentids(i));
   }
 
   // repeated string outputfields = 7;
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(outputfields_.size());
-  for (int i = 0, n = outputfields_.size(); i < n; i++) {
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->outputfields_size());
+  for (int i = 0, n = this->outputfields_size(); i < n; i++) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-      outputfields_.Get(i));
+      this->outputfields(i));
   }
 
   // repeated string embeddingItems = 8;
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(embeddingitems_.size());
-  for (int i = 0, n = embeddingitems_.size(); i < n; i++) {
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->embeddingitems_size());
+  for (int i = 0, n = this->embeddingitems_size(); i < n; i++) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-      embeddingitems_.Get(i));
+      this->embeddingitems(i));
   }
 
   // string filter = 4;
   if (this->filter().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_filter());
+        this->filter());
   }
 
   // .olama.SearchParams params = 3;
@@ -17481,13 +24988,9 @@ size_t SearchCond::ByteSizeLong() const {
   if (this->limit() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_limit());
+        this->limit());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -17524,13 +25027,13 @@ void SearchCond::MergeFrom(const SearchCond& from) {
     filter_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.filter_);
   }
   if (from.has_params()) {
-    _internal_mutable_params()->::olama::SearchParams::MergeFrom(from._internal_params());
+    mutable_params()->::olama::SearchParams::MergeFrom(from.params());
   }
   if (from.retrievevector() != 0) {
-    _internal_set_retrievevector(from._internal_retrievevector());
+    set_retrievevector(from.retrievevector());
   }
   if (from.limit() != 0) {
-    _internal_set_limit(from._internal_limit());
+    set_limit(from.limit());
   }
 }
 
@@ -17552,13 +25055,17 @@ bool SearchCond::IsInitialized() const {
   return true;
 }
 
+void SearchCond::Swap(SearchCond* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void SearchCond::InternalSwap(SearchCond* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  vectors_.InternalSwap(&other->vectors_);
-  documentids_.InternalSwap(&other->documentids_);
-  outputfields_.InternalSwap(&other->outputfields_);
-  embeddingitems_.InternalSwap(&other->embeddingitems_);
+  CastToBase(&vectors_)->InternalSwap(CastToBase(&other->vectors_));
+  documentids_.InternalSwap(CastToBase(&other->documentids_));
+  outputfields_.InternalSwap(CastToBase(&other->outputfields_));
+  embeddingitems_.InternalSwap(CastToBase(&other->embeddingitems_));
   filter_.Swap(&other->filter_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(params_, other->params_);
@@ -17577,15 +25084,22 @@ void SearchRequest::InitAsDefaultInstance() {
   ::olama::_SearchRequest_default_instance_._instance.get_mutable()->search_ = const_cast< ::olama::SearchCond*>(
       ::olama::SearchCond::internal_default_instance());
 }
-class SearchRequest::_Internal {
+class SearchRequest::HasBitSetters {
  public:
   static const ::olama::SearchCond& search(const SearchRequest* msg);
 };
 
 const ::olama::SearchCond&
-SearchRequest::_Internal::search(const SearchRequest* msg) {
+SearchRequest::HasBitSetters::search(const SearchRequest* msg) {
   return *msg->search_;
 }
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int SearchRequest::kDatabaseFieldNumber;
+const int SearchRequest::kCollectionFieldNumber;
+const int SearchRequest::kSearchFieldNumber;
+const int SearchRequest::kReadConsistencyFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
 SearchRequest::SearchRequest()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
@@ -17596,18 +25110,18 @@ SearchRequest::SearchRequest(const SearchRequest& from)
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   database_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_database().empty()) {
+  if (from.database().size() > 0) {
     database_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.database_);
   }
   collection_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_collection().empty()) {
+  if (from.collection().size() > 0) {
     collection_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.collection_);
   }
   readconsistency_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_readconsistency().empty()) {
+  if (from.readconsistency().size() > 0) {
     readconsistency_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.readconsistency_);
   }
-  if (from._internal_has_search()) {
+  if (from.has_search()) {
     search_ = new ::olama::SearchCond(*from.search_);
   } else {
     search_ = nullptr;
@@ -17660,6 +25174,7 @@ void SearchRequest::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* SearchRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -17670,34 +25185,28 @@ const char* SearchRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
       // string database = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_database();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.SearchRequest.database"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_database(), ptr, ctx, "olama.SearchRequest.database");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string collection = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_collection();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.SearchRequest.collection"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_collection(), ptr, ctx, "olama.SearchRequest.collection");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .olama.SearchCond search = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          ptr = ctx->ParseMessage(_internal_mutable_search(), ptr);
+          ptr = ctx->ParseMessage(mutable_search(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string readConsistency = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
-          auto str = _internal_mutable_readconsistency();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.SearchRequest.readConsistency"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_readconsistency(), ptr, ctx, "olama.SearchRequest.readConsistency");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -17720,9 +25229,145 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool SearchRequest::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.SearchRequest)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string database = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_database()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->database().data(), static_cast<int>(this->database().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.SearchRequest.database"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SearchRequest::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+      // string collection = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_collection()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->collection().data(), static_cast<int>(this->collection().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.SearchRequest.collection"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .olama.SearchCond search = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+               input, mutable_search()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string readConsistency = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_readconsistency()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->readconsistency().data(), static_cast<int>(this->readconsistency().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.SearchRequest.readConsistency"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.SearchRequest)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.SearchRequest)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void SearchRequest::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.SearchRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string database = 1;
+  if (this->database().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->database().data(), static_cast<int>(this->database().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.SearchRequest.database");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->database(), output);
+  }
+
+  // string collection = 2;
+  if (this->collection().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->collection().data(), static_cast<int>(this->collection().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.SearchRequest.collection");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->collection(), output);
+  }
+
+  // .olama.SearchCond search = 3;
+  if (this->has_search()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      3, HasBitSetters::search(this), output);
+  }
+
+  // string readConsistency = 4;
+  if (this->readconsistency().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->readconsistency().data(), static_cast<int>(this->readconsistency().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.SearchRequest.readConsistency");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      4, this->readconsistency(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.SearchRequest)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* SearchRequest::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.SearchRequest)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -17730,44 +25375,46 @@ failure:
   // string database = 1;
   if (this->database().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_database().data(), static_cast<int>(this->_internal_database().length()),
+      this->database().data(), static_cast<int>(this->database().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.SearchRequest.database");
-    target = stream->WriteStringMaybeAliased(
-        1, this->_internal_database(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->database(), target);
   }
 
   // string collection = 2;
   if (this->collection().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_collection().data(), static_cast<int>(this->_internal_collection().length()),
+      this->collection().data(), static_cast<int>(this->collection().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.SearchRequest.collection");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_collection(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->collection(), target);
   }
 
   // .olama.SearchCond search = 3;
   if (this->has_search()) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::search(this), target, stream);
+      InternalWriteMessageToArray(
+        3, HasBitSetters::search(this), target);
   }
 
   // string readConsistency = 4;
   if (this->readconsistency().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_readconsistency().data(), static_cast<int>(this->_internal_readconsistency().length()),
+      this->readconsistency().data(), static_cast<int>(this->readconsistency().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.SearchRequest.readConsistency");
-    target = stream->WriteStringMaybeAliased(
-        4, this->_internal_readconsistency(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        4, this->readconsistency(), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.SearchRequest)
   return target;
@@ -17777,6 +25424,11 @@ size_t SearchRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.SearchRequest)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -17785,21 +25437,21 @@ size_t SearchRequest::ByteSizeLong() const {
   if (this->database().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_database());
+        this->database());
   }
 
   // string collection = 2;
   if (this->collection().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_collection());
+        this->collection());
   }
 
   // string readConsistency = 4;
   if (this->readconsistency().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_readconsistency());
+        this->readconsistency());
   }
 
   // .olama.SearchCond search = 3;
@@ -17809,10 +25461,6 @@ size_t SearchRequest::ByteSizeLong() const {
         *search_);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -17853,7 +25501,7 @@ void SearchRequest::MergeFrom(const SearchRequest& from) {
     readconsistency_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.readconsistency_);
   }
   if (from.has_search()) {
-    _internal_mutable_search()->::olama::SearchCond::MergeFrom(from._internal_search());
+    mutable_search()->::olama::SearchCond::MergeFrom(from.search());
   }
 }
 
@@ -17875,6 +25523,10 @@ bool SearchRequest::IsInitialized() const {
   return true;
 }
 
+void SearchRequest::Swap(SearchRequest* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void SearchRequest::InternalSwap(SearchRequest* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -17896,9 +25548,15 @@ void SearchRequest::InternalSwap(SearchRequest* other) {
 
 void Filter::InitAsDefaultInstance() {
 }
-class Filter::_Internal {
+class Filter::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int Filter::kExprFieldNumber;
+const int Filter::kRadiusFieldNumber;
+const int Filter::kSizeFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 Filter::Filter()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -17910,7 +25568,7 @@ Filter::Filter(const Filter& from)
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   expr_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_expr().empty()) {
+  if (from.expr().size() > 0) {
     expr_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.expr_);
   }
   ::memcpy(&radius_, &from.radius_,
@@ -17958,6 +25616,7 @@ void Filter::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* Filter::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -17968,9 +25627,7 @@ const char* Filter::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::int
       // string expr = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_expr();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.Filter.expr"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_expr(), ptr, ctx, "olama.Filter.expr");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -18007,9 +25664,114 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool Filter::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.Filter)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string expr = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_expr()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->expr().data(), static_cast<int>(this->expr().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.Filter.expr"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Filter::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+      // float radius = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (21 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   float, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_FLOAT>(
+                 input, &radius_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint32 size = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &size_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.Filter)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.Filter)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void Filter::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.Filter)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string expr = 1;
+  if (this->expr().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->expr().data(), static_cast<int>(this->expr().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.Filter.expr");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->expr(), output);
+  }
+
+  // float radius = 2;
+  if (!(this->radius() <= 0 && this->radius() >= 0)) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloat(2, this->radius(), output);
+  }
+
+  // uint32 size = 3;
+  if (this->size() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32(3, this->size(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.Filter)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* Filter::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.Filter)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -18017,28 +25779,27 @@ failure:
   // string expr = 1;
   if (this->expr().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_expr().data(), static_cast<int>(this->_internal_expr().length()),
+      this->expr().data(), static_cast<int>(this->expr().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.Filter.expr");
-    target = stream->WriteStringMaybeAliased(
-        1, this->_internal_expr(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->expr(), target);
   }
 
   // float radius = 2;
   if (!(this->radius() <= 0 && this->radius() >= 0)) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(2, this->_internal_radius(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(2, this->radius(), target);
   }
 
   // uint32 size = 3;
   if (this->size() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(3, this->_internal_size(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(3, this->size(), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.Filter)
   return target;
@@ -18048,6 +25809,11 @@ size_t Filter::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.Filter)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -18056,7 +25822,7 @@ size_t Filter::ByteSizeLong() const {
   if (this->expr().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_expr());
+        this->expr());
   }
 
   // float radius = 2;
@@ -18068,13 +25834,9 @@ size_t Filter::ByteSizeLong() const {
   if (this->size() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_size());
+        this->size());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -18107,10 +25869,10 @@ void Filter::MergeFrom(const Filter& from) {
     expr_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.expr_);
   }
   if (!(from.radius() <= 0 && from.radius() >= 0)) {
-    _internal_set_radius(from._internal_radius());
+    set_radius(from.radius());
   }
   if (from.size() != 0) {
-    _internal_set_size(from._internal_size());
+    set_size(from.size());
   }
 }
 
@@ -18132,6 +25894,10 @@ bool Filter::IsInitialized() const {
   return true;
 }
 
+void Filter::Swap(Filter* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void Filter::InternalSwap(Filter* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -18152,15 +25918,24 @@ void SearchResponse::InitAsDefaultInstance() {
   ::olama::_SearchResponse_default_instance_._instance.get_mutable()->embedding_extra_info_ = const_cast< ::olama::EmbeddingExtraInfo*>(
       ::olama::EmbeddingExtraInfo::internal_default_instance());
 }
-class SearchResponse::_Internal {
+class SearchResponse::HasBitSetters {
  public:
   static const ::olama::EmbeddingExtraInfo& embedding_extra_info(const SearchResponse* msg);
 };
 
 const ::olama::EmbeddingExtraInfo&
-SearchResponse::_Internal::embedding_extra_info(const SearchResponse* msg) {
+SearchResponse::HasBitSetters::embedding_extra_info(const SearchResponse* msg) {
   return *msg->embedding_extra_info_;
 }
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int SearchResponse::kCodeFieldNumber;
+const int SearchResponse::kMsgFieldNumber;
+const int SearchResponse::kRedirectFieldNumber;
+const int SearchResponse::kResultsFieldNumber;
+const int SearchResponse::kWarningFieldNumber;
+const int SearchResponse::kEmbeddingExtraInfoFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
 SearchResponse::SearchResponse()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
@@ -18172,18 +25947,18 @@ SearchResponse::SearchResponse(const SearchResponse& from)
       results_(from.results_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   msg_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_msg().empty()) {
+  if (from.msg().size() > 0) {
     msg_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.msg_);
   }
   redirect_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_redirect().empty()) {
+  if (from.redirect().size() > 0) {
     redirect_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.redirect_);
   }
   warning_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_warning().empty()) {
+  if (from.warning().size() > 0) {
     warning_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.warning_);
   }
-  if (from._internal_has_embedding_extra_info()) {
+  if (from.has_embedding_extra_info()) {
     embedding_extra_info_ = new ::olama::EmbeddingExtraInfo(*from.embedding_extra_info_);
   } else {
     embedding_extra_info_ = nullptr;
@@ -18241,6 +26016,7 @@ void SearchResponse::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* SearchResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -18258,18 +26034,14 @@ const char* SearchResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
       // string msg = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_msg();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.SearchResponse.msg"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_msg(), ptr, ctx, "olama.SearchResponse.msg");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string redirect = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          auto str = _internal_mutable_redirect();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.SearchResponse.redirect"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_redirect(), ptr, ctx, "olama.SearchResponse.redirect");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -18279,25 +26051,23 @@ const char* SearchResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
           ptr -= 1;
           do {
             ptr += 1;
-            ptr = ctx->ParseMessage(_internal_add_results(), ptr);
+            ptr = ctx->ParseMessage(add_results(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<34>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 34);
         } else goto handle_unusual;
         continue;
       // string warning = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
-          auto str = _internal_mutable_warning();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.SearchResponse.warning"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_warning(), ptr, ctx, "olama.SearchResponse.warning");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .olama.EmbeddingExtraInfo embedding_extra_info = 6;
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
-          ptr = ctx->ParseMessage(_internal_mutable_embedding_extra_info(), ptr);
+          ptr = ctx->ParseMessage(mutable_embedding_extra_info(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -18320,68 +26090,243 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool SearchResponse::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.SearchResponse)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int32 code = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
 
-::PROTOBUF_NAMESPACE_ID::uint8* SearchResponse::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
+                 input, &code_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string msg = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_msg()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->msg().data(), static_cast<int>(this->msg().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.SearchResponse.msg"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string redirect = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_redirect()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->redirect().data(), static_cast<int>(this->redirect().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.SearchResponse.redirect"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated .olama.SearchResult results = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+                input, add_results()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string warning = 5;
+      case 5: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (42 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_warning()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->warning().data(), static_cast<int>(this->warning().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.SearchResponse.warning"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // .olama.EmbeddingExtraInfo embedding_extra_info = 6;
+      case 6: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (50 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
+               input, mutable_embedding_extra_info()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.SearchResponse)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.SearchResponse)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void SearchResponse::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.SearchResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 code = 1;
+  if (this->code() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(1, this->code(), output);
+  }
+
+  // string msg = 2;
+  if (this->msg().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->msg().data(), static_cast<int>(this->msg().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.SearchResponse.msg");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->msg(), output);
+  }
+
+  // string redirect = 3;
+  if (this->redirect().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->redirect().data(), static_cast<int>(this->redirect().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.SearchResponse.redirect");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      3, this->redirect(), output);
+  }
+
+  // repeated .olama.SearchResult results = 4;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->results_size()); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      4,
+      this->results(static_cast<int>(i)),
+      output);
+  }
+
+  // string warning = 5;
+  if (this->warning().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->warning().data(), static_cast<int>(this->warning().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.SearchResponse.warning");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      5, this->warning(), output);
+  }
+
+  // .olama.EmbeddingExtraInfo embedding_extra_info = 6;
+  if (this->has_embedding_extra_info()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
+      6, HasBitSetters::embedding_extra_info(this), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.SearchResponse)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* SearchResponse::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.SearchResponse)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 code = 1;
   if (this->code() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_code(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->code(), target);
   }
 
   // string msg = 2;
   if (this->msg().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_msg().data(), static_cast<int>(this->_internal_msg().length()),
+      this->msg().data(), static_cast<int>(this->msg().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.SearchResponse.msg");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_msg(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->msg(), target);
   }
 
   // string redirect = 3;
   if (this->redirect().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_redirect().data(), static_cast<int>(this->_internal_redirect().length()),
+      this->redirect().data(), static_cast<int>(this->redirect().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.SearchResponse.redirect");
-    target = stream->WriteStringMaybeAliased(
-        3, this->_internal_redirect(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        3, this->redirect(), target);
   }
 
   // repeated .olama.SearchResult results = 4;
   for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_results_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+      n = static_cast<unsigned int>(this->results_size()); i < n; i++) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(4, this->_internal_results(i), target, stream);
+      InternalWriteMessageToArray(
+        4, this->results(static_cast<int>(i)), target);
   }
 
   // string warning = 5;
   if (this->warning().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_warning().data(), static_cast<int>(this->_internal_warning().length()),
+      this->warning().data(), static_cast<int>(this->warning().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.SearchResponse.warning");
-    target = stream->WriteStringMaybeAliased(
-        5, this->_internal_warning(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        5, this->warning(), target);
   }
 
   // .olama.EmbeddingExtraInfo embedding_extra_info = 6;
   if (this->has_embedding_extra_info()) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        6, _Internal::embedding_extra_info(this), target, stream);
+      InternalWriteMessageToArray(
+        6, HasBitSetters::embedding_extra_info(this), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.SearchResponse)
   return target;
@@ -18391,36 +26336,45 @@ size_t SearchResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.SearchResponse)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .olama.SearchResult results = 4;
-  total_size += 1UL * this->_internal_results_size();
-  for (const auto& msg : this->results_) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  {
+    unsigned int count = static_cast<unsigned int>(this->results_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          this->results(static_cast<int>(i)));
+    }
   }
 
   // string msg = 2;
   if (this->msg().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_msg());
+        this->msg());
   }
 
   // string redirect = 3;
   if (this->redirect().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_redirect());
+        this->redirect());
   }
 
   // string warning = 5;
   if (this->warning().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_warning());
+        this->warning());
   }
 
   // .olama.EmbeddingExtraInfo embedding_extra_info = 6;
@@ -18434,13 +26388,9 @@ size_t SearchResponse::ByteSizeLong() const {
   if (this->code() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_code());
+        this->code());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -18482,10 +26432,10 @@ void SearchResponse::MergeFrom(const SearchResponse& from) {
     warning_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.warning_);
   }
   if (from.has_embedding_extra_info()) {
-    _internal_mutable_embedding_extra_info()->::olama::EmbeddingExtraInfo::MergeFrom(from._internal_embedding_extra_info());
+    mutable_embedding_extra_info()->::olama::EmbeddingExtraInfo::MergeFrom(from.embedding_extra_info());
   }
   if (from.code() != 0) {
-    _internal_set_code(from._internal_code());
+    set_code(from.code());
   }
 }
 
@@ -18507,10 +26457,14 @@ bool SearchResponse::IsInitialized() const {
   return true;
 }
 
+void SearchResponse::Swap(SearchResponse* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void SearchResponse::InternalSwap(SearchResponse* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  results_.InternalSwap(&other->results_);
+  CastToBase(&results_)->InternalSwap(CastToBase(&other->results_));
   msg_.Swap(&other->msg_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   redirect_.Swap(&other->redirect_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
@@ -18530,9 +26484,14 @@ void SearchResponse::InternalSwap(SearchResponse* other) {
 
 void DatabaseRequest::InitAsDefaultInstance() {
 }
-class DatabaseRequest::_Internal {
+class DatabaseRequest::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int DatabaseRequest::kDatabaseFieldNumber;
+const int DatabaseRequest::kDbTypeFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 DatabaseRequest::DatabaseRequest()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -18544,7 +26503,7 @@ DatabaseRequest::DatabaseRequest(const DatabaseRequest& from)
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   database_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_database().empty()) {
+  if (from.database().size() > 0) {
     database_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.database_);
   }
   dbtype_ = from.dbtype_;
@@ -18586,6 +26545,7 @@ void DatabaseRequest::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* DatabaseRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -18596,9 +26556,7 @@ const char* DatabaseRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
       // string database = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_database();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.DatabaseRequest.database"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_database(), ptr, ctx, "olama.DatabaseRequest.database");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -18607,7 +26565,7 @@ const char* DatabaseRequest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
-          _internal_set_dbtype(static_cast<::olama::DataType>(val));
+          set_dbtype(static_cast<::olama::DataType>(val));
         } else goto handle_unusual;
         continue;
       default: {
@@ -18629,9 +26587,98 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool DatabaseRequest::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.DatabaseRequest)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // string database = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_database()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->database().data(), static_cast<int>(this->database().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.DatabaseRequest.database"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
 
-::PROTOBUF_NAMESPACE_ID::uint8* DatabaseRequest::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+      // .olama.DataType dbType = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
+          int value = 0;
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_dbtype(static_cast< ::olama::DataType >(value));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.DatabaseRequest)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.DatabaseRequest)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void DatabaseRequest::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.DatabaseRequest)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string database = 1;
+  if (this->database().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->database().data(), static_cast<int>(this->database().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.DatabaseRequest.database");
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->database(), output);
+  }
+
+  // .olama.DataType dbType = 2;
+  if (this->dbtype() != 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
+      2, this->dbtype(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.DatabaseRequest)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* DatabaseRequest::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:olama.DatabaseRequest)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -18639,23 +26686,23 @@ failure:
   // string database = 1;
   if (this->database().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_database().data(), static_cast<int>(this->_internal_database().length()),
+      this->database().data(), static_cast<int>(this->database().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.DatabaseRequest.database");
-    target = stream->WriteStringMaybeAliased(
-        1, this->_internal_database(), target);
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        1, this->database(), target);
   }
 
   // .olama.DataType dbType = 2;
   if (this->dbtype() != 0) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      2, this->_internal_dbtype(), target);
+      2, this->dbtype(), target);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.DatabaseRequest)
   return target;
@@ -18665,6 +26712,11 @@ size_t DatabaseRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.DatabaseRequest)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -18673,19 +26725,15 @@ size_t DatabaseRequest::ByteSizeLong() const {
   if (this->database().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_database());
+        this->database());
   }
 
   // .olama.DataType dbType = 2;
   if (this->dbtype() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_dbtype());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->dbtype());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -18718,7 +26766,7 @@ void DatabaseRequest::MergeFrom(const DatabaseRequest& from) {
     database_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.database_);
   }
   if (from.dbtype() != 0) {
-    _internal_set_dbtype(from._internal_dbtype());
+    set_dbtype(from.dbtype());
   }
 }
 
@@ -18740,6 +26788,10 @@ bool DatabaseRequest::IsInitialized() const {
   return true;
 }
 
+void DatabaseRequest::Swap(DatabaseRequest* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void DatabaseRequest::InternalSwap(DatabaseRequest* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
@@ -18774,9 +26826,18 @@ void DatabaseResponse_InfoEntry_DoNotUse::MergeFrom(
 
 void DatabaseResponse::InitAsDefaultInstance() {
 }
-class DatabaseResponse::_Internal {
+class DatabaseResponse::HasBitSetters {
  public:
 };
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int DatabaseResponse::kCodeFieldNumber;
+const int DatabaseResponse::kMsgFieldNumber;
+const int DatabaseResponse::kRedirectFieldNumber;
+const int DatabaseResponse::kDatabasesFieldNumber;
+const int DatabaseResponse::kAffectedCountFieldNumber;
+const int DatabaseResponse::kInfoFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 DatabaseResponse::DatabaseResponse()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -18790,11 +26851,11 @@ DatabaseResponse::DatabaseResponse(const DatabaseResponse& from)
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   info_.MergeFrom(from.info_);
   msg_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_msg().empty()) {
+  if (from.msg().size() > 0) {
     msg_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.msg_);
   }
   redirect_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_redirect().empty()) {
+  if (from.redirect().size() > 0) {
     redirect_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.redirect_);
   }
   ::memcpy(&affectedcount_, &from.affectedcount_,
@@ -18847,6 +26908,7 @@ void DatabaseResponse::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* DatabaseResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
@@ -18864,18 +26926,14 @@ const char* DatabaseResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
       // string msg = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_msg();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.DatabaseResponse.msg"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_msg(), ptr, ctx, "olama.DatabaseResponse.msg");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string redirect = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          auto str = _internal_mutable_redirect();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.DatabaseResponse.redirect"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_redirect(), ptr, ctx, "olama.DatabaseResponse.redirect");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -18885,12 +26943,10 @@ const char* DatabaseResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           ptr -= 1;
           do {
             ptr += 1;
-            auto str = _internal_add_databases();
-            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-            CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "olama.DatabaseResponse.databases"));
+            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(add_databases(), ptr, ctx, "olama.DatabaseResponse.databases");
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<34>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 34);
         } else goto handle_unusual;
         continue;
       // uint64 affectedCount = 5;
@@ -18909,7 +26965,7 @@ const char* DatabaseResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
             ptr = ctx->ParseMessage(&info_, ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<50>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 50);
         } else goto handle_unusual;
         continue;
       default: {
@@ -18931,57 +26987,180 @@ failure:
   goto success;
 #undef CHK_
 }
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool DatabaseResponse::MergePartialFromCodedStream(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+  // @@protoc_insertion_point(parse_start:olama.DatabaseResponse)
+  for (;;) {
+    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // int32 code = 1;
+      case 1: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
 
-::PROTOBUF_NAMESPACE_ID::uint8* DatabaseResponse::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:olama.DatabaseResponse)
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
+                 input, &code_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string msg = 2;
+      case 2: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_msg()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->msg().data(), static_cast<int>(this->msg().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.DatabaseResponse.msg"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // string redirect = 3;
+      case 3: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->mutable_redirect()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->redirect().data(), static_cast<int>(this->redirect().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.DatabaseResponse.redirect"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated string databases = 4;
+      case 4: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
+                input, this->add_databases()));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            this->databases(this->databases_size() - 1).data(),
+            static_cast<int>(this->databases(this->databases_size() - 1).length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.DatabaseResponse.databases"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // uint64 affectedCount = 5;
+      case 5: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (40 & 0xFF)) {
+
+          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
+                   ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
+                 input, &affectedcount_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // map<string, .olama.DatabaseItem> info = 6;
+      case 6: {
+        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (50 & 0xFF)) {
+          DatabaseResponse_InfoEntry_DoNotUse::Parser< ::PROTOBUF_NAMESPACE_ID::internal::MapField<
+              DatabaseResponse_InfoEntry_DoNotUse,
+              std::string, ::olama::DatabaseItem,
+              ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_STRING,
+              ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_MESSAGE,
+              0 >,
+            ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::DatabaseItem > > parser(&info_);
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessageNoVirtual(
+              input, &parser));
+          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+            parser.key().data(), static_cast<int>(parser.key().length()),
+            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
+            "olama.DatabaseResponse.InfoEntry.key"));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:olama.DatabaseResponse)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:olama.DatabaseResponse)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void DatabaseResponse::SerializeWithCachedSizes(
+    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:olama.DatabaseResponse)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int32 code = 1;
   if (this->code() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_code(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(1, this->code(), output);
   }
 
   // string msg = 2;
   if (this->msg().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_msg().data(), static_cast<int>(this->_internal_msg().length()),
+      this->msg().data(), static_cast<int>(this->msg().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.DatabaseResponse.msg");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_msg(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->msg(), output);
   }
 
   // string redirect = 3;
   if (this->redirect().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_redirect().data(), static_cast<int>(this->_internal_redirect().length()),
+      this->redirect().data(), static_cast<int>(this->redirect().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.DatabaseResponse.redirect");
-    target = stream->WriteStringMaybeAliased(
-        3, this->_internal_redirect(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
+      3, this->redirect(), output);
   }
 
   // repeated string databases = 4;
-  for (int i = 0, n = this->_internal_databases_size(); i < n; i++) {
-    const auto& s = this->_internal_databases(i);
+  for (int i = 0, n = this->databases_size(); i < n; i++) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      s.data(), static_cast<int>(s.length()),
+      this->databases(i).data(), static_cast<int>(this->databases(i).length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "olama.DatabaseResponse.databases");
-    target = stream->WriteString(4, s, target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteString(
+      4, this->databases(i), output);
   }
 
   // uint64 affectedCount = 5;
   if (this->affectedcount() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(5, this->_internal_affectedcount(), target);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64(5, this->affectedcount(), output);
   }
 
   // map<string, .olama.DatabaseItem> info = 6;
-  if (!this->_internal_info().empty()) {
+  if (!this->info().empty()) {
     typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::DatabaseItem >::const_pointer
         ConstPtr;
     typedef ConstPtr SortItem;
@@ -18995,35 +27174,135 @@ failure:
       }
     };
 
-    if (stream->IsSerializationDeterministic() &&
-        this->_internal_info().size() > 1) {
+    if (output->IsSerializationDeterministic() &&
+        this->info().size() > 1) {
       ::std::unique_ptr<SortItem[]> items(
-          new SortItem[this->_internal_info().size()]);
+          new SortItem[this->info().size()]);
       typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::DatabaseItem >::size_type size_type;
       size_type n = 0;
       for (::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::DatabaseItem >::const_iterator
-          it = this->_internal_info().begin();
-          it != this->_internal_info().end(); ++it, ++n) {
+          it = this->info().begin();
+          it != this->info().end(); ++it, ++n) {
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
       for (size_type i = 0; i < n; i++) {
-        target = DatabaseResponse_InfoEntry_DoNotUse::Funcs::InternalSerialize(6, items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second, target, stream);
+        DatabaseResponse_InfoEntry_DoNotUse::MapEntryWrapper entry(nullptr, items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second);
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(6, entry, output);
         Utf8Check::Check(&(*items[static_cast<ptrdiff_t>(i)]));
       }
     } else {
       for (::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::DatabaseItem >::const_iterator
-          it = this->_internal_info().begin();
-          it != this->_internal_info().end(); ++it) {
-        target = DatabaseResponse_InfoEntry_DoNotUse::Funcs::InternalSerialize(6, it->first, it->second, target, stream);
+          it = this->info().begin();
+          it != this->info().end(); ++it) {
+        DatabaseResponse_InfoEntry_DoNotUse::MapEntryWrapper entry(nullptr, it->first, it->second);
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(6, entry, output);
         Utf8Check::Check(&(*it));
       }
     }
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target, stream);
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:olama.DatabaseResponse)
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* DatabaseResponse::InternalSerializeWithCachedSizesToArray(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:olama.DatabaseResponse)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 code = 1;
+  if (this->code() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->code(), target);
+  }
+
+  // string msg = 2;
+  if (this->msg().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->msg().data(), static_cast<int>(this->msg().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.DatabaseResponse.msg");
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        2, this->msg(), target);
+  }
+
+  // string redirect = 3;
+  if (this->redirect().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->redirect().data(), static_cast<int>(this->redirect().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.DatabaseResponse.redirect");
+    target =
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
+        3, this->redirect(), target);
+  }
+
+  // repeated string databases = 4;
+  for (int i = 0, n = this->databases_size(); i < n; i++) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->databases(i).data(), static_cast<int>(this->databases(i).length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "olama.DatabaseResponse.databases");
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      WriteStringToArray(4, this->databases(i), target);
+  }
+
+  // uint64 affectedCount = 5;
+  if (this->affectedcount() != 0) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(5, this->affectedcount(), target);
+  }
+
+  // map<string, .olama.DatabaseItem> info = 6;
+  if (!this->info().empty()) {
+    typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::DatabaseItem >::const_pointer
+        ConstPtr;
+    typedef ConstPtr SortItem;
+    typedef ::PROTOBUF_NAMESPACE_ID::internal::CompareByDerefFirst<SortItem> Less;
+    struct Utf8Check {
+      static void Check(ConstPtr p) {
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+          p->first.data(), static_cast<int>(p->first.length()),
+          ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+          "olama.DatabaseResponse.InfoEntry.key");
+      }
+    };
+
+    if (false &&
+        this->info().size() > 1) {
+      ::std::unique_ptr<SortItem[]> items(
+          new SortItem[this->info().size()]);
+      typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::DatabaseItem >::size_type size_type;
+      size_type n = 0;
+      for (::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::DatabaseItem >::const_iterator
+          it = this->info().begin();
+          it != this->info().end(); ++it, ++n) {
+        items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
+      }
+      ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
+      for (size_type i = 0; i < n; i++) {
+        DatabaseResponse_InfoEntry_DoNotUse::MapEntryWrapper entry(nullptr, items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second);
+        target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::InternalWriteMessageNoVirtualToArray(6, entry, target);
+        Utf8Check::Check(&(*items[static_cast<ptrdiff_t>(i)]));
+      }
+    } else {
+      for (::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::DatabaseItem >::const_iterator
+          it = this->info().begin();
+          it != this->info().end(); ++it) {
+        DatabaseResponse_InfoEntry_DoNotUse::MapEntryWrapper entry(nullptr, it->first, it->second);
+        target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::InternalWriteMessageNoVirtualToArray(6, entry, target);
+        Utf8Check::Check(&(*it));
+      }
+    }
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:olama.DatabaseResponse)
   return target;
@@ -19033,59 +27312,62 @@ size_t DatabaseResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:olama.DatabaseResponse)
   size_t total_size = 0;
 
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated string databases = 4;
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(databases_.size());
-  for (int i = 0, n = databases_.size(); i < n; i++) {
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->databases_size());
+  for (int i = 0, n = this->databases_size(); i < n; i++) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-      databases_.Get(i));
+      this->databases(i));
   }
 
   // map<string, .olama.DatabaseItem> info = 6;
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->_internal_info_size());
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->info_size());
   for (::PROTOBUF_NAMESPACE_ID::Map< std::string, ::olama::DatabaseItem >::const_iterator
-      it = this->_internal_info().begin();
-      it != this->_internal_info().end(); ++it) {
-    total_size += DatabaseResponse_InfoEntry_DoNotUse::Funcs::ByteSizeLong(it->first, it->second);
+      it = this->info().begin();
+      it != this->info().end(); ++it) {
+    DatabaseResponse_InfoEntry_DoNotUse::MapEntryWrapper entry(nullptr, it->first, it->second);
+    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+        MessageSizeNoVirtual(entry);
   }
 
   // string msg = 2;
   if (this->msg().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_msg());
+        this->msg());
   }
 
   // string redirect = 3;
   if (this->redirect().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_redirect());
+        this->redirect());
   }
 
   // uint64 affectedCount = 5;
   if (this->affectedcount() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->_internal_affectedcount());
+        this->affectedcount());
   }
 
   // int32 code = 1;
   if (this->code() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_code());
+        this->code());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -19124,10 +27406,10 @@ void DatabaseResponse::MergeFrom(const DatabaseResponse& from) {
     redirect_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.redirect_);
   }
   if (from.affectedcount() != 0) {
-    _internal_set_affectedcount(from._internal_affectedcount());
+    set_affectedcount(from.affectedcount());
   }
   if (from.code() != 0) {
-    _internal_set_code(from._internal_code());
+    set_code(from.code());
   }
 }
 
@@ -19149,10 +27431,14 @@ bool DatabaseResponse::IsInitialized() const {
   return true;
 }
 
+void DatabaseResponse::Swap(DatabaseResponse* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
 void DatabaseResponse::InternalSwap(DatabaseResponse* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  databases_.InternalSwap(&other->databases_);
+  databases_.InternalSwap(CastToBase(&other->databases_));
   info_.Swap(&other->info_);
   msg_.Swap(&other->msg_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());

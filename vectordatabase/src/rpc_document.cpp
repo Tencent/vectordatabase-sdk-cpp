@@ -84,7 +84,9 @@ int RpcClient::query(const std::string& dbName, const std::string& collectionNam
     request.set_database(dbName);
     request.set_collection(collectionName);
     olama::QueryCond* queryCond = new olama::QueryCond();
-    queryCond->mutable_documentids()->Assign(documentIds.begin(), documentIds.end());
+    for (const auto& docId : documentIds) {
+        queryCond->add_documentids(docId);
+    }
     request.set_allocated_query(queryCond);
     request.set_readconsistency(option_.readConsistency);
     if (params != nullptr) {
@@ -139,7 +141,9 @@ int RpcClient::dele(const std::string& dbName, const std::string& collectionName
 
     if (params != nullptr) {
         olama::QueryCond* queryCond = new olama::QueryCond();
-        queryCond->mutable_documentids()->Assign(params->documentIds.begin(), params->documentIds.end());
+        for (const auto& docId : params->documentIds) {
+            queryCond->add_documentids(docId);
+        }
         if (params->filter) {
             queryCond->set_filter(params->filter->cond);
         }
@@ -174,15 +178,16 @@ int RpcClient::update(const std::string& dbName, const std::string& collectionNa
     request.set_collection(collectionName);
     if (params) {
         olama::QueryCond* queryCond = new olama::QueryCond();
-        queryCond->mutable_documentids()->Assign(params->queryIds.begin(), params->queryIds.end());
+        for (const auto& docId : params->queryIds) {
+            queryCond->add_documentids(docId);
+        }
         if (params->queryFilter) {
             queryCond->set_filter(params->queryFilter->cond);
         }
         request.set_allocated_query(queryCond);
         auto* updateDoc = new olama::Document();
-        updateDoc->mutable_vector()->Reserve(params->updateVector.size());
         for (const auto& value : params->updateVector) {
-            updateDoc->mutable_vector()->Add(value);
+            updateDoc->add_vector(value);
         }
         for (const auto& [key, value] : params->updateFields) {
             olama::Field protoField;
@@ -222,10 +227,14 @@ int RpcClient::search(const std::string& dbName, const std::string& collectionNa
     request.set_collection(collectionName);
     request.set_readconsistency(option_.readConsistency);
     olama::SearchCond* searchCond = new olama::SearchCond();
-    searchCond->mutable_documentids()->Assign(documentIds.begin(), documentIds.end());
+    for (const auto& docId : documentIds) {
+        searchCond->add_documentids(docId);
+    }
     for (const auto& vector : vectors) {
         auto* vectorArray = searchCond->add_vectors();
-        vectorArray->mutable_vector()->Assign(vector.begin(), vector.end());
+        for (const auto& vecValue : vector) {
+            vectorArray->add_vector(vecValue);
+        }
     }
     for (const auto& [key, value] : text) {
         for (const auto& str : value) {

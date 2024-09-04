@@ -102,8 +102,6 @@ void convertField2Proto(const Field& field, olama::Field* protoField) {
 }
 
 void convertProto2Field(const olama::Field& protoField, Field* field) {
-    if (!protoField.has_val_double() && !protoField.has_val_str() &&
-        !protoField.has_val_str_arr() && protoField.has_val_u64()) return;
     switch (protoField.oneof_val_case()) {
         case olama::Field::OneofValCase::kValStr:
             field->setValStr(protoField.val_str());
