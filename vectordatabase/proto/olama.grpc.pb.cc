@@ -32,8 +32,8 @@ static const char* SearchEngine_method_names[] = {
   "/document/update",
   "/document/query",
   "/document/search",
-  "/document/dele",
-  "/olama.SearchEngine/create",
+  "/document/delete",
+  "/database/create",
   "/database/drop",
   "/database/list",
 };

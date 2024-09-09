@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 include_directories(${CMAKE_SOURCE_DIR}/vectordatabase)
 
-file(GLOB_RECURSE SOURCES "${CMAKE_SOURCE_DIR}/vectordatabase/src/*.cpp" "${CMAKE_SOURCE_DIR}/vectordatabase/proto/*.cc")
+file(GLOB_RECURSE SOURCES "${CMAKE_SOURCE_DIR}/vectordatabase/src/*.cpp" "${CMAKE_SOURCE_DIR}/vectordatabase/proto/*.cc" "${CMAKE_SOURCE_DIR}/example/main.cpp")
 add_library(vectordb_sdk STATIC ${SOURCES})
 
 add_subdirectory(vectordatabase/tests)
