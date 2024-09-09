@@ -225,14 +225,13 @@ int main() {
     std::vector<std::string> outputField = {"id", "bookName"};
 
     QueryDocumentResult queryDocumentResult;
-    std::vector<std::string> documentIds;
     QueryDocumentParams* queryDocumentParams = new QueryDocumentParams();
     queryDocumentParams->filter = std::move(filter);
     queryDocumentParams->retrieveVector = true;
     queryDocumentParams->outputFields = outputField;
     queryDocumentParams->offset = 1;
     queryDocumentParams->limit = 2;
-    int status = cli.query(dbName, collectionName, documentIds, queryDocumentParams, &queryDocumentResult);
+    status = cli.query(dbName, collectionName, documentIds, queryDocumentParams, &queryDocumentResult);
     std::cout << queryDocumentResult.message << std::endl;
 
     // search by vector
@@ -249,7 +248,7 @@ int main() {
         {0.3123, 0.43, 0.213},
         {0.233, 0.12, 0.97}
     };
-    int status = cli.search(dbName, collectionName, {}, vectors, {}, searchByVecParams, &searchDocumentResultByVec);
+    status = cli.search(dbName, collectionName, {}, vectors, {}, searchByVecParams, &searchDocumentResultByVec);
     std::cout << searchDocumentResultByVec.message << std::endl;
 
     // search by id
@@ -265,8 +264,8 @@ int main() {
     searchByIdParams->retrieveVector = false;
     searchByIdParams->limit = 2;
     searchByIdParams->filter = std::make_unique<Filter>("bookName=\"三国演义\"");
-    std::vector<std::string> documentIds = {"0003"};
-    int status = cli.search(dbName, collectionName, documentIds, {}, {}, searchByIdParams, &searchDocumentResultById);
+    std::vector<std::string> docIds = {"0003"};
+    status = cli.search(dbName, collectionName, docIds, {}, {}, searchByIdParams, &searchDocumentResultById);
     std::cout << searchDocumentResultById.message << std::endl;
 
     // search by text
@@ -284,7 +283,7 @@ int main() {
     searchByTextParams->limit = 2;
     std::map<std::string, std::vector<std::string>> text;
     text["text"] =  {"细作探知这个消息，飞报吕布。"};
-    int status = cli.search(dbName, collectionName, {}, {}, text, searchByTextParams, &searchDocumentResultByText);
+    status = cli.search(dbName, collectionName, {}, {}, text, searchByTextParams, &searchDocumentResultByText);
     std::cout << searchDocumentResultByText.message << std::endl;
 
     // update
@@ -295,7 +294,7 @@ int main() {
     updateParams->queryIds = {"0001", "0003"};
     updateParams->queryFilter = std::make_unique<Filter>("bookName=\"三国演义\"");
     updateParams->updateFields.insert({"page", Field(static_cast<uint64_t>(24))});
-    int status = cli.update(dbName, collectionName, updateParams, &updateDocumentResult);
+    status = cli.update(dbName, collectionName, updateParams, &updateDocumentResult);
     std::cout << updateDocumentResult.message << std::endl;
 
     // delete
@@ -307,7 +306,7 @@ int main() {
     DeleteDocumentParams* deleteParams = new DeleteDocumentParams();
     deleteParams->documentIds = {"0001", "0003"};
     deleteParams->filter = std::make_unique<Filter>("bookName=\"西游记\"");
-    int status = cli.dele(dbName, collectionName, deleteParams, &deleteDocumentResult);
+    status = cli.dele(dbName, collectionName, deleteParams, &deleteDocumentResult);
     std::cout << deleteDocumentResult.message << std::endl;
 
     // rebuild_index
@@ -318,6 +317,7 @@ int main() {
     rebuildIndexParams->throttle = 1;
     status = cli.rebuildIndex(dbName, collectionName, rebuildIndexParams, &rebuildIndexResult);
 
+    return 0;
 }
 
 }  // namespace vectordb
