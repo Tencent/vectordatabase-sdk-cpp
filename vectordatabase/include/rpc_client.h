@@ -62,6 +62,7 @@ class RpcClient {
     RpcClient(const std::string& url, const std::string& username, const std::string& key,
         const ClientOption* option = nullptr);
     void setTimeout(int timeout);
+    void closeConnection();
 
     // database
     int createDatabase(const std::string& dbName, CreateDatabaseResult* result);

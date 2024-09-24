@@ -111,4 +111,8 @@ void RpcClient::setTimeout(int timeout) {
     option_.timeout = timeout;
 }
 
+void RpcClient::closeConnection() {
+    grpcChannel_.reset();
+}
+
 }  // namespace vectordb
