@@ -27,10 +27,18 @@ C++ SDK for Tencent Cloud VectorDB.
 
 #### [protobuf](https://github.com/protocolbuffers/protobuf/releases?page=1)
 
-安装完成grpc，protobuf会一并安装，无需额外安装
+version 3.11.4
 
-如果protobuf版本不是27.0
-需要重新生成olama.pb.cc和olama.grpc.pb.cc等文件
+```
+git clone https://github.com/protocolbuffers/protobuf.git
+cd protobuf
+git submodule update --init --recursive
+cmake .
+cmake --build . --parallel 10
+sudo cmake --install .
+```
+
+生成olama.pb.cc和olama.grpc.pb.cc等文件
 
 ```
 protoc -I=. --cpp_out=. olama.proto
@@ -83,4 +91,4 @@ make
 
 ## Examples
 
-See [examples](https://git.woa.com/cloud_nosql/vectordb/vectordatabase-sdk-cpp/blob/master/example/main.cpp) about how to use this package to communicate with TencentCloud VectorDB
+See example/main.cpp about how to use this package to communicate with TencentCloud VectorDB.
