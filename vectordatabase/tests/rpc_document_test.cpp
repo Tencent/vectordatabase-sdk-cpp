@@ -1,32 +1,3 @@
-
-/*
-  *Copyright (c) 2024, Tencent. All rights reserved.
-  *
-  *Redistribution and use in source and binary forms, with or without
-  *modification, are permitted provided that the following conditions are met:
-  *
-  *  * Redistributions of source code must retain the above copyright notice,
-  *    this list of conditions and the following disclaimer.
-  *  * Redistributions in binary form must reproduce the above copyright
-  *    notice, this list of conditions and the following disclaimer in the
-  *    documentation and/or other materials provided with the distribution.
-  *  * Neither the name of elasticfaiss nor the names of its contributors may be used
-  *    to endorse or promote products derived from this software without
-  *    specific prior written permission.
-  *
-  *THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-  *AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-  *IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
-  *ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
-  *BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
-  *CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
-  *SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
-  *INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
-  *CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
-  *ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
-  *THE POSSIBILITY OF SUCH DAMAGE.
-*/
-
 #include <gtest/gtest.h>
 
 #include "include/rpc_client.h"
@@ -72,22 +43,22 @@ TEST_F(RpcClientTestBase, UpsertDocument) {
         },
         {
             "0004",
-            {0.253f, 0.346f, 0.346f},
+            {0.786f, 0.4768f, 0.546f},
             {
                 {"bookName", Field("三国演义")},
                 {"author", Field("罗贯中")},
-                {"page", Field(static_cast<uint64_t>(24u))},
+                {"page", Field(static_cast<uint64_t>(32u))},
                 {"segment", Field("布大惊，与陈宫商议。宫曰：“闻刘玄德新领徐州，可往投之。”布从其言，竟投徐州来。有人报知玄德。")},
                 {"tag", Field(std::vector<std::string>{"曹操", "诸葛亮", "刘备"})}
             }
         },
         {
             "0005",
-            {0.2123f, 0.25f, 0.213f},
+            {0.457f, 0.8796f, 0.764f},
             {
                 {"bookName", Field("三国演义")},
                 {"author", Field("罗贯中")},
-                {"page", Field(static_cast<uint64_t>(25u))},
+                {"page", Field(static_cast<uint64_t>(33u))},
                 {"segment", Field("玄德曰：“布乃当今英勇之士，可出迎之。”糜竺曰：“吕布乃虎狼之徒，不可收留；收则伤人矣。")},
                 {"tag", Field(std::vector<std::string>{"曹操", "诸葛亮", "刘备"})}
             }
