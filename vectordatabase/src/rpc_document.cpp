@@ -1,30 +1,30 @@
 /*
- *Copyright (c) 2024, Tencent. All rights reserved.
- *
- *Redistribution and use in source and binary forms, with or without
- *modification, are permitted provided that the following conditions are met:
- *
- *  * Redistributions of source code must retain the above copyright notice,
- *    this list of conditions and the following disclaimer.
- *  * Redistributions in binary form must reproduce the above copyright
- *    notice, this list of conditions and the following disclaimer in the
- *    documentation and/or other materials provided with the distribution.
- *  * Neither the name of elasticfaiss nor the names of its contributors may be used
- *    to endorse or promote products derived from this software without
- *    specific prior written permission.
- *
- *THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- *AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- *IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- *ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
- *BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- *CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- *SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- *INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- *CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- *ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
- *THE POSSIBILITY OF SUCH DAMAGE.
- */
+  *Copyright (c) 2024, Tencent. All rights reserved.
+  *
+  *Redistribution and use in source and binary forms, with or without
+  *modification, are permitted provided that the following conditions are met:
+  *
+  *  * Redistributions of source code must retain the above copyright notice,
+  *    this list of conditions and the following disclaimer.
+  *  * Redistributions in binary form must reproduce the above copyright
+  *    notice, this list of conditions and the following disclaimer in the
+  *    documentation and/or other materials provided with the distribution.
+  *  * Neither the name of elasticfaiss nor the names of its contributors may be used
+  *    to endorse or promote products derived from this software without
+  *    specific prior written permission.
+  *
+  *THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  *AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  *IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  *ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
+  *BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  *CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  *SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+  *INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+  *CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  *ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
+  *THE POSSIBILITY OF SUCH DAMAGE.
+*/
 
 #include "include/rpc_client.h"
 #include "include/helper.h"
@@ -84,7 +84,9 @@ int RpcClient::query(const std::string& dbName, const std::string& collectionNam
     request.set_database(dbName);
     request.set_collection(collectionName);
     olama::QueryCond* queryCond = new olama::QueryCond();
-    queryCond->mutable_documentids()->Assign(documentIds.begin(), documentIds.end());
+    for (const auto& docId : documentIds) {
+        queryCond->add_documentids(docId);
+    }
     request.set_allocated_query(queryCond);
     request.set_readconsistency(option_.readConsistency);
     if (params != nullptr) {
@@ -139,7 +141,9 @@ int RpcClient::dele(const std::string& dbName, const std::string& collectionName
 
     if (params != nullptr) {
         olama::QueryCond* queryCond = new olama::QueryCond();
-        queryCond->mutable_documentids()->Assign(params->documentIds.begin(), params->documentIds.end());
+        for (const auto& docId : params->documentIds) {
+            queryCond->add_documentids(docId);
+        }
         if (params->filter) {
             queryCond->set_filter(params->filter->cond);
         }
@@ -174,15 +178,16 @@ int RpcClient::update(const std::string& dbName, const std::string& collectionNa
     request.set_collection(collectionName);
     if (params) {
         olama::QueryCond* queryCond = new olama::QueryCond();
-        queryCond->mutable_documentids()->Assign(params->queryIds.begin(), params->queryIds.end());
+        for (const auto& docId : params->queryIds) {
+            queryCond->add_documentids(docId);
+        }
         if (params->queryFilter) {
             queryCond->set_filter(params->queryFilter->cond);
         }
         request.set_allocated_query(queryCond);
         auto* updateDoc = new olama::Document();
-        updateDoc->mutable_vector()->Reserve(params->updateVector.size());
         for (const auto& value : params->updateVector) {
-            updateDoc->mutable_vector()->Add(value);
+            updateDoc->add_vector(value);
         }
         for (const auto& [key, value] : params->updateFields) {
             olama::Field protoField;
@@ -222,10 +227,14 @@ int RpcClient::search(const std::string& dbName, const std::string& collectionNa
     request.set_collection(collectionName);
     request.set_readconsistency(option_.readConsistency);
     olama::SearchCond* searchCond = new olama::SearchCond();
-    searchCond->mutable_documentids()->Assign(documentIds.begin(), documentIds.end());
+    for (const auto& docId : documentIds) {
+        searchCond->add_documentids(docId);
+    }
     for (const auto& vector : vectors) {
         auto* vectorArray = searchCond->add_vectors();
-        vectorArray->mutable_vector()->Assign(vector.begin(), vector.end());
+        for (const auto& vecValue : vector) {
+            vectorArray->add_vector(vecValue);
+        }
     }
     for (const auto& [key, value] : text) {
         for (const auto& str : value) {

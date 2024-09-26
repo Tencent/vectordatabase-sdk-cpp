@@ -1,32 +1,30 @@
-
-
 /*
- *Copyright (c) 2024, Tencent. All rights reserved.
- *
- *Redistribution and use in source and binary forms, with or without
- *modification, are permitted provided that the following conditions are met:
- *
- *  * Redistributions of source code must retain the above copyright notice,
- *    this list of conditions and the following disclaimer.
- *  * Redistributions in binary form must reproduce the above copyright
- *    notice, this list of conditions and the following disclaimer in the
- *    documentation and/or other materials provided with the distribution.
- *  * Neither the name of elasticfaiss nor the names of its contributors may be used
- *    to endorse or promote products derived from this software without
- *    specific prior written permission.
- *
- *THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- *AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- *IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- *ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
- *BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- *CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- *SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- *INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- *CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- *ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
- *THE POSSIBILITY OF SUCH DAMAGE.
- */
+  *Copyright (c) 2024, Tencent. All rights reserved.
+  *
+  *Redistribution and use in source and binary forms, with or without
+  *modification, are permitted provided that the following conditions are met:
+  *
+  *  * Redistributions of source code must retain the above copyright notice,
+  *    this list of conditions and the following disclaimer.
+  *  * Redistributions in binary form must reproduce the above copyright
+  *    notice, this list of conditions and the following disclaimer in the
+  *    documentation and/or other materials provided with the distribution.
+  *  * Neither the name of elasticfaiss nor the names of its contributors may be used
+  *    to endorse or promote products derived from this software without
+  *    specific prior written permission.
+  *
+  *THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  *AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  *IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  *ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
+  *BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  *CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  *SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+  *INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+  *CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  *ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
+  *THE POSSIBILITY OF SUCH DAMAGE.
+*/
 
 #include <string>
 
@@ -98,7 +96,7 @@ int main() {
     // 第二步：创建 Collection
     // 创建collection耗时较长，需要调整客户端的timeout
     // 这里以三可用区实例作为参考，具体实例不同的规格所支持的shard和replicas区间不同，需要参考官方文档
-    cli.setTimeout(30);  // 单位：秒（s）
+    cli.setTimeout(3000);  // 单位：毫秒（s）
     status = cli.createCollection(dbName, collectionName, 3, 0, "test collection", indexes);
 
     // Create Collection without Embedding
@@ -125,10 +123,10 @@ int main() {
     CreateCollectionParams* createCollectionParams = new CreateCollectionParams();
     auto embedding = std::make_unique<Embedding>();
     embedding->field = "text";
-    embedding->enabled = "vector";
+    embedding->vectorField = "vector";
     embedding->model = "bge-base-zh";
     createCollectionParams->embedding = std::move(embedding);
-    cli.setTimeout(30);  // 单位：秒（s）
+    cli.setTimeout(3000);  // 单位：毫秒（s）
     status = cli.createCollection(dbName, collectionName, 3, 0, "test collection", indexes);
 
     // list Collection
@@ -225,14 +223,13 @@ int main() {
     std::vector<std::string> outputField = {"id", "bookName"};
 
     QueryDocumentResult queryDocumentResult;
-    std::vector<std::string> documentIds;
     QueryDocumentParams* queryDocumentParams = new QueryDocumentParams();
     queryDocumentParams->filter = std::move(filter);
     queryDocumentParams->retrieveVector = true;
     queryDocumentParams->outputFields = outputField;
     queryDocumentParams->offset = 1;
     queryDocumentParams->limit = 2;
-    int status = cli.query(dbName, collectionName, documentIds, queryDocumentParams, &queryDocumentResult);
+    status = cli.query(dbName, collectionName, documentIds, queryDocumentParams, &queryDocumentResult);
     std::cout << queryDocumentResult.message << std::endl;
 
     // search by vector
@@ -249,7 +246,7 @@ int main() {
         {0.3123, 0.43, 0.213},
         {0.233, 0.12, 0.97}
     };
-    int status = cli.search(dbName, collectionName, {}, vectors, {}, searchByVecParams, &searchDocumentResultByVec);
+    status = cli.search(dbName, collectionName, {}, vectors, {}, searchByVecParams, &searchDocumentResultByVec);
     std::cout << searchDocumentResultByVec.message << std::endl;
 
     // search by id
@@ -265,8 +262,8 @@ int main() {
     searchByIdParams->retrieveVector = false;
     searchByIdParams->limit = 2;
     searchByIdParams->filter = std::make_unique<Filter>("bookName=\"三国演义\"");
-    std::vector<std::string> documentIds = {"0003"};
-    int status = cli.search(dbName, collectionName, documentIds, {}, {}, searchByIdParams, &searchDocumentResultById);
+    std::vector<std::string> docIds = {"0003"};
+    status = cli.search(dbName, collectionName, docIds, {}, {}, searchByIdParams, &searchDocumentResultById);
     std::cout << searchDocumentResultById.message << std::endl;
 
     // search by text
@@ -284,7 +281,7 @@ int main() {
     searchByTextParams->limit = 2;
     std::map<std::string, std::vector<std::string>> text;
     text["text"] =  {"细作探知这个消息，飞报吕布。"};
-    int status = cli.search(dbName, collectionName, {}, {}, text, searchByTextParams, &searchDocumentResultByText);
+    status = cli.search(dbName, collectionName, {}, {}, text, searchByTextParams, &searchDocumentResultByText);
     std::cout << searchDocumentResultByText.message << std::endl;
 
     // update
@@ -295,7 +292,7 @@ int main() {
     updateParams->queryIds = {"0001", "0003"};
     updateParams->queryFilter = std::make_unique<Filter>("bookName=\"三国演义\"");
     updateParams->updateFields.insert({"page", Field(static_cast<uint64_t>(24))});
-    int status = cli.update(dbName, collectionName, updateParams, &updateDocumentResult);
+    status = cli.update(dbName, collectionName, updateParams, &updateDocumentResult);
     std::cout << updateDocumentResult.message << std::endl;
 
     // delete
@@ -307,7 +304,7 @@ int main() {
     DeleteDocumentParams* deleteParams = new DeleteDocumentParams();
     deleteParams->documentIds = {"0001", "0003"};
     deleteParams->filter = std::make_unique<Filter>("bookName=\"西游记\"");
-    int status = cli.dele(dbName, collectionName, deleteParams, &deleteDocumentResult);
+    status = cli.dele(dbName, collectionName, deleteParams, &deleteDocumentResult);
     std::cout << deleteDocumentResult.message << std::endl;
 
     // rebuild_index
@@ -318,6 +315,7 @@ int main() {
     rebuildIndexParams->throttle = 1;
     status = cli.rebuildIndex(dbName, collectionName, rebuildIndexParams, &rebuildIndexResult);
 
+    return 0;
 }
 
 }  // namespace vectordb
