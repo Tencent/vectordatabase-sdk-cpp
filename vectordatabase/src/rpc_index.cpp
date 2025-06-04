@@ -32,7 +32,7 @@
 namespace vectordb {
 
 int RpcClient::rebuildIndex(const std::string& dbName, const std::string& collectionName,
-    const RebuildIndexParams* params, RebuildIndexResult* result) {
+    const RebuildIndexParams* params, RebuildIndexResult* result, int timeout) {
     olama::RebuildIndexRequest request;
     request.set_database(dbName);
     request.set_collection(collectionName);
@@ -42,7 +42,7 @@ int RpcClient::rebuildIndex(const std::string& dbName, const std::string& collec
     }
     grpc::ClientContext context;
     std::chrono::system_clock::time_point deadline = std::chrono::system_clock::now() +
-        std::chrono::milliseconds(option_.timeout);
+        std::chrono::milliseconds(timeout);
     context.set_deadline(deadline);
     olama::RebuildIndexResponse response;
     grpc::Status status = stub_->rebuildIndex(&context, request, &response);

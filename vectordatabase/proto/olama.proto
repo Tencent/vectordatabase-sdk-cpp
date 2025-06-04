@@ -446,6 +446,32 @@ message DatabaseResponse {
     map<string, DatabaseItem> info  = 6;
 };
 
+message CountRequest {
+    string database         = 1;
+    string collection       = 2;
+    QueryCond query         = 3;
+};
+
+message CountResponse {
+    int32 code                    = 1;
+    string msg                    = 2;
+    string redirect               = 3;
+    uint64 count                  = 4;
+};
+
+message ModifyVectorIndexRequest {
+    string database                         = 1;
+    string collection                       = 2;
+    map<string, IndexColumn> vectorIndexes  = 3;
+    RebuildIndexRequest rebuildRules        = 4;
+};
+
+message ModifyVectorIndexResponse {
+    int32 code                      = 1;
+    string msg                      = 2;
+    string redirect                 = 3;
+};
+
 service SearchEngine {
     // 修改别名指向
     rpc setAlias(AddAliasRequest) returns (UpdateAliasResponse);
@@ -467,6 +493,8 @@ service SearchEngine {
 
     // 重建索引
     rpc rebuildIndex(RebuildIndexRequest) returns (RebuildIndexResponse);
+    // 修改index配置
+    rpc modifyVectorIndex(ModifyVectorIndexRequest) returns (ModifyVectorIndexResponse);
 
     // 写入向量
     rpc upsert(UpsertRequest) returns (UpsertResponse);
@@ -478,6 +506,8 @@ service SearchEngine {
     rpc search(SearchRequest) returns (SearchResponse);
     // 删除向量
     rpc dele(DeleteRequest) returns (DeleteResponse);
+    // count
+    rpc count(CountRequest) returns (CountResponse);
 
     // 创建 database
     rpc createDatabase(DatabaseRequest) returns (DatabaseResponse);

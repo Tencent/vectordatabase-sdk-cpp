@@ -34,7 +34,7 @@ namespace vectordb {
 
 int RpcClient::createCollection(const std::string& dbName, const std::string& collectionName,
     uint32_t shardNum, uint32_t replicaNum, const std::string& description, const Indexes& indexes,
-    const CreateCollectionParams* params, CreateCollectionResult* result) {
+    const CreateCollectionParams* params, CreateCollectionResult* result, int timeout) {
     olama::CreateCollectionRequest request;
     request.set_database(dbName);
     request.set_collection(collectionName);
@@ -81,7 +81,7 @@ int RpcClient::createCollection(const std::string& dbName, const std::string& co
 
     grpc::ClientContext context;
     std::chrono::system_clock::time_point deadline = std::chrono::system_clock::now() +
-        std::chrono::milliseconds(option_.timeout);
+        std::chrono::milliseconds(timeout);
     context.set_deadline(deadline);
     olama::CreateCollectionResponse response;
     grpc::Status status = stub_->createCollection(&context, request, &response);
@@ -108,13 +108,13 @@ int RpcClient::createCollection(const std::string& dbName, const std::string& co
     return 0;
 }
 
-int RpcClient::listCollections(const std::string& dbName, ListCollectionResult* result) {
+int RpcClient::listCollections(const std::string& dbName, ListCollectionResult* result, int timeout) {
     olama::ListCollectionsRequest request;
     request.set_database(dbName);
 
     grpc::ClientContext context;
     std::chrono::system_clock::time_point deadline = std::chrono::system_clock::now() +
-        std::chrono::milliseconds(option_.timeout);
+        std::chrono::milliseconds(timeout);
     context.set_deadline(deadline);
     olama::ListCollectionsResponse response;
     grpc::Status status = stub_->listCollections(&context, request, &response);
@@ -141,13 +141,13 @@ int RpcClient::listCollections(const std::string& dbName, ListCollectionResult* 
 }
 
 int RpcClient::describeCollection(const std::string& dbName, const std::string& collectionName,
-        DescribeCollectionResult* result) {
+        DescribeCollectionResult* result, int timeout) {
     olama::DescribeCollectionRequest request;
     request.set_database(dbName);
     request.set_collection(collectionName);
     grpc::ClientContext context;
     std::chrono::system_clock::time_point deadline = std::chrono::system_clock::now() +
-        std::chrono::milliseconds(option_.timeout);
+        std::chrono::milliseconds(timeout);
     context.set_deadline(deadline);
     olama::DescribeCollectionResponse response;
     grpc::Status status = stub_->describeCollection(&context, request, &response);
@@ -175,13 +175,13 @@ int RpcClient::describeCollection(const std::string& dbName, const std::string& 
 }
 
 int RpcClient::truncateCollection(const std::string& dbName, const std::string& collectionName,
-        TruncateCollectionResult* result) {
+        TruncateCollectionResult* result, int timeout) {
     olama::TruncateCollectionRequest request;
     request.set_database(dbName);
     request.set_collection(collectionName);
     grpc::ClientContext context;
     std::chrono::system_clock::time_point deadline = std::chrono::system_clock::now() +
-        std::chrono::milliseconds(option_.timeout);
+        std::chrono::milliseconds(timeout);
     context.set_deadline(deadline);
     olama::TruncateCollectionResponse response;
     grpc::Status status = stub_->truncateCollection(&context, request, &response);
@@ -202,14 +202,14 @@ int RpcClient::truncateCollection(const std::string& dbName, const std::string& 
 }
 
 int RpcClient::dropCollection(const std::string& dbName, const std::string& collectionName,
-        DropCollectionResult* result) {
+        DropCollectionResult* result, int timeout) {
     olama::DropCollectionRequest request;
     request.set_database(dbName);
     request.set_collection(collectionName);
 
     grpc::ClientContext context;
     std::chrono::system_clock::time_point deadline = std::chrono::system_clock::now() +
-        std::chrono::milliseconds(option_.timeout);
+        std::chrono::milliseconds(timeout);
     context.set_deadline(deadline);
     olama::DropCollectionResponse response;
     grpc::Status status = stub_->dropCollection(&context, request, &response);

@@ -31,14 +31,14 @@
 
 namespace vectordb {
 
-int RpcClient::createDatabase(const std::string& dbName, CreateDatabaseResult* result) {
+int RpcClient::createDatabase(const std::string& dbName, CreateDatabaseResult* result, int timeout) {
     olama::DatabaseRequest request;
     request.set_database(dbName);
     request.set_dbtype(olama::DataType::BASE);
     olama::DatabaseResponse response;
     grpc::ClientContext context;
     std::chrono::system_clock::time_point deadline = std::chrono::system_clock::now() +
-        std::chrono::milliseconds(option_.timeout);
+        std::chrono::milliseconds(timeout);
     context.set_deadline(deadline);
     grpc::Status status = stub_->createDatabase(&context, request, &response);
     if (!status.ok()) {
@@ -59,12 +59,12 @@ int RpcClient::createDatabase(const std::string& dbName, CreateDatabaseResult* r
     return 0;
 }
 
-int RpcClient::listDatabases(ListDatabaseResult* result) {
+int RpcClient::listDatabases(ListDatabaseResult* result, int timeout) {
     olama::DatabaseRequest request;
     olama::DatabaseResponse response;
     grpc::ClientContext context;
     std::chrono::system_clock::time_point deadline = std::chrono::system_clock::now() +
-        std::chrono::milliseconds(option_.timeout);
+        std::chrono::milliseconds(timeout);
     context.set_deadline(deadline);
     grpc::Status status = stub_->listDatabases(&context, request, &response);
     if (!status.ok()) {
@@ -94,14 +94,14 @@ int RpcClient::listDatabases(ListDatabaseResult* result) {
     return 0;
 }
 
-int RpcClient::dropDatabase(const std::string& dbName, DropDatabaseResult* result) {
+int RpcClient::dropDatabase(const std::string& dbName, DropDatabaseResult* result, int timeout) {
     olama::DatabaseRequest request;
     request.set_database(dbName);
     request.set_dbtype(olama::DataType::BASE);
     olama::DatabaseResponse response;
     grpc::ClientContext context;
     std::chrono::system_clock::time_point deadline = std::chrono::system_clock::now() +
-        std::chrono::milliseconds(option_.timeout);
+        std::chrono::milliseconds(timeout);
     context.set_deadline(deadline);
     grpc::Status status = stub_->dropDatabase(&context, request, &response);
     if (!status.ok()) {

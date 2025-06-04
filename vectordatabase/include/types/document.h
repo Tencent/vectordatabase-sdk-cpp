@@ -190,12 +190,19 @@ struct UpdateDocumentResult {
 struct DeleteDocumentParams {
     std::vector<std::string> documentIds;
     std::unique_ptr<Filter> filter;
+    int64_t limit;
 };
 
 struct DeleteDocumentResult {
     bool success;
     std::string message;
     int affectedCount = 0;
+};
+
+struct CountResult {
+    bool success;
+    std::string message;
+    uint64_t count;
 };
 
 }  // namespace vectordb

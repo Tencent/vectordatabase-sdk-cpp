@@ -34,15 +34,17 @@
 namespace vectordb {
 
 int main() {
-    std::string database = "go-sdk-demo-db";
-    std::string collectionName = "go-sdk-demo-col";
-    std::string collectionAlias = "go-sdk-demo-alias";
+    std::string database = "cpp-sdk-demo-db";
+    std::string collectionName = "cpp-sdk-demo-col";
+    std::string collectionAlias = "cpp-sdk-demo-alias";
     int status;
 
     // Create RpcClient
     // set ClientOption (optional)
     ClientOption* clientOption = new ClientOption();
+    // timeout(ms)
     clientOption->timeout = 5000;
+    // readConsistency: EventualConsistency or StrongConsistency
     clientOption->readConsistency = vectordb::EventualConsistency;
     // with ClientOption
     RpcClient cli = RpcClient("url", "username", "key", clientOption);
@@ -96,10 +98,10 @@ int main() {
     // 第二步：创建 Collection
     // 创建collection耗时较长，需要调整客户端的timeout
     // 这里以三可用区实例作为参考，具体实例不同的规格所支持的shard和replicas区间不同，需要参考官方文档
-    cli.setTimeout(3000);  // 单位：毫秒（s）
+    cli.setTimeout(5000);  // 单位：毫秒（ms）
     status = cli.createCollection(dbName, collectionName, 3, 0, "test collection", indexes);
 
-    // Create Collection without Embedding
+    // Create Collection with Embedding
 
     // 新建 Collection
     // 第一步，设计索引（不是设计表格的结构）
@@ -126,7 +128,7 @@ int main() {
     embedding->vectorField = "vector";
     embedding->model = "bge-base-zh";
     createCollectionParams->embedding = std::move(embedding);
-    cli.setTimeout(3000);  // 单位：毫秒（s）
+    cli.setTimeout(5000);  // 单位：毫秒（ms）
     status = cli.createCollection(dbName, collectionName, 3, 0, "test collection", indexes);
 
     // list Collection
@@ -230,12 +232,11 @@ int main() {
     queryDocumentParams->offset = 1;
     queryDocumentParams->limit = 2;
     status = cli.query(dbName, collectionName, documentIds, queryDocumentParams, &queryDocumentResult);
-    std::cout << queryDocumentResult.message << std::endl;
 
     // search by vector
     // 批量相似性查询，根据指定的多个向量查找多个 Top K 个相似性结果
 
-    // 输出相似性检索结果，检索结果为二维数组，每一位为一组返回结果，分别对应search时指定的多个向量
+    // 输出相似性检索结果，检索结果为二维数组，每一维为一组返回结果，分别对应search时指定的多个向量
     SearchDocumentResult searchDocumentResultByVec;
     SearchDocumentParams* searchByVecParams = new SearchDocumentParams();
     searchByVecParams->searchParams = std::make_unique<SearchParms>();
@@ -264,16 +265,15 @@ int main() {
     searchByIdParams->filter = std::make_unique<Filter>("bookName=\"三国演义\"");
     std::vector<std::string> docIds = {"0003"};
     status = cli.search(dbName, collectionName, docIds, {}, {}, searchByIdParams, &searchDocumentResultById);
-    std::cout << searchDocumentResultById.message << std::endl;
 
     // search by text
     // 通过 embedding 文本搜索
-    // 1. searchByText 提供基于 embedding 文本的搜索能力，会先将 embedding 内容做 Embedding 然后进行按向量搜索
+    // 1. 提供基于 embedding 文本的搜索能力，会先将 embedding 内容做 Embedding 然后按向量搜索
     // 其他选项类似 search 接口
 
-    // searchByText 返回类型为 Dict，接口查询过程中 embedding 可能会出现截断
-    // 如发生截断将会返回响应 warn 信息，如需确认是否截断可以
-    // 使用 "warning" 作为 key 从 Dict 结果中获取警告信息，查询结果可以通过 "documents" 作为 key 从 Dict 结果中获取
+    // 接口查询过程中 embedding 可能会出现截断
+    // 如发生截断将会返回响应 warn 信息，如需确认是否截断可以使用 "warning" 作为 key 从结果中获取警告信息
+    // 查询结果可以通过 "documents" 作为 key 从结果中获取
     SearchDocumentResult searchDocumentResultByText;
     SearchDocumentParams* searchByTextParams = new SearchDocumentParams();
     searchByTextParams->searchParams = std::make_unique<SearchParms>();
@@ -282,21 +282,19 @@ int main() {
     std::map<std::string, std::vector<std::string>> text;
     text["text"] =  {"细作探知这个消息，飞报吕布。"};
     status = cli.search(dbName, collectionName, {}, {}, text, searchByTextParams, &searchDocumentResultByText);
-    std::cout << searchDocumentResultByText.message << std::endl;
 
     // update
-    // 1. update 提供基于 [主键查询] 和 [Filter 过滤] 的部分字段更新或者非索引字段新增
-    // filter 限制仅会更新 id = "0003"
+    // 1. 提供基于 [主键查询] 和 [Filter 过滤] 的部分字段更新或者非索引字段新增
+    // 2. filter 限制仅会更新 id = "0003"
     UpdateDocumentResult updateDocumentResult;
     UpdateDocumentParams* updateParams = new UpdateDocumentParams();
     updateParams->queryIds = {"0001", "0003"};
     updateParams->queryFilter = std::make_unique<Filter>("bookName=\"三国演义\"");
     updateParams->updateFields.insert({"page", Field(static_cast<uint64_t>(24))});
     status = cli.update(dbName, collectionName, updateParams, &updateDocumentResult);
-    std::cout << updateDocumentResult.message << std::endl;
 
     // delete
-    // 1. delete 提供基于 [主键查询] 和 [Filter 过滤] 的数据删除能力
+    // 1. 提供基于 [主键查询] 和 [Filter 过滤] 的数据删除能力
     // 2. 删除功能会受限于 collection 的索引类型，部分索引类型不支持删除操作
 
     // filter 限制只会删除 id="0001" 成功
@@ -304,8 +302,8 @@ int main() {
     DeleteDocumentParams* deleteParams = new DeleteDocumentParams();
     deleteParams->documentIds = {"0001", "0003"};
     deleteParams->filter = std::make_unique<Filter>("bookName=\"西游记\"");
+    deleteParams->limit = 10;
     status = cli.dele(dbName, collectionName, deleteParams, &deleteDocumentResult);
-    std::cout << deleteDocumentResult.message << std::endl;
 
     // rebuild_index
     // 索引重建，重建期间不支持写入
@@ -314,6 +312,17 @@ int main() {
     rebuildIndexParams->dropBeforeRebuild = true;
     rebuildIndexParams->throttle = 1;
     status = cli.rebuildIndex(dbName, collectionName, rebuildIndexParams, &rebuildIndexResult);
+
+    // 获取集合总文档数
+    CountResult result;
+    status = cli.count(dbName, collectionName, nullptr, &result);
+
+    // 获取符合条件的文档数
+    std::unique_ptr<Filter> countFilter = std::make_unique<Filter>("bookName=\"三国演义\"");
+    status = cli.count(dbName, collectionName, countFilter.get(), &result);
+
+    // close grpc connection
+    cli.closeConnection();
 
     return 0;
 }

@@ -34,7 +34,7 @@ namespace vectordb {
 
 int RpcClient::upsert(const std::string& dbName, const std::string& collectionName,
     const std::vector<Document>& documents, const UpsertDocumentParams* params,
-    UpsertDocumentResult* result) {
+    UpsertDocumentResult* result, int timeout) {
     olama::UpsertRequest request;
     request.set_database(dbName);
     request.set_collection(collectionName);
@@ -57,7 +57,7 @@ int RpcClient::upsert(const std::string& dbName, const std::string& collectionNa
     }
     grpc::ClientContext context;
     std::chrono::system_clock::time_point deadline = std::chrono::system_clock::now() +
-        std::chrono::milliseconds(option_.timeout);
+        std::chrono::milliseconds(timeout);
     context.set_deadline(deadline);
     olama::UpsertResponse response;
     grpc::Status status = stub_->upsert(&context, request, &response);
@@ -79,7 +79,7 @@ int RpcClient::upsert(const std::string& dbName, const std::string& collectionNa
 
 int RpcClient::query(const std::string& dbName, const std::string& collectionName,
     const std::vector<std::string>& documentIds,
-    const QueryDocumentParams* params, QueryDocumentResult* result) {
+    const QueryDocumentParams* params, QueryDocumentResult* result, int timeout) {
     olama::QueryRequest request;
     request.set_database(dbName);
     request.set_collection(collectionName);
@@ -102,7 +102,7 @@ int RpcClient::query(const std::string& dbName, const std::string& collectionNam
     }
     grpc::ClientContext context;
     std::chrono::system_clock::time_point deadline = std::chrono::system_clock::now() +
-        std::chrono::milliseconds(option_.timeout);
+        std::chrono::milliseconds(timeout);
     context.set_deadline(deadline);
     olama::QueryResponse response;
     grpc::Status status = stub_->query(&context, request, &response);
@@ -134,7 +134,7 @@ int RpcClient::query(const std::string& dbName, const std::string& collectionNam
 }
 
 int RpcClient::dele(const std::string& dbName, const std::string& collectionName,
-        const DeleteDocumentParams* params, DeleteDocumentResult* result) {
+        const DeleteDocumentParams* params, DeleteDocumentResult* result, int timeout) {
     olama::DeleteRequest request;
     request.set_database(dbName);
     request.set_collection(collectionName);
@@ -147,11 +147,14 @@ int RpcClient::dele(const std::string& dbName, const std::string& collectionName
         if (params->filter) {
             queryCond->set_filter(params->filter->cond);
         }
+        if (params->limit > 0) {
+            queryCond->set_limit(params->limit);
+        }
         request.set_allocated_query(queryCond);
     }
     grpc::ClientContext context;
     std::chrono::system_clock::time_point deadline = std::chrono::system_clock::now() +
-        std::chrono::milliseconds(option_.timeout);
+        std::chrono::milliseconds(timeout);
     context.set_deadline(deadline);
     olama::DeleteResponse response;
     grpc::Status status = stub_->dele(&context, request, &response);
@@ -172,7 +175,7 @@ int RpcClient::dele(const std::string& dbName, const std::string& collectionName
 }
 
 int RpcClient::update(const std::string& dbName, const std::string& collectionName,
-        const UpdateDocumentParams* params, UpdateDocumentResult* result) {
+        const UpdateDocumentParams* params, UpdateDocumentResult* result, int timeout) {
     olama::UpdateRequest request;
     request.set_database(dbName);
     request.set_collection(collectionName);
@@ -198,7 +201,7 @@ int RpcClient::update(const std::string& dbName, const std::string& collectionNa
     }
     grpc::ClientContext context;
     std::chrono::system_clock::time_point deadline = std::chrono::system_clock::now() +
-        std::chrono::milliseconds(option_.timeout);
+        std::chrono::milliseconds(timeout);
     context.set_deadline(deadline);
     olama::UpdateResponse response;
     grpc::Status status = stub_->update(&context, request, &response);
@@ -221,7 +224,7 @@ int RpcClient::update(const std::string& dbName, const std::string& collectionNa
 int RpcClient::search(const std::string& dbName, const std::string& collectionName,
     const std::vector<std::string>& documentIds, const std::vector<std::vector<float>>& vectors,
     const std::map<std::string, std::vector<std::string>>& text,
-    const SearchDocumentParams* params, SearchDocumentResult* result) {
+    const SearchDocumentParams* params, SearchDocumentResult* result, int timeout) {
     olama::SearchRequest request;
     request.set_database(dbName);
     request.set_collection(collectionName);
@@ -261,7 +264,7 @@ int RpcClient::search(const std::string& dbName, const std::string& collectionNa
     }
     grpc::ClientContext context;
     std::chrono::system_clock::time_point deadline = std::chrono::system_clock::now() +
-        std::chrono::milliseconds(option_.timeout);
+        std::chrono::milliseconds(timeout);
     context.set_deadline(deadline);
     olama::SearchResponse response;
     grpc::Status status = stub_->search(&context, request, &response);
@@ -294,6 +297,44 @@ int RpcClient::search(const std::string& dbName, const std::string& collectionNa
     }
     result->success = true;
     result->message = response.msg();
+    return 0;
+}
+
+int RpcClient::count(const std::string& dbName, const std::string& collectionName,
+    const Filter* filter, CountResult* result, int timeout) {
+    olama::CountRequest request;
+    request.set_database(dbName);
+    request.set_collection(collectionName);
+    
+    if (filter != nullptr) {
+        olama::QueryCond* queryCond = new olama::QueryCond();
+        queryCond->set_filter(filter->cond);
+        request.set_allocated_query(queryCond);
+    }
+
+    grpc::ClientContext context;
+    std::chrono::system_clock::time_point deadline = std::chrono::system_clock::now() +
+        std::chrono::milliseconds(timeout);
+    context.set_deadline(deadline);
+    
+    olama::CountResponse response;
+    grpc::Status status = stub_->count(&context, request, &response);
+    
+    if (!status.ok()) {
+        result->success = false;
+        result->message = "Fail to count documents: " + status.error_message();
+        return -1;
+    }
+    
+    if (response.code() != 0) {
+        result->success = false;
+        result->message = "Fail to count documents: " + response.msg();
+        return -1;
+    }
+    
+    result->success = true;
+    result->message = response.msg();
+    result->count = response.count();
     return 0;
 }
 

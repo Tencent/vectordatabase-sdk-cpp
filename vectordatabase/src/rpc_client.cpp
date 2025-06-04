@@ -30,6 +30,7 @@
 
 #include <grpcpp/create_channel.h>
 #include <grpcpp/impl/codegen/client_interceptor.h>
+#include <grpcpp/impl/codegen/time.h>
 
 #include "include/rpc_client.h"
 
@@ -104,6 +105,16 @@ RpcClient::RpcClient(const std::string& url, const std::string& username, const 
     if (!grpcChannel_) {
         throw std::runtime_error("Failed to create gRPC channel");
     }
+
+    const gpr_timespec deadline = gpr_time_add(
+        gpr_now(GPR_CLOCK_REALTIME),
+        gpr_time_from_seconds(option_.timeout / 1000, GPR_TIMESPAN));
+    
+    grpc_connectivity_state state = grpcChannel_->GetState(true);
+    if (!grpcChannel_->WaitForConnected(deadline)) {
+        throw std::runtime_error("Failed to establish connection within timeout");
+    }
+
     stub_ = olama::SearchEngine::NewStub(grpcChannel_);
 }
 
